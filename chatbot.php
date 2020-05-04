@@ -181,23 +181,31 @@ $notext = new BubbleContainerBuilder(
 );
 if (!is_null($events)) {
     $userMessage = strtolower($userMessage);
-switch ($typeMessage) {
-    case "text":
-        if ($userMessage != null) {
-            if($userMessage == "สวัสดี") {
-                $replyData = new FlexMessageBuilder("Flex", $hello);
-            }
-            else {
-                $replyData = new FlexMessageBuilder("Flex", $noword);
-            }
-        }            
-    default:
-        if (!is_null($replyData)) {
-        } else {
-            $replyData = new FlexMessageBuilder("Flex", $notext);
+    if (!is_null($eventMessage)) {
+        $typeMessage = $eventObj->getMessageType();
+        $idMessage = $eventObj->getMessageId();
+        if ($typeMessage == 'text') {
+            $userMessage = $eventObj->getText();
         }
-        break;
-}
+        if ($typeMessage == 'image') {
+        }
+    }
+    switch ($typeMessage) {
+        case "text":
+            if ($userMessage != null) {
+                if ($userMessage == "สวัสดี") {
+                    $replyData = new FlexMessageBuilder("Flex", $hello);
+                } else {
+                    $replyData = new FlexMessageBuilder("Flex", $noword);
+                }
+            }
+        default:
+            if (!is_null($replyData)) {
+            } else {
+                $replyData = new FlexMessageBuilder("Flex", $notext);
+            }
+            break;
+    }
 }
 
 $response = $bot->replyMessage($replyToken, $replyData);
@@ -207,4 +215,3 @@ if ($response->isSucceeded()) {
 }
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
-
