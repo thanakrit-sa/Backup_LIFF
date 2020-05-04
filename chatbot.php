@@ -13,23 +13,11 @@ include 'connect.php';
 
 use LINE\LINEBot;
 use LINE\LINEBot\HTTPClient\CurlHTTPClient;
-use LINE\LINEBot\MessageBuilder\TextMessageBuilder;
-use LINE\LINEBot\TemplateActionBuilder\UriTemplateActionBuilder;
-use LINE\LINEBot\QuickReplyBuilder\QuickReplyMessageBuilder;
-use LINE\LINEBot\QuickReplyBuilder\ButtonBuilder\QuickReplyButtonBuilder;
-use LINE\LINEBot\TemplateActionBuilder\CameraRollTemplateActionBuilder;
-use LINE\LINEBot\TemplateActionBuilder\CameraTemplateActionBuilder;
 use LINE\LINEBot\MessageBuilder\FlexMessageBuilder;
-use LINE\LINEBot\TemplateActionBuilder\MessageTemplateActionBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder\BubbleContainerBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\BoxComponentBuilder;
-use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\TextComponentBuilder;
-use LINE\LINEBot\MessageBuilder\ImagemapMessageBuilder;
-use LINE\LINEBot\ImagemapActionBuilder\ImagemapMessageActionBuilder;
-use LINE\LINEBot\ImagemapActionBuilder\ImagemapUriActionBuilder;
-use LINE\LINEBot\ImagemapActionBuilder\AreaBuilder;
-use LINE\LINEBot\MessageBuilder\Imagemap\BaseSizeBuilder;
+
 
 $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
 $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
@@ -50,33 +38,25 @@ $sourceId = NULL;
 $sourceType = NULL;
 $replyToken = NULL;
 $replyData = NULL;
-$userImage = null;
 $eventMessage = NULL;
 $eventPostback = NULL;
-$eventJoin = NULL;
-$eventLeave = NULL;
 $eventFollow = NULL;
-$eventUnfollow = NULL;
-$eventBeacon = NULL;
-$eventAccountLink = NULL;
-$eventMemberJoined = NULL;
-$eventMemberLeft = NULL;
 
-function startsWith($string, $startString)
-{
-    $len = strlen($startString);
-    return (substr($string, 0, $len) === $startString);
-}
 
-function endsWith($haystack, $needle)
-{
-    $length = strlen($needle);
-    if ($length == 0) {
-        return true;
-    }
+// function startsWith($string, $startString)
+// {
+//     $len = strlen($startString);
+//     return (substr($string, 0, $len) === $startString);
+// }
 
-    return (substr($haystack, -$length) === $needle);
-}
+// function endsWith($haystack, $needle)
+// {
+//     $length = strlen($needle);
+//     if ($length == 0) {
+//         return true;
+//     }
+//     return (substr($haystack, -$length) === $needle);
+// }
 
 switch ($eventType) {
     case 'message':
@@ -85,29 +65,8 @@ switch ($eventType) {
     case 'postback':
         $eventPostback = true;
         break;
-    case 'join':
-        $eventJoin = true;
-        break;
-    case 'leave':
-        $eventLeave = true;
-        break;
     case 'follow':
         $eventFollow = true;
-        break;
-    case 'unfollow':
-        $eventUnfollow = true;
-        break;
-    case 'beacon':
-        $eventBeacon = true;
-        break;
-    case 'accountLink':
-        $eventAccountLink = true;
-        break;
-    case 'memberJoined':
-        $eventMemberJoined = true;
-        break;
-    case 'memberLeft':
-        $eventMemberLeft = true;
         break;
 }
 
@@ -131,6 +90,25 @@ $hello = new BubbleContainerBuilder(
         array(
             new TextComponentBuilder(
                 "สวัสดีครับ",
+                NULL,
+                NULL,
+                "md",
+                NULL,
+                NULL,
+                true
+            )
+        )
+    )
+);
+$welcome = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "ตัวอย่าง 04052020",
                 NULL,
                 NULL,
                 "md",
@@ -168,7 +146,7 @@ $notext = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "คุณไม่ได้ส่งข้อความ",
+                "คุณไม่ได้เป็นส่งข้อความ",
                 NULL,
                 NULL,
                 "md",
@@ -181,6 +159,9 @@ $notext = new BubbleContainerBuilder(
 );
 if (!is_null($events)) {
     $userMessage = strtolower($userMessage);
+    if (!is_null($eventFollow)) {
+
+    }
     if (!is_null($eventMessage)) {
         $typeMessage = $eventObj->getMessageType();
         $idMessage = $eventObj->getMessageId();
