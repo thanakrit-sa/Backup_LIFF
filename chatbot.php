@@ -160,7 +160,7 @@ $notext = new BubbleContainerBuilder(
 if (!is_null($events)) {
     $userMessage = strtolower($userMessage);
     if (!is_null($eventFollow)) {
-
+        $replyData = new FlexMessageBuilder("ข้อความต้อนรับ", $welcome);
     }
     if (!is_null($eventMessage)) {
         $typeMessage = $eventObj->getMessageType();
@@ -175,15 +175,15 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "สวัสดี") {
-                    $replyData = new FlexMessageBuilder("Flex", $hello);
+                    $replyData = new FlexMessageBuilder("ข้อควมตอบกลับ", $hello);
                 } else {
-                    $replyData = new FlexMessageBuilder("Flex", $noword);
+                    $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $noword);
                 }
             }
         default:
             if (!is_null($replyData)) {
             } else {
-                $replyData = new FlexMessageBuilder("Flex", $notext);
+                $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $notext);
             }
             break;
     }
