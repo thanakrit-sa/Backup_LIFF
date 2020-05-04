@@ -1,13 +1,9 @@
 <?php
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-
 include 'vendor/autoload.php';
-
-
 
 include 'connect.php';
 
@@ -32,31 +28,12 @@ $eventObj = $events[0];
 
 $eventType = $eventObj->getType();
 
-
-$userId = NULL;
-$sourceId = NULL;
 $sourceType = NULL;
 $replyToken = NULL;
 $replyData = NULL;
 $eventMessage = NULL;
 $eventPostback = NULL;
 $eventFollow = NULL;
-
-
-// function startsWith($string, $startString)
-// {
-//     $len = strlen($startString);
-//     return (substr($string, 0, $len) === $startString);
-// }
-
-// function endsWith($haystack, $needle)
-// {
-//     $length = strlen($needle);
-//     if ($length == 0) {
-//         return true;
-//     }
-//     return (substr($haystack, -$length) === $needle);
-// }
 
 switch ($eventType) {
     case 'message':
@@ -70,12 +47,8 @@ switch ($eventType) {
         break;
 }
 
-if ($eventObj->isUserEvent()) {
-    $userId = $eventObj->getUserId();
-    $sourceType = "USER";
-}
 
-$sourceId = $eventObj->getEventSourceId();
+
 
 if (is_null($eventLeave) && is_null($eventUnfollow) && is_null($eventMemberLeft)) {
     $replyToken = $eventObj->getReplyToken();
