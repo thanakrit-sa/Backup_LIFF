@@ -179,7 +179,8 @@ $notext = new BubbleContainerBuilder(
         )
     )
 );
-
+if (!is_null($events)) {
+    $userMessage = strtolower($userMessage);
 switch ($typeMessage) {
     case "text":
         if ($userMessage != null) {
@@ -189,14 +190,14 @@ switch ($typeMessage) {
             else {
                 $replyData = new FlexMessageBuilder("Flex", $noword);
             }
-        }
-                
+        }            
     default:
         if (!is_null($replyData)) {
         } else {
             $replyData = new FlexMessageBuilder("Flex", $notext);
         }
         break;
+}
 }
 
 $response = $bot->replyMessage($replyToken, $replyData);
