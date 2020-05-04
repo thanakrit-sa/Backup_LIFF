@@ -47,13 +47,6 @@ switch ($eventType) {
         break;
 }
 
-
-
-
-if (is_null($eventLeave) && is_null($eventUnfollow) && is_null($eventMemberLeft)) {
-    $replyToken = $eventObj->getReplyToken();
-}
-
 $hello = new BubbleContainerBuilder(
     "ltr",
     NULL,
