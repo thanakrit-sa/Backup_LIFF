@@ -346,13 +346,13 @@ if (!is_null($events)) {
     }
 
 
-// $response = $bot->replyMessage($replyToken, $replyData);
-// if ($response->isSucceeded()) {
-//     echo 'Succeeded!';
-//     return;
-// }
+$response = $bot->replyMessage($replyToken, $messages);
+if ($response->isSucceeded()) {
+    echo 'Succeeded!';
+    return;
+}
 
-// echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
     // $post = json_encode($data);
     // $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
@@ -369,18 +369,18 @@ if (!is_null($events)) {
     // echo $result . "\r\n";
 
 };
-$url = 'https://api.line.me/v2/bot/message/reply';
-    $data = [
-      'replyToken' => $replyToken,
-      'messages' => [$messages],
-    ];
+// $url = 'https://api.line.me/v2/bot/message/reply';
+//     $data = [
+//       'replyToken' => $replyToken,
+//       'messages' => [$messages],
+//     ];
 
-// $url = "https://graph.facebook.com/v2.6/me/messages?access_token=EAADSvg5yW7UBAGyavqtG89YpW5Jep9Ul0lv0pZCZBAz3VZCjZBRQ0UfCHFgOot1K0hhLIGgR0XsW3xQ0SPAN6xBUoc4NZBOvOOZBZB0ESIC8RkCL601hovV8zX7FM5TKCCkCF4IZCUwxJqZAztEB5xUpoHocZCVuXrs26LBA4D6hlSrKjUQ6EtKsTx";
-$ch = curl_init($url);
-$post = json_encode($data);
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-$result = curl_exec($ch);
+// // $url = "https://graph.facebook.com/v2.6/me/messages?access_token=EAADSvg5yW7UBAGyavqtG89YpW5Jep9Ul0lv0pZCZBAz3VZCjZBRQ0UfCHFgOot1K0hhLIGgR0XsW3xQ0SPAN6xBUoc4NZBOvOOZBZB0ESIC8RkCL601hovV8zX7FM5TKCCkCF4IZCUwxJqZAztEB5xUpoHocZCVuXrs26LBA4D6hlSrKjUQ6EtKsTx";
+// $ch = curl_init($url);
+// $post = json_encode($data);
+// curl_setopt($ch, CURLOPT_POST, 1);
+// curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+// curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+// $result = curl_exec($ch);
 
-echo "ok";
+// echo "ok";
