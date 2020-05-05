@@ -309,7 +309,7 @@ if (!is_null($events)) {
                                     0 =>
                                     array (
                                         'type' => 'text',
-                                        'text' => $txt,
+                                        // 'text' => $txt,
                                         'margin' => 'md',
                                         'size' => 'lg',
                                         'align' => 'center',
@@ -322,7 +322,7 @@ if (!is_null($events)) {
                             array (
                                 'type' => 'image',
                                 // 'url' => $image_path,
-                                'url' => $image_path,
+                                // 'url' => $image_path,
                                 'size' => 'full',
                                 'aspectRatio' => '1:1',
                                 'aspectMode' => 'cover',
@@ -353,25 +353,34 @@ if (!is_null($events)) {
 // }
 
 // echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+
+    // $post = json_encode($data);
+    // $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
+
+    // $ch = curl_init($url);
+    // curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    // curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+    // curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    // curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    // $result = curl_exec($ch);
+    // curl_close($ch);
+
+    // echo $result . "\r\n";
+
+};
 $url = 'https://api.line.me/v2/bot/message/reply';
     $data = [
       'replyToken' => $replyToken,
       'messages' => [$messages],
     ];
-    $post = json_encode($data);
-    $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
-    $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    $result = curl_exec($ch);
-    curl_close($ch);
-
-    echo $result . "\r\n";
-
-};
+// $url = "https://graph.facebook.com/v2.6/me/messages?access_token=EAADSvg5yW7UBAGyavqtG89YpW5Jep9Ul0lv0pZCZBAz3VZCjZBRQ0UfCHFgOot1K0hhLIGgR0XsW3xQ0SPAN6xBUoc4NZBOvOOZBZB0ESIC8RkCL601hovV8zX7FM5TKCCkCF4IZCUwxJqZAztEB5xUpoHocZCVuXrs26LBA4D6hlSrKjUQ6EtKsTx";
+$ch = curl_init($url);
+$post = json_encode($data);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+$result = curl_exec($ch);
 
 echo "ok";
