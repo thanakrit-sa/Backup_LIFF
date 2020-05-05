@@ -211,7 +211,71 @@ $notext = new BubbleContainerBuilder(
         ]
       }'
 );
-
+$data = [
+    '{
+        "type": "carousel",
+        "contents": [
+          {
+            "type": "bubble",
+            "body": {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                  "wrap": true
+                }
+              ]
+            },
+            "footer": {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "button",
+                  "style": "primary",
+                  "action": {
+                    "type": "uri",
+                    "label": "Go",
+                    "uri": "https://example.com"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "bubble",
+            "body": {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "Hello, World!",
+                  "wrap": true
+                }
+              ]
+            },
+            "footer": {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "button",
+                  "style": "primary",
+                  "action": {
+                    "type": "uri",
+                    "label": "Go",
+                    "uri": "https://example.com"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }'
+    ];
 if (!is_null($events)) {
     $userMessage = strtolower($userMessage);
     if (!is_null($eventFollow)) {
@@ -229,71 +293,7 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
-                    $replyData =  new FlexMessageBuilder("ข้อความตอบกลับ",[
-                        '{
-                            "type": "carousel",
-                            "contents": [
-                              {
-                                "type": "bubble",
-                                "body": {
-                                  "type": "box",
-                                  "layout": "horizontal",
-                                  "contents": [
-                                    {
-                                      "type": "text",
-                                      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                                      "wrap": true
-                                    }
-                                  ]
-                                },
-                                "footer": {
-                                  "type": "box",
-                                  "layout": "horizontal",
-                                  "contents": [
-                                    {
-                                      "type": "button",
-                                      "style": "primary",
-                                      "action": {
-                                        "type": "uri",
-                                        "label": "Go",
-                                        "uri": "https://example.com"
-                                      }
-                                    }
-                                  ]
-                                }
-                              },
-                              {
-                                "type": "bubble",
-                                "body": {
-                                  "type": "box",
-                                  "layout": "horizontal",
-                                  "contents": [
-                                    {
-                                      "type": "text",
-                                      "text": "Hello, World!",
-                                      "wrap": true
-                                    }
-                                  ]
-                                },
-                                "footer": {
-                                  "type": "box",
-                                  "layout": "horizontal",
-                                  "contents": [
-                                    {
-                                      "type": "button",
-                                      "style": "primary",
-                                      "action": {
-                                        "type": "uri",
-                                        "label": "Go",
-                                        "uri": "https://example.com"
-                                      }
-                                    }
-                                  ]
-                                }
-                              }
-                            ]
-                          }'
-                        ]
+                    $replyData =  new FlexMessageBuilder("ข้อความตอบกลับ",$data
                         );
                 } else {
                     $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $noword);
