@@ -293,41 +293,17 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
-                    $messages = array (
-                        'type' => 'flex',
-                        'altText' => 'Flex Message',
-                        'contents' =>
-                        array (
-                            'type' => 'bubble',
-                            'direction' => 'ltr',
-                            'header' =>
-                            array (
-                                'type' => 'box',
-                                'layout' => 'vertical',
-                                'contents' =>
-                                array (
-                                    0 =>
-                                    array (
-                                        'type' => 'text',
-                                        // 'text' => $txt,
-                                        'margin' => 'md',
-                                        'size' => 'lg',
-                                        'align' => 'center',
-                                        'gravity' => 'center',
-                                        'wrap' => true,
-                                    ),
-                                ),
-                            ),
-                            'hero' =>
-                            array (
-                                'type' => 'image',
-                                // 'url' => $image_path,
-                                // 'url' => $image_path,
-                                'size' => 'full',
-                                'aspectRatio' => '1:1',
-                                'aspectMode' => 'cover',
-                            ),
-                        ),
+                    $messages = array(
+                        "type" =>  "bubble",
+                        "body" =>  array(
+                          "type" =>  "box",
+                          "layout" =>  "horizontal",
+                          "contents" =>  array(
+                              "type" =>  "image",
+                              "url" =>  "https://example.com/flex/images/image.jpg",
+                              "size" =>  "md"
+                          )
+                        )
                     );
 
 
