@@ -293,20 +293,42 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
-                    $messages = [
-                        "type"=> "bubble",
-                        "body"=> [
-                          "type"=> "box",
-                          "layout"=> "horizontal",
-                          "contents"=> [
-                            [
-                              "type"=> "image",
-                              "url"=> "https://example.com/flex/images/image.jpg",
-                              "size"=> "md"
-                            ]
-                          ]
-                        ]
-                      ];
+                    $messages = array (
+                        'type' => 'flex',
+                        'altText' => 'Flex Message',
+                        'contents' =>
+                        array (
+                            'type' => 'bubble',
+                            'direction' => 'ltr',
+                            'header' =>
+                            array (
+                                'type' => 'box',
+                                'layout' => 'vertical',
+                                'contents' =>
+                                array (
+                                    0 =>
+                                    array (
+                                        'type' => 'text',
+                                        // 'text' => $txt,
+                                        'margin' => 'md',
+                                        'size' => 'lg',
+                                        'align' => 'center',
+                                        'gravity' => 'center',
+                                        'wrap' => true,
+                                    ),
+                                ),
+                            ),
+                            'hero' =>
+                            array (
+                                'type' => 'image',
+                                // 'url' => $image_path,
+                                // 'url' => $image_path,
+                                'size' => 'full',
+                                'aspectRatio' => '1:1',
+                                'aspectMode' => 'cover',
+                            ),
+                        ),
+                    );
 
 
 
@@ -324,13 +346,13 @@ if (!is_null($events)) {
     }
 
 
-$response = $bot->replyMessage($replyToken, $messages);
-if ($response->isSucceeded()) {
-    echo 'Succeeded!';
-    return;
-}
+// $response = $bot->replyMessage($replyToken, $replyData);
+// if ($response->isSucceeded()) {
+//     echo 'Succeeded!';
+//     return;
+// }
 
-echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+// echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
     // $post = json_encode($data);
     // $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
@@ -347,18 +369,18 @@ echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
     // echo $result . "\r\n";
 
 };
-// $url = 'https://api.line.me/v2/bot/message/reply';
-//     $data = [
-//       'replyToken' => $replyToken,
-//       'messages' => [$messages],
-//     ];
+$url = 'https://api.line.me/v2/bot/message/reply';
+    $data = [
+      'replyToken' => $replyToken,
+      'messages' => [$messages],
+    ];
 
-// // $url = "https://graph.facebook.com/v2.6/me/messages?access_token=EAADSvg5yW7UBAGyavqtG89YpW5Jep9Ul0lv0pZCZBAz3VZCjZBRQ0UfCHFgOot1K0hhLIGgR0XsW3xQ0SPAN6xBUoc4NZBOvOOZBZB0ESIC8RkCL601hovV8zX7FM5TKCCkCF4IZCUwxJqZAztEB5xUpoHocZCVuXrs26LBA4D6hlSrKjUQ6EtKsTx";
-// $ch = curl_init($url);
-// $post = json_encode($data);
-// curl_setopt($ch, CURLOPT_POST, 1);
-// curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-// curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-// $result = curl_exec($ch);
+// $url = "https://graph.facebook.com/v2.6/me/messages?access_token=EAADSvg5yW7UBAGyavqtG89YpW5Jep9Ul0lv0pZCZBAz3VZCjZBRQ0UfCHFgOot1K0hhLIGgR0XsW3xQ0SPAN6xBUoc4NZBOvOOZBZB0ESIC8RkCL601hovV8zX7FM5TKCCkCF4IZCUwxJqZAztEB5xUpoHocZCVuXrs26LBA4D6hlSrKjUQ6EtKsTx";
+$ch = curl_init($url);
+$post = json_encode($data);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Authorization: Bearer ' . 'Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU='));
+$result = curl_exec($ch);
 
-// echo "ok";
+echo "ok";
