@@ -293,7 +293,7 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
-                    $replyData =  $messages = array (
+                    $messages = array (
                         'type' => 'flex',
                         'altText' => 'Flex Message',
                         'contents' =>
