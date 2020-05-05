@@ -293,9 +293,8 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
-                    $replyData = new FlexMessageBuilder(
-                        "ข้อความตอบกลับ", $jdata
-                    );
+                    $replyData =  $jdata;
+                
                 } else {
                     $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $noword);
                 }
