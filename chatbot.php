@@ -147,144 +147,128 @@ $noword = new BubbleContainerBuilder(
     )
 );
 $notext = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "คุณไม่ได้เป็นส่งข้อความ",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
-$jdata = '{
-    "body": {
-    "type": "flex",
-    "altText": "Flex Message",
-    "contents": {
-      "type": "bubble",
-      "direction": "ltr",
-      "header": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "Purchase",
-            "size": "lg",
-            "align": "start",
-            "weight": "bold",
-            "color": "#009813"
-          },
-          {
-            "type": "text",
-            "text": "฿ 100.00",
-            "size": "3xl",
-            "weight": "bold",
-            "color": "#000000"
-          },
-          {
-            "type": "text",
-            "text": "Rabbit Line Pay",
-            "size": "lg",
-            "weight": "bold",
-            "color": "#000000"
-          },
-          {
-            "type": "text",
-            "text": "2019.02.14 21:47 (GMT+0700)",
-            "size": "xs",
-            "color": "#B2B2B2"
-          },
-          {
-            "type": "text",
-            "text": "Payment complete.",
-            "margin": "lg",
-            "size": "lg",
-            "color": "#000000"
-          }
-        ]
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "separator",
-            "color": "#C3C3C3"
-          },
-          {
+    '{
+        
+        "type": "flex",
+        "altText": "Flex Message",
+        "contents": {
+          "type": "bubble",
+          "direction": "ltr",
+          "header": {
             "type": "box",
-            "layout": "baseline",
-            "margin": "lg",
+            "layout": "vertical",
             "contents": [
               {
                 "type": "text",
-                "text": "Merchant",
+                "text": "Purchase",
+                "size": "lg",
                 "align": "start",
-                "color": "#C3C3C3"
+                "weight": "bold",
+                "color": "#009813"
               },
               {
                 "type": "text",
-                "text": "BTS 01",
-                "align": "end",
+                "text": "฿ 100.00",
+                "size": "3xl",
+                "weight": "bold",
+                "color": "#000000"
+              },
+              {
+                "type": "text",
+                "text": "Rabbit Line Pay",
+                "size": "lg",
+                "weight": "bold",
+                "color": "#000000"
+              },
+              {
+                "type": "text",
+                "text": "2019.02.14 21:47 (GMT+0700)",
+                "size": "xs",
+                "color": "#B2B2B2"
+              },
+              {
+                "type": "text",
+                "text": "Payment complete.",
+                "margin": "lg",
+                "size": "lg",
                 "color": "#000000"
               }
             ]
           },
-          {
+          "body": {
             "type": "box",
-            "layout": "baseline",
-            "margin": "lg",
+            "layout": "vertical",
             "contents": [
               {
-                "type": "text",
-                "text": "New balance",
+                "type": "separator",
                 "color": "#C3C3C3"
               },
               {
-                "type": "text",
-                "text": "฿ 45.57",
-                "align": "end"
+                "type": "box",
+                "layout": "baseline",
+                "margin": "lg",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Merchant",
+                    "align": "start",
+                    "color": "#C3C3C3"
+                  },
+                  {
+                    "type": "text",
+                    "text": "BTS 01",
+                    "align": "end",
+                    "color": "#000000"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "margin": "lg",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "New balance",
+                    "color": "#C3C3C3"
+                  },
+                  {
+                    "type": "text",
+                    "text": "฿ 45.57",
+                    "align": "end"
+                  }
+                ]
+              },
+              {
+                "type": "separator",
+                "margin": "lg",
+                "color": "#C3C3C3"
               }
             ]
           },
-          {
-            "type": "separator",
-            "margin": "lg",
-            "color": "#C3C3C3"
+          "footer": {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "View Details",
+                "size": "lg",
+                "align": "start",
+                "color": "#0084B6",
+                "action": {
+                  "type": "uri",
+                  "label": "View Details",
+                  "uri": "https://google.co.th/"
+                }
+              }
+            ]
           }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "text",
-            "text": "View Details",
-            "size": "lg",
-            "align": "start",
-            "color": "#0084B6",
-            "action": {
-              "type": "uri",
-              "label": "View Details",
-              "uri": "https://google.co.th/"
-            }
-          }
-        ]
-      }
-    }
-}
-}';
+        }
+    
+    }'
+);
+
 if (!is_null($events)) {
     $userMessage = strtolower($userMessage);
     if (!is_null($eventFollow)) {
@@ -302,7 +286,7 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
-                    $replyData =  $jdata;
+                    $replyData =  new FlexMessageBuilder("ข้อความตอบกลับ", $notext);
                 } else {
                     $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $noword);
                 }
