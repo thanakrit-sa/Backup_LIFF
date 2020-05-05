@@ -13,9 +13,11 @@ use LINE\LINEBot\MessageBuilder\TemplateMessageBuilder;
 use LINE\LINEBot\MessageBuilder\FlexMessageBuilder;
 use LINE\LINEBot\MessageBuilder\TemplateBuilder\CarouselColumnTemplateBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder\BubbleContainerBuilder;
+use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder\CarouselContainerBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\BoxComponentBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\TextComponentBuilder;
-use LINE\LINEBot\MessageBuilder\TemplateBuilder\CarouselTemplateBuilder;
+use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder;
+use LINE\LINEBot\TemplateActionBuilder\UriTemplateActionBuilder;
 
 
 $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
@@ -71,6 +73,50 @@ $hello = new BubbleContainerBuilder(
                 true
             )
         )
+    )
+);
+
+$liff = new CarouselContainerBuilder(
+    array(
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,NULL,
+            new BoxComponentBuilder(
+                "horizontal",
+                array(
+                    new TextComponentBuilder("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.",NULL,NULL,NULL,NULL,NULL,true)
+                )
+            ),
+            new BoxComponentBuilder(
+                "horizontal",
+                array(
+                    new ButtonComponentBuilder(
+                        new UriTemplateActionBuilder("GO","http://niik.in"),
+                        NULL,NULL,NULL,"primary"
+                    )
+                )
+            )
+        ), // end bubble 1
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,NULL,
+            new BoxComponentBuilder(
+                "horizontal",
+                array(
+                    new TextComponentBuilder("Hello, World!",NULL,NULL,NULL,NULL,NULL,true)
+                )
+            ),
+            new BoxComponentBuilder(
+                "horizontal",
+                array(
+                    new ButtonComponentBuilder(
+                        new UriTemplateActionBuilder("GO","http://niik.in"),
+                        NULL,NULL,NULL,"primary"
+                    )
+                )
+            )
+        ) // end bubble 2       
     )
 );
 $noword = new BubbleContainerBuilder(
@@ -129,30 +175,7 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
-                    $replyData = new TemplateMessageBuilder('Carousel',
-                    new CarouselTemplateBuilder(
-                        array(
-                            new CarouselColumnTemplateBuilder(
-                                'Title Carousel',
-                                'Description Carousel',
-                                'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
-                                $actionBuilder
-                            ),
-                            new CarouselColumnTemplateBuilder(
-                                'Title Carousel',
-                                'Description Carousel',
-                                'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
-                                $actionBuilder
-                            ),
-                            new CarouselColumnTemplateBuilder(
-                                'Title Carousel',
-                                'Description Carousel',
-                                'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
-                                $actionBuilder
-                            ),                                          
-                        )
-                    )
-                    );
+                    $replyData = new FlexMessageBuilder("ข้อควมตอบกลับ", $liff);
                 } else {
                     $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $noword);
                 }
