@@ -9,12 +9,14 @@ include 'connect.php';
 
 use LINE\LINEBot;
 use LINE\LINEBot\HTTPClient\CurlHTTPClient;
+use LINE\LINEBot\MessageBuilder\TemplateMessageBuilder;
 use LINE\LINEBot\MessageBuilder\FlexMessageBuilder;
+use LINE\LINEBot\MessageBuilder\TemplateBuilder\CarouselColumnTemplateBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder\BubbleContainerBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\BoxComponentBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\TextComponentBuilder;
-use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder;
-use LINE\LINEBot\TemplateActionBuilder\UriTemplateActionBuilder;
+use LINE\LINEBot\MessageBuilder\TemplateBuilder\CarouselTemplateBuilder;
+
 
 $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
 $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
@@ -67,20 +69,6 @@ $hello = new BubbleContainerBuilder(
                 NULL,
                 NULL,
                 true
-            )
-        )
-    )
-);
-$liff = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("Liff","https://liff.line.me/1654173341-pJegLPb3"),
-                NULL,NULL,NULL,"primary"
             )
         )
     )
@@ -141,7 +129,30 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
-                    $replyData = new FlexMessageBuilder("ข้อควมตอบกลับ", $liff);
+                    $replyData = new TemplateMessageBuilder('Carousel',
+                    new CarouselTemplateBuilder(
+                        array(
+                            new CarouselColumnTemplateBuilder(
+                                'Title Carousel',
+                                'Description Carousel',
+                                'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
+                                $actionBuilder
+                            ),
+                            new CarouselColumnTemplateBuilder(
+                                'Title Carousel',
+                                'Description Carousel',
+                                'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
+                                $actionBuilder
+                            ),
+                            new CarouselColumnTemplateBuilder(
+                                'Title Carousel',
+                                'Description Carousel',
+                                'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
+                                $actionBuilder
+                            ),                                          
+                        )
+                    )
+                    );
                 } else {
                     $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $noword);
                 }
