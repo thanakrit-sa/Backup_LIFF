@@ -80,39 +80,47 @@ $liff = new CarouselContainerBuilder(
     array(
         new BubbleContainerBuilder(
             "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-            NULL,NULL,
+            NULL,
+            NULL,
             new BoxComponentBuilder(
                 "horizontal",
                 array(
                     new TextComponentBuilder("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.",NULL,NULL,NULL,NULL,NULL,true)
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.", NULL, NULL, NULL, NULL, NULL, true)
                 )
             ),
             new BoxComponentBuilder(
                 "horizontal",
                 array(
                     new ButtonComponentBuilder(
-                        new UriTemplateActionBuilder("GO","http://niik.in"),
-                        NULL,NULL,NULL,"primary"
+                        new UriTemplateActionBuilder("GO", "http://niik.in"),
+                        NULL,
+                        NULL,
+                        NULL,
+                        "primary"
                     )
                 )
             )
         ), // end bubble 1
         new BubbleContainerBuilder(
             "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-            NULL,NULL,
+            NULL,
+            NULL,
             new BoxComponentBuilder(
                 "horizontal",
                 array(
-                    new TextComponentBuilder("Hello, World!",NULL,NULL,NULL,NULL,NULL,true)
+                    new TextComponentBuilder("Hello, World!", NULL, NULL, NULL, NULL, NULL, true)
                 )
             ),
             new BoxComponentBuilder(
                 "horizontal",
                 array(
                     new ButtonComponentBuilder(
-                        new UriTemplateActionBuilder("GO","http://niik.in"),
-                        NULL,NULL,NULL,"primary"
+                        new UriTemplateActionBuilder("GO", "http://niik.in"),
+                        NULL,
+                        NULL,
+                        NULL,
+                        "primary"
                     )
                 )
             )
@@ -158,6 +166,7 @@ $notext = new BubbleContainerBuilder(
     )
 );
 $jdata = '{
+    "body": {
     "type": "flex",
     "altText": "Flex Message",
     "contents": {
@@ -274,11 +283,11 @@ $jdata = '{
         ]
       }
     }
+}
 }';
 if (!is_null($events)) {
     $userMessage = strtolower($userMessage);
     if (!is_null($eventFollow)) {
-        
     }
     if (!is_null($eventMessage)) {
         $typeMessage = $eventObj->getMessageType();
@@ -294,7 +303,6 @@ if (!is_null($events)) {
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
                     $replyData =  $jdata;
-                
                 } else {
                     $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $noword);
                 }
@@ -315,4 +323,3 @@ if ($response->isSucceeded()) {
 }
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
-?>
