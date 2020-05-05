@@ -13,7 +13,8 @@ use LINE\LINEBot\MessageBuilder\FlexMessageBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder\BubbleContainerBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\BoxComponentBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\TextComponentBuilder;
-
+use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder;
+use LINE\LINEBot\TemplateActionBuilder\UriTemplateActionBuilder;
 
 $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
 $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
@@ -70,21 +71,16 @@ $hello = new BubbleContainerBuilder(
         )
     )
 );
-$welcome = new BubbleContainerBuilder(
+$liff = new BubbleContainerBuilder(
     "ltr",
     NULL,
     NULL,
     new BoxComponentBuilder(
         "horizontal",
         array(
-            new TextComponentBuilder(
-                "ตัวอย่าง 04052020",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("Liff","https://liff.line.me/1654173341-pJegLPb3"),
+                NULL,NULL,NULL,"primary"
             )
         )
     )
@@ -130,7 +126,7 @@ $notext = new BubbleContainerBuilder(
 if (!is_null($events)) {
     $userMessage = strtolower($userMessage);
     if (!is_null($eventFollow)) {
-        $replyData = new FlexMessageBuilder("ข้อความต้อนรับ", $welcome);
+        
     }
     if (!is_null($eventMessage)) {
         $typeMessage = $eventObj->getMessageType();
@@ -144,8 +140,8 @@ if (!is_null($events)) {
     switch ($typeMessage) {
         case "text":
             if ($userMessage != null) {
-                if ($userMessage == "สวัสดี") {
-                    $replyData = new FlexMessageBuilder("ข้อควมตอบกลับ", $hello);
+                if ($userMessage == "liff") {
+                    $replyData = new FlexMessageBuilder("ข้อควมตอบกลับ", $liff);
                 } else {
                     $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $noword);
                 }
