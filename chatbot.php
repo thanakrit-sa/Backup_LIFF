@@ -293,8 +293,46 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
-                    $replyData =  new FlexMessageBuilder("ข้อความตอบกลับ",$data
-                        );
+                    $replyData =  $messages = array (
+                        'type' => 'flex',
+                        'altText' => 'Flex Message',
+                        'contents' =>
+                        array (
+                            'type' => 'bubble',
+                            'direction' => 'ltr',
+                            'header' =>
+                            array (
+                                'type' => 'box',
+                                'layout' => 'vertical',
+                                'contents' =>
+                                array (
+                                    0 =>
+                                    array (
+                                        'type' => 'text',
+                                        'text' => $txt,
+                                        'margin' => 'md',
+                                        'size' => 'lg',
+                                        'align' => 'center',
+                                        'gravity' => 'center',
+                                        'wrap' => true,
+                                    ),
+                                ),
+                            ),
+                            'hero' =>
+                            array (
+                                'type' => 'image',
+                                // 'url' => $image_path,
+                                'url' => $image_path,
+                                'size' => 'full',
+                                'aspectRatio' => '1:1',
+                                'aspectMode' => 'cover',
+                            ),
+                        ),
+                    );
+
+
+
+        
                 } else {
                     $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $noword);
                 }
