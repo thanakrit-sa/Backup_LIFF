@@ -229,7 +229,7 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
-                    $replyData =  [
+                    $replyData =  new FlexMessageBuilder("ข้อความตอบกลับ",[
                         '{
                             "type": "carousel",
                             "contents": [
@@ -293,7 +293,8 @@ if (!is_null($events)) {
                               }
                             ]
                           }'
-                        ];
+                        ]
+                        );
                 } else {
                     $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $noword);
                 }
