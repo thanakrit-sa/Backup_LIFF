@@ -293,20 +293,20 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "liff") {
-                    $messages = '{
-                        "type": "bubble",
-                        "body": {
-                          "type": "box",
-                          "layout": "horizontal",
-                          "contents": [
-                            {
-                              "type": "image",
-                              "url": "https://example.com/flex/images/image.jpg",
-                              "size": "md"
-                            }
+                    $messages = [
+                        "type"=> "bubble",
+                        "body"=> [
+                          "type"=> "box",
+                          "layout"=> "horizontal",
+                          "contents"=> [
+                            [
+                              "type"=> "image",
+                              "url"=> "https://example.com/flex/images/image.jpg",
+                              "size"=> "md"
+                            ]
                           ]
-                        }
-                      }';
+                        ]
+                      ];
 
 
 
