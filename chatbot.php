@@ -166,3 +166,4 @@ if ($response->isSucceeded()) {
 }
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+?>
