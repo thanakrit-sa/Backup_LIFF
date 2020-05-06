@@ -28,7 +28,7 @@ $jsonFlex = [
           "type"=> "bubble",
           "hero"=> [
             "type"=> "image",
-            "url"=> "https://www.google.com",
+            "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_5_carousel.png",
             "size"=> "full",
             "aspectRatio"=> "20:13",
             "aspectMode"=> "cover"
@@ -40,7 +40,7 @@ $jsonFlex = [
             "contents"=> [
               [
                 "type"=> "text",
-                "text"=> "Arm Chair, White",
+                "text"=> "Product 1",
                 "size"=> "xl",
                 "weight"=> "bold",
                 "wrap"=> true
@@ -49,17 +49,10 @@ $jsonFlex = [
                 "type"=> "box",
                 "layout"=> "baseline",
                 "contents"=> [
+                  
                   [
                     "type"=> "text",
-                    "text"=> "$49",
-                    "flex"=> 0,
-                    "size"=> "xl",
-                    "weight"=> "bold",
-                    "wrap"=> true
-                ],
-                  [
-                    "type"=> "text",
-                    "text"=> ".99",
+                    "text"=> "Description",
                     "flex"=> 0,
                     "size"=> "sm",
                     "weight"=> "bold",
@@ -78,7 +71,7 @@ $jsonFlex = [
                 "type"=> "button",
                 "action"=> [
                   "type"=> "uri",
-                  "label"=> "Add to whishlist",
+                  "label"=> "Detail 1",
                   "uri"=> "https://liff.line.me/1654173341-pJegLPb3"
                 ]
               ]
