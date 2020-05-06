@@ -20,7 +20,7 @@ $content = file_get_contents('php://input');
 
 $jsonFlex = [
     
-        "type"=> "template",
+        "type"=> "Flex",
         "altText"=> "this is a carousel template",
         "template"=> [
           "type"=> "carousel",
