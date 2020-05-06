@@ -12,7 +12,7 @@
     $message = $arrayJson['events'][0]['message']['text'];
 #ตัวอย่าง Message Type "Text"
     if($message == "สวัสดี"){
-        $arrayPostData = array (
+        $arrayPostData = [
             'type' => 'flex',
             'altText' => 'Flex Message',
             'contents' =>
@@ -47,7 +47,7 @@
                     'aspectMode' => 'cover',
                 ),
             ),
-        );
+        ];
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Sticker"
