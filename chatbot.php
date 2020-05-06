@@ -49,15 +49,14 @@ $jsonFlex = [
                 "type"=> "box",
                 "layout"=> "baseline",
                 "contents"=> [
-                
                   [
                     "type"=> "text",
-                    "text"=> "Description",
+                    "text"=> "$49",
                     "flex"=> 0,
-                    "size"=> "sm",
+                    "size"=> "xl",
                     "weight"=> "bold",
                     "wrap"=> true
-                  ]
+                ]
                 ]
               ]
             ]
