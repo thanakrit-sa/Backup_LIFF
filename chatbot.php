@@ -94,7 +94,7 @@ $jsonFlex = [
             "contents"=> [
               [
                 "type"=> "text",
-                "text"=> "Metal Desk Lamp",
+                "text"=> "Product 2",
                 "size"=> "xl",
                 "weight"=> "bold",
                 "wrap"=> true
@@ -104,17 +104,10 @@ $jsonFlex = [
                 "layout"=> "baseline",
                 "flex"=> 1,
                 "contents"=> [
+                  
                   [
                     "type"=> "text",
-                    "text"=> "$11",
-                    "flex"=> 0,
-                    "size"=> "xl",
-                    "weight"=> "bold",
-                    "wrap"=> true
-                ],
-                  [
-                    "type"=> "text",
-                    "text"=> ".99",
+                    "text"=> "Description",
                     "flex"=> 0,
                     "size"=> "sm",
                     "weight"=> "bold",
@@ -133,7 +126,7 @@ $jsonFlex = [
                 "type"=> "button",
                 "action"=> [
                   "type"=> "uri",
-                  "label"=> "Add to wish list",
+                  "label"=> "Detail 2",
                   "uri"=> "https://liff.line.me/1654173341-pJegLPb3"
                 ]
               ]
@@ -187,5 +180,3 @@ function send_reply_message($url, $post_header, $post_body)
 
     return $result;
 }
-
-?>
