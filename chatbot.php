@@ -139,7 +139,7 @@ $jsonFlex = [
 
 
 
-if ( $message == "แสดง L" ) {
+if ( $message == "แสดง Liff" ) {
     foreach ($request_array['events'] as $event) {
         error_log(json_encode($event));
         $reply_message = '';
