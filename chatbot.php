@@ -56,7 +56,15 @@ $jsonFlex = [
                     "size"=> "xl",
                     "weight"=> "bold",
                     "wrap"=> true
-                ]
+                ],
+                  [
+                    "type"=> "text",
+                    "text"=> ".99",
+                    "flex"=> 0,
+                    "size"=> "sm",
+                    "weight"=> "bold",
+                    "wrap"=> true
+                  ]
                 ]
               ]
             ]
@@ -70,7 +78,7 @@ $jsonFlex = [
                 "type"=> "button",
                 "action"=> [
                   "type"=> "uri",
-                  "label"=> "Detail 1",
+                  "label"=> "Add to whishlist",
                   "uri"=> "https://liff.line.me/1654173341-pJegLPb3"
                 ]
               ]
