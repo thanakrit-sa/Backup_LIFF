@@ -40,7 +40,7 @@ $jsonFlex = [
             "contents"=> [
               [
                 "type"=> "text",
-                "text"=> "Product 1",
+                "text"=> "Arm Chair, White",
                 "size"=> "xl",
                 "weight"=> "bold",
                 "wrap"=> true
