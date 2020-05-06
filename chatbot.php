@@ -22,67 +22,134 @@ $jsonFlex = [
     "type"=> "flex",
     "altText"=> "Flex Message",
     "contents"=> [
-      "type"=> "bubble",
-      "hero"=> [
-        "type"=> "image",
-        "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_5_carousel.png",
-        "size"=> "full",
-        "aspectRatio"=> "20:13",
-        "aspectMode"=> "cover"
-      ],
-      "body"=> [
-        "type"=> "box",
-        "layout"=> "vertical",
-        "spacing"=> "sm",
-        "contents"=> [
+      "type"=> "carousel",
+      "contents"=> [
         [
-            "type"=> "text",
-            "text"=> "Arm Chair, White",
-            "size"=> "xl",
-            "weight"=> "bold",
-            "wrap"=> true
-        ],
-          [
+          "type"=> "bubble",
+          "hero"=> [
+            "type"=> "image",
+            "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_5_carousel.png",
+            "size"=> "full",
+            "aspectRatio"=> "20:13",
+            "aspectMode"=> "cover"
+      ],
+          "body"=> [
             "type"=> "box",
-            "layout"=> "baseline",
+            "layout"=> "vertical",
+            "spacing"=> "sm",
             "contents"=> [
               [
                 "type"=> "text",
-                "text"=> "$49",
-                "flex"=> 0,
+                "text"=> "Arm Chair, White",
                 "size"=> "xl",
                 "weight"=> "bold",
                 "wrap"=> true
-              ],
+            ],
+              [
+                "type"=> "box",
+                "layout"=> "baseline",
+                "contents"=> [
+                  [
+                    "type"=> "text",
+                    "text"=> "$49",
+                    "flex"=> 0,
+                    "size"=> "xl",
+                    "weight"=> "bold",
+                    "wrap"=> true
+                ],
+                  [
+                    "type"=> "text",
+                    "text"=> ".99",
+                    "flex"=> 0,
+                    "size"=> "sm",
+                    "weight"=> "bold",
+                    "wrap"=> true
+                  ]
+                ]
+              ]
+            ]
+            ],
+          "footer"=> [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "spacing"=> "sm",
+            "contents"=> [
+              [
+                "type"=> "button",
+                "action"=> [
+                  "type"=> "uri",
+                  "label"=> "Add to whishlist",
+                  "uri"=> "https://liff.line.me/1654173341-pJegLPb3"
+                ]
+              ]
+            ]
+      ]
+      ],
+        [
+          "type"=> "bubble",
+          "hero"=> [
+            "type"=> "image",
+            "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_6_carousel.png",
+            "size"=> "full",
+            "aspectRatio"=> "20:13",
+            "aspectMode"=> "cover"
+      ],
+          "body"=> [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "spacing"=> "sm",
+            "contents"=> [
               [
                 "type"=> "text",
-                "text"=> ".99",
-                "flex"=> 0,
-                "size"=> "sm",
+                "text"=> "Metal Desk Lamp",
+                "size"=> "xl",
                 "weight"=> "bold",
                 "wrap"=> true
+            ],
+              [
+                "type"=> "box",
+                "layout"=> "baseline",
+                "flex"=> 1,
+                "contents"=> [
+                  [
+                    "type"=> "text",
+                    "text"=> "$11",
+                    "flex"=> 0,
+                    "size"=> "xl",
+                    "weight"=> "bold",
+                    "wrap"=> true
+                ],
+                  [
+                    "type"=> "text",
+                    "text"=> ".99",
+                    "flex"=> 0,
+                    "size"=> "sm",
+                    "weight"=> "bold",
+                    "wrap"=> true
+                ]
+                ]
+            ]
+            ]
+            ],
+          "footer"=> [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "spacing"=> "sm",
+            "contents"=> [
+              [
+                "type"=> "button",
+                "action"=> [
+                  "type"=> "uri",
+                  "label"=> "Add to wish list",
+                  "uri"=> "https://liff.line.me/1654173341-pJegLPb3"
+                ]
               ]
             ]
           ]
         ]
-              ],
-      "footer"=> [
-        "type"=> "box",
-        "layout"=> "vertical",
-        "spacing"=> "sm",
-        "contents"=> [
-        [
-            "type"=> "button",
-            "action"=> [
-              "type"=> "uri",
-              "label"=> "Add to whishlist",
-              "uri"=> "https://liff.line.me/1654173341-pJegLPb3"
       ]
     ]
-        ]
-      ]
-    ]
-];
+  ];
 
 
 
