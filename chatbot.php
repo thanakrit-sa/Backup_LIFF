@@ -1,386 +1,71 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-include 'vendor/autoload.php';
-
-include 'connect.php';
-
-use LINE\LINEBot;
-use LINE\LINEBot\HTTPClient\CurlHTTPClient;
-use LINE\LINEBot\MessageBuilder\TemplateMessageBuilder;
-use LINE\LINEBot\MessageBuilder\FlexMessageBuilder;
-use LINE\LINEBot\MessageBuilder\TemplateBuilder\CarouselColumnTemplateBuilder;
-use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder\BubbleContainerBuilder;
-use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder\CarouselContainerBuilder;
-use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\BoxComponentBuilder;
-use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\TextComponentBuilder;
-use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder;
-use LINE\LINEBot\TemplateActionBuilder\UriTemplateActionBuilder;
-
-
-$httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
-$bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
-
-$content = file_get_contents('php://input');
-
-$hash = hash_hmac('sha256', $content, LINE_MESSAGE_CHANNEL_SECRET, true);
-$signature = base64_encode($hash);
-
-$events = $bot->parseEventRequest($content, $signature);
-$eventObj = $events[0];
-
-$eventType = $eventObj->getType();
-
-$sourceType = NULL;
-$replyToken = NULL;
-$replyData = NULL;
-$eventMessage = NULL;
-$eventPostback = NULL;
-$eventFollow = NULL;
-
-switch ($eventType) {
-    case 'message':
-        $eventMessage = true;
-        break;
-    case 'postback':
-        $eventPostback = true;
-        break;
-    case 'follow':
-        $eventFollow = true;
-        break;
-}
-
-if (is_null($eventLeave) && is_null($eventUnfollow) && is_null($eventMemberLeft)) {
-    $replyToken = $eventObj->getReplyToken();
-}
-
-$hello = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "สวัสดีครับ",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
-
-$liff = new CarouselContainerBuilder(
-    array(
-        new BubbleContainerBuilder(
-            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-            NULL,
-            NULL,
-            new BoxComponentBuilder(
-                "horizontal",
-                array(
-                    new TextComponentBuilder("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.", NULL, NULL, NULL, NULL, NULL, true)
-                )
-            ),
-            new BoxComponentBuilder(
-                "horizontal",
-                array(
-                    new ButtonComponentBuilder(
-                        new UriTemplateActionBuilder("GO", "http://niik.in"),
-                        NULL,
-                        NULL,
-                        NULL,
-                        "primary"
-                    )
-                )
-            )
-        ), // end bubble 1
-        new BubbleContainerBuilder(
-            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-            NULL,
-            NULL,
-            new BoxComponentBuilder(
-                "horizontal",
-                array(
-                    new TextComponentBuilder("Hello, World!", NULL, NULL, NULL, NULL, NULL, true)
-                )
-            ),
-            new BoxComponentBuilder(
-                "horizontal",
-                array(
-                    new ButtonComponentBuilder(
-                        new UriTemplateActionBuilder("GO", "http://niik.in"),
-                        NULL,
-                        NULL,
-                        NULL,
-                        "primary"
-                    )
-                )
-            )
-        ) // end bubble 2       
-    )
-);
-$noword = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ไม่ตรงคีย์เวิร์ด",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
-$notext = new BubbleContainerBuilder(
-    '{
-        "type": "carousel",
-        "contents": [
-          {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                  "wrap": true
-                }
-              ]
-            },
-            "footer": {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "button",
-                  "style": "primary",
-                  "action": {
-                    "type": "uri",
-                    "label": "Go",
-                    "uri": "https://example.com"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "Hello, World!",
-                  "wrap": true
-                }
-              ]
-            },
-            "footer": {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "button",
-                  "style": "primary",
-                  "action": {
-                    "type": "uri",
-                    "label": "Go",
-                    "uri": "https://example.com"
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }'
-);
-$data = [
-    '{
-        "type": "carousel",
-        "contents": [
-          {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                  "wrap": true
-                }
-              ]
-            },
-            "footer": {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "button",
-                  "style": "primary",
-                  "action": {
-                    "type": "uri",
-                    "label": "Go",
-                    "uri": "https://example.com"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "Hello, World!",
-                  "wrap": true
-                }
-              ]
-            },
-            "footer": {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "button",
-                  "style": "primary",
-                  "action": {
-                    "type": "uri",
-                    "label": "Go",
-                    "uri": "https://example.com"
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }'
-    ];
-if (!is_null($events)) {
-    $userMessage = strtolower($userMessage);
-    if (!is_null($eventFollow)) {
+    $accessToken = "Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=";//copy Channel access token ตอนที่ตั้งค่ามาใส่
+    
+    $content = file_get_contents('php://input');
+    $arrayJson = json_decode($content, true);
+    
+    $arrayHeader = array();
+    $arrayHeader[] = "Content-Type: application/json";
+    $arrayHeader[] = "Authorization: Bearer {$accessToken}";
+    
+    //รับข้อความจากผู้ใช้
+    $message = $arrayJson['events'][0]['message']['text'];
+#ตัวอย่าง Message Type "Text"
+    if($message == "สวัสดี"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา";
+        replyMsg($arrayHeader,$arrayPostData);
     }
-    if (!is_null($eventMessage)) {
-        $typeMessage = $eventObj->getMessageType();
-        $idMessage = $eventObj->getMessageId();
-        if ($typeMessage == 'text') {
-            $userMessage = $eventObj->getText();
-        }
-        if ($typeMessage == 'image') {
-        }
+    #ตัวอย่าง Message Type "Sticker"
+    else if($message == "ฝันดี"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "sticker";
+        $arrayPostData['messages'][0]['packageId'] = "2";
+        $arrayPostData['messages'][0]['stickerId'] = "46";
+        replyMsg($arrayHeader,$arrayPostData);
     }
-    switch ($typeMessage) {
-        case "text":
-            if ($userMessage != null) {
-                if ($userMessage == "liff") {
-                    $messages = array (
-                        'type' => 'flex',
-                        'altText' => 'Flex Message',
-                        'contents' =>
-                        array (
-                            'type' => 'bubble',
-                            'direction' => 'ltr',
-                            'header' =>
-                            array (
-                                'type' => 'box',
-                                'layout' => 'vertical',
-                                'contents' =>
-                                array (
-                                    0 =>
-                                    array (
-                                        'type' => 'text',
-                                        // 'text' => $txt,
-                                        'margin' => 'md',
-                                        'size' => 'lg',
-                                        'align' => 'center',
-                                        'gravity' => 'center',
-                                        'wrap' => true,
-                                    ),
-                                ),
-                            ),
-                            'hero' =>
-                            array (
-                                'type' => 'image',
-                                // 'url' => $image_path,
-                                // 'url' => $image_path,
-                                'size' => 'full',
-                                'aspectRatio' => '1:1',
-                                'aspectMode' => 'cover',
-                            ),
-                        ),
-                    );
-
-
-
-        
-                } else {
-                    $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $noword);
-                }
-            }
-        default:
-            if (!is_null($replyData)) {
-            } else {
-                $replyData = new FlexMessageBuilder("ข้อความตอบกลับ", $notext);
-            }
-            break;
+    #ตัวอย่าง Message Type "Image"
+    else if($message == "รูปน้องแมว"){
+        $image_url = "https://i.pinimg.com/originals/cc/22/d1/cc22d10d9096e70fe3dbe3be2630182b.jpg";
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "image";
+        $arrayPostData['messages'][0]['originalContentUrl'] = $image_url;
+        $arrayPostData['messages'][0]['previewImageUrl'] = $image_url;
+        replyMsg($arrayHeader,$arrayPostData);
     }
-
-
-// $response = $bot->replyMessage($replyToken, $replyData);
-// if ($response->isSucceeded()) {
-//     echo 'Succeeded!';
-//     return;
-// }
-
-// echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
-};
-$url = 'https://api.line.me/v2/bot/message/reply';
-    $data = [
-      'replyToken' => $replyToken,
-      'messages' => $messages,
-    ];
-    $post = json_encode($data);
-    $headers = array('Content-Type: application/json', 'Authorization: Bearer Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=');
-
-    $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    $result = curl_exec($ch);
-    curl_close($ch);
-
-    echo $result . "\r\n";
-
-
-
-// $url = "https://graph.facebook.com/v2.6/me/messages?access_token=EAADSvg5yW7UBAGyavqtG89YpW5Jep9Ul0lv0pZCZBAz3VZCjZBRQ0UfCHFgOot1K0hhLIGgR0XsW3xQ0SPAN6xBUoc4NZBOvOOZBZB0ESIC8RkCL601hovV8zX7FM5TKCCkCF4IZCUwxJqZAztEB5xUpoHocZCVuXrs26LBA4D6hlSrKjUQ6EtKsTx";
-// $ch = curl_init($url);
-// $post = json_encode($data);
-// curl_setopt($ch, CURLOPT_POST, 1);
-// curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-// curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-// $result = curl_exec($ch);
-
-// echo "ok";
+    #ตัวอย่าง Message Type "Location"
+    else if($message == "พิกัดสยามพารากอน"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "location";
+        $arrayPostData['messages'][0]['title'] = "สยามพารากอน";
+        $arrayPostData['messages'][0]['address'] =   "13.7465354,100.532752";
+        $arrayPostData['messages'][0]['latitude'] = "13.7465354";
+        $arrayPostData['messages'][0]['longitude'] = "100.532752";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    #ตัวอย่าง Message Type "Text + Sticker ใน 1 ครั้ง"
+    else if($message == "ลาก่อน"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "อย่าทิ้งกันไป";
+        $arrayPostData['messages'][1]['type'] = "sticker";
+        $arrayPostData['messages'][1]['packageId'] = "1";
+        $arrayPostData['messages'][1]['stickerId'] = "131";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+function replyMsg($arrayHeader,$arrayPostData){
+        $strUrl = "https://api.line.me/v2/bot/message/reply";
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL,$strUrl);
+        curl_setopt($ch, CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $arrayHeader);    
+        curl_setopt($ch, CURLOPT_POSTFIELDS,json_encode($arrayPostData));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        $result = curl_exec($ch);
+        curl_close ($ch);
+    }
+   exit;
+?>
