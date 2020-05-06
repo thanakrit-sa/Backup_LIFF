@@ -12,9 +12,42 @@
     $message = $arrayJson['events'][0]['message']['text'];
 #ตัวอย่าง Message Type "Text"
     if($message == "สวัสดี"){
-        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
-        $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา";
+        $arrayPostData = array (
+            'type' => 'flex',
+            'altText' => 'Flex Message',
+            'contents' =>
+            array (
+                'type' => 'bubble',
+                'direction' => 'ltr',
+                'header' =>
+                array (
+                    'type' => 'box',
+                    'layout' => 'vertical',
+                    'contents' =>
+                    array (
+                        0 =>
+                        array (
+                            'type' => 'text',
+                            // 'text' => $txt,
+                            'margin' => 'md',
+                            'size' => 'lg',
+                            'align' => 'center',
+                            'gravity' => 'center',
+                            'wrap' => true,
+                        ),
+                    ),
+                ),
+                'hero' =>
+                array (
+                    'type' => 'image',
+                    // 'url' => $image_path,
+                    // 'url' => $image_path,
+                    'size' => 'full',
+                    'aspectRatio' => '1:1',
+                    'aspectMode' => 'cover',
+                ),
+            ),
+        );
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Sticker"
