@@ -127,7 +127,7 @@ $jsonFlex = [
                 "action"=> [
                   "type"=> "uri",
                   "label"=> "Detail 2",
-                  "uri"=> "https://liff.line.me/1654173341-pJegLPb3"
+                  "uri"=> "https://liff.line.me/1654173341-lVDxGq6k"
                 ]
               ]
             ]
