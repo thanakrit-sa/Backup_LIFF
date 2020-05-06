@@ -16,17 +16,17 @@
             'type' => 'flex',
             'altText' => 'Flex Message',
             'contents' =>
-            array (
+            [
                 'type' => 'bubble',
                 'direction' => 'ltr',
                 'header' =>
-                array (
+                [
                     'type' => 'box',
                     'layout' => 'vertical',
                     'contents' =>
-                    array (
+                    [
                         0 =>
-                        array (
+                        [
                             'type' => 'text',
                             // 'text' => $txt,
                             'margin' => 'md',
@@ -34,19 +34,19 @@
                             'align' => 'center',
                             'gravity' => 'center',
                             'wrap' => true,
-                        ),
-                    ),
-                ),
+                        ],
+                    ],
+                ],
                 'hero' =>
-                array (
+                [
                     'type' => 'image',
                     // 'url' => $image_path,
                     // 'url' => $image_path,
                     'size' => 'full',
                     'aspectRatio' => '1:1',
                     'aspectMode' => 'cover',
-                ),
-            ),
+                ],
+            ],
         ];
         replyMsg($arrayHeader,$arrayPostData);
     }
