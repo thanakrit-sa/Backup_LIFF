@@ -10,8 +10,7 @@ $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' 
 
 $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
-$arrayJson = json_decode($content, true);
-$message = $arrayJson['events'][0]['message']['text'];
+
 
 
 $jsonFlex = [
@@ -135,7 +134,7 @@ $jsonFlex = [
 
 
 
-if ( sizeof($request_array['events']) > 0 ) {
+if ( $request_array['events'] == "fill" ) {
     foreach ($request_array['events'] as $event) {
         error_log(json_encode($event));
         $reply_message = '';
