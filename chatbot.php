@@ -11,6 +11,7 @@ $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' 
 $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
 
+
 $jsonFlex = [
     "type" => "flex",
     "altText" => "Hello Flex Message",
@@ -132,33 +133,79 @@ $jsonFlex = [
 
 
 
-if ( sizeof($request_array['events']) > 0 ) {
-    foreach ($request_array['events'] as $event) {
-        error_log(json_encode($event));
-        $reply_message = '';
-        $reply_token = $event['replyToken'];
+// if ( sizeof($request_array['events']) > 0 ) {
+//     foreach ($request_array['events'] as $event) {
+//         error_log(json_encode($event));
+//         $reply_message = '';
+//         $reply_token = $event['replyToken'];
 
 
-        $data = [
-            'replyToken' => $reply_token,
-            'messages' => [$jsonFlex]
-        ];
+//         $data = [
+//             'replyToken' => $reply_token,
+//             'messages' => [$jsonFlex]
+//         ];
 
-        print_r($data);
+//         print_r($data);
 
-        $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
+//         $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
 
-        $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
+//         $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
 
-        echo "Result: ".$send_result."\r\n";
+//         echo "Result: ".$send_result."\r\n";
         
+//     }
+// }
+
+// echo "OK";
+
+
+if (!is_null($events)) {
+    $userMessage = strtolower($userMessage);
+    if (!is_null($eventFollow)) {
     }
-}
+    if (!is_null($eventMessage)) {
+        $typeMessage = $eventObj->getMessageType();
+        $idMessage = $eventObj->getMessageId();
+        if ($typeMessage == 'text') {
+            $userMessage = $eventObj->getText();
+        }
+        if ($typeMessage == 'image') {
+        }
+    }
+    
+            if ($userMessage != null) {
+                if ($userMessage == "liff") {
+                    $data = [
+                        'replyToken' => $reply_token,
+                        'messages' => [$jsonFlex]
+                    ];
+            
+                    print_r($data);
+            
+                    $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
+            
+                    $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
+            
+                    echo "Result: ".$send_result."\r\n";
 
-echo "OK";
-
-
-
+                } else {
+                    $data = [
+                        'replyToken' => $reply_token,
+                        'messages' => [$jsonFlex]
+                    ];
+            
+                    print_r($data);
+            
+                    $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
+            
+                    $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
+            
+                    echo "Result: ".$send_result."\r\n";
+                }
+            }
+        };
+       
+    
 
 function send_reply_message($url, $post_header, $post_body)
 {
