@@ -8,12 +8,10 @@ $channelSecret = 'a35820614034732a864c1e03c76bb327';
 
 $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
 
-$request = file_get_contents('php://input');   // Get request content
-$request_array = json_decode($request, true);   // Decode JSON to Array
+$request = file_get_contents('php://input');   
+$request_array = json_decode($request, true);   
 $content = file_get_contents('php://input');
     $arrayJson = json_decode($content, true);
-    
-    //รับข้อความจากผู้ใช้
     $message = $arrayJson['events'][0]['message']['text'];
 
 
@@ -71,7 +69,7 @@ $jsonFlex = [
                 "type"=> "button",
                 "action"=> [
                   "type"=> "uri",
-                  "label"=> "Detail 1",
+                  "label"=> "Detail 111111",
                   "uri"=> "https://liff.line.me/1654173341-pJegLPb3"
                 ]
               ]
@@ -157,15 +155,9 @@ if ( $message == "แสดง Liff" ) {
 
         $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
 
-        echo "Result: ".$send_result."\r\n";
-        
     }
 }
 
-echo "OK";
-
-                
-  
 
 function send_reply_message($url, $post_header, $post_body)
 {
