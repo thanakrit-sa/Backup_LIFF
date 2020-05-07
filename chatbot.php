@@ -8,8 +8,8 @@ $channelSecret = 'a35820614034732a864c1e03c76bb327';
 
 $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
 
-$request = file_get_contents('php://input');   
-$request_array = json_decode($request, true);   
+// $request = file_get_contents('php://input');   
+// $request_array = json_decode($request, true);   
 $content = file_get_contents('php://input');
     $arrayJson = json_decode($content, true);
     $message = $arrayJson['events'][0]['message']['text'];
