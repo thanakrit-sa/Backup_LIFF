@@ -137,9 +137,9 @@ $jsonFlex = [
 
 
 
-
+if ( $message == "แสดง Liff" ) { 
     foreach ($message['events'] as $event) {
-       if ( $message == "แสดง Liff" ) { 
+       
         
         $reply_token = $event['replyToken'];
 
