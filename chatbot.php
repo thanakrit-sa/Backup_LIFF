@@ -138,7 +138,7 @@ $jsonFlex = [
 
 
 if ( $message == "แสดง Liff" ) {
-    foreach ($request_array['events'] as $event) {
+    
         
         
         $reply_token = $event['replyToken'];
@@ -156,7 +156,7 @@ if ( $message == "แสดง Liff" ) {
         $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
 
     }
-}
+
 
 
 function send_reply_message($url, $post_header, $post_body)
