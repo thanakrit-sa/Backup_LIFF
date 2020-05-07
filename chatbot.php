@@ -8,8 +8,8 @@ $channelSecret = 'a35820614034732a864c1e03c76bb327';
 
 $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
 
-// $request = file_get_contents('php://input');   
-// $request_array = json_decode($request, true);   
+$request = file_get_contents('php://input');   
+$request_array = json_decode($request, true);   
 $content = file_get_contents('php://input');
     $arrayJson = json_decode($content, true);
     $message = $arrayJson['events'][0]['message']['text'];
@@ -137,9 +137,9 @@ $jsonFlex = [
 
 
 
-if ( $message == "แสดง Liff" ) {
-    
-        
+
+    foreach ($message['events'] as $event) {
+       if ( $message == "แสดง Liff" ) { 
         
         $reply_token = $event['replyToken'];
 
@@ -156,7 +156,7 @@ if ( $message == "แสดง Liff" ) {
         $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
 
     }
-
+}
 
 
 function send_reply_message($url, $post_header, $post_body)
