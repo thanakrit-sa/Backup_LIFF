@@ -1,6 +1,5 @@
 <?php
 
-
 $API_URL = 'https://api.line.me/v2/bot/message';
 $ACCESS_TOKEN = 'Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU='; 
 $channelSecret = 'a35820614034732a864c1e03c76bb327';
@@ -8,7 +7,7 @@ $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' 
 
 $request = file_get_contents('php://input');   
 $request_array = json_decode($request, true);   
-$message = $request_array['events'][0]['message']['text'];
+$message = $request_array['events'][0]['message']['text'];  
 
 
 
@@ -65,7 +64,7 @@ $jsonFlex = [
                 "type"=> "button",
                 "action"=> [
                   "type"=> "uri",
-                  "label"=> "Detail 111111",
+                  "label"=> "Detail 1",
                   "uri"=> "https://liff.line.me/1654173341-pJegLPb3"
                 ]
               ]
