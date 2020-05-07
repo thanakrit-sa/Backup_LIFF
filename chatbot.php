@@ -11,8 +11,8 @@ $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' 
 $request = file_get_contents('php://input');   
 $request_array = json_decode($request, true);   
 $content = file_get_contents('php://input');
-    $arrayJson = json_decode($content, true);
-    $message = $arrayJson['events'][0]['message']['text'];
+    
+    $message = $request_array['events'][0]['message']['text'];
 
 
 
