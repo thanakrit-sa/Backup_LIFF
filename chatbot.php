@@ -140,7 +140,7 @@ $jsonFlex = [
 if ( $message == "แสดง Liff" ) {
     foreach ($request_array['events'] as $event) {
         
-        $reply_message = '';
+        
         $reply_token = $event['replyToken'];
 
 
@@ -149,7 +149,7 @@ if ( $message == "แสดง Liff" ) {
             'messages' => [$jsonFlex]
         ];
 
-        print_r($data);
+        
 
         $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
 
