@@ -147,9 +147,9 @@ if ( $message == "แสดง Liff" ) {
 
 
 
-function send_reply_message($url, $post_header, $post_body)
+function send_reply_message($API_URL, $post_header, $post_body)
 {
-    $ch = curl_init($url);
+    $ch = curl_init($$API_URL);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, $post_header);
