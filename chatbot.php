@@ -131,23 +131,17 @@ $jsonFlex = [
     ]
   ];
 
-  foreach ($request_array['events'] as $event) {
-        
-        
-    $reply_token = $event['replyToken'];}
+foreach ($request_array['events'] as $event) {
+  $reply_token = $event['replyToken'];
+}
 
 if ( $message == "แสดง Liff" ) {
-   
         $data = [
             'replyToken' => $reply_token,
             'messages' => [$jsonFlex]
         ];
-
-        
-
         $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
-
-        $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
+        // $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
 
     }
 
