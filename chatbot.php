@@ -4,15 +4,11 @@
 $API_URL = 'https://api.line.me/v2/bot/message';
 $ACCESS_TOKEN = 'Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU='; 
 $channelSecret = 'a35820614034732a864c1e03c76bb327';
-
-
 $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
 
 $request = file_get_contents('php://input');   
 $request_array = json_decode($request, true);   
-$content = file_get_contents('php://input');
-    
-    $message = $request_array['events'][0]['message']['text'];
+$message = $request_array['events'][0]['message']['text'];
 
 
 
@@ -135,15 +131,13 @@ $jsonFlex = [
     ]
   ];
 
-
+  foreach ($request_array['events'] as $event) {
+        
+        
+    $reply_token = $event['replyToken'];}
 
 if ( $message == "แสดง Liff" ) {
-    foreach ($request_array['events'] as $event) {
-        
-        
-        $reply_token = $event['replyToken'];
-
-
+   
         $data = [
             'replyToken' => $reply_token,
             'messages' => [$jsonFlex]
@@ -156,7 +150,7 @@ if ( $message == "แสดง Liff" ) {
         $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
 
     }
-}
+
 
 
 function send_reply_message($url, $post_header, $post_body)
