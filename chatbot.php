@@ -32,7 +32,7 @@ $displayName =  $dataa['status'];
 
 foreach ($dataa['data'] as $event) {
   $reply_token = $event['employee_name'];
-  echo $reply_token;
+  echo $reply_token[0];
 }
 
 
