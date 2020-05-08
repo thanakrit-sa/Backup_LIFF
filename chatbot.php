@@ -39,7 +39,7 @@ foreach ($dataFormhtml['data'] as $data) {
 
 
 for($i = 0;$i <= count($dataName); $i++) {
-  echo $i;
+  echo $dataName[$i];
 }
 
 // echo $dataName;
