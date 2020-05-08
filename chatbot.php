@@ -35,8 +35,15 @@ foreach ($dataFormhtml['data'] as $data) {
   // echo $salary;
 }
 
-echo $dataName;
-echo $dataSalary;
+// for($i = 0; $i++)
+
+// echo $dataName;
+// echo $dataSalary;
+
+$numbers = [10, 20, 30, 40, 50];
+foreach ($numbers as $el) {
+    echo "$el\n";
+}
 
 
 
