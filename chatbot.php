@@ -31,7 +31,7 @@ $dataFormhtml = json_decode($html,true);
 foreach ($dataFormhtml['data'] as $data) {
   $dataName = $data['employee_name'];
   $dataSalary = $data['employee_salary'];
-  // echo $name;
+  echo $dataName[1];
   // echo $salary;
 }
 
@@ -40,10 +40,6 @@ foreach ($dataFormhtml['data'] as $data) {
 // echo $dataName;
 // echo $dataSalary;
 
-$numbers = [10, 20, 30, 40, 50];
-foreach ($numbers as $el) {
-    echo "$el\n";
-}
 
 
 
