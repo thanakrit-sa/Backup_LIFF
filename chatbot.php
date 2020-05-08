@@ -28,9 +28,12 @@ $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees
 
 $dataa = json_decode($html,true);
 $displayName =  $dataa['status'];
-echo $displayName;
+// echo $displayName;
 
-
+foreach ($dataa['data'] as $event) {
+  $reply_token = $event['employee_name'];
+  echo $reply_token;
+}
 
 
 
