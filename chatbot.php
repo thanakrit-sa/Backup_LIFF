@@ -27,25 +27,13 @@ function file_get_contents_curl($url)
 $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees");
 
 $dataFormhtml = json_decode($html, true);
-// $arr[] = $dataFormhtml['data'];
-// echo $arr[0];
 
 foreach ($dataFormhtml['data'] as $data) {
   $dataName[] = $data['employee_name'];
-  // $dataSalary = $data['employee_salary'];
-  
-  // echo $salary;
+  $dataSalary[] = $data['employee_salary'];
+
 }
 echo $dataName[0];
-echo $dataName[1];
-
-
-
-// echo $dataName;
-// echo $dataSalary;
-
-
-
 
 $jsonFlex = [
   "type" => "flex",
@@ -69,7 +57,7 @@ $jsonFlex = [
           "contents" => [
             [
               "type" => "text",
-              "text" => $dataName,
+              "text" => $dataName[0],
               "size" => "xl",
               "weight" => "bold",
               "wrap" => true
@@ -81,7 +69,7 @@ $jsonFlex = [
 
                 [
                   "type" => "text",
-                  "text" => $dataSalary,
+                  "text" => $dataSalary[0],
                   "flex" => 0,
                   "size" => "sm",
                   "weight" => "bold",
@@ -123,7 +111,7 @@ $jsonFlex = [
           "contents" => [
             [
               "type" => "text",
-              "text" => "Product 2",
+              "text" => $dataName[1],
               "size" => "xl",
               "weight" => "bold",
               "wrap" => true
@@ -136,7 +124,7 @@ $jsonFlex = [
 
                 [
                   "type" => "text",
-                  "text" => "Description",
+                  "text" => $dataSalary[1],
                   "flex" => 0,
                   "size" => "sm",
                   "weight" => "bold",
