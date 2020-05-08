@@ -29,11 +29,20 @@ $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees
 $dataFormhtml = json_decode($html,true);
 
 foreach ($dataFormhtml['data'] as $data) {
-  $dataName = $data['{}'];
-  $dataSalary = $data['employee_salary'];
-  echo $dataName;
-  // echo $salary;
+  echo $data;
+  // $dataName = $data['employee_name'];
+  // $dataSalary = $data['employee_salary'];
+  // echo $dataName;
+  // // echo $salary;
+  foreach ($data['employee_name'] as $datan) {
+    echo $datan;
+    // $dataName = $data['employee_name'];
+    // $dataSalary = $data['employee_salary'];
+    // echo $dataName;
+    // // echo $salary;
+  }
 }
+
 
 // for($i = 0; $i++)
 
