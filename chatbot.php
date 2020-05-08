@@ -29,8 +29,12 @@ $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees
 
 $doc = new DOMDocument(); 
 $doc->loadHTML($html); 
-echo $html;
-echo $doc;
+// echo $html;
+
+$dataa = json_decode($html,true);
+
+echo $dataa;
+
 
 
 
