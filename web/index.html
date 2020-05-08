@@ -22,23 +22,19 @@
     <div class="container">
         <div class="row mt-1">
             <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <img src="https://www.teknozeka.com/wp-content/uploads/2020/03/wp-header-logo-28.png"
-                    class="img-thumbnail p-0 m-0" style="width: 100%;">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">   
             </div>
         </div>
         <div class="row mt-1">
             <div class="col p-0">
-                <!-- <img src="https://www.teknozeka.com/wp-content/uploads/2020/03/wp-header-logo-28.png"
-                    class="img-thumbnail p-0 mt-0"> -->
-                <img src="https://www.w3schools.com/howto/img_nature.jpg" class="img-thumbnail p-0 mt-0" style="width:100%" onclick="myFunction(this);">
+                <img src="https://www.w3schools.com/howto/img_nature.jpg" class="img-thumbnail p-0 mt-0" onclick="myFunction(this);">
             </div>
             <div class="col px-1">
-                <img src="https://www.teknozeka.com/wp-content/uploads/2020/03/wp-header-logo-28.png"
-                    class="img-thumbnail p-0 mt-0">
+                <img src="https://www.w3schools.com/howto/img_snow.jpg" class="img-thumbnail p-0 mt-0" onclick="myFunction(this);">
             </div>
             <div class="col p-0">
-                <img src="https://www.teknozeka.com/wp-content/uploads/2020/03/wp-header-logo-28.png"
-                    class="img-thumbnail p-0 mt-0">
+                <img src="https://www.w3schools.com/howto/img_mountains.jpg" class="img-thumbnail p-0 mt-0" onclick="myFunction(this);">
             </div>
         </div>
         <hr>
@@ -63,22 +59,6 @@
                 <button type="button" class="btn btn-dark btn-block">Add to Basket</button>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-              <img src="https://www.w3schools.com/howto/img_nature.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="col">
-              <img src="https://www.w3schools.com/howto/img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="col">
-              <img src="https://www.w3schools.com/howto/img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-            </div>
-          </div>
-          <div class="container">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            <img id="expandedImg" style="width:100%">
-            <div id="imgtext"></div>
-          </div>
           
           <script>
           function myFunction(imgs) {
