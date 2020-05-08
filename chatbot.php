@@ -32,7 +32,7 @@ $dataFormhtml = json_decode($html,true);
 
 foreach ($dataFormhtml['data'] as $data) {
   $name = $data['employee_name'];
-  $name = $data['employee_salary'];
+  $salary = $data['employee_salary'];
   echo $name;
   echo $salary;
 }
