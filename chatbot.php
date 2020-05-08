@@ -29,14 +29,18 @@ $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees
 $dataFormhtml = json_decode($html,true);
 
 foreach ($dataFormhtml['data'] as $data) {
-  $name = $data['employee_name'];
-  $salary = $data['employee_salary'];
+  $dataName = $data['employee_name'];
+  $dataSalary = $data['employee_salary'];
   // echo $name;
   // echo $salary;
 }
 
-echo $name;
-echo $salary;
+foreach ($dataName as $data) {
+  $name = $data;
+  echo $name;
+}
+// echo $dataName;
+// echo $dataSalary;
 
 
 
