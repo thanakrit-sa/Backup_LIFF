@@ -32,8 +32,8 @@ $doc->loadHTML($html);
 // echo $html;
 
 $dataa = json_decode($html,true);
-
-echo $dataa;
+$displayName =  $dataa['status'];
+echo $displayName;
 
 
 
