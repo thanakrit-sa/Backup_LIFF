@@ -26,13 +26,8 @@ function file_get_contents_curl($url)
 
 $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); 
 
-
-$doc = new DOMDocument(); 
-$doc->loadHTML($html); 
-// echo $html;
-
 $dataa = json_decode($html,true);
-$displayName =  $dataa['employee_name'];
+$displayName =  $dataa['data'];
 echo $displayName;
 
 
