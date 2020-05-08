@@ -27,7 +27,10 @@ function file_get_contents_curl($url)
 $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); 
 
 
-echo $data;
+$doc = new DOMDocument(); 
+$doc->loadHTML($html); 
+echo $html;
+echo $doc;
 
 
 
