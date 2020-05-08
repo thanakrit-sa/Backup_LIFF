@@ -9,7 +9,26 @@ $request = file_get_contents('php://input');
 $request_array = json_decode($request, true);   
 $message = $request_array['events'][0]['message']['text'];  
 
+function file_get_contents_curl($url) 
+{
+    $ch = curl_init();
+ 
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
+ 
+    $data = curl_exec($ch);
+    curl_close($ch);
+ 
+    return $data;
+}
+ 
+$html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); 
+$doc = new DOMDocument(); 
+$doc->loadHTML($html); 
 
+echo $html;
 
 $jsonFlex = [
     "type"=> "flex",
