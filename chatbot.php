@@ -26,13 +26,15 @@ function file_get_contents_curl($url)
 
 $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); 
 
-$dataa = json_decode($html,true);
-$displayName =  $dataa['status'];
+$dataFormhtml = json_decode($html,true);
+// $displayName =  $dataa['status'];
 // echo $displayName;
 
-foreach ($dataa['data'] as $event) {
-  $reply_token = $event['employee_name'];
-  echo $reply_token[0];
+foreach ($dataFormhtml['data'] as $data) {
+  $name = $data['employee_name'];
+  $name = $data['employee_salary'];
+  echo $name;
+  echo $salary;
 }
 
 
