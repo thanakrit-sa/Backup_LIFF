@@ -24,13 +24,14 @@ function file_get_contents_curl($url)
     return $data;
 }
 
-// $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); 
-$html = file_get_contents_curl("https://www.domain.com"); 
+$html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); 
 
-$doc = new DOMDocument(); 
-$doc->loadHTML($html); 
 
-echo $html;
+echo $data;
+
+
+
+
 
 $jsonFlex = [
     "type"=> "flex",
