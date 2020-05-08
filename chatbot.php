@@ -27,16 +27,16 @@ function file_get_contents_curl($url)
 $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); 
 
 $dataFormhtml = json_decode($html,true);
-// $displayName =  $dataa['status'];
-// echo $displayName;
 
 foreach ($dataFormhtml['data'] as $data) {
   $name = $data['employee_name'];
   $salary = $data['employee_salary'];
-  echo $name;
-  echo $salary;
+  // echo $name;
+  // echo $salary;
 }
 
+echo $name[0];
+echo $salary[0];
 
 
 
