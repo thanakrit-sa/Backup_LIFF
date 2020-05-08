@@ -32,7 +32,7 @@ $doc->loadHTML($html);
 // echo $html;
 
 $dataa = json_decode($html,true);
-$displayName =  $dataa['status'];
+$displayName =  $dataa['employee_name'];
 echo $displayName;
 
 
