@@ -99,7 +99,7 @@ $jsonFlex = [
         "type" => "bubble",
         "hero" => [
           "type" => "image",
-          "url" => "https://www.bnn.in.th/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/S/a/Samsung-Tablet-Galaxy-Tab-S6-Lite-4_2B64GB-Wi-Fi-SM-P610NZIATHL-Chiffon-Pink-1-1588867299.jpg",
+          "url" => "https://www.bnn.in.th/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/W/I/WIWU-Alcohol-Wipes-White-1-1588022365.jpg",
           "size" => "full",
           "aspectRatio" => "20:13",
           "aspectMode" => "cover"
@@ -142,7 +142,7 @@ $jsonFlex = [
               "type" => "button",
               "action" => [
                 "type" => "uri",
-                "label" => "Detail 1",
+                "label" => "Detail 2",
                 "uri" => "https://liff.line.me/1654173341-pJegLPb3"
               ]
             ]
@@ -153,7 +153,7 @@ $jsonFlex = [
         "type" => "bubble",
         "hero" => [
           "type" => "image",
-          "url" => "https://www.teknozeka.com/wp-content/uploads/2020/03/wp-header-logo-28.png",
+          "url" => "https://www.bnn.in.th/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/7/3/7340055337076-1-1588524115.jpg",
           "size" => "full",
           "aspectRatio" => "20:13",
           "aspectMode" => "cover"
@@ -197,7 +197,7 @@ $jsonFlex = [
               "type" => "button",
               "action" => [
                 "type" => "uri",
-                "label" => "Detail 2",
+                "label" => "Detail 3",
                 "uri" => "https://liff.line.me/1654173341-lVDxGq6k"
               ]
             ]
