@@ -23,8 +23,10 @@ function file_get_contents_curl($url)
  
     return $data;
 }
- 
-$html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); 
+
+// $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); 
+$html = file_get_contents_curl("https://www.domain.com"); 
+
 $doc = new DOMDocument(); 
 $doc->loadHTML($html); 
 
