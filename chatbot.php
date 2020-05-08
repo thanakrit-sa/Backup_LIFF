@@ -64,7 +64,7 @@ $jsonFlex = [
             "contents"=> [
               [
                 "type"=> "text",
-                "text"=> "Product 1",
+                "text"=> $dataName,
                 "size"=> "xl",
                 "weight"=> "bold",
                 "wrap"=> true
@@ -76,7 +76,7 @@ $jsonFlex = [
                   
                   [
                     "type"=> "text",
-                    "text"=> "Description",
+                    "text"=> $dataSalary,
                     "flex"=> 0,
                     "size"=> "sm",
                     "weight"=> "bold",
