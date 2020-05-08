@@ -33,10 +33,10 @@ $dataFormhtml = json_decode($html, true);
 foreach ($dataFormhtml['data'] as $data) {
   $dataName[] = $data['employee_name'];
   // $dataSalary = $data['employee_salary'];
-  echo $dataName[0];
+  
   // echo $salary;
 }
-
+echo $dataName[0];
 
 
 
