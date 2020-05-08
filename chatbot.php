@@ -36,14 +36,8 @@ foreach ($dataFormhtml['data'] as $data) {
 }
 
 
-
-
-for($i = 0;$i <= count($dataName); $i++) {
-  echo $dataName[$i];
-}
-
-// echo $dataName;
-// echo $dataSalary;
+echo $dataName;
+echo $dataSalary;
 
 
 
