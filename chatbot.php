@@ -35,9 +35,9 @@ foreach ($dataFormhtml['data'] as $data) {
   // echo $salary;
 }
 
-foreach ($dataName as $data) {
+foreach ($dataName as $dataFormName) {
   // $name = $data[0];
-  echo $data;
+  echo $dataFormName;
 }
 // echo $dataName;
 // echo $dataSalary;
