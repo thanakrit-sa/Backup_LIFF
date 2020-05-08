@@ -30,16 +30,11 @@ $dataFormhtml = json_decode($html, true);
 
 foreach ($dataFormhtml['data'] as $data) {
   $dataName = $data['employee_name'];
+  $dataSalary = $data['employee_salary'];
+  echo $dataName;
+  echo $salary;
 }
-  for ($i = 0; $i <= count($dataName); $i++) {
-    // $dataName = $data['employee_name'];
-    // $dataSalary = $data['employee_salary'];
-    // echo $dataName;
-    // echo $salary;
-    echo $i;
-    // $dataForShow = [];
-  }
-// }
+
 
 
 
