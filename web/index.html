@@ -21,19 +21,22 @@
 <body>
     <div class="container">
         <div class="row mt-1">
-            <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <img src="https://www.w3schools.com/howto/img_nature.jpg" id="expandedImg" style="width:100%">   
+            <div class="col">
+                <img src="https://www.w3schools.com/howto/img_nature.jpg" id="expandedImg" class="img-fluid">
             </div>
         </div>
         <div class="row mt-1">
             <div class="col p-0">
-                <img src="https://www.w3schools.com/howto/img_nature.jpg" class="img-thumbnail p-0 mt-0" onclick="myFunction(this);">
+                <img src="https://www.w3schools.com/howto/img_nature.jpg" class="img-thumbnail p-0 mt-0"
+                    onclick="myFunction(this);">
             </div>
             <div class="col px-1">
-                <img src="https://www.w3schools.com/howto/img_snow.jpg" class="img-thumbnail p-0 mt-0" onclick="myFunction(this);">
+                <img src="https://www.w3schools.com/howto/img_snow.jpg" class="img-thumbnail p-0 mt-0"
+                    onclick="myFunction(this);">
             </div>
             <div class="col p-0">
-                <img src="https://www.w3schools.com/howto/img_mountains.jpg" class="img-thumbnail p-0 mt-0" onclick="myFunction(this);">
+                <img src="https://www.w3schools.com/howto/img_mountains.jpg" class="img-thumbnail p-0 mt-0"
+                    onclick="myFunction(this);">
             </div>
         </div>
         <hr>
@@ -58,18 +61,17 @@
                 <button type="button" class="btn btn-dark btn-block">Add to Basket</button>
             </div>
         </div>
-          
-          <script>
-          function myFunction(imgs) {
-            var expandImg = document.getElementById("expandedImg");
-            var imgText = document.getElementById("imgtext");
-            expandImg.src = imgs.src;
-            imgText.innerHTML = imgs.alt;
-            expandImg.parentElement.style.display = "block";
-          }
-          </script>
     </div>
-
 </body>
 
 </html>
+
+<script>
+    function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+    }
+</script>
