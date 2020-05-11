@@ -330,21 +330,6 @@ function send_reply_message($url, $post_header, $post_body)
   return $result;
 }
 
-function rich($url, $POST_HEADER, $post_rich)
-{
-  $ch = curl_init($url);
-  curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_HEADER);
-  curl_setopt($ch, CURLOPT_POSTFIELDS, $post_rich);
-  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-  $result_rich = curl_exec($ch);
-  curl_close($ch);
-
-  return $result_rich;
-
-  echo $result_rich;
-}
 
 $url = 'https://api.line.me/v2/bot/richmenu';
 // $request = 'username=guest&password=guest'; // กำหนด HTTP Request โดยระบุ username=guest และ password=เguest (รูปแบบเหมือนการส่งค่า $_GET แต่ข้างหน้าข้อความไม่มีเครื่องหมาย ?)
