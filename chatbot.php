@@ -11,20 +11,6 @@ $message = $request_array['events'][0]['message']['text'];
 foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
-$events = $bot->parseEventRequest($request, $signature);
-$eventObj = $events[0];
-$eventType = $eventObj->getType();
-$eventMessage = NULL;
-$eventFollow = NULL;
-
-switch ($eventType) {
-    case 'message':
-        $eventMessage = true;
-        break;
-    case 'follow':
-        $eventFollow = true;
-        break;
-}
 
 # Get API
 function file_get_contents_curl($url)
@@ -51,29 +37,23 @@ foreach ($dataFormhtml['data'] as $data) {
 # Flex Message
 include 'flex_message.php';
 
-if (!is_null($events)) {
-  $userMessage = strtolower($userMessage);
-  if (!is_null($eventFollow)) {
-  }
-  if (!is_null($eventMessage)) {
-      $typeMessage = $eventObj->getMessageType();
-      if ($typeMessage == 'text') {
-      }
-      if ($typeMessage == 'image') {
-      }
-  }
-if ($typeMessage == 'text') {
-  if ($message == "แสดงสินค้า") {
-    $data = [
-      'replyToken' => $reply_token,
-      'messages' => [$jsonFlex]
-    ];
-    $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
-    $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
-  }
+
+
+if ($message == "แสดงสินค้า") {
+  $data = [
+    'replyToken' => $reply_token,
+    'messages' => [$jsonFlex]
+  ];
+  $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
+  $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 }
-if ($typeMessage == 'image') {
-}
+else {
+  $data = [
+    'replyToken' => $reply_token,
+    'messages' => 'Not Match Keyword'
+  ];
+  $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
+  $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 }
 
 // if ($message == "แสดงสินค้า") {
