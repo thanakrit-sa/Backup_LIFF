@@ -334,7 +334,7 @@ function send_reply_message($url, $post_header, $post_body)
 $url = 'https://api.line.me/v2/bot/richmenu';
 // $request = 'username=guest&password=guest'; // กำหนด HTTP Request โดยระบุ username=guest และ password=เguest (รูปแบบเหมือนการส่งค่า $_GET แต่ข้างหน้าข้อความไม่มีเครื่องหมาย ?)
 $rich = [
-  'replyToken' => $reply_token,
+  // 'replyToken' => $reply_token,
   'messages' => [$jsonRich]
 ];
 $post_rich = json_encode($rich, JSON_UNESCAPED_UNICODE);
