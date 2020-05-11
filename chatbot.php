@@ -47,14 +47,6 @@ if ($message == "แสดงสินค้า") {
   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 }
-else {
-  $data = [
-    'replyToken' => $reply_token,
-    'messages' => 'Not Match Keyword'
-  ];
-  $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
-  $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
-}
 
 // if ($message == "แสดงสินค้า") {
 //   $data = [
