@@ -5,7 +5,8 @@ $RICH_URL = 'https://api.line.me/v2/bot/richmenu';
 $ACCESS_TOKEN = 'Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=';
 $channelSecret = 'a35820614034732a864c1e03c76bb327';
 $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
-$POST_IMAGE_HEADER = array('Content-Type: image/jpeg', 'Authorization: Bearer ' . $ACCESS_TOKEN);
+$HEADER = array('Authorization: Bearer ' . $ACCESS_TOKEN);
+
 
 $request = file_get_contents('php://input');
 $request_array = json_decode($request, true);
@@ -330,27 +331,33 @@ function send_reply_message($url, $post_header, $post_body)
 }
 
 # Rich Menu
-$url = 'https://api.line.me/v2/bot/richmenu';
-$post_rich = json_encode($jsonRich, JSON_UNESCAPED_UNICODE);
-$ch = curl_init();
+// $url = 'https://api.line.me/v2/bot/richmenu';
+// $post_rich = json_encode($jsonRich, JSON_UNESCAPED_UNICODE);
+// $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_HEADER);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $post_rich);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+// curl_setopt($ch, CURLOPT_URL, $url);
+// curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+// curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_HEADER);
+// curl_setopt($ch, CURLOPT_POSTFIELDS, $post_rich);
+// curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
-$response = curl_exec($ch);
-curl_close($ch);
-echo $response;
+// $response = curl_exec($ch);
+// curl_close($ch);
+// echo $response;
 
-function add_image_rich()
-{
+// $rich_id = 'richmenu-8a8e5903d38095de325d1ad4cf5b0de4';
+
   $ch = curl_init();
   $data = curl_file_create('a.jpg','image/jpeg','test_name');
-  curl_setopt($ch, CURLOPT_URL, 'https://api-data.line.me/v2/bot/richmenu/richmenu-26e01219b4fd8af3b4ba9023b72573b8/content');
+  curl_setopt($ch, CURLOPT_URL, 'https://api-data.line.me/v2/bot/richmenu/richmenu-8a8e5903d38095de325d1ad4cf5b0de4/content');
   curl_setopt($ch, CURLOPT_POST, 1);
   curl_setopt($ch, CURLOPT_SAFE_UPLOAD, false);
   curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
   curl_exec($ch);
-}
+
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, 'https://api.line.me/v2/bot/user/all/richmenu/richmenu-8a8e5903d38095de325d1ad4cf5b0de4');
+  curl_setopt($ch, CURLOPT_POST, 1);
+  curl_setopt($ch, CURLOPT_HTTPHEADER, $HEADER);
+  curl_exec($ch);
+
