@@ -12,11 +12,6 @@ foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
 
-$text = [
-  "type"=> "text",
-  "text"=> "Hello, world"
-];
-
 # Get API
 function file_get_contents_curl($url)
 {
@@ -42,8 +37,6 @@ foreach ($dataFormhtml['data'] as $data) {
 # Flex Message
 include 'flex_message.php';
 
-
-
 if ($message == "แสดงสินค้า") {
   $data = [
     'replyToken' => $reply_token,
@@ -60,15 +53,6 @@ else {
   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 }
-
-// if ($message == "แสดงสินค้า") {
-//   $data = [
-//     'replyToken' => $reply_token,
-//     'messages' => [$jsonFlex]
-//   ];
-//   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
-//   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
-// }
 
 # Reply Messages
 function send_reply_message($url, $post_header, $post_body)

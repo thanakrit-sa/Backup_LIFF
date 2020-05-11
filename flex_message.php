@@ -173,6 +173,11 @@ $jsonFlex = [
     ]
 ];
 
+$text = [
+    "type" => "text",
+    "text" => "คำที่คุณกรอกไม่ตรงกับคีย์เวิร์ด"
+];
+
 $jsonRich = [
     "size" => [
         "width" => 2500,
