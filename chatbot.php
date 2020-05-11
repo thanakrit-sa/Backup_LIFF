@@ -11,6 +11,20 @@ $message = $request_array['events'][0]['message']['text'];
 foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
+$events = $bot->parseEventRequest($request, $signature);
+$eventObj = $events[0];
+$eventType = $eventObj->getType();
+$eventMessage = NULL;
+$eventFollow = NULL;
+
+switch ($eventType) {
+    case 'message':
+        $eventMessage = true;
+        break;
+    case 'follow':
+        $eventFollow = true;
+        break;
+}
 
 # Get API
 function file_get_contents_curl($url)
@@ -37,11 +51,17 @@ foreach ($dataFormhtml['data'] as $data) {
 # Flex Message
 include 'flex_message.php';
 
-$signature = base64_encode($hash);
-$events = $bot->parseEventRequest($request, $signature);
-$eventObj = $events[0];
-$typeMessage = $eventObj->getMessageType();
-$idMessage = $eventObj->getMessageId();
+if (!is_null($events)) {
+  $userMessage = strtolower($userMessage);
+  if (!is_null($eventFollow)) {
+  }
+  if (!is_null($eventMessage)) {
+      $typeMessage = $eventObj->getMessageType();
+      if ($typeMessage == 'text') {
+      }
+      if ($typeMessage == 'image') {
+      }
+  }
 if ($typeMessage == 'text') {
   if ($message == "แสดงสินค้า") {
     $data = [
@@ -53,6 +73,7 @@ if ($typeMessage == 'text') {
   }
 }
 if ($typeMessage == 'image') {
+}
 }
 
 // if ($message == "แสดงสินค้า") {
