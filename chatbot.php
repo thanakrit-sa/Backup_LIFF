@@ -1,12 +1,9 @@
 <?php
 
 $API_URL = 'https://api.line.me/v2/bot/message';
-$RICH_URL = 'https://api.line.me/v2/bot/richmenu';
 $ACCESS_TOKEN = 'Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=';
 $channelSecret = 'a35820614034732a864c1e03c76bb327';
 $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
-$HEADER = array('Authorization: Bearer ' . $ACCESS_TOKEN);
-
 
 $request = file_get_contents('php://input');
 $request_array = json_decode($request, true);
@@ -299,7 +296,7 @@ foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
 
-if ($message == "แสดง Liff") {
+if ($message == "แสดงสินค้า") {
   $data = [
     'replyToken' => $reply_token,
     'messages' => [$jsonFlex]
@@ -307,13 +304,6 @@ if ($message == "แสดง Liff") {
   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 }
-
-// $rich = [
-//   'replyToken' => $reply_token,
-//   'messages' => [$jsonRich]
-// ];
-// $post_rich = json_encode($rich, JSON_UNESCAPED_UNICODE);
-// $send_rich = rich($RICH_URL, $POST_HEADER, $post_rich);
 
 # Reply Messages
 function send_reply_message($url, $post_header, $post_body)
@@ -345,9 +335,3 @@ $response = curl_exec($ch);
 curl_close($ch);
 echo $response;
 
-// $rich_id = 'richmenu-8a8e5903d38095de325d1ad4cf5b0de4';
-
-// curl -v -X POST https://api-data.line.me/v2/bot/richmenu/richmenu-8a8e5903d38095de325d1ad4cf5b0de4/content \
-// -H "Authorization: Bearer Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=" \
-// -H "Content-Type: image/jpeg" \
-// -T /Users/iamsuttichai/Downloads/a.jpg
