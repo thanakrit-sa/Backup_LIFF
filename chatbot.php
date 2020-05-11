@@ -338,10 +338,12 @@ function rich($url, $POST_IMAGE_HEADER, $post_rich)
   curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_IMAGE_HEADER);
   curl_setopt($ch, CURLOPT_POSTFIELDS, $post_rich);
   curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-  $result = curl_exec($ch);
+  $result_rich = curl_exec($ch);
   curl_close($ch);
 
-  return $result;
+  return $result_rich;
 
-  echo $result;
+  echo $result_rich;
 }
+
+
