@@ -37,7 +37,9 @@ foreach ($dataFormhtml['data'] as $data) {
 # Flex Message
 include 'flex_message.php';
 
-
+$signature = base64_encode($hash);
+$events = $bot->parseEventRequest($request, $signature);
+$eventObj = $events[0];
 $typeMessage = $eventObj->getMessageType();
 $idMessage = $eventObj->getMessageId();
 if ($typeMessage == 'text') {
@@ -52,6 +54,15 @@ if ($typeMessage == 'text') {
 }
 if ($typeMessage == 'image') {
 }
+
+// if ($message == "แสดงสินค้า") {
+//   $data = [
+//     'replyToken' => $reply_token,
+//     'messages' => [$jsonFlex]
+//   ];
+//   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
+//   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
+// }
 
 # Reply Messages
 function send_reply_message($url, $post_header, $post_body)
