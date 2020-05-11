@@ -313,7 +313,7 @@ $rich = [
   'messages' => [$jsonRich]
 ];
 $post_rich = json_encode($rich, JSON_UNESCAPED_UNICODE);
-$send_rich = rich($RICH_URL, $POST_IMAGE_HEADER, $post_rich);
+$send_rich = rich($RICH_URL, $POST_HEADER, $post_rich);
 
 # Reply Messages
 function send_reply_message($url, $post_header, $post_body)
@@ -330,12 +330,12 @@ function send_reply_message($url, $post_header, $post_body)
   return $result;
 }
 
-function rich($url, $POST_IMAGE_HEADER, $post_rich)
+function rich($url, $POST_HEADER, $post_rich)
 {
   $ch = curl_init($url);
   curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_IMAGE_HEADER);
+  curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_HEADER);
   curl_setopt($ch, CURLOPT_POSTFIELDS, $post_rich);
   curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
   $result_rich = curl_exec($ch);
