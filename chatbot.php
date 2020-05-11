@@ -34,7 +34,6 @@ $dataFormhtml = json_decode($html, true);
 foreach ($dataFormhtml['data'] as $data) {
   $dataName[] = $data['employee_name'];
   $dataSalary[] = $data['employee_salary'];
-
 }
 
 # Flex Messages
@@ -212,86 +211,86 @@ $jsonFlex = [
 ];
 
 $jsonRich = [
-  "size"=> [
-    "width"=> 2500,
-    "height"=> 1686
-],
-  "selected"=> true,
-  "name"=> "ริชเมนู 1",
-  "chatBarText"=> "ประกาศ",
-  "areas"=> [
+  "size" => [
+    "width" => 2500,
+    "height" => 1686
+  ],
+  "selected" => true,
+  "name" => "ริชเมนู 1",
+  "chatBarText" => "ประกาศ",
+  "areas" => [
     [
-      "bounds"=> [
-        "x"=> 47,
-        "y"=> 61,
-        "width"=> 790,
-        "height"=> 787
-  ],
-      "action"=> [
-        "type"=> "message",
-        "text"=> "พื้นที่ 1"
-  ]
-  ],
+      "bounds" => [
+        "x" => 47,
+        "y" => 61,
+        "width" => 790,
+        "height" => 787
+      ],
+      "action" => [
+        "type" => "message",
+        "text" => "พื้นที่ 1"
+      ]
+    ],
     [
-      "bounds"=> [
-        "x"=> 851,
-        "y"=> 57,
-        "width"=> 801,
-        "height"=> 791
-  ],
-      "action"=> [
-        "type"=> "message",
-        "text"=> "พื้นที่ 2"
-  ]
-  ],
+      "bounds" => [
+        "x" => 851,
+        "y" => 57,
+        "width" => 801,
+        "height" => 791
+      ],
+      "action" => [
+        "type" => "message",
+        "text" => "พื้นที่ 2"
+      ]
+    ],
     [
-      "bounds"=> [
-        "x"=> 1669,
-        "y"=> 54,
-        "width"=> 784,
-        "height"=> 794
-  ],
-      "action"=> [
-        "type"=> "message",
-        "text"=> "การดำเนินการ 3"
-  ]
-  ],
+      "bounds" => [
+        "x" => 1669,
+        "y" => 54,
+        "width" => 784,
+        "height" => 794
+      ],
+      "action" => [
+        "type" => "message",
+        "text" => "การดำเนินการ 3"
+      ]
+    ],
     [
-      "bounds"=> [
-        "x"=> 50,
-        "y"=> 858,
-        "width"=> 783,
-        "height"=> 769
-  ],
-      "action"=> [
-        "type"=> "message",
-        "text"=> "การดำเนินการ 4"
-  ]
-  ],
+      "bounds" => [
+        "x" => 50,
+        "y" => 858,
+        "width" => 783,
+        "height" => 769
+      ],
+      "action" => [
+        "type" => "message",
+        "text" => "การดำเนินการ 4"
+      ]
+    ],
     [
-      "bounds"=> [
-        "x"=> 851,
-        "y"=> 858,
-        "width"=> 801,
-        "height"=> 773
-  ],
-      "action"=> [
-        "type"=> "message",
-        "text"=> "การดำเนินการ 5"
-  ]
-  ],
+      "bounds" => [
+        "x" => 851,
+        "y" => 858,
+        "width" => 801,
+        "height" => 773
+      ],
+      "action" => [
+        "type" => "message",
+        "text" => "การดำเนินการ 5"
+      ]
+    ],
     [
-      "bounds"=> [
-        "x"=> 1674,
-        "y"=> 855,
-        "width"=> 779,
-        "height"=> 779
-  ],
-      "action"=> [
-        "type"=> "message",
-        "text"=> "การดำเนินการ 6"
-  ]
-  ]
+      "bounds" => [
+        "x" => 1674,
+        "y" => 855,
+        "width" => 779,
+        "height" => 779
+      ],
+      "action" => [
+        "type" => "message",
+        "text" => "การดำเนินการ 6"
+      ]
+    ]
   ]
 ];
 
@@ -330,20 +329,28 @@ function send_reply_message($url, $post_header, $post_body)
   return $result;
 }
 
-
+# Rich Menu
 $url = 'https://api.line.me/v2/bot/richmenu';
-
 $post_rich = json_encode($jsonRich, JSON_UNESCAPED_UNICODE);
-
 $ch = curl_init();
-  
+
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_HEADER);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post_rich);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  
-$response = curl_exec($ch); // ประมวลผล cURL
-curl_close($ch); // ปิดการใช้งาน cURL
-  
-echo $response; // แสดงผลการทำงาน
+
+$response = curl_exec($ch);
+curl_close($ch);
+echo $response['richMenuId'];
+
+function add_image_rich()
+{
+  $ch = curl_init();
+  $data = curl_file_create('a.jpg','image/jpeg','test_name');
+  curl_setopt($ch, CURLOPT_URL, 'https://api-data.line.me/v2/bot/richmenu/richmenu-26e01219b4fd8af3b4ba9023b72573b8/content');
+  curl_setopt($ch, CURLOPT_POST, 1);
+  curl_setopt($ch, CURLOPT_SAFE_UPLOAD, false);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+  curl_exec($ch);
+}
