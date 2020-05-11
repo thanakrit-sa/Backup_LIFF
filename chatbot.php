@@ -37,13 +37,20 @@ foreach ($dataFormhtml['data'] as $data) {
 # Flex Message
 include 'flex_message.php';
 
-if ($message == "แสดงสินค้า") {
-  $data = [
-    'replyToken' => $reply_token,
-    'messages' => [$jsonFlex]
-  ];
-  $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
-  $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
+
+$typeMessage = $eventObj->getMessageType();
+$idMessage = $eventObj->getMessageId();
+if ($typeMessage == 'text') {
+  if ($message == "แสดงสินค้า") {
+    $data = [
+      'replyToken' => $reply_token,
+      'messages' => [$jsonFlex]
+    ];
+    $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
+    $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
+  }
+}
+if ($typeMessage == 'image') {
 }
 
 # Reply Messages
@@ -72,4 +79,3 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $response = curl_exec($ch);
 curl_close($ch);
 echo $response;
-
