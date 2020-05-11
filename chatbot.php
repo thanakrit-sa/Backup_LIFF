@@ -308,12 +308,12 @@ if ($message == "แสดง Liff") {
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 }
 
-$rich = [
-  'replyToken' => $reply_token,
-  'messages' => [$jsonRich]
-];
-$post_rich = json_encode($rich, JSON_UNESCAPED_UNICODE);
-$send_rich = rich($RICH_URL, $POST_HEADER, $post_rich);
+// $rich = [
+//   'replyToken' => $reply_token,
+//   'messages' => [$jsonRich]
+// ];
+// $post_rich = json_encode($rich, JSON_UNESCAPED_UNICODE);
+// $send_rich = rich($RICH_URL, $POST_HEADER, $post_rich);
 
 # Reply Messages
 function send_reply_message($url, $post_header, $post_body)
@@ -346,4 +346,23 @@ function rich($url, $POST_HEADER, $post_rich)
   echo $result_rich;
 }
 
+$url = 'https://api.line.me/v2/bot/richmenu';
+// $request = 'username=guest&password=guest'; // กำหนด HTTP Request โดยระบุ username=guest และ password=เguest (รูปแบบเหมือนการส่งค่า $_GET แต่ข้างหน้าข้อความไม่มีเครื่องหมาย ?)
+$rich = [
+  'replyToken' => $reply_token,
+  'messages' => [$jsonRich]
+];
+$post_rich = json_encode($rich, JSON_UNESCAPED_UNICODE);
 
+$ch = curl_init(); // เริ่มต้นใช้งาน cURL
+  
+curl_setopt($ch, CURLOPT_URL, $url); // กำหนดค่า URL
+curl_setopt($ch, CURLOPT_POST, 1); // กำหนดรูปแบบการส่งข้อมูลเป็นแบบ $_POST
+curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_HEADER);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post_rich); // กำหนดค่า HTTP Request
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); // กำหนดให้ cURL คืนค่าผลลัพท์
+  
+$response = curl_exec($ch); // ประมวลผล cURL
+curl_close($ch); // ปิดการใช้งาน cURL
+  
+echo $response; // แสดงผลการทำงาน
