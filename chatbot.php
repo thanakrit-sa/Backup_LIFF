@@ -8,6 +8,9 @@ $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' 
 $request = file_get_contents('php://input');
 $request_array = json_decode($request, true);
 $message = $request_array['events'][0]['message']['text'];
+foreach ($request_array['events'] as $event) {
+  $reply_token = $event['replyToken'];
+}
 
 # Get API
 function file_get_contents_curl($url)
@@ -34,11 +37,8 @@ foreach ($dataFormhtml['data'] as $data) {
   $dataSalary[] = $data['employee_salary'];
 }
 
+# Flex Message
 include 'flex_message.php';
-
-foreach ($request_array['events'] as $event) {
-  $reply_token = $event['replyToken'];
-}
 
 if ($message == "แสดงสินค้า") {
   $data = [
