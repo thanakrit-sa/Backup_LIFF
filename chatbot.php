@@ -1,14 +1,17 @@
 <?php
 
 $API_URL = 'https://api.line.me/v2/bot/message';
+$RICH_URL = 'https://api.line.me/v2/bot/richmenu';
 $ACCESS_TOKEN = 'Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=';
 $channelSecret = 'a35820614034732a864c1e03c76bb327';
 $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
+$POST_IMAGE_HEADER = array('Content-Type: image/jpeg', 'Authorization: Bearer ' . $ACCESS_TOKEN);
 
 $request = file_get_contents('php://input');
 $request_array = json_decode($request, true);
 $message = $request_array['events'][0]['message']['text'];
 
+# Get API
 function file_get_contents_curl($url)
 {
   $ch = curl_init();
@@ -33,8 +36,8 @@ foreach ($dataFormhtml['data'] as $data) {
   $dataSalary[] = $data['employee_salary'];
 
 }
-echo $dataName[0];
 
+# Flex Messages
 $jsonFlex = [
   "type" => "flex",
   "altText" => "Flex Message",
@@ -208,6 +211,90 @@ $jsonFlex = [
   ]
 ];
 
+$jsonRich = [
+  "size"=> [
+    "width"=> 2500,
+    "height"=> 1686
+],
+  "selected"=> true,
+  "name"=> "ริชเมนู 1",
+  "chatBarText"=> "ประกาศ",
+  "areas"=> [
+    [
+      "bounds"=> [
+        "x"=> 47,
+        "y"=> 61,
+        "width"=> 790,
+        "height"=> 787
+  ],
+      "action"=> [
+        "type"=> "message",
+        "text"=> "พื้นที่ 1"
+  ]
+  ],
+    [
+      "bounds"=> [
+        "x"=> 851,
+        "y"=> 57,
+        "width"=> 801,
+        "height"=> 791
+  ],
+      "action"=> [
+        "type"=> "message",
+        "text"=> "พื้นที่ 2"
+  ]
+  ],
+    [
+      "bounds"=> [
+        "x"=> 1669,
+        "y"=> 54,
+        "width"=> 784,
+        "height"=> 794
+  ],
+      "action"=> [
+        "type"=> "message",
+        "text"=> "การดำเนินการ 3"
+  ]
+  ],
+    [
+      "bounds"=> [
+        "x"=> 50,
+        "y"=> 858,
+        "width"=> 783,
+        "height"=> 769
+  ],
+      "action"=> [
+        "type"=> "message",
+        "text"=> "การดำเนินการ 4"
+  ]
+  ],
+    [
+      "bounds"=> [
+        "x"=> 851,
+        "y"=> 858,
+        "width"=> 801,
+        "height"=> 773
+  ],
+      "action"=> [
+        "type"=> "message",
+        "text"=> "การดำเนินการ 5"
+  ]
+  ],
+    [
+      "bounds"=> [
+        "x"=> 1674,
+        "y"=> 855,
+        "width"=> 779,
+        "height"=> 779
+  ],
+      "action"=> [
+        "type"=> "message",
+        "text"=> "การดำเนินการ 6"
+  ]
+  ]
+  ]
+];
+
 foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
@@ -221,6 +308,14 @@ if ($message == "แสดง Liff") {
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 }
 
+$rich = [
+  'replyToken' => $reply_token,
+  'messages' => [$jsonRich]
+];
+$post_rich = json_encode($rich, JSON_UNESCAPED_UNICODE);
+$send_rich = rich($RICH_URL, $POST_IMAGE_HEADER, $post_rich);
+
+# Reply Messages
 function send_reply_message($url, $post_header, $post_body)
 {
   $ch = curl_init($url);
@@ -233,4 +328,20 @@ function send_reply_message($url, $post_header, $post_body)
   curl_close($ch);
 
   return $result;
+}
+
+function rich($url, $POST_IMAGE_HEADER, $post_rich)
+{
+  $ch = curl_init($url);
+  curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_IMAGE_HEADER);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, $post_rich);
+  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+  $result = curl_exec($ch);
+  curl_close($ch);
+
+  return $result;
+
+  echo $result;
 }
