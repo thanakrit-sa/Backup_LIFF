@@ -347,17 +347,18 @@ function send_reply_message($url, $post_header, $post_body)
 
 // $rich_id = 'richmenu-8a8e5903d38095de325d1ad4cf5b0de4';
 
-  $ch = curl_init();
-  $data = curl_file_create('a.jpg','image/jpeg','test_name');
-  curl_setopt($ch, CURLOPT_URL, 'https://api-data.line.me/v2/bot/richmenu/richmenu-8a8e5903d38095de325d1ad4cf5b0de4/content');
-  curl_setopt($ch, CURLOPT_POST, 1);
-  curl_setopt($ch, CURLOPT_SAFE_UPLOAD, false);
-  curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-  curl_exec($ch);
+$ch = curl_init();
+$data = curl_file_create('a.jpg', 'image/jpeg', 'test_name');
+curl_setopt($ch, CURLOPT_URL, 'https://api-data.line.me/v2/bot/richmenu/richmenu-8a8e5903d38095de325d1ad4cf5b0de4/content');
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_SAFE_UPLOAD, false);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+$response = curl_exec($ch);
+curl_close($ch);
+echo $response;
 
-  $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, 'https://api.line.me/v2/bot/user/all/richmenu/richmenu-8a8e5903d38095de325d1ad4cf5b0de4');
-  curl_setopt($ch, CURLOPT_POST, 1);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, $HEADER);
-  curl_exec($ch);
-
+// $ch = curl_init();
+// curl_setopt($ch, CURLOPT_URL, 'https://api.line.me/v2/bot/user/all/richmenu/richmenu-8a8e5903d38095de325d1ad4cf5b0de4');
+// curl_setopt($ch, CURLOPT_POST, 1);
+// curl_setopt($ch, CURLOPT_HTTPHEADER, $HEADER);
+// curl_exec($ch);
