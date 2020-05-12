@@ -7,9 +7,9 @@ article {
 .received {
     height: 12px;
     width: 12px;
-    background-color: rgb(0, 255, 13);
+    background-color: rgb(0, 255, 34);
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid rgb(85, 85, 85);
     display: inline-block;
   }
 
