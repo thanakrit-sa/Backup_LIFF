@@ -2,33 +2,9 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid rgb(95,158,160);
     box-shadow: 2px 2px 2px #888888;
 }
-/* .data {
-    text-align: center;
-    width: 70%;
-    padding: 10px;
-    border-radius: 30px;
-    border: 2px solid rgb(95,158,160);
-    box-shadow: 2px 2px 2px #888888;
-    color: rgb(95,158,160);
-} */
 
-.data {
-    margin: 20px auto;
-  width: 70%;
-  
-  border-left: 15px solid #3EC8AC;
-  border-right: 15px solid #4E90A4;
-  border-radius: 5px;
-  box-sizing: border-box;
-  background-position: 0 0, 0 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 20px;
-  background-image: -webkit-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -webkit-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
-  background-image: -moz-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -moz-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
-  background-image: -o-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -o-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
-  background-image: linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%), linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%);
-}
+
+
 
