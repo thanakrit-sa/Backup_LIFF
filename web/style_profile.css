@@ -7,9 +7,8 @@
     text-align: center;
     width: 70%;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 30px;
     border: 2px solid rgb(95,158,160);
     box-shadow: 2px 2px 2px #888888;
     color: rgb(95,158,160);
-    background-color: white;
 }
