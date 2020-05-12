@@ -13,9 +13,9 @@ input[type="text"] {
     text-align: center;
     width: 50%;
     border-radius: 15px;
-    border: 2px solid;
+    border: 2px solid black;
     padding: 10px;
-    box-shadow: 5px 10px 18px #888888;
-    background-color: rgba(0, 0, 0, 0.185);
+    box-shadow: 0px 5px 13px #888888;
+    opacity: 0.5;
     color: white;
 }
