@@ -4,6 +4,14 @@
 article {
     font-size: 11px;
 }
+.received {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0, 255, 13);
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+  }
 
 
 
