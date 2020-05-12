@@ -9,7 +9,7 @@ body {
     height: 150px;
     border-radius: 50%;
 }
-input {
-    width: 30%;
-    border-radius: 30px;
-}
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+  }
