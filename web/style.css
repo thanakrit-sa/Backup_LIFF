@@ -1,3 +1,7 @@
+body {
+    background-image: linear-gradient(red, yellow);
+}
+
 .img_avatar {
     width: 150px;
     height: 150px;
