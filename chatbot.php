@@ -26,7 +26,6 @@ function file_get_contents_curl($url)
 }
 
 $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees");
-
 $dataFormhtml = json_decode($html, true);
 
 foreach ($dataFormhtml['data'] as $data) {
@@ -70,12 +69,12 @@ function send_reply_message($url, $post_header, $post_body)
 
 # Rich Menu
 $url = 'https://api.line.me/v2/bot/richmenu';
-$post_rich = json_encode($jsonRich, JSON_UNESCAPED_UNICODE);
+$rich = json_encode($jsonRich, JSON_UNESCAPED_UNICODE);
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_HEADER);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $post_rich);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $rich);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $response = curl_exec($ch);
 curl_close($ch);
