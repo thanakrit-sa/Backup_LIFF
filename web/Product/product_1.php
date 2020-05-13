@@ -78,17 +78,20 @@ foreach ($dataFromApi['data'] as $data) {
         </div>
     </div>
     <br>
-    <div class="footer p-0 m-0">
+    <div class="footer">
         <div class="row">
             <div class="col-6">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <button id="count" type="button" class="btn btn-secondary p-2">-</button>
-                    <button id="count" type="button" class="btn btn-light p-2" align="center">1</button>
-                    <button id="count" type="button" class="btn btn-secondary p-2">+</button>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">- กรุณาเลือก -</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>ซื้อ</option>
+                        <option>สั่งซื้อ</option>
+                        <option>สั่ง</option>
+                    </select>
                 </div>
             </div>
             <div class="col-6">
-                <button type="button" id="count" class="btn btn-secondary btn-block p-2 m-0" align="center">สั่งสินค้า</button>
+                <button type="button" id="count" class="btn btn-dark btn-block p-2" align="center">สั่งสินค้า</button>
             </div>
         </div>
     </div>
