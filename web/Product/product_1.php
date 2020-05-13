@@ -37,7 +37,7 @@ foreach ($dataFromApi['data'] as $data) {
     $prod_cate[] = $data['category_name'];
     $prod_created_time[] = $data['created_at'];
     $prod_updated_time[] = $data['updated_at'];
-    echo $dataFromApi['data'];
+    echo $prod_image[0];
 }
 ?>
 
