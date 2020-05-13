@@ -29,7 +29,7 @@ for($i = 0;$i < count($dataFromApi['data']);$i++) {
     
 
 
-
+}
 # Flex Messages
 $jsonFlex = [
     "type" => "flex",
@@ -748,7 +748,7 @@ $jsonFlex = [
         ]
     ]
 ];
-}
+
 
 $text = [
     "type" => "text",
