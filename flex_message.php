@@ -36,8 +36,14 @@ $jsonFlex = [
                             ]
                         ],
                         [
+                            "type"=> "filler"
+                        ],
+                        [
                             "type" => "separator",
                             "color" => "#000000"
+                        ],
+                        [
+                            "type"=> "filler"
                         ],
                         [
                             "type" => "box",
