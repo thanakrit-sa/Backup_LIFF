@@ -10,7 +10,7 @@ $jsonFlex = [
                 "type" => "bubble",
                 "hero" => [
                     "type" => "image",
-                    "url" => "https://www.bnn.in.th/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/7/3/7340055337076-1-1588524115.jpg",
+                    "url" => $prod_image[0],
                     "size" => "full",
                     "aspectRatio" => "20:13",
                     "aspectMode" => "cover"
@@ -22,7 +22,7 @@ $jsonFlex = [
                     "contents" => [
                         [
                             "type" => "text",
-                            "text" => $prod_name[2],
+                            "text" => $prod_name[0],
                             "size" => "xl",
                             "weight" => "bold",
                             "wrap" => true
@@ -35,7 +35,7 @@ $jsonFlex = [
 
                                 [
                                     "type" => "text",
-                                    "text" => $prod_stock[2],
+                                    "text" => $prod_stock[0],
                                     "flex" => 0,
                                     "size" => "sm",
                                     "weight" => "bold",
