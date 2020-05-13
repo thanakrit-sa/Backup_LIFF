@@ -51,13 +51,21 @@ $jsonFlex = [
                     "spacing" => "sm",
                     "contents" => [
                         [
-                            "type"=> "button",
-                            "action"=> [
-                              "type"=> "uri",
-                              "label"=> "Add to Cart",
-                              "uri"=> "https://linecorp.com"
+                            "type" => "separator",
+                            "margin" => "xxl",
+                            "color" => "#000000"
                         ],
-                            "style"=> "primary"
+                        [
+                            "type" => "filler"
+                        ],
+                        [
+                            "type" => "button",
+                            "action" => [
+                                "type" => "uri",
+                                "label" => "Add to Cart",
+                                "uri" => "https://linecorp.com"
+                            ],
+                            "style" => "primary"
                         ],
                     ]
                 ]
