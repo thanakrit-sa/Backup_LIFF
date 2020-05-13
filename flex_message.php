@@ -71,6 +71,8 @@ $data = [
     ]
 ];
 
+echo $data;
+
 $jsonFlex = [
     "type" => "flex",
     "altText" => "Flex Message",
