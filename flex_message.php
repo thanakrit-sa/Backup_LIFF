@@ -60,7 +60,7 @@ $jsonFlex = [
                 "type"=> "button",
                 "action"=> [
                   "type"=> "uri",
-                  "label"=> "Add to Cart",
+                  "label"=> $prod_name[0],
                   "uri"=> "https://linecorp.com"
             ],
                 "style"=> "primary"
@@ -140,7 +140,7 @@ $jsonFlex = [
                 "type"=> "button",
                 "action"=> [
                   "type"=> "uri",
-                  "label"=> "Add to Cart",
+                  "label"=> $prod_name[1],
                   "uri"=> "https://linecorp.com"
             ],
                 "flex"=> 2,
