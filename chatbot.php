@@ -41,6 +41,8 @@ foreach ($dataFromApi['data'] as $data) {
   echo $dataFromApi['data'];
 }
 
+include 'flex_message.php';
+
 if ($message == "แสดงสินค้า") {
   $data = [
     'replyToken' => $reply_token,
