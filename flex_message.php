@@ -215,7 +215,7 @@ $jsonFlex = [
                                             "type" => "text",
                                             "text" => $prod_stock[1] . " ชิ้น",
                                             "flex" => 3,
-                                            "margin" => "sm",
+                                            "margin" => "xs",
                                             "align" => "start"
                                         ]
                                     ]
