@@ -47,7 +47,7 @@ foreach ($dataFromApi['data'] as $data) {
             <div clss="col">
                 <div class="row">
                     <div class="col p-0">
-                        <img src="<?$prod_image[0]?>">
+                        <img src=<?$prod_image[0]?>>
                     </div>
                 </div>
             </div>
