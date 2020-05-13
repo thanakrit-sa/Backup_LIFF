@@ -43,7 +43,7 @@ foreach ($dataFromApi['data'] as $data) {
 
 <body>
     <div class="container">
-        <div class="card mb-4 shadow rounde">
+        <div class="card mb-5 shadow rounde">
             <div class="card-body">
                 <div class="row">
                     <div class="col">
