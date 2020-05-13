@@ -26,7 +26,7 @@ foreach ($dataFromApi['data'] as $data) {
 }
 
 for($i = 0;$i < count($dataFromApi['data']);$i++) {
-    echo $i;
+    echo $prod_name[$i];
 } 
 // echo $prod_name[0];
 $data = [
