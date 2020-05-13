@@ -51,13 +51,14 @@ $jsonFlex = [
                     "spacing" => "sm",
                     "contents" => [
                         [
-                            "type" => "button",
-                            "action" => [
-                                "type" => "uri",
-                                "label" => "Detail 3",
-                                "uri" => "https://liff.line.me/1654173341-lVDxGq6k"
-                            ]
-                        ]
+                            "type"=> "button",
+                            "action"=> [
+                              "type"=> "uri",
+                              "label"=> "Add to Cart",
+                              "uri"=> "https://linecorp.com"
+                        ],
+                            "style"=> "primary"
+                        ],
                     ]
                 ]
             ]
