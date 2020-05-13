@@ -25,15 +25,16 @@ function file_get_contents_curl($url)
   return $data;
 }
 
-$html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees");
+$Api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
 // $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
-$dataFormhtml = json_decode($html, true);
+$dataFormApi = json_decode($Api, true);
+echo $dataFormApi;
 
-foreach ($dataFormhtml['data'] as $data) {
-  $dataName[] = $data['employee_name'];
-  $dataSalary[] = $data['employee_salary'];
-}
-echo $dataName[0];
+// foreach ($dataFormhtml['data'] as $data) {
+//   $dataName[] = $data['employee_name'];
+//   $dataSalary[] = $data['employee_salary'];
+// }
+
 # Flex Message
 include 'flex_message.php';
 
