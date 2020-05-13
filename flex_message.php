@@ -25,7 +25,9 @@ foreach ($dataFromApi['data'] as $data) {
   $prod_updated_time[] = $data['updated_at'];
 }
 
-echo count($dataFromApi['data']);
+for($i = 0;$i < count($dataFromApi['data']);$i++) {
+    echo $i;
+} 
 // echo $prod_name[0];
 $data = [
     "type" => "bubble",
