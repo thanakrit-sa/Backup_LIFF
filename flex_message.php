@@ -91,7 +91,7 @@ $jsonFlex = [
                                             "type" => "text",
                                             "text" => "คงเหลือ :",
                                             "align" => "start",
-                                            "Flex" => 0,
+                                            "flex" => 0,
                                             "weight" => "bold"
                                         ],
                                         [
