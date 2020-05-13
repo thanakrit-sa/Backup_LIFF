@@ -79,7 +79,14 @@ foreach ($dataFromApi['data'] as $data) {
     </div>
     <br>
     <div class="footer">
-        <p>Footer</p>
+        <div class="row">
+            <div class="col-6">
+                
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
     </div>
 </body>
 
