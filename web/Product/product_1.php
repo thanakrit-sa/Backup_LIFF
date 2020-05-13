@@ -42,50 +42,16 @@ foreach ($dataFromApi['data'] as $data) {
 
 <body>
     <div class="container">
-        <div class="row">
-            <div clss="col">
+        <div class="card">
+            <div class="card-body">
                 <div class="row">
-                    <div class="col p-0">
-                        <img src="<?php echo $prod_image[0]; ?>">
+                    <div class="col">
+                        <img src="<? echo $prod_image[0]; ?>" class="img-thumbnail">
                     </div>
                 </div>
-            </div>
-
-        </div>
-
-        <hr>
-        <div class="row">
-            <div class="col" align="left">
-                <h5 class="p-0 m-0">Product 1</h5>
-                <p>Lorem ipsum dolor !</p>
-            </div>
-            <div class="col" align="right">
-                <b style="font-size: 2em;">3,259 </b>THB
-            </div>
-        </div>
-        <div class="row border border-dark">
-            <div class="col-6 p-0 m-0" align="center">
-                <select class="form-control">
-                    <option>ซื้อ</option>
-                    <option>สั่งซื้อ</option>
-                    <option>สั่ง</option>
-                </select>
-            </div>
-            <div class="col-6 p-0 m-0" align="center">
-                <a href="../Detail_Product/detail_1.html"><button type="button" class="btn btn-dark btn-block">Add to Basket</button></a>
             </div>
         </div>
     </div>
 </body>
 
 </html>
-
-<script>
-    function myFunction(imgs) {
-        var expandImg = document.getElementById("expandedImg");
-        var imgText = document.getElementById("imgtext");
-        expandImg.src = imgs.src;
-        imgText.innerHTML = imgs.alt;
-        expandImg.parentElement.style.display = "block";
-    }
-</script>
