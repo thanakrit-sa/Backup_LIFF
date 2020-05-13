@@ -28,7 +28,6 @@ function file_get_contents_curl($url)
 $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees");
 // $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
 $dataFormhtml = json_decode($html, true);
-echo $data;
 
 foreach ($dataFormhtml['data'] as $data) {
   $dataName[] = $data['employee_name'];
