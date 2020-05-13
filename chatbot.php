@@ -40,7 +40,7 @@ foreach ($dataFromApi['data'] as $data) {
   $prod_updated_time[] = $data['updated_at'];
 }
 
-echo $prod_name[0]+"<br/>";
+echo $prod_name[0];
 echo $prod_image[0];
 echo $prod_stock[0];
 echo $prod_price[0];
