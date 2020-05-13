@@ -24,6 +24,10 @@ article {
  #count {
      height: 100%;
  }
+ option {
+     text-align: center;
+     padding-left: 10px;
+ }
 
 
 
