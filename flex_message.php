@@ -12,7 +12,7 @@ $jsonFlex = [
                     "type" => "image",
                     "url" => $prod_image[0],
                     "size" => "full",
-                    "aspectRatio" => "20=>13",
+                    "aspectRatio" => "20:13",
                     "aspectMode" => "cover"
                 ],
                 "body" => [
@@ -49,7 +49,7 @@ $jsonFlex = [
                                     "contents" => [
                                         [
                                             "type" => "text",
-                                            "text" => "หมวดหมู่ =>",
+                                            "text" => "หมวดหมู่ :",
                                             "align" => "end",
                                             "weight" => "bold"
                                         ],
@@ -75,7 +75,7 @@ $jsonFlex = [
                                     "contents" => [
                                         [
                                             "type" => "text",
-                                            "text" => "คงเหลือ =>",
+                                            "text" => "คงเหลือ :",
                                             "align" => "end",
                                             "weight" => "bold"
                                         ],
@@ -95,7 +95,7 @@ $jsonFlex = [
                             "contents" => [
                                 [
                                     "type" => "text",
-                                    "text" => "ราคา =>",
+                                    "text" => "ราคา :",
                                     "align" => "end",
                                     "weight" => "bold"
                                 ],
@@ -119,7 +119,7 @@ $jsonFlex = [
                             "action" => [
                                 "type" => "uri",
                                 "label" => "สั่งซื้อ",
-                                "uri" => "https=>//linecorp.com"
+                                "uri" => "https://linecorp.com"
                             ],
                             "color" => "#000000",
                             "style" => "primary"
