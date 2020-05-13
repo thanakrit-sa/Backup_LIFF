@@ -75,6 +75,9 @@ foreach ($dataFromApi['data'] as $data) {
                     <div class="col-8" align="left"><? echo $prod_price[1]." บาท";?></div>
                 </div>
             </div>
+            <div class="card-footer" align="center">
+                <div><? echo $prod_address[1];?></div>
+            </div>
         </div>
     </div>
     <br>
