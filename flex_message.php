@@ -95,7 +95,7 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => $prod_stock[0] . " ชิ้น",
+                                            "text" => $prod_stock[0]." ชิ้น",
                                             "flex" => 3,
                                             "margin" => "sm",
                                             "align" => "start"
@@ -213,9 +213,9 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => $prod_stock[1] . " ชิ้น",
+                                            "text" => $prod_stock[1]." ชิ้น",
                                             "flex" => 3,
-                                            "margin" => "xs",
+                                            "margin" => "sm",
                                             "align" => "start"
                                         ]
                                     ]
