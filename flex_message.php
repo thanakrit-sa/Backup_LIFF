@@ -12,8 +12,8 @@ $jsonFlex = [
                     "type" => "image",
                     "url" => $prod_image[0],
                     "size" => "full",
-                    "aspectRatio" => "20:13",
-                    "aspectMode" => "cover"
+                    "aspectRatio" => "2:1",
+                    "aspectMode" => "fit",
                 ],
                 "body" => [
                     "type" => "box",
@@ -21,76 +21,76 @@ $jsonFlex = [
                     "spacing" => "sm",
                     "contents" => [
                         [
-                            "type"=> "box",
-                            "layout"=> "horizontal",
-                            "contents"=> [
-                              [
-                                "type"=> "box",
-                                "layout"=> "horizontal",
-                                "contents"=> [
-                                  [
-                                    "type"=> "text",
-                                    "text"=> "หมวดหมู่สินค้า :",
-                                    "flex"=> 0,
-                                    "align"=> "start",
-                                    "weight"=> "bold"
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "หมวดหมู่สินค้า :",
+                                            "flex" => 0,
+                                            "align" => "start",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => "เครื่องสำอาง",
+                                            "flex" => 2,
+                                            "margin" => "sm",
+                                            "align" => "start",
+                                            "wrap" => false
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "text",
+                                    "text" => "ราคาสินค้า :",
+                                    "flex" => 0,
+                                    "align" => "start",
+                                    "weight" => "bold"
                                 ],
-                                  [
-                                    "type"=> "text",
-                                    "text"=> "เครื่องสำอาง",
-                                    "flex"=> 2,
-                                    "margin"=> "sm",
-                                    "align"=> "start",
-                                    "wrap"=> false
-                                ]
+                                [
+                                    "type" => "text",
+                                    "text" => "1345 บาท",
+                                    "margin" => "sm",
+                                    "align" => "start"
                                 ]
                             ]
-                            ]
-                            ],
-                          [
-                            "type"=> "box",
-                            "layout"=> "horizontal",
-                            "contents"=> [
-                              [
-                                "type"=> "text",
-                                "text"=> "ราคาสินค้า :",
-                                "flex"=> 0,
-                                "align"=> "start",
-                                "weight"=> "bold"
-                            ],
-                              [
-                                "type"=> "text",
-                                "text"=> "1345 บาท",
-                                "margin"=> "sm",
-                                "align"=> "start"
-                            ]
-                            ]
-                            ],
-                          [
-                            "type"=> "box",
-                            "layout"=> "horizontal",
-                            "contents"=> [
-                              [
-                                "type"=> "box",
-                                "layout"=> "horizontal",
-                                "contents"=> [
-                                  [
-                                    "type"=> "text",
-                                    "text"=> "คงเหลือ :",
-                                    "align"=> "start",
-                                    "weight"=> "bold"
-                                ],
-                                  [
-                                    "type"=> "text",
-                                    "text"=> "4 ชิ้น",
-                                    "flex"=> 3,
-                                    "margin"=> "sm",
-                                    "align"=> "start"
-                                ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "คงเหลือ :",
+                                            "align" => "start",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => "4 ชิ้น",
+                                            "flex" => 3,
+                                            "margin" => "sm",
+                                            "align" => "start"
+                                        ]
+                                    ]
                                 ]
                             ]
-                            ]
-                    ]
+                        ]
                     ]
                 ],
                 "footer" => [
