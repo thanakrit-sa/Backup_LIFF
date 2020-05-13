@@ -73,7 +73,7 @@ $jsonFlex = [
                                 ],
                                 [
                                     "type" => "text",
-                                    "text" => $prod_price[0]." บาท",
+                                    "text" => $prod_price[0] . " บาท",
                                     "margin" => "sm",
                                     "align" => "start"
                                 ]
@@ -95,7 +95,124 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => $prod_stock[0]." ชิ้น",
+                                            "text" => $prod_stock[0] . " ชิ้น",
+                                            "flex" => 3,
+                                            "margin" => "sm",
+                                            "align" => "start"
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                "footer" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "button",
+                            "action" => [
+                                "type" => "uri",
+                                "label" => "สั่งซื้อ",
+                                "uri" => "https://linecorp.com"
+                            ],
+                            "color" => "#000000",
+                            "style" => "primary"
+                        ]
+                    ]
+                ]
+            ], [
+                "type" => "bubble",
+                "header" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "contents" => [
+                        [
+                            "type" => "text",
+                            "text" => $prod_name[0],
+                            "align" => "center",
+                            "weight" => "bold",
+                            "color" => "#000000"
+                        ]
+                    ]
+                ],
+                "hero" => [
+                    "type" => "image",
+                    "url" => $prod_image[0],
+                    "size" => "full",
+                    "aspectRatio" => "2:1",
+                    "aspectMode" => "fit",
+                ],
+                "body" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "หมวดหมู่สินค้า :",
+                                            "flex" => 0,
+                                            "align" => "start",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => $prod_cate[0],
+                                            "flex" => 2,
+                                            "margin" => "sm",
+                                            "align" => "start",
+                                            "wrap" => false
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "text",
+                                    "text" => "ราคาสินค้า :",
+                                    "flex" => 0,
+                                    "align" => "start",
+                                    "weight" => "bold"
+                                ],
+                                [
+                                    "type" => "text",
+                                    "text" => $prod_price[0] . " บาท",
+                                    "margin" => "sm",
+                                    "align" => "start"
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "คงเหลือ :",
+                                            "align" => "start",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => $prod_stock[0] . " ชิ้น",
                                             "flex" => 3,
                                             "margin" => "sm",
                                             "align" => "start"
