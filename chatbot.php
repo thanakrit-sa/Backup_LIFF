@@ -38,17 +38,7 @@ foreach ($dataFromApi['data'] as $data) {
   $prod_cate[] = $data['category_name'];
   $prod_created_time[] = $data['created_at'];
   $prod_updated_time[] = $data['updated_at'];
-  echo $data['product_name'];
 }
-
-// echo $prod_name[0];
-// echo $prod_image[0];
-// echo $prod_stock[0];
-// echo $prod_price[0];
-// echo $prod_address[0];
-// echo $prod_cate[0];
-// echo $prod_created_time[0];
-// echo $prod_updated_time[0];
 
 # Flex Message
 include 'flex_message.php';
