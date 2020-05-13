@@ -59,19 +59,19 @@ foreach ($dataFromApi['data'] as $data) {
                 </article>
                 <hr>
                 <div class="row">
-                    <div class="col-4"><b>Name : </b></div>
+                    <div class="col-4" align="right"><b>Name : </b></div>
                     <div class="col-8" align="left"><? echo $prod_name[1];?></div>
                 </div>
                 <div class="row">
-                    <div class="col-4"><b>Catagory : </b></div>
+                    <div class="col-4" align="right"><b>Catagory : </b></div>
                     <div class="col-8" align="left"><? echo $prod_cate[1];?></div>
                 </div>
                 <div class="row">
-                    <div class="col-4"><b>Stock : </b></div>
+                    <div class="col-4" align="right"><b>Stock : </b></div>
                     <div class="col-8" align="left"><? echo $prod_stock[1];?></div>
                 </div>
                 <div class="row">
-                    <div class="col-4"><b>Price : </b></div>
+                    <div class="col-4" align="right"><b>Price : </b></div>
                     <div class="col-8" align="left"><? echo $prod_price[1];?></div>
                 </div>
             </div>
