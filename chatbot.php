@@ -40,6 +40,10 @@ foreach ($dataFromApi['data'] as $data) {
   // $prod_updated_time[] = $data['updated_at'];
 }
 
+for($i = 0;$i < count($dataFromApi['data']); $i++){
+  echo $i;
+}
+
 # Flex Message
 include 'flex_message.php';
 
