@@ -59,8 +59,8 @@ foreach ($dataFromApi['data'] as $data) {
                 </article>
                 <hr>
                 <div class="row">
-                    <div class="col-4" align="right"><b>Name : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_name[1]; ?></div>
+                    <div class="col-4" align="right"><b>Brand : </b></div>
+                    <div class="col-8" align="left">Adidas</div>
                 </div>
                 <div class="row">
                     <div class="col-4" align="right"><b>Catagory : </b></div>
@@ -80,7 +80,7 @@ foreach ($dataFromApi['data'] as $data) {
     <br>
     <div class="footer">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 p-0 m-0">
                 <div class="form-group p-0 m-0">
                     <select multiple class="form-control">
                         <option>ซื้อ</option>
@@ -89,7 +89,7 @@ foreach ($dataFromApi['data'] as $data) {
                     </select>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 p-0 m-0">
                 <button type="button" id="count" class="btn btn-dark btn-block p-2" align="center">สั่งสินค้า</button>
             </div>
         </div>
