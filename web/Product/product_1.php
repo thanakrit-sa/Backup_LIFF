@@ -47,10 +47,10 @@ foreach ($dataFromApi['data'] as $data) {
             <div class="card-body">
                 <div class="row">
                     <div class="col">
-                        <img src="<? echo $prod_image[1]; ?>" class="img-thumbnail shadow p-1 mb-3 bg-white rounded">
+                        <img src="<? echo $prod_image[0]; ?>" class="img-thumbnail shadow p-1 mb-3 bg-white rounded">
                     </div>
                 </div>
-                <p align="center"><b><? echo $prod_name[1]; ?></b></p>
+                <p align="center"><b><? echo $prod_name[0]; ?></b></p>
                 <hr>
                 <article class="row">
                     <div class="col-12" align="center">
@@ -64,15 +64,15 @@ foreach ($dataFromApi['data'] as $data) {
                 </div>
                 <div class="row">
                     <div class="col-4" align="right"><b>Catagory : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_cate[1]; ?></div>
+                    <div class="col-8" align="left"><? echo $prod_cate[0]; ?></div>
                 </div>
                 <div class="row">
                     <div class="col-4" align="right"><b>Stock : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_stock[1] . " ชิ้น"; ?></div>
+                    <div class="col-8" align="left"><? echo $prod_stock[0] . " ชิ้น"; ?></div>
                 </div>
                 <div class="row">
                     <div class="col-4" align="right"><b>Price : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_price[1] . " บาท"; ?></div>
+                    <div class="col-8" align="left"><? echo $prod_price[0] . " บาท"; ?></div>
                 </div>
             </div>
         </div>
