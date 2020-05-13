@@ -14,7 +14,7 @@ $jsonFlex = [
                     "contents" => [
                         [
                             "type" => "text",
-                            "text" => "ลิปสติก Rouge Dior",
+                            "text" => $prod_name[0],
                             "align" => "center",
                             "weight" => "bold",
                             "color" => "#000000"
@@ -50,7 +50,7 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => "เครื่องสำอาง",
+                                            "text" => $prod_cate[0],
                                             "flex" => 2,
                                             "margin" => "sm",
                                             "align" => "start",
@@ -73,7 +73,7 @@ $jsonFlex = [
                                 ],
                                 [
                                     "type" => "text",
-                                    "text" => "1345 บาท",
+                                    "text" => $prod_price[0],
                                     "margin" => "sm",
                                     "align" => "start"
                                 ]
@@ -95,7 +95,7 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => "4 ชิ้น",
+                                            "text" => $prod_stock[0],
                                             "flex" => 3,
                                             "margin" => "sm",
                                             "align" => "start"
