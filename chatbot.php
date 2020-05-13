@@ -36,7 +36,7 @@ foreach ($dataFormhtml['data'] as $data) {
 # Flex Message
 include 'flex_message.php';
 
-if ($message == "แสดงสินค้า") {
+if ($message == "แสดงสินค้") {
   $data = [
     'replyToken' => $reply_token,
     'messages' => [$jsonFlex]
