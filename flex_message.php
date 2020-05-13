@@ -1,296 +1,296 @@
 <?
 # Flex Messages
 $jsonFlex = [
-    "type"=> "flex",
-    "altText"=> "Flex Message",
-    "contents"=> [
-      "type"=> "carousel",
-      "contents"=> [
-        [
-          "type"=> "bubble",
-          "header"=> [
-            "type"=> "box",
-            "layout"=> "horizontal",
-            "contents"=> [
-              [
-                "type"=> "spacer"
-              ]
-            ]
-          ],
-          "hero"=> [
-            "type"=> "image",
-            "url"=> "https=>//e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/prod_img_1589255125.jpg",
-            "size"=> "full",
-            "aspectRatio"=> "20=>13",
-            "action"=> [
-              "type"=> "uri",
-              "label"=> "Action",
-              "uri"=> "https=>//linecorp.com/"
-            ]
-          ],
-          "body"=> [
-            "type"=> "box",
-            "layout"=> "vertical",
-            "spacing"=> "md",
-            "contents"=> [
-              [
-                "type"=> "box",
-                "layout"=> "vertical",
-                "flex"=> 2,
-                "contents"=> [
-                  [
-                    "type"=> "text",
-                    "text"=> "ลิปสติก Rouge Dior",
-                    "flex"=> 3,
-                    "size"=> "sm",
-                    "align"=> "center",
-                    "weight"=> "bold"
-                  ]
-                ]
-              ],
-              [
-                "type"=> "separator",
-                "color"=> "#000000"
-              ],
-              [
-                "type"=> "box",
-                "layout"=> "horizontal",
-                "contents"=> [
-                  [
-                    "type"=> "box",
-                    "layout"=> "horizontal",
-                    "contents"=> [
-                      [
-                        "type"=> "text",
-                        "text"=> "หมวดหมู่ =>",
-                        "align"=> "end",
-                        "weight"=> "bold"
-                      ],
-                      [
-                        "type"=> "text",
-                        "text"=> "เครื่องสำอาง",
-                        "flex"=> 2,
-                        "margin"=> "none",
-                        "align"=> "center",
-                        "wrap"=> false
-                      ]
+    "type" => "flex",
+    "altText" => "Flex Message",
+    "contents" => [
+        "type" => "carousel",
+        "contents" => [
+            [
+                "type" => "bubble",
+                "header" => [
+                    "type" => "box",
+                    "layout" => "horizontal",
+                    "contents" => [
+                        [
+                            "type" => "spacer"
+                        ]
                     ]
-                  ]
-                ]
-              ],
-              [
-                "type"=> "box",
-                "layout"=> "horizontal",
-                "contents"=> [
-                  [
-                    "type"=> "box",
-                    "layout"=> "horizontal",
-                    "contents"=> [
-                      [
-                        "type"=> "text",
-                        "text"=> "คงเหลือ =>",
-                        "align"=> "end",
-                        "weight"=> "bold"
-                      ],
-                      [
-                        "type"=> "text",
-                        "text"=> "4 ชิ้น",
-                        "flex"=> 2,
-                        "align"=> "center"
-                      ]
-                    ]
-                  ]
-                ]
-              ],
-              [
-                "type"=> "box",
-                "layout"=> "horizontal",
-                "contents"=> [
-                  [
-                    "type"=> "text",
-                    "text"=> "ราคา =>",
-                    "align"=> "end",
-                    "weight"=> "bold"
-                  ],
-                  [
-                    "type"=> "text",
-                    "text"=> "1345 บาท",
-                    "flex"=> 2,
-                    "align"=> "center"
-                  ]
-                ]
-              ]
-            ]
-          ],
-          "footer"=> [
-            "type"=> "box",
-            "layout"=> "horizontal",
-            "contents"=> [
-              [
-                "type"=> "button",
-                "action"=> [
-                  "type"=> "uri",
-                  "label"=> "สั่งซื้อ",
-                  "uri"=> "https=>//linecorp.com"
                 ],
-                "color"=> "#000000",
-                "style"=> "primary"
-              ]
-            ]
-          ],
-          "styles"=> [
-            "header"=> [
-              "backgroundColor"=> "#FFFFFF"
-            ],
-            "footer"=> [
-              "backgroundColor"=> "#FFFFFF"
-            ]
-          ]
-        ],
-        [
-          "type"=> "bubble",
-          "header"=> [
-            "type"=> "box",
-            "layout"=> "horizontal",
-            "contents"=> [
-              [
-                "type"=> "spacer"
-              ]
-            ]
-          ],
-          "hero"=> [
-            "type"=> "image",
-            "url"=> "https=>//e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/prod_img_1589255125.jpg",
-            "size"=> "full",
-            "aspectRatio"=> "20=>13",
-            "action"=> [
-              "type"=> "uri",
-              "label"=> "Action",
-              "uri"=> "https=>//linecorp.com/"
-            ]
-          ],
-          "body"=> [
-            "type"=> "box",
-            "layout"=> "vertical",
-            "spacing"=> "md",
-            "contents"=> [
-              [
-                "type"=> "box",
-                "layout"=> "vertical",
-                "flex"=> 2,
-                "contents"=> [
-                  [
-                    "type"=> "text",
-                    "text"=> "ลิปสติก Rouge Dior",
-                    "flex"=> 3,
-                    "size"=> "sm",
-                    "align"=> "center",
-                    "weight"=> "bold"
-                  ]
-                ]
-              ],
-              [
-                "type"=> "separator",
-                "color"=> "#000000"
-              ],
-              [
-                "type"=> "box",
-                "layout"=> "horizontal",
-                "contents"=> [
-                  [
-                    "type"=> "box",
-                    "layout"=> "horizontal",
-                    "contents"=> [
-                      [
-                        "type"=> "text",
-                        "text"=> "หมวดหมู่ =>",
-                        "align"=> "end",
-                        "weight"=> "bold"
-                      ],
-                      [
-                        "type"=> "text",
-                        "text"=> "เครื่องสำอาง",
-                        "flex"=> 2,
-                        "margin"=> "none",
-                        "align"=> "center",
-                        "wrap"=> false
-                      ]
+                "hero" => [
+                    "type" => "image",
+                    "url" => "https=>//e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/prod_img_1589255125.jpg",
+                    "size" => "full",
+                    "aspectRatio" => "20=>13",
+                    "action" => [
+                        "type" => "uri",
+                        "label" => "Action",
+                        "uri" => "https=>//linecorp.com/"
                     ]
-                  ]
-                ]
-              ],
-              [
-                "type"=> "box",
-                "layout"=> "horizontal",
-                "contents"=> [
-                  [
-                    "type"=> "box",
-                    "layout"=> "horizontal",
-                    "contents"=> [
-                      [
-                        "type"=> "text",
-                        "text"=> "คงเหลือ =>",
-                        "align"=> "end",
-                        "weight"=> "bold"
-                      ],
-                      [
-                        "type"=> "text",
-                        "text"=> "4 ชิ้น",
-                        "flex"=> 2,
-                        "align"=> "center"
-                      ]
-                    ]
-                  ]
-                ]
-              ],
-              [
-                "type"=> "box",
-                "layout"=> "horizontal",
-                "contents"=> [
-                  [
-                    "type"=> "text",
-                    "text"=> "ราคา =>",
-                    "align"=> "end",
-                    "weight"=> "bold"
-                  ],
-                  [
-                    "type"=> "text",
-                    "text"=> "1345 บาท",
-                    "flex"=> 2,
-                    "align"=> "center"
-                  ]
-                ]
-              ]
-            ]
-          ],
-          "footer"=> [
-            "type"=> "box",
-            "layout"=> "horizontal",
-            "contents"=> [
-              [
-                "type"=> "button",
-                "action"=> [
-                  "type"=> "uri",
-                  "label"=> "สั่งซื้อ",
-                  "uri"=> "https=>//linecorp.com"
                 ],
-                "color"=> "#000000",
-                "style"=> "primary"
-              ]
-            ]
-          ],
-          "styles"=> [
-            "header"=> [
-              "backgroundColor"=> "#FFFFFF"
+                "body" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "md",
+                    "contents" => [
+                        [
+                            "type" => "box",
+                            "layout" => "vertical",
+                            "flex" => 2,
+                            "contents" => [
+                                [
+                                    "type" => "text",
+                                    "text" => "ลิปสติก Rouge Dior",
+                                    "flex" => 3,
+                                    "size" => "sm",
+                                    "align" => "center",
+                                    "weight" => "bold"
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "separator",
+                            "color" => "#000000"
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "หมวดหมู่ =>",
+                                            "align" => "end",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => "เครื่องสำอาง",
+                                            "flex" => 2,
+                                            "margin" => "none",
+                                            "align" => "center",
+                                            "wrap" => false
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "คงเหลือ =>",
+                                            "align" => "end",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => "4 ชิ้น",
+                                            "flex" => 2,
+                                            "align" => "center"
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "text",
+                                    "text" => "ราคา =>",
+                                    "align" => "end",
+                                    "weight" => "bold"
+                                ],
+                                [
+                                    "type" => "text",
+                                    "text" => "1345 บาท",
+                                    "flex" => 2,
+                                    "align" => "center"
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                "footer" => [
+                    "type" => "box",
+                    "layout" => "horizontal",
+                    "contents" => [
+                        [
+                            "type" => "button",
+                            "action" => [
+                                "type" => "uri",
+                                "label" => "สั่งซื้อ",
+                                "uri" => "https=>//linecorp.com"
+                            ],
+                            "color" => "#000000",
+                            "style" => "primary"
+                        ]
+                    ]
+                ],
+                "styles" => [
+                    "header" => [
+                        "backgroundColor" => "#FFFFFF"
+                    ],
+                    "footer" => [
+                        "backgroundColor" => "#FFFFFF"
+                    ]
+                ]
             ],
-            "footer"=> [
-              "backgroundColor"=> "#FFFFFF"
+            [
+                "type" => "bubble",
+                "header" => [
+                    "type" => "box",
+                    "layout" => "horizontal",
+                    "contents" => [
+                        [
+                            "type" => "spacer"
+                        ]
+                    ]
+                ],
+                "hero" => [
+                    "type" => "image",
+                    "url" => "https=>//e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/prod_img_1589255125.jpg",
+                    "size" => "full",
+                    "aspectRatio" => "20=>13",
+                    "action" => [
+                        "type" => "uri",
+                        "label" => "Action",
+                        "uri" => "https=>//linecorp.com/"
+                    ]
+                ],
+                "body" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "md",
+                    "contents" => [
+                        [
+                            "type" => "box",
+                            "layout" => "vertical",
+                            "flex" => 2,
+                            "contents" => [
+                                [
+                                    "type" => "text",
+                                    "text" => "ลิปสติก Rouge Dior",
+                                    "flex" => 3,
+                                    "size" => "sm",
+                                    "align" => "center",
+                                    "weight" => "bold"
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "separator",
+                            "color" => "#000000"
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "หมวดหมู่ =>",
+                                            "align" => "end",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => "เครื่องสำอาง",
+                                            "flex" => 2,
+                                            "margin" => "none",
+                                            "align" => "center",
+                                            "wrap" => false
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "คงเหลือ =>",
+                                            "align" => "end",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => "4 ชิ้น",
+                                            "flex" => 2,
+                                            "align" => "center"
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "text",
+                                    "text" => "ราคา =>",
+                                    "align" => "end",
+                                    "weight" => "bold"
+                                ],
+                                [
+                                    "type" => "text",
+                                    "text" => "1345 บาท",
+                                    "flex" => 2,
+                                    "align" => "center"
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                "footer" => [
+                    "type" => "box",
+                    "layout" => "horizontal",
+                    "contents" => [
+                        [
+                            "type" => "button",
+                            "action" => [
+                                "type" => "uri",
+                                "label" => "สั่งซื้อ",
+                                "uri" => "https=>//linecorp.com"
+                            ],
+                            "color" => "#000000",
+                            "style" => "primary"
+                        ]
+                    ]
+                ],
+                "styles" => [
+                    "header" => [
+                        "backgroundColor" => "#FFFFFF"
+                    ],
+                    "footer" => [
+                        "backgroundColor" => "#FFFFFF"
+                    ]
+                ]
             ]
-          ]
         ]
-      ]
     ]
-  ]
+];
 
 $text = [
     "type" => "text",
