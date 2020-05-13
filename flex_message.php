@@ -124,6 +124,14 @@ $jsonFlex = [
                     ]
                 ]
             ]
+        ],
+        "styles" => [
+            "header" => [
+                "backgroundColor" => "#000000"
+            ],
+            "footer" => [
+                "backgroundColor" => "#FFFFFF"
+            ]
         ]
     ]
 ];
