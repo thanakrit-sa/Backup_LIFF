@@ -25,12 +25,12 @@ foreach ($dataFromApi['data'] as $data) {
   $prod_updated_time[] = $data['updated_at'];
 }
 
-for($i = 0;$i < count($dataFromApi['data']);$i++) {
-    echo $prod_name[$i];
-    echo $prod_price[$i];
+// for($i = 0;$i < count($dataFromApi['data']);$i++) {
+//     echo $prod_name[$i];
+//     echo $prod_price[$i];
 
 
-}
+// }
 
 $jsonFlex = [
     "type" => "flex",
