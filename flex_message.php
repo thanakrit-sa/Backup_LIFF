@@ -1,6 +1,6 @@
 <?
 
-$dataFlex = [
+$dataFlex[$i] = [
     "type" => "bubble",
     "hero" => [
         "type" => "image",
