@@ -26,7 +26,8 @@ foreach ($dataFromApi['data'] as $data) {
 }
 
 for($i = 0;$i < count($dataFromApi['data']);$i++) {
-    
+    echo $prod_name[$i];
+    echo $prod_price[$i];
 
 
 }
