@@ -241,125 +241,479 @@ $jsonFlex = [
                         ]
                     ]
                 ]
+            ],
+            [
+                "type" => "bubble",
+                "header" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "contents" => [
+                        [
+                            "type" => "text",
+                            "text" => $prod_name[1],
+                            "align" => "center",
+                            "weight" => "bold",
+                            "color" => "#000000"
+                        ]
+                    ]
+                ],
+                "hero" => [
+                    "type" => "image",
+                    "url" => $prod_image[1],
+                    "size" => "full",
+                    "aspectRatio" => "2:1",
+                    "aspectMode" => "fit",
+                ],
+                "body" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "หมวดหมู่สินค้า :",
+                                            "flex" => 0,
+                                            "align" => "start",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => $prod_cate[1],
+                                            "flex" => 2,
+                                            "margin" => "sm",
+                                            "align" => "start",
+                                            "wrap" => false
+                                        ]
+                                    ]
+                                ]
+                            ]
                         ],
                         [
-                            "type" => "bubble",
-                            "header" => [
-                                "type" => "box",
-                                "layout" => "vertical",
-                                "contents" => [
-                                    [
-                                        "type" => "text",
-                                        "text" => $prod_name[1],
-                                        "align" => "center",
-                                        "weight" => "bold",
-                                        "color" => "#000000"
-                                    ]
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "text",
+                                    "text" => "ราคาสินค้า :",
+                                    "flex" => 0,
+                                    "align" => "start",
+                                    "weight" => "bold"
+                                ],
+                                [
+                                    "type" => "text",
+                                    "text" => $prod_price[1] . " บาท",
+                                    "margin" => "sm",
+                                    "align" => "start"
                                 ]
-                            ],
-                            "hero" => [
-                                "type" => "image",
-                                "url" => $prod_image[1],
-                                "size" => "full",
-                                "aspectRatio" => "2:1",
-                                "aspectMode" => "fit",
-                            ],
-                            "body" => [
-                                "type" => "box",
-                                "layout" => "vertical",
-                                "spacing" => "sm",
-                                "contents" => [
-                                    [
-                                        "type" => "box",
-                                        "layout" => "horizontal",
-                                        "contents" => [
-                                            [
-                                                "type" => "box",
-                                                "layout" => "horizontal",
-                                                "contents" => [
-                                                    [
-                                                        "type" => "text",
-                                                        "text" => "หมวดหมู่สินค้า :",
-                                                        "flex" => 0,
-                                                        "align" => "start",
-                                                        "weight" => "bold"
-                                                    ],
-                                                    [
-                                                        "type" => "text",
-                                                        "text" => $prod_cate[1],
-                                                        "flex" => 2,
-                                                        "margin" => "sm",
-                                                        "align" => "start",
-                                                        "wrap" => false
-                                                    ]
-                                                ]
-                                            ]
-                                        ]
-                                    ],
-                                    [
-                                        "type" => "box",
-                                        "layout" => "horizontal",
-                                        "contents" => [
-                                            [
-                                                "type" => "text",
-                                                "text" => "ราคาสินค้า :",
-                                                "flex" => 0,
-                                                "align" => "start",
-                                                "weight" => "bold"
-                                            ],
-                                            [
-                                                "type" => "text",
-                                                "text" => $prod_price[1] . " บาท",
-                                                "margin" => "sm",
-                                                "align" => "start"
-                                            ]
-                                        ]
-                                    ],
-                                    [
-                                        "type" => "box",
-                                        "layout" => "horizontal",
-                                        "contents" => [
-                                            [
-                                                "type" => "box",
-                                                "layout" => "horizontal",
-                                                "contents" => [
-                                                    [
-                                                        "type" => "text",
-                                                        "text" => "คงเหลือ :",
-                                                        "align" => "start",
-                                                        "flex" => 0,
-                                                        "weight" => "bold"
-                                                    ],
-                                                    [
-                                                        "type" => "text",
-                                                        "text" => $prod_stock[1] . " ชิ้น",
-                                                        "margin" => "sm",
-                                                        "align" => "start"
-                                                    ]
-                                                ]
-                                            ]
-                                        ]
-                                    ]
-                                ]
-                            ],
-                            "footer" => [
-                                "type" => "box",
-                                "layout" => "vertical",
-                                "spacing" => "sm",
-                                "contents" => [
-                                    [
-                                        "type" => "button",
-                                        "action" => [
-                                            "type" => "uri",
-                                            "label" => "สั่งซื้อ",
-                                            "uri" => "https://linecorp.com"
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "คงเหลือ :",
+                                            "align" => "start",
+                                            "flex" => 0,
+                                            "weight" => "bold"
                                         ],
-                                        "color" => "#000000",
-                                        "style" => "primary"
+                                        [
+                                            "type" => "text",
+                                            "text" => $prod_stock[1] . " ชิ้น",
+                                            "margin" => "sm",
+                                            "align" => "start"
+                                        ]
                                     ]
                                 ]
                             ]
                         ]
+                    ]
+                ],
+                "footer" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "button",
+                            "action" => [
+                                "type" => "uri",
+                                "label" => "สั่งซื้อ",
+                                "uri" => "https://linecorp.com"
+                            ],
+                            "color" => "#000000",
+                            "style" => "primary"
+                        ]
+                    ]
+                ]
+            ],
+            [
+                "type" => "bubble",
+                "header" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "contents" => [
+                        [
+                            "type" => "text",
+                            "text" => $prod_name[1],
+                            "align" => "center",
+                            "weight" => "bold",
+                            "color" => "#000000"
+                        ]
+                    ]
+                ],
+                "hero" => [
+                    "type" => "image",
+                    "url" => $prod_image[1],
+                    "size" => "full",
+                    "aspectRatio" => "2:1",
+                    "aspectMode" => "fit",
+                ],
+                "body" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "หมวดหมู่สินค้า :",
+                                            "flex" => 0,
+                                            "align" => "start",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => $prod_cate[1],
+                                            "flex" => 2,
+                                            "margin" => "sm",
+                                            "align" => "start",
+                                            "wrap" => false
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "text",
+                                    "text" => "ราคาสินค้า :",
+                                    "flex" => 0,
+                                    "align" => "start",
+                                    "weight" => "bold"
+                                ],
+                                [
+                                    "type" => "text",
+                                    "text" => $prod_price[1] . " บาท",
+                                    "margin" => "sm",
+                                    "align" => "start"
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "คงเหลือ :",
+                                            "align" => "start",
+                                            "flex" => 0,
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => $prod_stock[1] . " ชิ้น",
+                                            "margin" => "sm",
+                                            "align" => "start"
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                "footer" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "button",
+                            "action" => [
+                                "type" => "uri",
+                                "label" => "สั่งซื้อ",
+                                "uri" => "https://linecorp.com"
+                            ],
+                            "color" => "#000000",
+                            "style" => "primary"
+                        ]
+                    ]
+                ]
+            ],
+            [
+                "type" => "bubble",
+                "header" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "contents" => [
+                        [
+                            "type" => "text",
+                            "text" => $prod_name[1],
+                            "align" => "center",
+                            "weight" => "bold",
+                            "color" => "#000000"
+                        ]
+                    ]
+                ],
+                "hero" => [
+                    "type" => "image",
+                    "url" => $prod_image[1],
+                    "size" => "full",
+                    "aspectRatio" => "2:1",
+                    "aspectMode" => "fit",
+                ],
+                "body" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "หมวดหมู่สินค้า :",
+                                            "flex" => 0,
+                                            "align" => "start",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => $prod_cate[1],
+                                            "flex" => 2,
+                                            "margin" => "sm",
+                                            "align" => "start",
+                                            "wrap" => false
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "text",
+                                    "text" => "ราคาสินค้า :",
+                                    "flex" => 0,
+                                    "align" => "start",
+                                    "weight" => "bold"
+                                ],
+                                [
+                                    "type" => "text",
+                                    "text" => $prod_price[1] . " บาท",
+                                    "margin" => "sm",
+                                    "align" => "start"
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "คงเหลือ :",
+                                            "align" => "start",
+                                            "flex" => 0,
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => $prod_stock[1] . " ชิ้น",
+                                            "margin" => "sm",
+                                            "align" => "start"
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                "footer" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "button",
+                            "action" => [
+                                "type" => "uri",
+                                "label" => "สั่งซื้อ",
+                                "uri" => "https://linecorp.com"
+                            ],
+                            "color" => "#000000",
+                            "style" => "primary"
+                        ]
+                    ]
+                ]
+            ],
+            [
+                "type" => "bubble",
+                "header" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "contents" => [
+                        [
+                            "type" => "text",
+                            "text" => $prod_name[1],
+                            "align" => "center",
+                            "weight" => "bold",
+                            "color" => "#000000"
+                        ]
+                    ]
+                ],
+                "hero" => [
+                    "type" => "image",
+                    "url" => $prod_image[1],
+                    "size" => "full",
+                    "aspectRatio" => "2:1",
+                    "aspectMode" => "fit",
+                ],
+                "body" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "หมวดหมู่สินค้า :",
+                                            "flex" => 0,
+                                            "align" => "start",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => $prod_cate[1],
+                                            "flex" => 2,
+                                            "margin" => "sm",
+                                            "align" => "start",
+                                            "wrap" => false
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "text",
+                                    "text" => "ราคาสินค้า :",
+                                    "flex" => 0,
+                                    "align" => "start",
+                                    "weight" => "bold"
+                                ],
+                                [
+                                    "type" => "text",
+                                    "text" => $prod_price[1] . " บาท",
+                                    "margin" => "sm",
+                                    "align" => "start"
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "คงเหลือ :",
+                                            "align" => "start",
+                                            "flex" => 0,
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => $prod_stock[1] . " ชิ้น",
+                                            "margin" => "sm",
+                                            "align" => "start"
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                "footer" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "button",
+                            "action" => [
+                                "type" => "uri",
+                                "label" => "สั่งซื้อ",
+                                "uri" => "https://linecorp.com"
+                            ],
+                            "color" => "#000000",
+                            "style" => "primary"
+                        ]
+                    ]
+                ]
+            ]
         ]
     ]
 ];
