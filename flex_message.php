@@ -8,6 +8,19 @@ $jsonFlex = [
         "contents" => [
             [
                 "type" => "bubble",
+                "header" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "contents" => [
+                        [
+                            "type" => "text",
+                            "text" => "ลิปสติก Rouge Dior",
+                            "align" => "center",
+                            "weight" => "bold",
+                            "color" => "#FFFFFF"
+                        ]
+                    ]
+                ],
                 "hero" => [
                     "type" => "image",
                     "url" => $prod_image[0],
