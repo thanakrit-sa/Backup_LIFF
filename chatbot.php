@@ -28,7 +28,7 @@ function file_get_contents_curl($url)
 $Api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
 // $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
 $dataFormApi = json_decode($Api, true);
-echo $dataFormApi;
+echo $Api;
 
 // foreach ($dataFormhtml['data'] as $data) {
 //   $dataName[] = $data['employee_name'];
