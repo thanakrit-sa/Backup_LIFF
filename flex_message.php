@@ -26,9 +26,9 @@ foreach ($dataFromApi['data'] as $data) {
 }
 
 for($i = 0;$i < count($dataFromApi['data']);$i++) {
-    $name = $prod_name[$i];
+    $name[$i] = $prod_name[$i];
 } 
-echo $name;
+echo $name[$i];
 $data = [
     "type" => "bubble",
     "header" => [
