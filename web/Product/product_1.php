@@ -88,7 +88,7 @@ foreach ($dataFromApi['data'] as $data) {
                 </div>
             </div>
             <div class="col-6">
-
+                <button type="button" class="btn btn-secondary btn-block">+</button>
             </div>
         </div>
     </div>
