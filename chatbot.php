@@ -33,7 +33,7 @@ echo $dataFromApi['Api'];
 foreach ($dataFromApi['Api'] as $data) {
   // $dataName[] = $data['employee_name'];
   // $dataSalary[] = $data['employee_salary'];
-  echo $dataFromApi['Api'];
+  // echo $dataFromApi['Api'];
 }
 
 # Flex Message
