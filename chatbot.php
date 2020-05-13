@@ -33,7 +33,7 @@ foreach ($dataFormhtml['data'] as $data) {
   $dataName[] = $data['employee_name'];
   $dataSalary[] = $data['employee_salary'];
 }
-echo $dataName;
+echo $dataName[0];
 # Flex Message
 include 'flex_message.php';
 
