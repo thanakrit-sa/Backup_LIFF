@@ -1,78 +1,150 @@
 <?
 # Flex Messages
 $jsonFlex = [
-    "type" => "flex",
-    "altText" => "Flex Message",
-    "contents" => [
-        "type" => "carousel",
-        "contents" => [
-            [
-                "type" => "bubble",
-                "hero" => [
-                    "type" => "image",
-                    "url" => $prod_image[0],
-                    "size" => "full",
-                    "aspectRatio" => "20:13",
-                    "aspectMode" => "cover"
-                ],
-                "body" => [
-                    "type" => "box",
-                    "layout" => "vertical",
-                    "spacing" => "sm",
-                    "contents" => [
-                        [
-                            "type" => "text",
-                            "text" => $prod_name[0],
-                            "size" => "xl",
-                            "weight" => "bold",
-                            "wrap" => true
-                        ],
-                        [
-                            "type" => "box",
-                            "layout" => "baseline",
-                            "flex" => 1,
-                            "contents" => [
-
-                                [
-                                    "type" => "text",
-                                    "text" => $prod_stock[0],
-                                    "flex" => 0,
-                                    "size" => "sm",
-                                    "weight" => "bold",
-                                    "wrap" => true
-                                ]
-                            ]
-                        ]
-                    ]
-                ],
-                "footer" => [
-                    "type" => "box",
-                    "layout" => "vertical",
-                    "spacing" => "sm",
-                    "contents" => [
-                        [
-                            "type" => "separator",
-                            "margin" => "xxl",
-                            "color" => "#000000"
-                        ],
-                        [
-                            "type" => "filler"
-                        ],
-                        [
-                            "type" => "button",
-                            "action" => [
-                                "type" => "uri",
-                                "label" => "Add to Cart",
-                                "uri" => "https://linecorp.com"
-                            ],
-                            "style" => "primary"
-                        ],
-                    ]
-                ]
-            ]
+    "type"=> "flex",
+    "altText"=> "Flex Message",
+    "contents"=> [
+      "type"=> "bubble",
+      "header"=> [
+        "type"=> "box",
+        "layout"=> "horizontal",
+        "contents"=> [
+          [
+            "type"=> "spacer"
+          ]
         ]
+          ],
+      "hero"=> [
+        "type"=> "image",
+        "url"=> "https=>//e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/prod_img_1589255125.jpg",
+        "size"=> "full",
+        "aspectRatio"=> "20=>13",
+        "action"=> [
+          "type"=> "uri",
+          "label"=> "Action",
+          "uri"=> "https=>//linecorp.com/"
+        ]
+      ],
+      "body"=> [
+        "type"=> "box",
+        "layout"=> "vertical",
+        "spacing"=> "md",
+        "contents"=> [
+          [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "flex"=> 2,
+            "contents"=> [
+              [
+                "type"=> "text",
+                "text"=> "ลิปสติก Rouge Dior",
+                "flex"=> 3,
+                "size"=> "sm",
+                "align"=> "center",
+                "weight"=> "bold"
+              ]
+            ]
+          ],
+          [
+            "type"=> "separator",
+            "color"=> "#000000"
+          ],
+          [
+            "type"=> "box",
+            "layout"=> "horizontal",
+            "contents"=> [
+              [
+                "type"=> "box",
+                "layout"=> "horizontal",
+                "contents"=> [
+                  [
+                    "type"=> "text",
+                    "text"=> "หมวดหมู่ =>",
+                    "align"=> "end",
+                    "weight"=> "bold"
+                  ],
+                  [
+                    "type"=> "text",
+                    "text"=> "เครื่องสำอาง",
+                    "flex"=> 2,
+                    "margin"=> "none",
+                    "align"=> "center",
+                    "wrap"=> false
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "type"=> "box",
+            "layout"=> "horizontal",
+            "contents"=> [
+              [
+                "type"=> "box",
+                "layout"=> "horizontal",
+                "contents"=> [
+                  [
+                    "type"=> "text",
+                    "text"=> "คงเหลือ =>",
+                    "align"=> "end",
+                    "weight"=> "bold"
+                  ],
+                  [
+                    "type"=> "text",
+                    "text"=> "4 ชิ้น",
+                    "flex"=> 2,
+                    "align"=> "center"
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "type"=> "box",
+            "layout"=> "horizontal",
+            "contents"=> [
+              [
+                "type"=> "text",
+                "text"=> "ราคา =>",
+                "align"=> "end",
+                "weight"=> "bold"
+              ],
+              [
+                "type"=> "text",
+                "text"=> "1345 บาท",
+                "flex"=> 2,
+                "align"=> "center"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "footer"=> [
+        "type"=> "box",
+        "layout"=> "horizontal",
+        "contents"=> [
+          [
+            "type"=> "button",
+            "action"=> [
+              "type"=> "uri",
+              "label"=> "สั่งซื้อ",
+              "uri"=> "https=>//linecorp.com"
+            ],
+            "color"=> "#000000",
+            "style"=> "primary"
+          ]
+        ]
+      ],
+      "styles"=> [
+        "header"=> [
+          "backgroundColor"=> "#FFFFFF"
+        ],
+        "footer"=> [
+          "backgroundColor"=> "#FFFFFF"
+        ]
+      ]
     ]
-];
+  ];
 
 $text = [
     "type" => "text",
