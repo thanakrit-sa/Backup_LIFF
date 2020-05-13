@@ -76,7 +76,7 @@ foreach ($dataFromApi['data'] as $data) {
                 </div>
             </div>
             <div class="card-footer" align="center">
-                <div><? echo $prod_address[1];?></div>
+                <article><? echo $prod_address[1];?></article>
             </div>
         </div>
     </div>
