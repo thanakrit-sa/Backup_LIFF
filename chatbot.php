@@ -30,7 +30,7 @@ $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees
 $dataFromApi = json_decode($html, true);
 
 foreach ($dataFromApi['data'] as $data) {
-  // $prod_name[] = $data['product_name'];
+  $prod_name[] = $data['employee_name'];
   // $prod_image[] = $data['image_path'];
   // $prod_stock[] = $data['stock'];
   // $prod_price[] = $data['price'];
@@ -38,7 +38,6 @@ foreach ($dataFromApi['data'] as $data) {
   // $prod_cate[] = $data['category_name'];
   // $prod_created_time[] = $data['created_at'];
   // $prod_updated_time[] = $data['updated_at'];
-  echo $dataFromApi['data'];
 }
 
 # Flex Message
