@@ -250,7 +250,7 @@ $jsonFlex = [
                     "contents" => [
                         [
                             "type" => "text",
-                            "text" => $prod_name[1],
+                            "text" => $prod_name[2],
                             "align" => "center",
                             "weight" => "bold",
                             "color" => "#000000"
@@ -259,7 +259,7 @@ $jsonFlex = [
                 ],
                 "hero" => [
                     "type" => "image",
-                    "url" => $prod_image[1],
+                    "url" => $prod_image[2],
                     "size" => "full",
                     "aspectRatio" => "2:1",
                     "aspectMode" => "fit",
@@ -286,7 +286,7 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => $prod_cate[1],
+                                            "text" => $prod_cate[2],
                                             "flex" => 2,
                                             "margin" => "sm",
                                             "align" => "start",
@@ -309,7 +309,7 @@ $jsonFlex = [
                                 ],
                                 [
                                     "type" => "text",
-                                    "text" => $prod_price[1] . " บาท",
+                                    "text" => $prod_price[2] . " บาท",
                                     "margin" => "sm",
                                     "align" => "start"
                                 ]
@@ -332,7 +332,7 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => $prod_stock[1] . " ชิ้น",
+                                            "text" => $prod_stock[2] . " ชิ้น",
                                             "margin" => "sm",
                                             "align" => "start"
                                         ]
@@ -368,7 +368,7 @@ $jsonFlex = [
                     "contents" => [
                         [
                             "type" => "text",
-                            "text" => $prod_name[1],
+                            "text" => $prod_name[3],
                             "align" => "center",
                             "weight" => "bold",
                             "color" => "#000000"
@@ -377,7 +377,7 @@ $jsonFlex = [
                 ],
                 "hero" => [
                     "type" => "image",
-                    "url" => $prod_image[1],
+                    "url" => $prod_image[3],
                     "size" => "full",
                     "aspectRatio" => "2:1",
                     "aspectMode" => "fit",
@@ -404,7 +404,7 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => $prod_cate[1],
+                                            "text" => $prod_cate[3],
                                             "flex" => 2,
                                             "margin" => "sm",
                                             "align" => "start",
@@ -427,7 +427,7 @@ $jsonFlex = [
                                 ],
                                 [
                                     "type" => "text",
-                                    "text" => $prod_price[1] . " บาท",
+                                    "text" => $prod_price[3] . " บาท",
                                     "margin" => "sm",
                                     "align" => "start"
                                 ]
@@ -450,7 +450,7 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => $prod_stock[1] . " ชิ้น",
+                                            "text" => $prod_stock[3] . " ชิ้น",
                                             "margin" => "sm",
                                             "align" => "start"
                                         ]
@@ -486,7 +486,7 @@ $jsonFlex = [
                     "contents" => [
                         [
                             "type" => "text",
-                            "text" => $prod_name[1],
+                            "text" => $prod_name[4],
                             "align" => "center",
                             "weight" => "bold",
                             "color" => "#000000"
@@ -495,7 +495,7 @@ $jsonFlex = [
                 ],
                 "hero" => [
                     "type" => "image",
-                    "url" => $prod_image[1],
+                    "url" => $prod_image[4],
                     "size" => "full",
                     "aspectRatio" => "2:1",
                     "aspectMode" => "fit",
@@ -522,7 +522,7 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => $prod_cate[1],
+                                            "text" => $prod_cate[4],
                                             "flex" => 2,
                                             "margin" => "sm",
                                             "align" => "start",
@@ -545,7 +545,7 @@ $jsonFlex = [
                                 ],
                                 [
                                     "type" => "text",
-                                    "text" => $prod_price[1] . " บาท",
+                                    "text" => $prod_price[4] . " บาท",
                                     "margin" => "sm",
                                     "align" => "start"
                                 ]
@@ -568,7 +568,7 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => $prod_stock[1] . " ชิ้น",
+                                            "text" => $prod_stock[4] . " ชิ้น",
                                             "margin" => "sm",
                                             "align" => "start"
                                         ]
@@ -604,7 +604,7 @@ $jsonFlex = [
                     "contents" => [
                         [
                             "type" => "text",
-                            "text" => $prod_name[1],
+                            "text" => $prod_name[5],
                             "align" => "center",
                             "weight" => "bold",
                             "color" => "#000000"
@@ -613,7 +613,7 @@ $jsonFlex = [
                 ],
                 "hero" => [
                     "type" => "image",
-                    "url" => $prod_image[1],
+                    "url" => $prod_image[5],
                     "size" => "full",
                     "aspectRatio" => "2:1",
                     "aspectMode" => "fit",
@@ -640,7 +640,7 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => $prod_cate[1],
+                                            "text" => $prod_cate[5],
                                             "flex" => 2,
                                             "margin" => "sm",
                                             "align" => "start",
@@ -663,7 +663,7 @@ $jsonFlex = [
                                 ],
                                 [
                                     "type" => "text",
-                                    "text" => $prod_price[1] . " บาท",
+                                    "text" => $prod_price[5] . " บาท",
                                     "margin" => "sm",
                                     "align" => "start"
                                 ]
@@ -686,7 +686,7 @@ $jsonFlex = [
                                         ],
                                         [
                                             "type" => "text",
-                                            "text" => $prod_stock[1] . " ชิ้น",
+                                            "text" => $prod_stock[5] . " ชิ้น",
                                             "margin" => "sm",
                                             "align" => "start"
                                         ]
