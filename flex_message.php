@@ -21,98 +21,76 @@ $jsonFlex = [
                     "spacing" => "sm",
                     "contents" => [
                         [
-                            "type" => "box",
-                            "layout" => "vertical",
-                            "flex" => 2,
-                            "contents" => [
-                                [
-                                    "type" => "text",
-                                    "text" => "ลิปสติก Rouge Dior",
-                                    "flex" => 3,
-                                    "size" => "sm",
-                                    "align" => "center",
-                                    "weight" => "bold"
-                                ]
-                            ]
-                        ],
-                        [
-                            "type"=> "filler"
-                        ],
-                        [
-                            "type" => "separator",
-                            "color" => "#000000"
-                        ],
-                        [
-                            "type"=> "filler"
-                        ],
-                        [
-                            "type" => "box",
-                            "layout" => "horizontal",
-                            "contents" => [
-                                [
-                                    "type" => "box",
-                                    "layout" => "horizontal",
-                                    "contents" => [
-                                        [
-                                            "type" => "text",
-                                            "text" => "หมวดหมู่ :",
-                                            "align" => "end",
-                                            "weight" => "bold"
-                                        ],
-                                        [
-                                            "type" => "text",
-                                            "text" => "เครื่องสำอาง",
-                                            "flex" => 2,
-                                            "margin" => "none",
-                                            "align" => "center",
-                                            "wrap" => false
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ],
-                        [
-                            "type" => "box",
-                            "layout" => "horizontal",
-                            "contents" => [
-                                [
-                                    "type" => "box",
-                                    "layout" => "horizontal",
-                                    "contents" => [
-                                        [
-                                            "type" => "text",
-                                            "text" => "คงเหลือ :",
-                                            "align" => "end",
-                                            "weight" => "bold"
-                                        ],
-                                        [
-                                            "type" => "text",
-                                            "text" => "4 ชิ้น",
-                                            "flex" => 2,
-                                            "align" => "center"
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ],
-                        [
-                            "type" => "box",
-                            "layout" => "horizontal",
-                            "contents" => [
-                                [
-                                    "type" => "text",
-                                    "text" => "ราคา :",
-                                    "align" => "end",
-                                    "weight" => "bold"
+                            "type"=> "box",
+                            "layout"=> "horizontal",
+                            "contents"=> [
+                              [
+                                "type"=> "box",
+                                "layout"=> "horizontal",
+                                "contents"=> [
+                                  [
+                                    "type"=> "text",
+                                    "text"=> "หมวดหมู่สินค้า :",
+                                    "flex"=> 0,
+                                    "align"=> "start",
+                                    "weight"=> "bold"
                                 ],
-                                [
-                                    "type" => "text",
-                                    "text" => "1345 บาท",
-                                    "flex" => 2,
-                                    "align" => "center"
+                                  [
+                                    "type"=> "text",
+                                    "text"=> "เครื่องสำอาง",
+                                    "flex"=> 2,
+                                    "margin"=> "sm",
+                                    "align"=> "start",
+                                    "wrap"=> false
+                                ]
                                 ]
                             ]
-                        ]
+                            ]
+                            ],
+                          [
+                            "type"=> "box",
+                            "layout"=> "horizontal",
+                            "contents"=> [
+                              [
+                                "type"=> "text",
+                                "text"=> "ราคาสินค้า :",
+                                "flex"=> 0,
+                                "align"=> "start",
+                                "weight"=> "bold"
+                            ],
+                              [
+                                "type"=> "text",
+                                "text"=> "1345 บาท",
+                                "margin"=> "sm",
+                                "align"=> "start"
+                            ]
+                            ]
+                            ],
+                          [
+                            "type"=> "box",
+                            "layout"=> "horizontal",
+                            "contents"=> [
+                              [
+                                "type"=> "box",
+                                "layout"=> "horizontal",
+                                "contents"=> [
+                                  [
+                                    "type"=> "text",
+                                    "text"=> "คงเหลือ :",
+                                    "align"=> "start",
+                                    "weight"=> "bold"
+                                ],
+                                  [
+                                    "type"=> "text",
+                                    "text"=> "4 ชิ้น",
+                                    "flex"=> 3,
+                                    "margin"=> "sm",
+                                    "align"=> "start"
+                                ]
+                                ]
+                            ]
+                            ]
+                    ]
                     ]
                 ],
                 "footer" => [
