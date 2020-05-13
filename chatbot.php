@@ -41,11 +41,11 @@ foreach ($dataFromApi['data'] as $data) {
 }
 
 for($i = 0;$i < count($dataFromApi['data']); $i++){
-  echo $i;
+  echo $prod_name[$i];
+  include 'flex_message.php';
 }
 
-# Flex Message
-include 'flex_message.php';
+
 
 if ($message == "แสดงสินค้า") {
   $data = [
