@@ -42,7 +42,7 @@ foreach ($dataFromApi['data'] as $data) {
 
 for($i = 0;$i < count($dataFromApi['data']); $i++){
   $name[] = $prod_name[$i];
-  echo $name[$i]."<br/>";
+  echo $name[0]."<br/>";
   include 'flex_message.php';
 }
 
