@@ -60,19 +60,19 @@ foreach ($dataFromApi['data'] as $data) {
                 <hr>
                 <div class="row">
                     <div class="col-4" align="right"><b>Name : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_name[1];?></div>
+                    <div class="col-8" align="left"><? echo $prod_name[1]; ?></div>
                 </div>
                 <div class="row">
                     <div class="col-4" align="right"><b>Catagory : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_cate[1];?></div>
+                    <div class="col-8" align="left"><? echo $prod_cate[1]; ?></div>
                 </div>
                 <div class="row">
                     <div class="col-4" align="right"><b>Stock : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_stock[1]." ชิ้น";?></div>
+                    <div class="col-8" align="left"><? echo $prod_stock[1] . " ชิ้น"; ?></div>
                 </div>
                 <div class="row">
                     <div class="col-4" align="right"><b>Price : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_price[1]." บาท";?></div>
+                    <div class="col-8" align="left"><? echo $prod_price[1] . " บาท"; ?></div>
                 </div>
             </div>
         </div>
@@ -81,7 +81,11 @@ foreach ($dataFromApi['data'] as $data) {
     <div class="footer">
         <div class="row">
             <div class="col-6">
-                
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">-</button>
+                    <button type="button" class="btn btn-light" align="center">1</button>
+                    <button type="button" class="btn btn-secondary">+</button>
+                </div>
             </div>
             <div class="col-6">
 
