@@ -25,7 +25,8 @@ foreach ($dataFromApi['data'] as $data) {
   $prod_updated_time[] = $data['updated_at'];
 }
 
-
+echo count($dataFromApi['data']);
+// echo $prod_name[0];
 $data = [
     "type" => "bubble",
     "header" => [
@@ -145,7 +146,7 @@ $data = [
     ]
 ];
 
-echo $prod_name[0];
+
 
 # Flex Messages
 $jsonFlex = [
