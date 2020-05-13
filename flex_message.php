@@ -91,12 +91,12 @@ $jsonFlex = [
                                             "type" => "text",
                                             "text" => "คงเหลือ :",
                                             "align" => "start",
+                                            "Flex" => 0,
                                             "weight" => "bold"
                                         ],
                                         [
                                             "type" => "text",
                                             "text" => $prod_stock[0] . " ชิ้น",
-                                            "flex" => 3,
                                             "margin" => "sm",
                                             "align" => "start"
                                         ]
@@ -208,12 +208,12 @@ $jsonFlex = [
                                             "type" => "text",
                                             "text" => "คงเหลือ :",
                                             "align" => "start",
+                                            "flex" => 0,
                                             "weight" => "bold"
                                         ],
                                         [
                                             "type" => "text",
                                             "text" => $prod_stock[0] . " ชิ้น",
-                                            "flex" => 3,
                                             "margin" => "sm",
                                             "align" => "start"
                                         ]
