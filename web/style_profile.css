@@ -21,6 +21,9 @@ article {
     color: white;
     text-align: center;
  }
+ #count {
+     height: 100%;
+ }
 
 
 

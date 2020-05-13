@@ -82,13 +82,13 @@ foreach ($dataFromApi['data'] as $data) {
         <div class="row">
             <div class="col-6">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button id="count" type="button" class="btn btn-secondary p-0 m-0">-</button>
-                    <button id="count" type="button" class="btn btn-light p-0 m-0" align="center">1</button>
-                    <button id="count" type="button" class="btn btn-secondary p-0 m-0">+</button>
+                    <button id="count" type="button" class="btn btn-secondary p-2">-</button>
+                    <button id="count" type="button" class="btn btn-light p-2" align="center">1</button>
+                    <button id="count" type="button" class="btn btn-secondary p-2">+</button>
                 </div>
             </div>
             <div class="col-6">
-                <button type="button" class="btn btn-secondary btn-block p-0 m-0" align="center">สั่งสินค้า</button>
+                <button type="button" id="count" class="btn btn-secondary btn-block p-0 m-0" align="center">สั่งสินค้า</button>
             </div>
         </div>
     </div>
