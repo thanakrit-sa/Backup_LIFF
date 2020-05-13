@@ -78,17 +78,17 @@ foreach ($dataFromApi['data'] as $data) {
         </div>
     </div>
     <br>
-    <div class="footer">
+    <div class="footer p-0 m-0">
         <div class="row">
             <div class="col-6">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button id="count" type="button" class="btn btn-secondary btn-block">-</button>
-                    <button id="count" type="button" class="btn btn-light btn-block" align="center">1</button>
-                    <button id="count" type="button" class="btn btn-secondary btn-block">+</button>
+                    <button id="count" type="button" class="btn btn-secondary p-0 m-0">-</button>
+                    <button id="count" type="button" class="btn btn-light p-0 m-0" align="center">1</button>
+                    <button id="count" type="button" class="btn btn-secondary p-0 m-0">+</button>
                 </div>
             </div>
             <div class="col-6">
-                <button type="button" class="btn btn-secondary btn-block">+</button>
+                <button type="button" class="btn btn-secondary btn-block p-0 m-0" align="center">สั่งสินค้า</button>
             </div>
         </div>
     </div>
