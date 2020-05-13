@@ -47,10 +47,10 @@ foreach ($dataFromApi['data'] as $data) {
             <div class="card-body">
                 <div class="row">
                     <div class="col">
-                        <img src="<? echo $prod_image[0]; ?>" class="img-thumbnail shadow p-1 mb-3 bg-white rounded">
+                        <img src="<? echo $prod_image[1]; ?>" class="img-thumbnail shadow p-1 mb-3 bg-white rounded">
                     </div>
                 </div>
-                <p align="center"><b><? echo $prod_name[0]; ?></b></p>
+                <p align="center"><b><? echo $prod_name[1]; ?></b></p>
                 <hr>
                 <article class="row">
                     <div class="col-12" align="center">
@@ -58,6 +58,22 @@ foreach ($dataFromApi['data'] as $data) {
                     </div>
                 </article>
                 <hr>
+                <div class="row">
+                    <div class="col">
+                        <b>Name : </b><? echo $prod_name[1];?>
+                    </div>
+                    <div class="col">
+                        <b>Stock : </b><? echo $prod_stock[1];?>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <b>Category : </b><? echo $prod_cate[1];?>
+                    </div>
+                    <div class="col">
+                        <b>Price : </b><? echo $prod_price[1];?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
