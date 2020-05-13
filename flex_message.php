@@ -54,11 +54,12 @@ $jsonFlex = [
                             "type"=> "button",
                             "action"=> [
                               "type"=> "uri",
-                              "label"=> "Add to Cart",
+                              "label"=> "สั่งซื้อ",
                               "uri"=> "https://linecorp.com"
-                        ],
+                            ],
+                            "color"=> "#000000",
                             "style"=> "primary"
-                        ],
+                    ]
                     ]
                 ]
             ]
