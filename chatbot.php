@@ -26,17 +26,19 @@ function file_get_contents_curl($url)
 }
 
 $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees");
+// $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
 $dataFormhtml = json_decode($html, true);
+echo $data;
 
 foreach ($dataFormhtml['data'] as $data) {
   $dataName[] = $data['employee_name'];
   $dataSalary[] = $data['employee_salary'];
 }
-
+echo $dataName;
 # Flex Message
 include 'flex_message.php';
 
-if ($message == "แสดงสินค้") {
+if ($message == "แสดงสินค้า") {
   $data = [
     'replyToken' => $reply_token,
     'messages' => [$jsonFlex]
@@ -68,14 +70,14 @@ function send_reply_message($url, $post_header, $post_body)
 }
 
 # Rich Menu
-$url = 'https://api.line.me/v2/bot/richmenu';
-$rich = json_encode($jsonRich, JSON_UNESCAPED_UNICODE);
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_HEADER);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $rich);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-$response = curl_exec($ch);
-curl_close($ch);
-echo $response;
+// $url = 'https://api.line.me/v2/bot/richmenu';
+// $rich = json_encode($jsonRich, JSON_UNESCAPED_UNICODE);
+// $ch = curl_init();
+// curl_setopt($ch, CURLOPT_URL, $url);
+// curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+// curl_setopt($ch, CURLOPT_HTTPHEADER, $POST_HEADER);
+// curl_setopt($ch, CURLOPT_POSTFIELDS, $rich);
+// curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+// $response = curl_exec($ch);
+// curl_close($ch);
+// echo $response;
