@@ -29,17 +29,17 @@ foreach ($request_array['events'] as $event) {
 // // $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
 // $dataFromApi = json_decode($api, true);
 
-// foreach ($dataFromApi['data'] as $data) {
-//   $prod_name[] = $data['product_name'];
-//   $prod_image[] = $data['image_path'];
-//   $prod_stock[] = $data['stock'];
-//   $prod_price[] = $data['price'];
-//   $prod_address[] = $data['address'];
-//   $prod_cate[] = $data['category_name'];
-//   $prod_created_time[] = $data['created_at'];
-//   $prod_updated_time[] = $data['updated_at'];
-//   echo $dataFromApi['data'];
-// }
+foreach ($dataFromApi['data'] as $data) {
+  $prod_name[] = $data['product_name'];
+  $prod_image[] = $data['image_path'];
+  $prod_stock[] = $data['stock'];
+  $prod_price[] = $data['price'];
+  $prod_address[] = $data['address'];
+  $prod_cate[] = $data['category_name'];
+  $prod_created_time[] = $data['created_at'];
+  $prod_updated_time[] = $data['updated_at'];
+  echo $dataFromApi['data'];
+}
 
 include 'flex_message.php';
 include 'function.php';
