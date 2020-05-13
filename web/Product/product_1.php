@@ -44,13 +44,18 @@ foreach ($dataFromApi['data'] as $data) {
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <div class="row">
-                    <div class="col">
-                        <img src="<? echo $prod_image[0]; ?>" class="img-thumbnail">
-                    </div>
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">Content</p>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <img src="<? echo $prod_image[0]; ?>" class="img-thumbnail shadow-lg p-1 mb-5 bg-white rounded">
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 
