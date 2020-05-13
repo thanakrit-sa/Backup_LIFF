@@ -25,28 +25,20 @@ function file_get_contents_curl($url)
   return $data;
 }
 
-// $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
-$html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
-$dataFromApi = json_decode($html, true);
+$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
+// $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
+$dataFromApi = json_decode($api, true);
 
 foreach ($dataFromApi['data'] as $data) {
-  $prod_name[] = $data['employee_name'];
-  // $prod_image[] = $data['image_path'];
-  // $prod_stock[] = $data['stock'];
-  // $prod_price[] = $data['price'];
-  // $prod_address[] = $data['address'];
-  // $prod_cate[] = $data['category_name'];
-  // $prod_created_time[] = $data['created_at'];
-  // $prod_updated_time[] = $data['updated_at'];
+  $prod_name[] = $data['product_name'];
+  $prod_image[] = $data['image_path'];
+  $prod_stock[] = $data['stock'];
+  $prod_price[] = $data['price'];
+  $prod_address[] = $data['address'];
+  $prod_cate[] = $data['category_name'];
+  $prod_created_time[] = $data['created_at'];
+  $prod_updated_time[] = $data['updated_at'];
 }
-
-for($i = 0;$i < count($dataFromApi['data']); $i++){
-  $name[] = $prod_name[$i];
-  // echo $name[0]."<br/>";
-  echo $dataFlex[$i]."<br/>";
-  include 'flex_message.php';
-}
-
 
 if ($message == "แสดงสินค้า") {
   $data = [
