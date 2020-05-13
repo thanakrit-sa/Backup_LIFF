@@ -17,7 +17,7 @@ $jsonFlex = [
                             "text" => "ลิปสติก Rouge Dior",
                             "align" => "center",
                             "weight" => "bold",
-                            "color" => "#FFFFFF"
+                            "color" => "#000000"
                         ]
                     ]
                 ],
@@ -121,14 +121,6 @@ $jsonFlex = [
                             "color" => "#000000",
                             "style" => "primary"
                         ]
-                    ]
-                ],
-                "styles" => [
-                    "header" => [
-                        "backgroundColor" => "#000000"
-                    ],
-                    "footer" => [
-                        "backgroundColor" => "#FFFFFF"
                     ]
                 ]
             ]
