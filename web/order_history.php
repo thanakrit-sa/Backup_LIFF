@@ -20,6 +20,10 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
+<?
+
+?>
+
 <body>
     <!-- <div class="card p-0 m-0 bg-dark text-white" id="top">
         <div class="card-body" align="center">
