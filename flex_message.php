@@ -120,7 +120,7 @@ $data = [
     ]
 ];
 
-echo $data;
+echo $prod_name[0];
 
 # Flex Messages
 $jsonFlex = [
