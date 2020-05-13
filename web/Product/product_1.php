@@ -81,10 +81,10 @@ foreach ($dataFromApi['data'] as $data) {
     <div class="footer">
         <div class="row">
             <div class="col-6 p-0 m-0">
-                <select class="form-control form-control-lg form-control-dark" align="center">
-                    <option>ซื้อ</option>
-                    <option>สั่งซื้อ</option>
-                    <option>สั่ง</option>
+                <select class="form-control form-control-lg form-control-dark">
+                    <option><b align="center">ซื้อ</b></option>
+                    <option><b align="center">สั่งซื้อ</b></option>
+                    <option><b align="center">สั่ง</b></option>
                 </select>
             </div>
             <div class="col-6 p-0 m-0">
