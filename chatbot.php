@@ -25,15 +25,29 @@ function file_get_contents_curl($url)
   return $data;
 }
 
-$Api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
+$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
 // $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
-$dataFromApi = json_decode($Api, true);
+$dataFromApi = json_decode($api, true);
 
 foreach ($dataFromApi['data'] as $data) {
-  $dataName[] = $data['product_name'];
-  // $dataSalary[] = $data['employee_salary'];
-  echo $dataName[0];
+  $prod_name[] = $data['product_name'];
+  $prod_image[] = $data['image_path'];
+  $prod_stock[] = $data['stock'];
+  $prod_price[] = $data['price'];
+  $prod_address[] = $data['address'];
+  $prod_cate[] = $data['category_name'];
+  $prod_created_time[] = $data['created_at'];
+  $prod_updated_time[] = $data['updated_at'];
 }
+
+echo $prod_name[0];
+echo $prod_image[0];
+echo $prod_stock[0];
+echo $prod_price[0];
+echo $prod_address[0];
+echo $prod_cate[0];
+echo $prod_created_time[0];
+echo $prod_updated_time[0];
 
 # Flex Message
 include 'flex_message.php';
