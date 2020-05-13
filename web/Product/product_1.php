@@ -74,10 +74,6 @@ foreach ($dataFromApi['data'] as $data) {
                     <div class="col-4" align="right"><b>Price : </b></div>
                     <div class="col-8" align="left"><? echo $prod_price[1]." บาท";?></div>
                 </div>
-                <div class="row">
-                    <div class="col-4" align="right"><b>Address : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_address[1];?></div>
-                </div>
             </div>
         </div>
     </div>
