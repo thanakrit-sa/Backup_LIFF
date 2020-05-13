@@ -54,14 +54,14 @@ foreach ($dataFromApi['data'] as $data) {
                 <hr>
                 <article class="row">
                     <div class="col-12" align="center">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium provident error sit qui explicabo, aspernatur amet, pariatur deserunt, libero ad quas rerum! Maxime suscipit harum delectus iusto amet magnam minima?</p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium provident error sit qui explicabo, aspernatur amet, pariatur deserunt, libero ad quas rerum! Maxime suscipit harum delectus iusto amet magnam minima?
                     </div>
                 </article>
                 <hr>
-                <div class="row">
-                    <div class="col-2"><b>Name : </b></div>
-                    <div class="col-10"><? echo $prod_name[1];?></div>
-                </div>
+                <article class="row">
+                    <div class="col-4"><b>Name : </b></div>
+                    <div class="col-8"><? echo $prod_name[1];?></div>
+                </article>
             </div>
         </div>
     </div>
