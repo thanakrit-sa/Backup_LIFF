@@ -12,7 +12,7 @@ $jsonFlex = [
                     "type" => "image",
                     "url" => $prod_image[0],
                     "size" => "full",
-                    "aspectRatio" => "20:13",
+                    "aspectRatio" => "20=>13",
                     "aspectMode" => "cover"
                 ],
                 "body" => [
@@ -21,25 +21,89 @@ $jsonFlex = [
                     "spacing" => "sm",
                     "contents" => [
                         [
-                            "type" => "text",
-                            "text" => $prod_name[0],
-                            "size" => "xl",
-                            "weight" => "bold",
-                            "wrap" => true
+                            "type" => "box",
+                            "layout" => "vertical",
+                            "flex" => 2,
+                            "contents" => [
+                                [
+                                    "type" => "text",
+                                    "text" => "ลิปสติก Rouge Dior",
+                                    "flex" => 3,
+                                    "size" => "sm",
+                                    "align" => "center",
+                                    "weight" => "bold"
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "separator",
+                            "color" => "#000000"
                         ],
                         [
                             "type" => "box",
-                            "layout" => "baseline",
-                            "flex" => 1,
+                            "layout" => "horizontal",
                             "contents" => [
-
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "หมวดหมู่ =>",
+                                            "align" => "end",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => "เครื่องสำอาง",
+                                            "flex" => 2,
+                                            "margin" => "none",
+                                            "align" => "center",
+                                            "wrap" => false
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "คงเหลือ =>",
+                                            "align" => "end",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => "4 ชิ้น",
+                                            "flex" => 2,
+                                            "align" => "center"
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
                                 [
                                     "type" => "text",
-                                    "text" => $prod_stock[0],
-                                    "flex" => 0,
-                                    "size" => "sm",
-                                    "weight" => "bold",
-                                    "wrap" => true
+                                    "text" => "ราคา =>",
+                                    "align" => "end",
+                                    "weight" => "bold"
+                                ],
+                                [
+                                    "type" => "text",
+                                    "text" => "1345 บาท",
+                                    "flex" => 2,
+                                    "align" => "center"
                                 ]
                             ]
                         ]
@@ -51,15 +115,15 @@ $jsonFlex = [
                     "spacing" => "sm",
                     "contents" => [
                         [
-                            "type"=> "button",
-                            "action"=> [
-                              "type"=> "uri",
-                              "label"=> "สั่งซื้อ",
-                              "uri"=> "https://linecorp.com"
+                            "type" => "button",
+                            "action" => [
+                                "type" => "uri",
+                                "label" => "สั่งซื้อ",
+                                "uri" => "https=>//linecorp.com"
                             ],
-                            "color"=> "#000000",
-                            "style"=> "primary"
-                    ]
+                            "color" => "#000000",
+                            "style" => "primary"
+                        ]
                     ]
                 ]
             ]
