@@ -29,10 +29,10 @@ $Api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/pr
 // $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
 $dataFromApi = json_decode($Api, true);
 
-foreach ($dataFromApi['Api'] as $data) {
+foreach ($dataFromApi['data'] as $data) {
   // $dataName[] = $data['employee_name'];
   // $dataSalary[] = $data['employee_salary'];
-  echo $dataFromApi['Api'];
+  echo $data;
 }
 
 # Flex Message
