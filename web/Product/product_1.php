@@ -43,7 +43,7 @@ foreach ($dataFromApi['data'] as $data) {
 
 <body>
     <div class="container">
-        <div class="card">
+        <div class="card mb-5">
             <div class="card-body">
                 <div class="row">
                     <div class="col">
@@ -59,20 +59,8 @@ foreach ($dataFromApi['data'] as $data) {
                 </article>
                 <hr>
                 <div class="row">
-                    <div class="col">
-                        <b>Name : </b><? echo $prod_name[1];?>
-                    </div>
-                    <div class="col">
-                        <b>Stock : </b><? echo $prod_stock[1];?>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <b>Category : </b><? echo $prod_cate[1];?>
-                    </div>
-                    <div class="col">
-                        <b>Price : </b><? echo $prod_price[1];?>
-                    </div>
+                    <div class="col-2"><b>Name : </b></div>
+                    <div class="col-10"><? echo $prod_name[1];?></div>
                 </div>
             </div>
         </div>
