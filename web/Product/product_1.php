@@ -82,7 +82,7 @@ foreach ($dataFromApi['data'] as $data) {
         <div class="row">
             <div class="col-5 p-0 m-0">
                 <select class="custom-select mr-sm-2 custom-select-lg">
-                    <option selected class="px-5">ซื้อ</option>
+                    <option selected style="text-align: center">ซื้อ</option>
                     <option>สั่งซื้อ</option>
                     <option>สั่ง</option>
                 </select>
