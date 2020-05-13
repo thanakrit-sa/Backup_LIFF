@@ -118,6 +118,60 @@ $jsonFlex = [
                 "type" => "bubble",
                 "hero" => [
                     "type" => "image",
+                    "url" => "https://www.bnn.in.th/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/W/I/WIWU-Alcohol-Wipes-White-1-1588022365.jpg",
+                    "size" => "full",
+                    "aspectRatio" => "20:13",
+                    "aspectMode" => "cover"
+                ],
+                "body" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "text",
+                            "text" => $prod_name[1],
+                            "size" => "xl",
+                            "weight" => "bold",
+                            "wrap" => true
+                        ],
+                        [
+                            "type" => "box",
+                            "layout" => "baseline",
+                            "contents" => [
+
+                                [
+                                    "type" => "text",
+                                    "text" => $prod_stock[1],
+                                    "flex" => 0,
+                                    "size" => "sm",
+                                    "weight" => "bold",
+                                    "wrap" => true
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                "footer" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "button",
+                            "action" => [
+                                "type" => "uri",
+                                "label" => "Detail 2",
+                                "uri" => "https://liff.line.me/1654173341-pJegLPb3"
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            [
+                "type" => "bubble",
+                "hero" => [
+                    "type" => "image",
                     "url" => "https://www.bnn.in.th/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/7/3/7340055337076-1-1588524115.jpg",
                     "size" => "full",
                     "aspectRatio" => "20:13",
