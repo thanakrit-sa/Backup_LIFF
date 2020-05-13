@@ -49,8 +49,12 @@ foreach ($dataFromApi['data'] as $data) {
                         <img src="<? echo $prod_image[0]; ?>" class="img-thumbnail shadow p-1 mb-5 bg-white rounded">
                     </div>
                 </div>
-                <p><b><? echo $prod_name[0]; ?></b></p>
+                <p align="center"><b><? echo $prod_name[0]; ?></b></p>
                 <hr>
+
+            </div>
+            <div class="card-footer">
+                footer
             </div>
         </div>
     </div>
