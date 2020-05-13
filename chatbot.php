@@ -32,7 +32,7 @@ $dataFromApi = json_decode($Api, true);
 foreach ($dataFromApi['data'] as $data) {
   // $dataName[] = $data['employee_name'];
   // $dataSalary[] = $data['employee_salary'];
-  echo $data;
+  echo $dataFromApi['data'];
 }
 
 # Flex Message
