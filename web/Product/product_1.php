@@ -41,24 +41,24 @@
 // }
 function file_get_contents_curl($url)
 {
-  $ch = curl_init();
-  curl_setopt($ch, CURLOPT_HEADER, 0);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  curl_setopt($ch, CURLOPT_URL, $url);
-  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
-  $data = curl_exec($ch);
-  curl_close($ch);
-  return $data;
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
+    $data = curl_exec($ch);
+    curl_close($ch);
+    return $data;
 }
 
 $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
 $dataFromApi = json_decode($html, true);
 
 foreach ($dataFromApi['data'] as $data) {
-  $name[] = $data['employee_name'];
-  $cate[] = $data['employee_name'];
-  $stock[] = $data['employee_age'];
-  $price[] = $data['employee_salary'];
+    $name[] = $data['employee_name'];
+    $cate[] = $data['employee_name'];
+    $stock[] = $data['employee_age'];
+    $price[] = $data['employee_salary'];
 }
 ?>
 
@@ -102,15 +102,18 @@ foreach ($dataFromApi['data'] as $data) {
     <div class="footer">
         <div class="row">
             <div class="col-5 p-0 m-0">
-                <select class="custom-select mr-sm-2 custom-select-lg">
-                    <option selected>ซื้อ</option>
-                    <option>สั่งซื้อ</option>
-                    <option>สั่ง</option>
-                </select>
+                <form method="POST" action="../Detail_Product/detail_1.php">
+                    <select class="custom-select mr-sm-2 custom-select-lg">
+                        <option selected>ซื้อ</option>
+                        <option>สั่งซื้อ</option>
+                        <option>สั่ง</option>
+                    </select>
+
             </div>
             <div class="col-7 p-0 m-0">
-                <button type="button" id="count" class="btn btn-dark btn-block btn-lg p-2" align="center">สั่งสินค้า</button>
+                <button type="submit" id="count" class="btn btn-dark btn-block btn-lg p-2" align="center">สั่งสินค้า</button>
             </div>
+            </form>
         </div>
     </div>
 </body>
