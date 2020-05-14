@@ -28,7 +28,7 @@
                         <div class="card-body p-0 m-0">
                             <div class="row p-0 m-0">
                                 <div class="col-3 p-0 m-0">
-                                    <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
+                                    <img src="https://images.barrons.com/im-185870?width=1260&size=1.5005861664712778" id="img-content" class="img-fluid p-0 m-0">
                                 </div>
                                 <article class="col-8 py-2" align="left">
                                     <b>Receipt</b> RTXY-02214445332 <br>
@@ -114,7 +114,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-12" align="center">
-                        <img src="top.jpg" id="img-content" class="img-thumbnail p-0 m-0">
+                        <img src="https://images.barrons.com/im-185870?width=1260&size=1.5005861664712778" id="img-content" class="img-thumbnail p-0 m-0">
                     </div>
                 </div>
                 <hr>

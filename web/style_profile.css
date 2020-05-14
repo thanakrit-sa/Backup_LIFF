@@ -39,11 +39,6 @@ body {
     background-image: url("top.jpg");
 }
 
-#img-content {
-    width: 100%;
-    height: 100%;
-}
-
 .received {
     height: 15px;
     width: 15px;
