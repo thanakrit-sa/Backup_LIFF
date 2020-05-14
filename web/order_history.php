@@ -18,7 +18,7 @@
 ?>
 
 <body>
-    <div class="container mt-1">
+    <div class="container mt-2 mb-1">
         <div class="card">
             <div class="card-body" align="center">
                 <h3>Order History</h3>
