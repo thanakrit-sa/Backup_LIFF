@@ -30,7 +30,7 @@
                             <div class="col-4 p-0 m-0">
                                 <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
                             </div>
-                            <article class="col-5 py-5" align="left">
+                            <article class="col-5 py-2" align="left">
                                 Lorem ipsum dolor sit amet consectetur
                             </article>
                             <div class="col-3"></div>
