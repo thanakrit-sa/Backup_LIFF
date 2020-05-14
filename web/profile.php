@@ -44,6 +44,7 @@
                 </div>
             </div>
         </div>
+        <br>
         <div class="footer_allpage">
             <div class="row" align="center">
                 <div class="col-4">
