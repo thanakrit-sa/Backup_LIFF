@@ -194,7 +194,7 @@ $jsonFlex = [
                                             "type" => "text",
                                             "text" => $prod_cate[0],
                                             "flex" => 2,
-                                            "margin" => "sm",
+                                            "margin" => "xs",
                                             "align" => "start",
                                             "wrap" => false
                                         ]
