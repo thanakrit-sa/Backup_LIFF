@@ -35,7 +35,7 @@
                                 <b>Status</b> Received
                             </article>
                             <div class="col-1 p-0 m-0">
-                                <span class="received"></span>
+                                <span class="received shadow p-0 mb-0 bg-white rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                                 <b>Status</b> Sending
                             </article>
                             <div class="col-1 p-0 m-0">
-                                <span class="sending"></span>
+                                <span class="sending shadow p-0 mb-0 bg-white rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                                 <b>Status</b> Cancel
                             </article>
                             <div class="col-1 p-0 m-0">
-                                <span class="cancel"></span>
+                                <span class="cancel shadow p-0 mb-0 bg-white rounded"></span>
                             </div>
                         </div>
                     </div>
