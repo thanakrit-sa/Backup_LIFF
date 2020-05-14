@@ -140,7 +140,7 @@ $jsonFlex = [
                     "type" => "image",
                     "url" => $prod_image[0],
                     "size" => "full",
-                    "aspectRatio" => "20:13",
+                    "aspectRatio" => "1:1",
                     "aspectMode" => "cover",
                 ],
                 "body" => [
@@ -272,7 +272,7 @@ $jsonFlex = [
                     "type" => "image",
                     "url" => $prod_image[1],
                     "size" => "full",
-                    "aspectRatio" => "20:13",
+                    "aspectRatio" => "1:1",
                     "aspectMode" => "cover",
                 ],
                 "body" => [
@@ -404,7 +404,7 @@ $jsonFlex = [
                     "type" => "image",
                     "url" => $prod_image[2],
                     "size" => "full",
-                    "aspectRatio" => "20:13",
+                    "aspectRatio" => "1:1",
                     "aspectMode" => "cover",
                 ],
                 "body" => [
@@ -536,7 +536,7 @@ $jsonFlex = [
                     "type" => "image",
                     "url" => $prod_image[3],
                     "size" => "full",
-                    "aspectRatio" => "20:13",
+                    "aspectRatio" => "1:1",
                     "aspectMode" => "cover",
                 ],
                 "body" => [
@@ -668,7 +668,7 @@ $jsonFlex = [
                     "type" => "image",
                     "url" => $prod_image[4],
                     "size" => "full",
-                    "aspectRatio" => "20:13",
+                    "aspectRatio" => "1:1",
                     "aspectMode" => "cover",
                 ],
                 "body" => [
