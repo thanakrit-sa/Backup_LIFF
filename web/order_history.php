@@ -30,12 +30,12 @@
                             <div class="col-3 p-0 m-0">
                                 <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
                             </div>
-                            <article class="col-8 py-2" align="left">
+                            <article class="col-7 py-2" align="left">
                                 <b>Receipt</b> RTXY-02214445332 <br>
                                 <b>Date</b> 20/12/2060 <br>
                                 <b>Time</b> 12:45 AM
                             </article>
-                            <div class="col-1">
+                            <div class="col-2">
                                 <i class='fas fa-greater-than' style='font-size:20px'></i>
                             </div>
                         </div>
