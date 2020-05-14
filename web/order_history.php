@@ -20,7 +20,7 @@
 <body>
     <br>
     <div class="container">
-        <div class="card p-0 mb-5 shadow">
+        <div class="card shadow p-0 mb-0 bg-white rounded">
             <div class="card-body" align="center">
                 <h3>Order History</h3>
                 <hr>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="card">
+                <div class="card shadow p-0 mb-0 bg-white rounded">
                     <div class="card-body p-0 m-0">
                         <div class="row p-0 m-0">
                             <div class="col-3 p-0 m-0">
