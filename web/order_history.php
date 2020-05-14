@@ -25,9 +25,9 @@
                 <h3>Order History</h3>
                 <hr>
                 <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-4">
+                    <div class="card-body p-0 m-0">
+                        <div class="row p-0 m-0">
+                            <div class="col-4 p-0 m-0">
                                 <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
                             </div>
                             <article class="col-5" align="left">
