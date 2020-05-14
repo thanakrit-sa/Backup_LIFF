@@ -25,14 +25,7 @@
 ?>
 
 <body>
-    <div class="row">
-        <div class="col">
-            <img src="top.jpg" id="top-image" class="img-fluid p-0 m-0">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col p-0 m-0" id="content">
-            km;
-        </div>
+    <div class="bg">
+  
     </div>
     
