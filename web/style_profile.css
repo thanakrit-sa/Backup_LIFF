@@ -43,6 +43,12 @@ body {
     width: 100%;
     height: 100%;
 }
-#a {
+#received {
     background-color: green;
+}
+#sending {
+    background-color: blue;
+}
+#cancel {
+    background-color: red;
 }

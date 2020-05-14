@@ -33,9 +33,31 @@
                             <article class="col-8 py-2" align="left">
                                 <b>Receipt</b> RTXY-02214445332 <br>
                                 <b>Date</b> 20/12/2060 12:45 AM<br>
-                                <b>Status</b> 
+                                <b>Status</b> Received
                             </article>
-                            <div id="a" class="col-1 p-0 m-0"></div>
+                            <div id="received" class="col-1 p-0 m-0"></div>
+                        </div>
+                        <div class="row p-0 m-0">
+                            <div class="col-3 p-0 m-0">
+                                <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
+                            </div>
+                            <article class="col-8 py-2" align="left">
+                                <b>Receipt</b> RTXY-02214445332 <br>
+                                <b>Date</b> 20/12/2060 12:45 AM<br>
+                                <b>Status</b> Sending
+                            </article>
+                            <div id="sending" class="col-1 p-0 m-0"></div>
+                        </div>
+                        <div class="row p-0 m-0">
+                            <div class="col-3 p-0 m-0">
+                                <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
+                            </div>
+                            <article class="col-8 py-2" align="left">
+                                <b>Receipt</b> RTXY-02214445332 <br>
+                                <b>Date</b> 20/12/2060 12:45 AM<br>
+                                <b>Status</b> Cancel
+                            </article>
+                            <div id="cancel" class="col-1 p-0 m-0"></div>
                         </div>
                     </div>
                 </div>
