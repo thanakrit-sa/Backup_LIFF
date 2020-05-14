@@ -46,7 +46,6 @@ foreach ($dataFromApi['data'] as $data) {
   $prod_cate[] = $data['category_name'];
   $prod_created_time[] = $data['created_at'];
   $prod_updated_time[] = $data['updated_at'];
-  echo $dataFromApi['data'];
 }
 ?>
 
@@ -57,7 +56,7 @@ foreach ($dataFromApi['data'] as $data) {
                 <img src="<?=$prod_image[0]?>" width="100%" height="100%">
             </div>
             <div class="col-7">
-                <h5><?=$name[0]?></h5>
+                <h5><?=$prod_name[0]?></h5>
                 <p>Lorem ipsum dolor !</p>
                 <b>Status : </b><?=$status?><br>
                 <b>Price : </b><?=$prod_price[0]?> THB
