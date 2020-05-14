@@ -31,7 +31,9 @@
                                 <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
                             </div>
                             <article class="col-5 py-2" align="left">
-                                Lorem ipsum dolor sit amet consectetur
+                                <b>Recript :</b> RTXY-02214445332 <br>
+                                <b>Name product :</b> Converse All Star 1998 <br>
+                                <b>Date/Time :</b> 20/12/2060 12:45 AM 
                             </article>
                             <div class="col-3"></div>
                         </div>
