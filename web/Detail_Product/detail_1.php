@@ -19,6 +19,10 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
+<?
+$status = $_POST['test'];
+?>
+
 <body>
     <div class="container">
         <div class="row">
@@ -28,7 +32,7 @@
             <div class="col-7">
                 <h5>Product 1</h5>
                 <p>Lorem ipsum dolor !</p>
-                <b>Status : </b>สั่งซื้อ <br>
+                <b>Status : </b><?=$status?><br>
                 <b>Price : </b>3,259 THB
             </div>
         </div>
