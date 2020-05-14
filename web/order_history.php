@@ -30,3 +30,9 @@
             <img src="top.jpg" id="top-image" class="img-fluid p-0 m-0">
         </div>
     </div>
+    <div class="row">
+        <div class="col" id="content">
+            
+        </div>
+    </div>
+    
