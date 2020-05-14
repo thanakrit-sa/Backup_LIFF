@@ -24,14 +24,18 @@
             <div class="card-body" align="center">
                 <h3>Order History</h3>
                 <hr>
-                <div class="row">
-                    <div class="col-4">
-                        <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
+                            </div>
+                            <article class="col-5" align="left">
+                                Lorem ipsum dolor sit amet consectetur
+                            </article>
+                            <div class="col-3"></div>
+                        </div>
                     </div>
-                    <article class="col-5" align="left">
-                        Lorem ipsum dolor sit amet consectetur 
-                    </article>
-                    <div class="col-3"></div>
                 </div>
             </div>
         </div>
