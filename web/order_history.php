@@ -18,9 +18,11 @@
 ?>
 
 <body>
-    <div class="card p-0 mb-5 shadow">
-        <div class="card-body">
-            
+    <div class="container">
+        <div class="card p-0 mb-5 shadow">
+            <div class="card-body">
+
+            </div>
         </div>
     </div>
 </body>
