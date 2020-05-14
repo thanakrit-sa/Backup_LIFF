@@ -20,8 +20,9 @@
 <body>
     <div>
     <img src="top.jpg" class="img-fluid">
-    </div>
     <div class="content">
         sadsadas
     </div>
+    </div>
+    
 </body>
