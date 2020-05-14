@@ -34,7 +34,9 @@
                                 <b>Date</b> 20/12/2060 12:45 AM<br>
                                 <b>Status</b> Received
                             </article>
-                            <div id="received" class="col-1 p-0 m-0"></div>
+                            <div class="col-1 p-0 m-0">
+                                <span class="received"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -50,7 +52,9 @@
                                 <b>Date</b> 20/12/2060 12:45 AM<br>
                                 <b>Status</b> Sending
                             </article>
-                            <div id="sending" class="col-1 p-0 m-0"></div>
+                            <div class="col-1 p-0 m-0">
+                                <span class="sending"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,7 +71,7 @@
                                 <b>Status</b> Cancel
                             </article>
                             <div class="col-1 p-0 m-0">
-                                <span class="dot"></span>
+                                <span class="cancel"></span>
                             </div>
                         </div>
                     </div>
