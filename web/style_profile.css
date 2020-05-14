@@ -39,18 +39,19 @@ body {
     height: 100%;
 }
 .bg {
-    background-image: url("top.jpg");
     height: 30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: absolute;
+}
+
+#top-image {
+    height: 30%;
 }
 
 .content {
     background-color: black;
     width: 100%;
     height: 100%;
-    margin-top: 50%;
+    margin-top: 20%;
     border-radius: 50px;
     color: white;
 }

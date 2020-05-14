@@ -19,7 +19,7 @@
 
 <body>
     <div class="bg">
-
+    <img src="top.jpg" class="img-fluid">
     </div>
     <div class="content">
         sadsadas
