@@ -68,3 +68,6 @@ body {
     display: inline-block;
     box-shadow: 2px 2px 2px rgb(156, 156, 156);
 }
+ a {
+     color: black;
+ }
