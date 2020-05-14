@@ -105,12 +105,6 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Data</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-12" align="center">
@@ -125,12 +119,12 @@
                         <b>Amount : </b> 2 Items<br>
                         <b>Total : </b> 9,000 THB <br>
                     </article>
-                    <div class="col-6">
+                    <article class="col-6">
                         <b>Delivery date : </b> 20/12/2060 12:45 AM <br>
                         <b>Received date: </b> 20/12/2060 12:45 AM <br>
                         <b>Shipped by : </b> Kerry Express<br>
                         <b>Status : </b> Received <br>
-                    </div>
+                    </article>
                 </div>
             </div>
             <div class="modal-footer">
