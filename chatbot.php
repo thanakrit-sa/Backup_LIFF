@@ -58,13 +58,9 @@ $dataFromApi = json_decode($html, true);
 foreach ($dataFromApi['data'] as $data) {
   $name[] = $data['employee_name'];
   $cate[] = $data['employee_name'];
-  $stcok[] = $data['employee-salary'];
+  $stcok[] = $data['employee_salary'];
   $price[] = $data['employee_age'];
 }
-  echo $name[0];
-  echo $cate[0];
-  echo $stock[0];
-  echo $price[0];
 
 include 'flex_message.php';
 
