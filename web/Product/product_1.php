@@ -57,8 +57,8 @@ $dataFromApi = json_decode($html, true);
 foreach ($dataFromApi['data'] as $data) {
   $name[] = $data['employee_name'];
   $cate[] = $data['employee_name'];
-  $stcok[] = $data['employee_salary'];
-  $price[] = $data['employee_age'];
+  $stock[] = $data['employee_age'];
+  $price[] = $data['employee_salary'];
 }
 ?>
 
