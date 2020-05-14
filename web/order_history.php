@@ -21,12 +21,16 @@
     <br>
     <div class="container">
         <div class="card p-0 mb-5 shadow">
-            <div class="card-body">
+            <div class="card-body" align="center">
                 <h3>Order History</h3>
                 <hr>
                 <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-5"></div>
+                    <div class="col-4">
+                        <img src="top.jpg" class="img-thumbnail">
+                    </div>
+                    <div class="col-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquam perferendis quia ullam, tenetur quod a esse corrupti. Nemo, doloribus. Rerum, nisi! Autem, illo! Aut asperiores quo rem reprehenderit ratione.
+                    </div>
                     <div class="col-3"></div>
                 </div>
             </div>
