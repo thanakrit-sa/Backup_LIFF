@@ -54,9 +54,12 @@ function file_get_contents_curl($url)
 
 $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
 $dataFromApi = json_decode($html, true);
-echo $html;
+
 foreach ($dataFromApi['data'] as $data) {
-  
+  $name[] = $data['employee_name'];
+  $cate[] = $data['employee_name'];
+  $stcok[] = $data['employee-salary'];
+  $price[] = $data['employee_age'];
 }
 
 include 'flex_message.php';
