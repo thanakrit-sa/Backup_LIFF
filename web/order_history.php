@@ -36,7 +36,7 @@
                                 <b>Time</b> 12:45 AM
                             </article>
                             <div class="col-1">
-                                <i class='fas fa-greater-than' style='font-size:36px'></i>
+                                <i class='fas fa-greater-than' style='font-size:20px'></i>
                             </div>
                         </div>
                     </div>
