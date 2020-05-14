@@ -140,7 +140,7 @@ $jsonFlex = [
                     "type" => "image",
                     "url" => $prod_image[0],
                     "size" => "full",
-                    "aspectRatio" => "2:1",
+                    "aspectRatio" => "20:13",
                     "aspectMode" => "cover",
                 ],
                 "body" => [
