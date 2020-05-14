@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-body p-1 m-0">
+            <div class="card-body p-1 mb-5">
                 <div class="row">
                     <div class="col-4" style="border-right: groove;">
                         <img src="https://www.bnn.in.th/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/7/3/7340055355254-1-1588133386.jpg"
