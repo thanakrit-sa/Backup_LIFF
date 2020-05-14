@@ -32,12 +32,10 @@
                             </div>
                             <article class="col-8 py-2" align="left">
                                 <b>Receipt</b> RTXY-02214445332 <br>
-                                <b>Date</b> 20/12/2060 <br>
-                                <b>Time</b> 12:45 AM
+                                <b>Date</b> 20/12/2060 12:45 AM<br>
+                                <b>Status</b> 
                             </article>
-                            <div class="col-1 p-0 m-0">
-                                <i class="fas fa-greater-than p-0 m-0" style='font-size:15px'></i>
-                            </div>
+                            <div id="a" class="col-1 p-0 m-0"></div>
                         </div>
                     </div>
                 </div>
