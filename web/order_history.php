@@ -66,13 +66,15 @@
                                 <b>Date</b> 20/12/2060 12:45 AM<br>
                                 <b>Status</b> Cancel
                             </article>
-                            <div id="cancel" class="col-1 p-0 m-0"></div>
+                            <div class="col-1 p-0 m-0">
+                                <span class="dot"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <hr>
                 <nav aria-label="Page navigation example p-0 m-0">
-                    <ul class="pagination justify-content-center">
+                    <ul class="pagination justify-content-center p-0 m-0">
                         <li class="page-item disabled">
                             <a class="page-link" href="#" tabindex="-1">Previous</a>
                         </li>
