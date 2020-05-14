@@ -126,7 +126,10 @@
                         <b>Total : </b> 9,000 THB <br>
                     </article>
                     <div class="col-6">
-
+                        <b>Delivery date : </b> 20/12/2060 12:45 AM <br>
+                        <b>Received date: </b> 20/12/2060 12:45 AM <br>
+                        <b>Shipped by : </b> Kerry Express<br>
+                        <b>Status : </b> Received <br>
                     </div>
                 </div>
             </div>
