@@ -35,8 +35,8 @@
                                 <b>Date</b> 20/12/2060 <br>
                                 <b>Time</b> 12:45 AM
                             </article>
-                            <div class="col-2">
-                                <i class='fas fa-greater-than' style='font-size:20px'></i>
+                            <div class="col-2 p-0 m-0">
+                                <i class="fas fa-greater-than p-0 m-0" style='font-size:20px'></i>
                             </div>
                         </div>
                     </div>
