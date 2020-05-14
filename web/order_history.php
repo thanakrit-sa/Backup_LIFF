@@ -96,7 +96,7 @@
             </div>
         </div>
         <p></p>
-        <div class="card shadow p-0 m-0 bg-white rounded">
+        <div class="card shadow p-0 mb-5 bg-white rounded">
             <div class="card-header text-white bg-dark p-1 m-0">
                 <div class="row">
                     <div class="col-9 pt-1 mt-1">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-body p-1 mb-5">
+            <div class="card-body p-1 m-0">
                 <div class="row">
                     <div class="col-4" style="border-right: groove;">
                         <img src="https://www.bnn.in.th/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/7/3/7340055355254-1-1588133386.jpg"
@@ -129,7 +129,7 @@
         </div>
     </div>
     <br>
-    <div class="footer2">
+    <div class="footer_order footer_order-dark">
         
             <nav>
                 <ul class="pagination justify-content-center p-1 m-1">

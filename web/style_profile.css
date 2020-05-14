@@ -21,13 +21,22 @@ article {
     color: white;
     text-align: center;
  }
- .footer2 {
+ .footer_order {
     position: fixed;
     height: 12%;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #2e2e2e;
+    color: white;
+    text-align: center;
+ }
+ .footer_profile {
+    position: fixed;
+    height: 12%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     color: white;
     text-align: center;
  }

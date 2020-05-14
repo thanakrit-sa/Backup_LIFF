@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer2">
+            <div class="footer_profile">
                 <div class="row" align="center">
                     <div class="col-4">
                         <a href="https://www.facebook.com"><button type="button" class="btn btn-dark px-3 m-0">
