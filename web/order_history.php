@@ -19,9 +19,9 @@
 
 <body>
     <div class="bg">
-        <div class="content">
-            sadsadas
-        </div>
-    </div>
 
+    </div>
+    <div class="content">
+        sadsadas
+    </div>
 </body>
