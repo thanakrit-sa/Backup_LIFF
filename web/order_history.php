@@ -129,8 +129,8 @@
         </div>
     </div>
     <br>
-    <div class="card p-0 m-0 bg-dark rounded">
-        <div class="card-body p-1 m-1">
+    <div class="footer">
+        
             <nav>
                 <ul class="pagination justify-content-center p-1 m-1">
                     <li class="page-item disabled">
@@ -144,7 +144,7 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        
     </div>
 </body>
 

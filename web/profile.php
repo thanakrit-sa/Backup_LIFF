@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-footer text-white bg-dark" id="footer">
+            <div class="footer">
                 <div class="row" align="center">
                     <div class="col-4">
                         <a href="https://www.facebook.com"><button type="button" class="btn btn-dark px-3 m-0">
