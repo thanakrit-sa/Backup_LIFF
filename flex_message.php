@@ -136,31 +136,45 @@ $jsonFlex = [
         "contents" => [
             [
                 "type" => "bubble",
-                "header" => [
-                    "type" => "box",
-                    "layout" => "vertical",
-                    "contents" => [
-                        [
-                            "type" => "text",
-                            "text" => $prod_name[0],
-                            "align" => "center",
-                            "weight" => "bold",
-                            "color" => "#000000"
-                        ]
-                    ]
-                ],
                 "hero" => [
                     "type" => "image",
                     "url" => $prod_image[0],
                     "size" => "full",
                     "aspectRatio" => "2:1",
-                    "aspectMode" => "fit",
+                    "aspectMode" => "cover",
                 ],
                 "body" => [
                     "type" => "box",
                     "layout" => "vertical",
                     "spacing" => "sm",
                     "contents" => [
+                        [
+                            "type" => "box",
+                            "layout" => "horizontal",
+                            "contents" => [
+                                [
+                                    "type" => "box",
+                                    "layout" => "horizontal",
+                                    "contents" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "ชื่อสินค้า :",
+                                            "flex" => 0,
+                                            "align" => "start",
+                                            "weight" => "bold"
+                                        ],
+                                        [
+                                            "type" => "text",
+                                            "text" => $prod_name[0],
+                                            "flex" => 2,
+                                            "margin" => "sm",
+                                            "align" => "start",
+                                            "wrap" => false
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ],
                         [
                             "type" => "box",
                             "layout" => "horizontal",
