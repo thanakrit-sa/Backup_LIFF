@@ -36,8 +36,8 @@ $status = $_POST['test'];
 
 include '../../function.php';
 
-$html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
-$dataFromApi = json_decode($html, true);
+$api = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
+$dataFromApi = json_decode($api, true);
 
 foreach ($dataFromApi['data'] as $data) {
     $name[] = $data['employee_name'];

@@ -39,20 +39,11 @@
 //     $prod_created_time[] = $data['created_at'];
 //     $prod_updated_time[] = $data['updated_at'];
 // }
-function file_get_contents_curl($url)
-{
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_HEADER, 0);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
-    $data = curl_exec($ch);
-    curl_close($ch);
-    return $data;
-}
 
-$html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
-$dataFromApi = json_decode($html, true);
+include '../../function.php';
+
+$api = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
+$dataFromApi = json_decode($api, true);
 
 foreach ($dataFromApi['data'] as $data) {
     $name[] = $data['employee_name'];
