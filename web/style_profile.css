@@ -35,7 +35,9 @@ option {
     text-align: center;
     padding-left: 10px;
 }
-
+body {
+    height: 100%;
+}
 .bg {
     background-image: url("top.jpg");
     height: 30%;
