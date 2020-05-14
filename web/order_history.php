@@ -113,11 +113,11 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-5">
                         <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
                     </div>
-                    <article class="col-8" align="left">
-                        <b>Name : </b> Product1 <br>
+                    <article class="col-7" align="left">
+                        <b>Name : </b> Nike Air Jordan 1S <br>
                         <b>Category : </b> Sneakers <br>
                         <b>Amount : </b> 2 Items<br>
                         <b>Total : </b> 9,000 THB <br>
