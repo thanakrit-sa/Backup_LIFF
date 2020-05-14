@@ -11,6 +11,12 @@ article {
 #top {
     box-shadow: 5px 5px 5px black;
 }
+
+#img-content {
+    width: 100%;
+    height: 100%;
+}
+
 .footer {
     position: fixed;
     height: 10%;
