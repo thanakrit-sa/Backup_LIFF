@@ -24,14 +24,29 @@ $status = $_POST['status'];
 
 include '../../function.php';
 
-$api = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
+// $api = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
+// $dataFromApi = json_decode($api, true);
+
+// foreach ($dataFromApi['data'] as $data) {
+//     $name[] = $data['employee_name'];
+//     $cate[] = $data['employee_name'];
+//     $stock[] = $data['employee_age'];
+//     $price[] = $data['employee_salary'];
+// }
+
+$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
 $dataFromApi = json_decode($api, true);
 
 foreach ($dataFromApi['data'] as $data) {
-    $name[] = $data['employee_name'];
-    $cate[] = $data['employee_name'];
-    $stock[] = $data['employee_age'];
-    $price[] = $data['employee_salary'];
+  $prod_name[] = $data['product_name'];
+  $prod_image[] = $data['image_path'];
+  $prod_stock[] = $data['stock'];
+  $prod_price[] = $data['price'];
+  $prod_address[] = $data['address'];
+  $prod_cate[] = $data['category_name'];
+  $prod_created_time[] = $data['created_at'];
+  $prod_updated_time[] = $data['updated_at'];
+  echo $dataFromApi['data'];
 }
 ?>
 
@@ -39,13 +54,13 @@ foreach ($dataFromApi['data'] as $data) {
     <div class="container">
         <div class="row">
             <div class="col-5" align="center">
-                <img src="https://www.bnn.in.th/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/S/a/Samsung-Tablet-Galaxy-Tab-S6-Lite-4_2B64GB-Wi-Fi-SM-P610NZIATHL-Chiffon-Pink-1-1588867299.jpg" width="100%" height="100%">
+                <img src="<?=$prod_image[0]?>" width="100%" height="100%">
             </div>
             <div class="col-7">
                 <h5><?=$name[0]?></h5>
                 <p>Lorem ipsum dolor !</p>
                 <b>Status : </b><?=$status?><br>
-                <b>Price : </b><?=$price[0]?> THB
+                <b>Price : </b><?=$prod_price[0]?> THB
             </div>
         </div>
         <hr>
