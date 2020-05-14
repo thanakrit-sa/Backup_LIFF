@@ -38,13 +38,10 @@ option {
 body {
     height: 100%;
 }
-.bg {
-    height: 30%;
-    position: absolute;
-}
 
 #top-image {
     height: 30%;
+    position: absolute;
 }
 
 .content {

@@ -18,7 +18,7 @@
 ?>
 
 <body>
-    <div class="bg">
+    <div>
     <img src="top.jpg" class="img-fluid">
     </div>
     <div class="content">
