@@ -37,7 +37,7 @@ option {
 }
 
 #top-image {
-    height: 30%;
+    height: 20%;
     position: absolute;
 }
 #content {
@@ -45,5 +45,6 @@ option {
     height: 100%;
     padding-top: 20%;
     background-color: black;
+    position: absolute;
     border-radius: 80px;
 }
