@@ -33,10 +33,10 @@
                             <article class="col-8 py-2" align="left">
                                 <b>Receipt</b> RTXY-02214445332 <br>
                                 <b>Date</b> 20/12/2060 <br>
-                                <b>Time</b> 12:45 AM 
+                                <b>Time</b> 12:45 AM
                             </article>
                             <div class="col-1">
-                                
+                                <i class='fas fa-greater-than' style='font-size:36px'></i>
                             </div>
                         </div>
                     </div>
