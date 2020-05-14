@@ -22,17 +22,19 @@
 <?
 $status = $_POST['test'];
 
-function file_get_contents_curl($url)
-{
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_HEADER, 0);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
-    $data = curl_exec($ch);
-    curl_close($ch);
-    return $data;
-}
+// function file_get_contents_curl($url)
+// {
+//     $ch = curl_init();
+//     curl_setopt($ch, CURLOPT_HEADER, 0);
+//     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//     curl_setopt($ch, CURLOPT_URL, $url);
+//     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
+//     $data = curl_exec($ch);
+//     curl_close($ch);
+//     return $data;
+// }
+
+include '../../function.php';
 
 $html = file_get_contents_curl("http://dummy.restapiexample.com/api/v1/employees"); #API Dummy
 $dataFromApi = json_decode($html, true);
@@ -52,10 +54,10 @@ foreach ($dataFromApi['data'] as $data) {
                 <img src="https://www.bnn.in.th/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/S/a/Samsung-Tablet-Galaxy-Tab-S6-Lite-4_2B64GB-Wi-Fi-SM-P610NZIATHL-Chiffon-Pink-1-1588867299.jpg" width="100%" height="100%">
             </div>
             <div class="col-7">
-                <h5><?=$name?></h5>
+                <h5><?=$name[0]?></h5>
                 <p>Lorem ipsum dolor !</p>
                 <b>Status : </b><?=$status?><br>
-                <b>Price : </b><?=$price?> THB
+                <b>Price : </b><?=$price[0]?> THB
             </div>
         </div>
         <hr>
