@@ -51,7 +51,7 @@ body {
     background-color: green;
     border-radius: 50%;
     display: inline-block;
-    box-shadow: inset 2px 2px 2px black;
+    box-shadow: inset 1px 1px 1px black;
 }
 .sending {
     height: 15px;
@@ -59,7 +59,7 @@ body {
     background-color: blue;
     border-radius: 50%;
     display: inline-block;
-    box-shadow: inset 2px 2px 2px black;
+    box-shadow: inset 1px 1px 1px black;
 }
 .cancel {
     height: 15px;
@@ -67,7 +67,7 @@ body {
     background-color: red;
     border-radius: 50%;
     display: inline-block;
-    box-shadow: inset 2px 2px 2px black;
+    box-shadow: inset 1px 1px 1px black;
 }
  a {
      color: black;
