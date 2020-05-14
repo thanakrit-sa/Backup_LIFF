@@ -117,10 +117,10 @@
                         <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
                     </div>
                     <article class="col-8" align="left">
-                        <b>Name Product : </b> Product1 <br>
-                        <b>Name Product : </b> Product1 <br>
-                        <b>Name Product : </b> Product1 <br>
-                        <b>Name Product : </b> Product1 <br>
+                        <b>Name : </b> Product1 <br>
+                        <b>Category : </b> Sneakers <br>
+                        <b>Amount : </b> 2 Items<br>
+                        <b>Total : </b> 9,000 THB <br>
                     </article>
                 </div>
             </div>
