@@ -120,15 +120,15 @@
                         <b>Total : </b> 9,000 THB <br>
                     </article>
                     <article class="col-6">
-                        <b>Delivery date : </b> 20/12/2060 12:45 AM <br>
-                        <b>Received date: </b> 20/12/2060 12:45 AM <br>
+                        <b>Delivery date : </b> 20/12/2060 <br>
+                        <b>Received date: </b> 20/12/2060 <br>
                         <b>Shipped by : </b> Kerry Express<br>
                         <b>Status : </b> Received <br>
                     </article>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-dark btn-block p-0 m-0" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
