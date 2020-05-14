@@ -18,10 +18,17 @@
 ?>
 
 <body>
+    <br>
     <div class="container">
         <div class="card p-0 mb-5 shadow">
             <div class="card-body">
-
+                <h3>Order History</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-5"></div>
+                    <div class="col-3"></div>
+                </div>
             </div>
         </div>
     </div>
