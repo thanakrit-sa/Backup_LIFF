@@ -35,3 +35,7 @@ option {
     text-align: center;
     padding-left: 10px;
 }
+
+#top-image {
+    height: 50%;
+}
