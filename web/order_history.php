@@ -23,23 +23,25 @@
             <div class="card-body" align="center">
                 <h3>Order History</h3>
                 <hr>
-                <div class="card shadow p-0 mb-0 bg-white rounded">
-                    <div class="card-body p-0 m-0">
-                        <div class="row p-0 m-0">
-                            <div class="col-3 p-0 m-0">
-                                <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
-                            </div>
-                            <article class="col-8 py-2" align="left">
-                                <b>Receipt</b> RTXY-02214445332 <br>
-                                <b>Date</b> 20/12/2060 12:45 AM<br>
-                                <b>Status</b> Received
-                            </article>
-                            <div class="col-1 p-0 m-0">
-                                <span class="received"></span>
+                <a href="#">
+                    <div class="card shadow p-0 mb-0 bg-white rounded">
+                        <div class="card-body p-0 m-0">
+                            <div class="row p-0 m-0">
+                                <div class="col-3 p-0 m-0">
+                                    <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
+                                </div>
+                                <article class="col-8 py-2" align="left">
+                                    <b>Receipt</b> RTXY-02214445332 <br>
+                                    <b>Date</b> 20/12/2060 12:45 AM<br>
+                                    <b>Status</b> Received
+                                </article>
+                                <div class="col-1 p-0 m-0">
+                                    <span class="received"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <br>
                 <div class="card shadow p-0 mb-0 bg-white rounded">
                     <div class="card-body p-0 m-0">
@@ -58,6 +60,7 @@
                         </div>
                     </div>
                 </div>
+                </a>
                 <br>
                 <div class="card shadow p-0 mb-0 bg-white rounded">
                     <div class="card-body p-0 m-0">
