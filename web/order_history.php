@@ -114,14 +114,14 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-4">
-                        <img src="top.jpg" class="img-fluid p-0 m-0">
+                        <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
                     </div>
-                    <div class="col-8" align="left">
+                    <article class="col-8" align="left">
                         <b>Name Product : </b> Product1 <br>
                         <b>Name Product : </b> Product1 <br>
                         <b>Name Product : </b> Product1 <br>
                         <b>Name Product : </b> Product1 <br>
-                    </div>
+                    </article>
                 </div>
             </div>
             <div class="modal-footer">
