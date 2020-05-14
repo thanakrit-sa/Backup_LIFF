@@ -18,7 +18,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style_profile.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
+    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
 </head>
 
 <body>

@@ -94,7 +94,7 @@ foreach ($dataFromApi['data'] as $data) {
         <div class="row">
             <div class="col-5 p-0 m-0">
                 <form method="POST" action="../Detail_Product/detail_1.php">
-                    <select class="custom-select mr-sm-2 custom-select-lg" name="test">
+                    <select class="custom-select mr-sm-2 custom-select-lg" name="status">
                         <option selected value="ซื้อ">ซื้อ</option>
                         <option value="สั่งซื้อ">สั่งซื้อ</option>
                         <option value="สั่ง">สั่ง</option>
