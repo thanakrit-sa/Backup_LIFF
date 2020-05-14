@@ -129,7 +129,7 @@
         </div>
     </div>
     <br>
-    <div class="footer_order footer_order-dark">
+    <div class="footer_order">
         
             <nav>
                 <ul class="pagination justify-content-center p-1 m-1">
