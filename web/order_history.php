@@ -20,7 +20,7 @@
 <body>
     <br>
     <div class="container">
-        <div class="card shadow p-0 mb-0 bg-white rounded">
+        <div class="card shadow p-0 m-0 bg-white rounded">
             <div class="card-body" align="center">
                 <h3>Order History</h3>
                 <hr>
@@ -77,9 +77,12 @@
                         <li class="page-item disabled">
                             <a class="page-link" href="#" tabindex="-1">Previous</a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a>
-                            <span class="sr-only">(current)</span>
-                            </span></li>
+                        <li class="page-item active">
+                            <span class="page-link">
+                                1
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item">
