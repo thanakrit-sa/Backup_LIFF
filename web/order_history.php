@@ -19,7 +19,7 @@
 
 <body>
     <div class="container mt-1">
-        <div class="card shadow p-0 m-0 bg-white rounded">
+        <div class="card">
             <div class="card-body" align="center">
                 <h3>Order History</h3>
                 <hr>
