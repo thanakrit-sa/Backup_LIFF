@@ -24,9 +24,9 @@
             <div class="card-body" align="center">
                 <h3>Order History</h3>
                 <hr>
-                <div class="row" style="height: 100px">
+                <div class="row">
                     <div class="col-4">
-                        <img src="top.jpg" class="img-thumbnail">
+                        <img src="top.jpg" id="img-content" class="img-thumbnail p-0 m-0">
                     </div>
                     <article class="col-5">
                         Lorem ipsum dolor sit amet consectetur 
