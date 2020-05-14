@@ -61,6 +61,10 @@ foreach ($dataFromApi['data'] as $data) {
   $stcok[] = $data['employee-salary'];
   $price[] = $data['employee_age'];
 }
+  echo $name[0];
+  echo $cate[0];
+  echo $stock[0];
+  echo $price[0];
 
 include 'flex_message.php';
 
