@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col" id="content">
+        <div class="col p-0 m-0" id="content">
             km;
         </div>
     </div>
