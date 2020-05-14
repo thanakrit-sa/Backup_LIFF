@@ -31,8 +31,8 @@
                                 <img src="top.jpg" id="img-content" class="img-fluid p-0 m-0">
                             </div>
                             <article class="col-5 py-2" align="left">
-                                <b>Recript</b><br> RTXY-02214445332 
-                                <b>Date</b><br> 20/12/2060 
+                                <b>Recript</b><br> RTXY-02214445332 <br>
+                                <b>Date</b><br> 20/12/2060 <br>
                                 <b>Time</b><br> 12:45 AM 
                             </article>
                             <div class="col-3"></div>
