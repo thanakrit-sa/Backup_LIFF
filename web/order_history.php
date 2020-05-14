@@ -119,12 +119,12 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-6">
+                    <article class="col-6">
                         <b>Name : </b> Nike Air Jordan 1S <br>
                         <b>Category : </b> Sneakers <br>
                         <b>Amount : </b> 2 Items<br>
                         <b>Total : </b> 9,000 THB <br>
-                    </div>
+                    </article>
                     <div class="col-6">
 
                     </div>
