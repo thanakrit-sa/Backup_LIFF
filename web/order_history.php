@@ -106,17 +106,26 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Data</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <div class="row">
+                    <div class="col-4">
+                        <img src="top.jpg" class="img-fluid p-0 m-0">
+                    </div>
+                    <div class="col-8" align="left">
+                        <b>Name Product : </b> Product1 <br>
+                        <b>Name Product : </b> Product1 <br>
+                        <b>Name Product : </b> Product1 <br>
+                        <b>Name Product : </b> Product1 <br>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
