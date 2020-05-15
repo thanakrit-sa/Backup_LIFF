@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <div class="card">
+        <div class="card mt-2">
             <div class="card-body">
                 <div class="row">
                     <div class="col-6">
