@@ -101,3 +101,7 @@ body {
 	right:0px; /* css กำหนดชิดขวา  */
 	z-index:999;
 }
+
+s{
+    color: azure;
+}
