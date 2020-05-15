@@ -142,6 +142,6 @@ s{
 }
 
 .scroll {
-    max-height: 50%;
+    height: 50%;
     overflow-y: auto;
 }
