@@ -581,6 +581,9 @@ $jsonFlex = [
                     ]
                 ],
                 "styles" => [
+                    "body"=> [
+                        "backgroundColor"=> "#000000"
+                    ],
                     "footer" => [
                         "backgroundColor" => "#000000"
                     ]
