@@ -22,7 +22,12 @@
                             <div class="card-body p-0 m-0">
                                 <div class="row p-0 m-0">
                                     <div class="col p-0 m-0">
-                                        <img src="https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg" class="p-0 m-0" id="img-product">
+                                        <div style="position:relative; left:-14px; top:-20px;">
+                                            <div style="position:absolute;top:0px;left:0px;z-index:100;">
+                                            <img src="https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg" class="p-0 m-0" id="img-product" ></div>
+                                            <div style="position:absolute;top:0px;left:0px;z-index:200;">Text Text Text Text Text</div>
+                                        </div>
+                                        <!-- <img src="https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg" class="p-0 m-0" id="img-product"> -->
                                     </div>
                                 </div>
                                 <article class="row p-1 m-1">
