@@ -74,21 +74,31 @@ body {
     display: inline-block;
     box-shadow: inset 1px 1px 1px black;
 }
-a {
-    color: black;
+ a {
+     color: black;
+ }
+
+ .holder_wrap{
+    position:relative;
+    margin:auto;
+    display:block;
+    height:120px; /* กำหนดความสูงส่วนพื้นที่คลุมเนื้อหาทั้งหมด */
+}
+.holder_wrap_img{
+    position:absolute;/* กำหนดการจัดตำแหน่งส่วนพื้นที่คลุมเนื้อหารุปและข้อความซ้อนทับ */
+}
+.holder_wrap_img img{
+    position:relative; /* กำหนดการจัดตำแหน่งของรูป */
 }
 
-.holder_wrap {
-    position: relative;
-    margin: auto;
-    display: block;
-    height: 120px; /* กำหนดความสูงส่วนพื้นที่คลุมเนื้อหาทั้งหมด */
-}
-.holder_wrap_img {
-    position: absolute; /* กำหนดการจัดตำแหน่งส่วนพื้นที่คลุมเนื้อหารุปและข้อความซ้อนทับ */
-}
-.holder_wrap_img img {
-    position: relative; /* กำหนดการจัดตำแหน่งของรูป */
+.inner_position_right{
+    position:absolute;
+    display:block;  
+    height:100%;/* กำหนดความสูงส่วนของเนื้อหาที่นำมาซ้อนทับ แบบขยายเต็ม */
+    width:50px; /* กำหนดความกว้างของเนื้อหาที่นำมาซ้อนทับ */
+    top:0px; /* css กำหนดชิดด้านบน  */
+    right:5px; /* css กำหนดชิดขวา  */
+    z-index:999;
 }
 
 .ribbon {
@@ -108,6 +118,6 @@ a {
     border-bottom: 50px solid transparent;
 }
 
-s {
+s{
     color: gray;
 }
