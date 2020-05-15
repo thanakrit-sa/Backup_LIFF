@@ -554,7 +554,7 @@ $jsonFlex = [
                         [
                             "type" => "image",
                             "url" => "https://static.vecteezy.com/system/resources/previews/000/554/229/non_2x/plus-sign-vector-icon.jpg",
-                            "size" => "5xl",
+                            "size" => "full",
                             "aspectRatio" => "4:3",
                             "aspectMode" => "cover",
                             "action" => [
@@ -573,10 +573,9 @@ $jsonFlex = [
                             "type" => "image",
                             "url" => "https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg",
                             "flex" => 0,
-                            "size" => "5xl",
+                            "size" => "full",
                             "aspectRatio" => "4:3",
                             "aspectMode" => "cover",
-                            "align"=> "center",
                             "backgroundColor" => "#FFFFFF"
                         ]
                     ]
