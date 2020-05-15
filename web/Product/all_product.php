@@ -26,7 +26,7 @@
                                     </div>
                                 </div>
                                 <article class="row p-1 m-1">
-                                    <div class="col p-1 m-1" align="left">
+                                    <div class="col p-1" align="left">
                                         <strong>ชื่อสินค้า</strong> <br>
                                         <b style="font-size: 18px; color:darkturquoise;">1,459</b> THB <br>
                                         <s>1,659 THB</s>
