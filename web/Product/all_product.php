@@ -18,33 +18,34 @@
             <div class="card-body p-0 m-0">
                 <div class="row p-0 m-0">
                     <div class="col-6 p-0 m-0" align="center">
-                        <div class="card mt-2 ml-2 mr-1 mb-2 p-0 shadow bg-white">
-                            <div class="card-body p-0 m-0">
-                                <div class="row p-0 m-0">
-                                    <div class="col p-0 m-0">
-                                        <!-- <img src="https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg" class="p-0 m-0" id="img-product"> -->
-                                        <div class="holder_wrap">
-                                            <div class="holder_wrap_img">
-                                                <img src="https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg" class="p-0 m-0" id="img-product">
-                                                <div class="inner_position_right">
-                                                    <article class="ribbon red">
-                                                        -50%
-                                                    </article>
-                                                </div>
+                        <a href="https://getbootstrap.com/docs/4.0/components/card/?">
+                            <div class="card mt-2 ml-2 mr-1 mb-2 p-0 shadow bg-white">
+                                <div class="card-body p-0 m-0">
+                                    <div class="row p-0 m-0">
+                                        <div class="col p-0 m-0">
+                                            <div class="holder_wrap">
+                                                <div class="holder_wrap_img">
+                                                    <img src="https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg" class="p-0 m-0" id="img-product">
+                                                    <div class="inner_position_right">
+                                                        <article class="ribbon red">
+                                                            -50%
+                                                        </article>
+                                                    </div>
 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <article class="row p-1 m-1">
+                                        <div class="col p-1" align="left">
+                                            <strong style="font-size: 12px;">ชื่อสินค้า</strong> <br>
+                                            <b style="font-size: 18px; color:rgb(235, 105, 19);">฿1,459.00</b> <br>
+                                            <s>฿1,659.00</s>
+                                        </div>
+                                    </article>
                                 </div>
-                                <article class="row p-1 m-1">
-                                    <div class="col p-1" align="left">
-                                        <strong style="font-size: 12px;">ชื่อสินค้า</strong> <br>
-                                        <b style="font-size: 18px; color:rgb(235, 105, 19);">฿1,459.00</b> <br>
-                                        <s>฿1,659.00</s>
-                                    </div>
-                                </article>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-6 p-0 m-0" align="center">
                         <div class="card mt-2 mr-2 ml-1 mb-2 p-0">
