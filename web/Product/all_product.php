@@ -22,15 +22,8 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col">
-                                        <div class="holder_wrap">
-                                            <div class="holder_wrap_img">
-                                                <img src="https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg" 
-                                                class="img-thumbnail p-0 m-0" />
-                                                <div class="inner_position_top">
-                                                    ซ้อนทับ ชิดขอบบน
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <img src="https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg" 
+                                        class="img-thumbnail p-0 m-0" id="img-content">
                                     </div>
                                 </div>
                             </div>
