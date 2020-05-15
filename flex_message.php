@@ -540,6 +540,16 @@ $jsonFlex = [
                     "aspectMode" => "cover",
                     "backgroundColor" => "#CC1919"
                 ],
+                "body" => [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "spacer"
+                        ]
+                    ]
+                ],
                 "footer" => [
                     "type" => "box",
                     "layout" => "vertical",
