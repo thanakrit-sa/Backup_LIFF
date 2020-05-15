@@ -16,11 +16,11 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="row">
             <div class="col-8">
-                <div class="input-group mb-2"><div class="input-group-prepend">
+                <div class="input-group mb-2">
                     <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="ค้นหาสินค้า...">
-                    </div>
+                    <div class="input-group-prepend">
                         <div class="input-group-text">ค้นหา</div>
-                    
+                    </div>
                 </div>
             </div>
             <div class="col-4">
