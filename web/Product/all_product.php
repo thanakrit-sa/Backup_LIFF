@@ -18,7 +18,7 @@
             <div class="card-body p-0 m-0">
                 <div class="row p-0 m-0">
                     <div class="col-6 p-0 m-0" align="center">
-                        <div class="card m-2 p-0">
+                        <div class="card mt-2 ml-2 mr-1 p-0">
                             <div class="card-body p-0 m-0">
                                 <div class="row p-0 m-0">
                                     <div class="col p-0 m-0">
@@ -32,11 +32,11 @@
                         </div>
                     </div>
                     <div class="col-6 p-0 m-0" align="center">
-                        <div class="card m-2 p-0">
+                        <div class="card mt-2 mr-2 ml-1 p-0">
                             <div class="card-body p-0 m-0">
                                 <div class="row p-0 m-0">
                                     <div class="col p-0 m-0">
-                                        <img src="https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg" class="img-thumbnail p-0 m-0" id="img-content">
+                                        <img src="https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg" class="p-0 m-0" id="img-product">
                                     </div>
                                 </div>
                             </div>
