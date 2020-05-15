@@ -103,18 +103,10 @@ body {
 
 .ribbon {
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: -5px;
     padding: 15px;
 }
-.ribbon-content{
-    position: relative; 
-    width: 100%; 
-    height: 100px; 
-    background: #f1f1f1; 
-    border: 1px solid #DDD;    
-}
-
 
 .ribbon.red {
     background: #e91b23;
