@@ -28,7 +28,7 @@
                                                 <img src="https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg" class="p-0 m-0" id="img-product">
 
                                                 <div class="inner_position_right">
-                                                    ซ้อนทับ ชิดขอบขวา
+                                                    <button class="btn btn-success"></button>
                                                 </div>
                                             </div>
                                         </div>
