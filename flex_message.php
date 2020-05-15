@@ -532,45 +532,31 @@ $jsonFlex = [
             ],
             [
                 "type" => "bubble",
-                "hero" => [
-                    "type" => "image",
-                    "url" => "https://static.vecteezy.com/system/resources/previews/000/554/229/non_2x/plus-sign-vector-icon.jpg",
-                    "size" => "full",
-                    "aspectRatio" => "1:1",
-                    "aspectMode" => "cover",
-                    "backgroundColor" => "#CC1919"
-                ],
-                "body" => [
+                "header" => [
                     "type" => "box",
                     "layout" => "vertical",
-                    "spacing" => "sm",
+                    "flex" => 0,
                     "contents" => [
                         [
-                            "type" => "spacer"
-                        ]
-                    ]
-                ],
-                "footer" => [
-                    "type" => "box",
-                    "layout" => "vertical",
-                    "spacing" => "sm",
-                    "contents" => [
+                            "type" => "text",
+                            "text" => "See more Product",
+                            "size" => "lg",
+                            "align" => "center",
+                            "weight" => "bold"
+                        ],
                         [
-                            "type" => "button",
-                            "action" => [
-                                "type" => "uri",
-                                "label" => "see more Product",
-                                "uri" => "https://linecorp.com"
-                            ],
-                            "color" => "#000000",
-                            "style" => "primary"
+                            "type" => "separator",
+                            "margin" => "xxl",
+                            "color" => "#000000"
+                        ],
+                        [
+                            "type" => "image",
+                            "url" => "https://static.vecteezy.com/system/resources/previews/000/554/229/non_2x/plus-sign-vector-icon.jpg",
+                            "margin" => "xxl",
+                            "size" => "full",
+                            "aspectRatio" => "4:3",
+                            "aspectMode" => "cover"
                         ]
-                    ]
-                ],
-                "styles" => [
-                    "hero" => [
-                        "backgroundColor" => "#1B1414",
-                        "separator" => false
                     ]
                 ]
             ]
