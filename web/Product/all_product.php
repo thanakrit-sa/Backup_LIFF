@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar shadow navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="row">
             <div class="col-8">
                 <div class="input-group mb-2">
