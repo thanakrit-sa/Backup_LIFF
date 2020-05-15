@@ -78,15 +78,8 @@ foreach ($dataFromApi['data'] as $data) {
                                         <div class="col p-1" align="left">
                                             <strong style="font-size: 12px;">ชื่อสินค้า</strong> <br>
                                             <b style="font-size: 18px; color:rgb(235, 105, 19);">฿1,459.00</b> <br>
-                                            <div class="row">
+                                            <div>
                                                 <s>฿1,659.00</s>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="alert alert-danger" role="alert">
-                                                        ด่วน!! 2 ชิ้นเท่านั้น.
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </article>
