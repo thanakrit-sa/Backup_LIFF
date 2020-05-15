@@ -544,7 +544,7 @@ $jsonFlex = [
                             "size" => "lg",
                             "align" => "center",
                             "weight" => "bold",
-                            "color"=> "#FFFFFF"
+                            "color" => "#FFFFFF"
                         ],
                         [
                             "type" => "separator",
@@ -557,9 +557,9 @@ $jsonFlex = [
                             "size" => "full",
                             "aspectRatio" => "1:1",
                             "aspectMode" => "cover",
-                            "action"=> [
-                                "type"=> "uri",
-                                "uri"=> "https://e-sport.in.th/ssdev/ecom/dashboard/product"
+                            "action" => [
+                                "type" => "uri",
+                                "uri" => "https://liff.line.me/1654173341-QR4Yj7Mx"
                             ]
                         ]
                     ]
@@ -581,8 +581,8 @@ $jsonFlex = [
                     ]
                 ],
                 "styles" => [
-                    "body"=> [
-                        "backgroundColor"=> "#000000"
+                    "body" => [
+                        "backgroundColor" => "#000000"
                     ],
                     "footer" => [
                         "backgroundColor" => "#000000"
