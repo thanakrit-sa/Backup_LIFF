@@ -33,7 +33,7 @@ article {
     text-align: center;
 }
 .footer_allpage {
-    position: fixed;
+    position: absolute;
     height: 12%;
     left: 0;
     bottom: 0;
@@ -92,7 +92,7 @@ body {
 }
 
 .inner_position_right{
-    position: fixed;
+    position:absolute;
     display:block;  
     height:100%;/* กำหนดความสูงส่วนของเนื้อหาที่นำมาซ้อนทับ แบบขยายเต็ม */
     width:50px; /* กำหนดความกว้างของเนื้อหาที่นำมาซ้อนทับ */
