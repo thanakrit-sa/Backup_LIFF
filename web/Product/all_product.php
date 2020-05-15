@@ -18,7 +18,7 @@
             <div class="card-body p-0 m-0">
                 <div class="row p-0 m-0">
                     <div class="col-6 p-0 m-0" align="center">
-                        <div class="card mt-2 ml-2 mr-1 p-0">
+                        <div class="card mt-2 ml-2 mr-1 mb-2 p-0">
                             <div class="card-body p-0 m-0">
                                 <div class="row p-0 m-0">
                                     <div class="col p-0 m-0">
@@ -26,13 +26,15 @@
                                     </div>
                                 </div>
                                 <article class="row p-1 m-1">
-                                    <b>ชื่อสินค้า</b> สินค้าที่ 1
+                                    <h4>ชื่อสินค้า</h4>
+                                    <b>1,459</b> THB <br>
+                                    <s>1,659 THB</s>
                                 </article>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 p-0 m-0" align="center">
-                        <div class="card mt-2 mr-2 ml-1 p-0">
+                        <div class="card mt-2 mr-2 ml-1 mb-2 p-0">
                             <div class="card-body p-0 m-0">
                                 <div class="row p-0 m-0">
                                     <div class="col p-0 m-0">
