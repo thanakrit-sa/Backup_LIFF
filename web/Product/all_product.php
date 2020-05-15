@@ -56,7 +56,7 @@ foreach ($dataFromApi['data'] as $data) {
             <div class="card-body p-0 m-0 scroll">
                 <div class="row p-0 m-0">
                     <div class="col-6 p-0 m-0" align="center">
-                        <a style="text-decoration:none; color:black" href="https://getbootstrap.com/docs/4.0/components/card/?">
+                        <a style="text-decoration:none; color:black" href="../Detail_Product/detail_1.php">
                             <div class="card mt-2 ml-2 mr-1 mb-2 p-0 shadow bg-white">
                                 <div class="card-body p-0 m-0">
                                     <div class="row p-0 m-0">
