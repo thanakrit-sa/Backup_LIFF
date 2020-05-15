@@ -14,11 +14,11 @@
 
 <body>
     <div class="container p-0 m-0">
-        <div class="card p-0 m-0 card-secondary">
+        <div class="card p-0 m-0 bg-light">
             <div class="card-body p-0 m-0">
                 <div class="row p-0 m-0">
                     <div class="col-6 p-0 m-0" align="center">
-                        <div class="card mt-2 ml-2 mr-1 mb-2 p-0">
+                        <div class="card mt-2 ml-2 mr-1 mb-2 p-0 shadow bg-white">
                             <div class="card-body p-0 m-0">
                                 <div class="row p-0 m-0">
                                     <div class="col p-0 m-0">
