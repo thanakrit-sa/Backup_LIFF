@@ -543,7 +543,8 @@ $jsonFlex = [
                             "text" => "See more Product",
                             "size" => "lg",
                             "align" => "center",
-                            "weight" => "bold"
+                            "weight" => "bold",
+                            "color"=> "#FFFFFF"
                         ],
                         [
                             "type" => "separator",
@@ -554,7 +555,7 @@ $jsonFlex = [
                             "type" => "image",
                             "url" => "https://static.vecteezy.com/system/resources/previews/000/554/229/non_2x/plus-sign-vector-icon.jpg",
                             "size" => "full",
-                            "aspectRatio" => "4:3",
+                            "aspectRatio" => "1:1",
                             "aspectMode" => "cover",
                             "action"=> [
                                 "type"=> "uri",
