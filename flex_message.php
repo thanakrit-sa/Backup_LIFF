@@ -531,32 +531,35 @@ $jsonFlex = [
                 ]
             ],
             [
-                "type" => "box",
-                "layout" => "vertical",
-                "spacing" => "sm",
-                "contents" => [
-                    [
-                        "type" => "text",
-                        "text" => "See more Product",
-                        "size" => "lg",
-                        "align" => "center",
-                        "weight" => "bold"
-                    ],
-                    [
-                        "type" => "separator",
-                        "margin" => "xl",
-                        "color" => "#000000"
-                    ],
-                    [
-                        "type" => "image",
-                        "url" => "https://static.vecteezy.com/system/resources/previews/000/554/229/non_2x/plus-sign-vector-icon.jpg",
-                        "size" => "full",
-                        "aspectRatio" => "4:3",
-                        "aspectMode" => "cover"
+                "type" => "bubble",
+                "body" =>
+                [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "spacing" => "sm",
+                    "contents" => [
+                        [
+                            "type" => "text",
+                            "text" => "See more Product",
+                            "size" => "lg",
+                            "align" => "center",
+                            "weight" => "bold"
+                        ],
+                        [
+                            "type" => "separator",
+                            "margin" => "xl",
+                            "color" => "#000000"
+                        ],
+                        [
+                            "type" => "image",
+                            "url" => "https://static.vecteezy.com/system/resources/previews/000/554/229/non_2x/plus-sign-vector-icon.jpg",
+                            "size" => "full",
+                            "aspectRatio" => "4:3",
+                            "aspectMode" => "cover"
+                        ]
                     ]
                 ]
             ]
-
         ]
     ]
 ];
