@@ -555,7 +555,11 @@ $jsonFlex = [
                             "url" => "https://static.vecteezy.com/system/resources/previews/000/554/229/non_2x/plus-sign-vector-icon.jpg",
                             "size" => "full",
                             "aspectRatio" => "4:3",
-                            "aspectMode" => "cover"
+                            "aspectMode" => "cover",
+                            "action"=> [
+                                "type"=> "uri",
+                                "uri"=> "https://e-sport.in.th/ssdev/ecom/dashboard/product"
+                            ]
                         ]
                     ]
                 ],
