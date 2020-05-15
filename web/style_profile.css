@@ -92,7 +92,7 @@ body {
 }
 
 .inner_position_right{
-    position:absolute;
+    position: fixed;
     display:block;  
     height:100%;/* กำหนดความสูงส่วนของเนื้อหาที่นำมาซ้อนทับ แบบขยายเต็ม */
     width:50px; /* กำหนดความกว้างของเนื้อหาที่นำมาซ้อนทับ */
@@ -102,7 +102,7 @@ body {
 }
 
 .ribbon {
-    position: fixed;
+    position: absolute;
     top: 5px;
     right: -5px;
     padding: 5px;
