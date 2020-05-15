@@ -26,7 +26,7 @@
                                     </div>
                                 </div>
                                 <article class="row p-1 m-1">
-                                    <h4>ชื่อสินค้า</h4>
+                                    <strong>ชื่อสินค้า</strong> <br>
                                     <b>1,459</b> THB <br>
                                     <s>1,659 THB</s>
                                 </article>
