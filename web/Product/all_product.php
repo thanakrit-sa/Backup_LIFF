@@ -14,7 +14,7 @@
 
 <body>
     <div class="container p-0 m-0">
-        <div class="card p-0 m-0">
+        <div class="card p-0 m-0 card-secondary">
             <div class="card-body p-0 m-0">
                 <div class="row p-0 m-0">
                     <div class="col-6 p-0 m-0" align="center">
@@ -28,8 +28,8 @@
                                 <article class="row p-1 m-1">
                                     <div class="col p-1" align="left">
                                         <strong>ชื่อสินค้า</strong> <br>
-                                        <b style="font-size: 18px; color:darkturquoise;">1,459</b> THB <br>
-                                        <s>1,659 THB</s>
+                                        <b style="font-size: 18px; color:darkturquoise;">฿1,459.00</b> <br>
+                                        <s>฿1,659.00</s>
                                     </div>
                                 </article>
                             </div>
