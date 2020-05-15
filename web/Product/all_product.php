@@ -27,8 +27,8 @@
                                 </div>
                                 <article class="row p-1 m-1">
                                     <div class="col p-1" align="left">
-                                        <strong>ชื่อสินค้า</strong> <br>
-                                        <b style="font-size: 18px; color:darkturquoise;">฿1,459.00</b> <br>
+                                        <strong style="font-size: 12px;">ชื่อสินค้า</strong> <br>
+                                        <b style="font-size: 18px; color:rgb(235, 105, 19);">฿1,459.00</b> <br>
                                         <s>฿1,659.00</s>
                                     </div>
                                 </article>
