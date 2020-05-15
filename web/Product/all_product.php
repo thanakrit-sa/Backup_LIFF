@@ -49,7 +49,7 @@
         </div>
     </nav>
     <div class="container p-0 mt-5">
-        <div class="card p-0 m-0 bg-light">
+        <div class="card p-0 m-0 bg-light" align="center">
             <div class="card-body p-0 m-0 scroll">
                 <div class="row p-0 m-0">
                     <div class="col-6 p-0 m-0" align="center">
@@ -300,11 +300,11 @@
                     </div>
                 </div>
             </div>
+            <button class="btn btn-primary btn-lg" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+            </button>
         </div>
-        <button class="btn btn-primary" type="button" disabled>
-            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            Loading...
-        </button>
     </div>
 </body>
 
