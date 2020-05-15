@@ -140,3 +140,8 @@ body {
 s{
     color: gray;
 }
+
+.scroll {
+    max-height: 700px;
+    overflow-y: auto;
+}
