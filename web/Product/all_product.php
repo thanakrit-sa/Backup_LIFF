@@ -14,11 +14,11 @@
 
 <body>
     <div class="container">
-        <div class="card p-0 mt-2">
+        <div class="card p-1 mt-2">
             <div class="card-body p-0 m-0">
                 <div class="row p-0 m-0">
                     <div class="col-6 p-0 m-0" align="center">
-                        <div class="card m-0 p-0">
+                        <div class="card m-1 p-0">
                             <div class="card-body p-0 m-0">
                                 <div class="row p-0 m-0">
                                     <div class="col p-0 m-0">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="col-6" align="center">
-                        <div class="card m-1">
+                        <div class="card p-0 m-1">
                             <div class="card-body">
                                 <h5 class="card-title">Title</h5>
                                 <p class="card-text">Content</p>
