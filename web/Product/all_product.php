@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4" align="left">
+            <div class="col-4 p-0 m-0" align="left">
                 <div class="dropdown">
                     <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         หมวดหมู่
