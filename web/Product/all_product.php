@@ -12,6 +12,20 @@
     <link rel="stylesheet" type="text/css" href="../style_profile.css">
 </head>
 
+<?
+include '../../function.php';
+
+$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
+$dataFromApi = json_decode($api, true);
+
+foreach ($dataFromApi['data'] as $data) {
+    $prod_name[] = $data['product_name'];
+    $prod_image[] = $data['image_path'];
+    $prod_stock[] = $data['stock'];
+    $prod_price[] = $data['price'];
+  }
+?>
+
 <body>
     <nav class="navbar shadow navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="row">
@@ -64,7 +78,14 @@
                                         <div class="col p-1" align="left">
                                             <strong style="font-size: 12px;">ชื่อสินค้า</strong> <br>
                                             <b style="font-size: 18px; color:rgb(235, 105, 19);">฿1,459.00</b> <br>
-                                            <s>฿1,659.00</s>
+                                            <div class="row">
+                                                <div class="col">
+                                                <s>฿1,659.00</s>
+                                                </div>
+                                                <div class="col">
+                                                ด่วน!! เหลื่อเพียง 2 ชินเท่านั้น
+                                                </div>
+                                            </div>
                                         </div>
                                     </article>
                                 </div>
