@@ -125,7 +125,7 @@ foreach ($dataFromApi['data'] as $data) {
                                     <div class="row p-0 m-0">
                                         <div class="col p-0 m-0">
                                             <div class="holder_wrap">
-                                                <div class="holder_wrap_img">
+                                                
                                                     <img src="<?=$prod_image[5]?>" class="p-0 m-0" id="img-product">
                                                     <div class="inner_position_right">
                                                         <article class="ribbon red">
@@ -133,7 +133,7 @@ foreach ($dataFromApi['data'] as $data) {
                                                         </article>
                                                     </div>
 
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
