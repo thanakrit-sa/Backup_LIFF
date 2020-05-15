@@ -13,11 +13,33 @@
 </head>
 
 <body>
-    <div class="holder_wrap">
-        <div class="holder_wrap_img">
-            <img src="http://www.ninenik.com/userfiles/12/image/1.jpg" />
-            <div class="inner_position_top">
-                ซ้อนทับ ชิดขอบบน
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="holder_wrap">
+                                    <div class="holder_wrap_img">
+                                        <img src="http://www.ninenik.com/userfiles/12/image/1.jpg" />
+                                        <div class="inner_position_top">
+                                            ซ้อนทับ ชิดขอบบน
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Content</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
