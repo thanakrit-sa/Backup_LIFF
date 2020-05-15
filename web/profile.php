@@ -16,56 +16,57 @@
 
 <body>
     <br>
-    <div class="container">
-        <div class="card p-0 mb-5">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col" align="center">
-                        <img src="catdog.jpg" class="rounded-circle shadow p-0 m-0 bg-black rounded" width="50%">
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col" align="center">
-                        <div class="data">
-                            <b>Mr. David Richard</b> <br>
-                            Programmer
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <div class="container">
+            <div class="card p-0 mb-5">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col" align="center">
+                            <img src="catdog.jpg" class="rounded-circle shadow p-0 m-0 bg-black rounded" width="50%">
                         </div>
                     </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col" align="center">
-                        <div class="data">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur nobis
-                            magni
-                            commodi. Iste illum nesciunt dolores doloremque fuga sit.
+                    <br>
+                    <div class="row">
+                        <div class="col" align="center">
+                            <div class="data">
+                                <b>Mr. David Richard</b> <br>
+                                Programmer
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col" align="center">
+                            <div class="data">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur nobis
+                                magni
+                                commodi. Iste illum nesciunt dolores doloremque fuga sit.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="footer_allpage">
-            <div class="row" align="center">
-                <div class="col-4">
-                    <a href="https://www.facebook.com"><button type="button" class="btn btn-dark px-3 m-0">
-                            <i class='fab fa-facebook-square' style='font-size:40px'></i>
-                        </button></a>
-                </div>
-                <div class="col-4">
-                    <a href="https://www.gmail.com"><button type="button" class="btn btn-dark px-3 m-0">
-                            <i class='fas fa-envelope' style='font-size:40px'></i>
-                        </button></a>
-                </div>
-                <div class="col-4">
-                    <button type="button" class="btn btn-dark px-3 m-0" data-toggle="modal" data-target="#contactModal">
-                        <i class='fas fa-address-card' style='font-size:40px'></i>
-                    </button>
+            <br>
+            <div class="footer_allpage">
+                <div class="row" align="center">
+                    <div class="col-4">
+                        <a href="https://www.facebook.com"><button type="button" class="btn btn-dark px-3 m-0">
+                                <i class='fab fa-facebook-square' style='font-size:40px'></i>
+                            </button></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://www.gmail.com"><button type="button" class="btn btn-dark px-3 m-0">
+                                <i class='fas fa-envelope' style='font-size:40px'></i>
+                            </button></a>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-dark px-3 m-0" data-toggle="modal" data-target="#contactModal">
+                            <i class='fas fa-address-card' style='font-size:40px'></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 </body>
 
@@ -103,4 +104,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
