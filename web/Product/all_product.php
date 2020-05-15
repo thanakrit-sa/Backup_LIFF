@@ -29,7 +29,7 @@ foreach ($dataFromApi['data'] as $data) {
 <body>
     <nav class="navbar shadow navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="row">
-            <div class="col-8 p-1 m-1">
+            <div class="col-8 p-1 m-0">
                 <div class="input-group mb-2">
                     <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="ค้นหาสินค้า...">
                     <div class="input-group-prepend">
