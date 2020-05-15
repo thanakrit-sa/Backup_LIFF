@@ -16,12 +16,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="row">
             <div class="col-8">
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
                 <label class="sr-only" for="inlineFormInputGroup">Username</label>
                 <div class="input-group mb-2">
                     <div class="input-group-prepend">
                         <div class="input-group-text">@</div>
                     </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                    
                 </div>
             </div>
             <div class="col-4">
