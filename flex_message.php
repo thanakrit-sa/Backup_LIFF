@@ -567,9 +567,9 @@ $jsonFlex = [
                         [
                             "type" => "image",
                             "url" => "https://s.isanook.com/he/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2hlLzAvdWQvMy8xODg0MS9hc3Ryb25hdXQuanBn.jpg",
-                            "flex" => 6,
+                            "flex" => 0,
                             "size" => "full",
-                            "aspectRatio" => "20:13",
+                            "aspectRatio" => "4:3",
                             "aspectMode" => "cover",
                             "backgroundColor" => "#FFFFFF"
                         ]
