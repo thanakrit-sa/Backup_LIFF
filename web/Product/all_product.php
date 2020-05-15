@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <div class="card mt-2">
+        <div class="card p-0 mt-2">
             <div class="card-body p-0 m-0">
                 <div class="row p-0 m-0">
                     <div class="col-6 p-0 m-0" align="center">
