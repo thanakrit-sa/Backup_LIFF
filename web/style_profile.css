@@ -74,33 +74,40 @@ body {
     display: inline-block;
     box-shadow: inset 1px 1px 1px black;
 }
- a {
-     color: black;
- }
-
- .holder_wrap{
-    position:relative;
-    margin:auto;
-    display:block;
-    height:120px; /* กำหนดความสูงส่วนพื้นที่คลุมเนื้อหาทั้งหมด */
-}
-.holder_wrap_img{
-    position:absolute;/* กำหนดการจัดตำแหน่งส่วนพื้นที่คลุมเนื้อหารุปและข้อความซ้อนทับ */
-}
-.holder_wrap_img img{
-    position:relative; /* กำหนดการจัดตำแหน่งของรูป */
+a {
+    color: black;
 }
 
-.inner_position_right{
-    position:absolute;
-    display:block;  
-    height:100%;/* กำหนดความสูงส่วนของเนื้อหาที่นำมาซ้อนทับ แบบขยายเต็ม */
-    width:50px; /* กำหนดความกว้างของเนื้อหาที่นำมาซ้อนทับ */
-    top:10px; /* css กำหนดชิดด้านบน  */
-    right:10px; /* css กำหนดชิดขวา  */
-    z-index:999;
+.holder_wrap {
+    position: relative;
+    margin: auto;
+    display: block;
+    height: 120px; /* กำหนดความสูงส่วนพื้นที่คลุมเนื้อหาทั้งหมด */
+}
+.holder_wrap_img {
+    position: absolute; /* กำหนดการจัดตำแหน่งส่วนพื้นที่คลุมเนื้อหารุปและข้อความซ้อนทับ */
+}
+.holder_wrap_img img {
+    position: relative; /* กำหนดการจัดตำแหน่งของรูป */
 }
 
-s{
+.ribbon {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+}
+.ribbon:before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    border-left: 50px solid white;
+    border-right: 50px solid white;
+    border-bottom: 50px solid transparent;
+}
+
+s {
     color: gray;
 }
