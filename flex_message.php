@@ -531,35 +531,32 @@ $jsonFlex = [
                 ]
             ],
             [
-                "type" => "bubble",
-                "header" => [
-                    "type" => "box",
-                    "layout" => "vertical",
-                    "flex" => 0,
-                    "contents" => [
-                        [
-                            "type" => "text",
-                            "text" => "See more Product",
-                            "size" => "lg",
-                            "align" => "center",
-                            "weight" => "bold"
-                        ],
-                        [
-                            "type" => "separator",
-                            "margin" => "xxl",
-                            "color" => "#000000"
-                        ],
-                        [
-                            "type" => "image",
-                            "url" => "https://static.vecteezy.com/system/resources/previews/000/554/229/non_2x/plus-sign-vector-icon.jpg",
-                            "margin" => "xxl",
-                            "size" => "full",
-                            "aspectRatio" => "4:3",
-                            "aspectMode" => "cover"
-                        ]
+                "type" => "box",
+                "layout" => "vertical",
+                "spacing" => "sm",
+                "contents" => [
+                    [
+                        "type" => "text",
+                        "text" => "See more Product",
+                        "size" => "lg",
+                        "align" => "center",
+                        "weight" => "bold"
+                    ],
+                    [
+                        "type" => "separator",
+                        "margin" => "xl",
+                        "color" => "#000000"
+                    ],
+                    [
+                        "type" => "image",
+                        "url" => "https://static.vecteezy.com/system/resources/previews/000/554/229/non_2x/plus-sign-vector-icon.jpg",
+                        "size" => "full",
+                        "aspectRatio" => "4:3",
+                        "aspectMode" => "cover"
                     ]
                 ]
             ]
+
         ]
     ]
 ];
