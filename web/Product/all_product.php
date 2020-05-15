@@ -50,6 +50,7 @@ foreach ($dataFromApi['data'] as $data) {
             </div>
         </div>
     </nav>
+    <br>
     <div class="container p-0 mt-5">
         <div class="card p-0 m-0 bg-light" align="center">
             <div class="card-body p-0 m-0 scroll">
