@@ -1,10 +1,9 @@
-* {
+
+* html .footer_allpage {
+    position:absolute;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#footer {
-    border-radius: 40px 40px 0px 0px;
-}
 article {
     font-size: 11px;
 }
@@ -33,7 +32,7 @@ article {
     text-align: center;
 }
 .footer_allpage {
-    position: absolute;
+    position: fixed;
     height: 12%;
     left: 0;
     bottom: 0;
