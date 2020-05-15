@@ -29,9 +29,9 @@
                         หมวดหมู่
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item" type="button">Action</button>
-                        <button class="dropdown-item" type="button">Another action</button>
-                        <button class="dropdown-item" type="button">Something else here</button>
+                        <button class="dropdown-item" type="button">เครื่องแต่งกาย</button>
+                        <button class="dropdown-item" type="button">อุปกรณ์กีฬา</button>
+                        <button class="dropdown-item" type="button">ท่องเที่ยว</button>
                     </div>
                 </div>
             </div>
