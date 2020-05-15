@@ -103,9 +103,9 @@ body {
 
 .ribbon {
     position: absolute;
-    top: 0px;
+    top: 5px;
     right: -5px;
-    padding: 15px;
+    padding: 5px;
 }
 
 .ribbon.red {
