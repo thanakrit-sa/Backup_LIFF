@@ -133,7 +133,7 @@
         document.getElementById("getDecodedIDToken").innerHTML = '<b>Email:</b> ' + liff.getDecodedIDToken().email;
       }).catch(err => console.error(err));
     }
-    liff.init({ liffId: "YOUT-LIFF-ID" }, () => {
+    liff.init({ liffId: "1654173341-8BdJg3a7" }, () => {
       if (liff.isLoggedIn()) {
         runApp()
       } else {
