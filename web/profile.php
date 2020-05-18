@@ -60,15 +60,11 @@ $updated = $data['updated_at'];
                 <b>Profile</b>
                 <hr style="border: 1px solid black">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col">
                         <article>
                             <b>Username</b> <?= $name ?> <br>
                             <b>E-mail</b> <?= $email ?> <br>
-                            <b>Telephone</b> <?= $tel ?>
-                        </article>
-                    </div>
-                    <div class="col-6">
-                        <article>
+                            <b>Telephone</b> <?= $tel ?> <br>
                             <b>Address</b> <?= $address ?> <br>
                             <b>Created</b> <?= $created ?> <br>
                             <b>Updated</b> <?= $updated ?>
