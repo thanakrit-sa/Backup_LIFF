@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,7 +14,7 @@
     <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
 </head>
 
-<body>
+<body> -->
     <!-- <br>
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
         <div class="container" id="navbar-example2">
@@ -106,33 +106,70 @@
     </div>
 </div>
 </div> -->
-
+<!-- 
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <form action="#" method="POST">
+                <form action="register.php" method="POST">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Username</label>
-                        <input type="text" class="form-control" placeholder="Enter Username">
+                        <label>Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="Enter Username">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="text" class="form-control" placeholder="Enter Password">
+                        <label>Password</label>
+                        <input type="text" class="form-control" name="password" placeholder="Enter Password">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Email</label>
-                        <input type="text" class="form-control" placeholder="Enter Email">
+                        <label>Email</label>
+                        <input type="text" class="form-control" name="email" placeholder="Enter Email">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Telephone</label>
-                        <input type="text" class="form-control" placeholder="Enter Telephone">
+                        <label>Telephone</label>
+                        <input type="text" class="form-control" name="tel" placeholder="Enter Telephone">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Address</label>
-                        <input type="text" class="form-control" placeholder="Enter Address">
+                        <label>Address</label>
+                        <input type="text" class="form-control" name="address" placeholder="Enter Address">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My LIFF v2</title>
+  <style>
+    #pictureUrl { display: block; margin: 0 auto }
+  </style>
+</head>
+<body>
+  <img id="pictureUrl" width="25%">
+  <p id="userId"></p>
+  <p id="displayName"></p>
+  <p id="statusMessage"></p>
+  <p id="getDecodedIDToken"></p>
+  <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+  <script>
+    function runApp() {
+      liff.getProfile().then(profile => {
+        document.getElementById("pictureUrl").src = profile.pictureUrl;
+        document.getElementById("userId").innerHTML = '<b>UserId:</b> ' + profile.userId;
+        document.getElementById("displayName").innerHTML = '<b>DisplayName:</b> ' + profile.displayName;
+        document.getElementById("statusMessage").innerHTML = '<b>StatusMessage:</b> ' + profile.statusMessage;
+        document.getElementById("getDecodedIDToken").innerHTML = '<b>Email:</b> ' + liff.getDecodedIDToken().email;
+      }).catch(err => console.error(err));
+    }
+    liff.init({ liffId: "1654173341-8BdJg3a7" }, () => {
+      if (liff.isLoggedIn()) {
+        runApp()
+      } else {
+        liff.login();
+      }
+    }, err => console.error(err.code, error.message));
+  </script>
+</body>
+</html>
