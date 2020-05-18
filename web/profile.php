@@ -40,35 +40,19 @@ $updated = $data['updated_at'];
 
 <body>
     <br>
-    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-        <div class="container" id="navbar-example2">
-            <div class="card p-0 mb-5">
-                <div class="card-body p-0 m-0">
-                    <div class="row shadow bg-info p-5 m-0">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="col" align="center">
-                                        <img src="Images/catdog.jpg" class="img-thumbnail rounded-circle shadow p-0 m-0 bg-black rounded" width="50%">
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="col" align="center">
-                                        <h4 style="font-weight: bold; color: white;"><?= $name ?></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-body bg-danger">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Images/catdog.jpg" class="img-thumbnail shadow rounded-circle shadow">
                     </div>
-                    <div>
-                        <b>Username : </b> <?= $name ?> <br>
-                        <b>Username : </b> <?= $name ?> <br>
-                        <b>Username : </b> <?= $name ?> <br>
-                        <b>Username : </b> <?= $name ?> <br>
+                    <div class="col-8">
+                        <?= $name ?> <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        doloribus ipsa voluptates. Praesentium.
                     </div>
-
                 </div>
             </div>
+        </div>
+    </div>
