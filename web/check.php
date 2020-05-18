@@ -14,7 +14,7 @@
      
     $result = curl_exec($ch);
     curl_close($ch);
-    $data = json_decode($result);
+    $data = json_decode($result, true);
     echo $data["resultMgs"];
 
     // if($result == "not found line user id") {
