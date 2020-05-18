@@ -1,18 +1,30 @@
-<?
-    $lineID = $_GET['lineID'];
-    $data = array(
-        "line_userid" => "$lineID",
-    );
-    $data_string = json_encode($data);
-    
-    $ch = curl_init('https://e-sport.in.th/ssdev/ecom/dashboard/api/member/linelogin');
-     
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json',));
-     
-    $result = curl_exec($ch);
-    curl_close($ch);
-    echo $result;
-?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+
+<body>
+<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+  <script>
+    function runApp() {
+      liff.getProfile().then(profile => {
+        
+        
+        window.location.href = "check.php?lineID=" + profile.userId;
+      }).catch(err => console.error(err));
+    }
+    liff.init({ liffId: "1654173341-jxzy3Mbk" }, () => {
+      if (liff.isLoggedIn()) {
+        runApp()
+      } else {
+        liff.login();
+      }
+    }, err => console.error(err.code, error.message));
+  </script>
+
+
+
