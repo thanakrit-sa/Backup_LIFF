@@ -5,7 +5,7 @@ $password = $_POST['password'];
 $email = $_POST['email'];
 $tel = $_POST['tel'];
 $address = $_POST['address'];
-$lineID = $_GET['line_userid'];
+$lineID = $_POST['LineID'];
 
 $data = array(
     "id" => "",

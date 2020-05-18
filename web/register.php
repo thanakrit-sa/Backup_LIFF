@@ -23,12 +23,8 @@
       <div class="card-body">
         <form action="add_user.php" method="POST">
           <div class="form-group">
-            <label>Line ID</label> <br>
-            <label><?= $lineID ?></label>
-          </div>
-          <div class="form-group">
-            <label>Username</label>
-            <input type="text" class="form-control" name="username" value="<?=$lineID?>">
+            <label>Line ID</label>
+            <input type="text" class="form-control" name="lineID" value="<?=$lineID?>" readonly>
           </div>
           <div class="form-group">
             <label>Username</label>
