@@ -106,20 +106,20 @@
     </div>
 </div>
 </div> -->
-
 <?
-$lineID = $_GET['lineID'];
-$data = "28";
+$data = array(
+    "id" => "28",
+);
 $data_string = json_encode($data);
 
-$ch = curl_init('https://e-sport.in.th/ssdev/ecom/dashboard/api/member/memberByid/'+$data);
-echo $ch;
-// curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-// curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
-// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-// curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json',));
+$ch = curl_init('https://e-sport.in.th/ssdev/ecom/dashboard/api/member/memberByid/');
 
-// $result = curl_exec($ch);
-// curl_close($ch);
-// $data = json_decode($result, true);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json',));
+
+$result = curl_exec($ch);
+curl_close($ch);
+echo $result;
 
