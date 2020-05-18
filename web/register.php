@@ -6,14 +6,9 @@ $email = $_POST['email'];
 $tel = $_POST['tel'];
 $address = $_POST['address'];
 
-echo $name;
-echo $password;
-echo $email;
-echo $tel;
-echo $address;
-
-// $url = 'http://localhost/sample/login_action.php'; // กำหนด URl ของเว็บไวต์ B
-// $request = 'username=guest&password=guest'; // กำหนด HTTP Request โดยระบุ username=guest และ password=เguest (รูปแบบเหมือนการส่งค่า $_GET แต่ข้างหน้าข้อความไม่มีเครื่องหมาย ?)
+// $url = 'http://localhost/sample/login_action.php'; 
+$request = 'username=$name&password=$password'; 
+echo $request;
 
 // $ch = curl_init(); // เริ่มต้นใช้งาน cURL
 
