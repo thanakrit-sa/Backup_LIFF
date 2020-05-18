@@ -111,7 +111,7 @@
     function runApp() {
       liff.getProfile().then(profile => {
         
-        document.getElementById("userId").innerHTML = '<b>UserId:</b> ' + profile.userId;
+        document.getElementById("userId").innerHTML = profile.userId;
       }).catch(err => console.error(err));
     }
     liff.init({ liffId: "1654173341-8BdJg3a7" }, () => {
@@ -128,8 +128,8 @@
             <div class="card-body">
                 <form action="register.php" method="POST">
                 <div class="form-group">
-                        <label id="userId"></label>
-                        <input type="text" class="form-control" name="username">
+                        <label>Line ID</label>
+                        <input type="text" class="form-control" name="line_userid" id="userId" readonly>
                     </div>
                     <div class="form-group">
                         <label>Username</label>
