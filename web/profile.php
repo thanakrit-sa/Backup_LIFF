@@ -43,89 +43,12 @@ $updated = $data['updated_at'];
         <div class="container" id="navbar-example2">
             <div class="card p-0 mb-5">
                 <div class="card-body">
-                    <div class="row">
+                    <div class="row bg-info">
                         <div class="col" align="center">
-                            <img src="Images/catdog.jpg" class="img-thumbnail rounded-circle shadow p-0 m-0 bg-black rounded" width="10%">
+                            <img src="Images/catdog.jpg" class="img-thumbnail rounded-circle shadow p-0 m-0 bg-black rounded" width="40%">
                         </div>
                     </div>
                     <br>
-                    <div class="row">
-                        <div class="col" align="center">
-                            <div class="data">
-                                <b>Mr. David Richard</b> <br>
-                                Programmer
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col" align="center">
-                            <div class="data">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur nobis
-                                magni
-                                commodi. Iste illum nesciunt dolores doloremque fuga sit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="footer_allpage">
-                <div class="row" align="center">
-                    <div class="col-4">
-                        <a href="https://www.facebook.com"><button type="button" class="btn btn-dark px-3 m-0">
-                                <i class='fab fa-facebook-square' style='font-size:40px'></i>
-                            </button></a>
-                    </div>
-                    <div class="col-4">
-                        <a href="https://www.gmail.com"><button type="button" class="btn btn-dark px-3 m-0">
-                                <i class='fas fa-envelope' style='font-size:40px'></i>
-                            </button></a>
-                    </div>
-                    <div class="col-4">
-                        <button type="button" class="btn btn-dark px-3 m-0" data-toggle="modal" data-target="#contactModal">
-                            <i class='fas fa-address-card' style='font-size:40px'></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-</body>
-
-</html>
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header modal-dark">
-                <h5 class="modal-title" id="exampleModalLabel">Contact Panel</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-2" align="right">
-                        <i class='fas fa-hotel' style='font-size:25px; padding-top: 10px;'></i>
-                    </div>
-                    <div class="col-10" align="left">
-                        Lorem ipsum, dolor sit amet consectetur.
-                    </div>
-                </div>
-                <p></p>
-                <div class="row">
-                    <div class="col-2" align="right">
-                        <i class='fas fa-phone-square' style='font-size:30px;'></i>
-                    </div>
-                    <div class="col-10" align="left">
-                        098-765-4321 , 02-345-6789
-                    </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-dark btn-block" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
