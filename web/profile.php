@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <!-- <br>
+    <br>
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
         <div class="container" id="navbar-example2">
             <div class="card p-0 mb-5">
@@ -105,55 +105,4 @@
         </div>
     </div>
 </div>
-</div> -->
-<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-  <script>
-    function runApp() {
-      liff.getProfile().then(profile => {
-        
-        document.getElementById("userId").innerHTML = profile.userId;
-        window.location.href = "register.php?line_userid=" + profile.userId;
-      }).catch(err => console.error(err));
-    }
-    liff.init({ liffId: "1654173341-8BdJg3a7" }, () => {
-      if (liff.isLoggedIn()) {
-        runApp()
-      } else {
-        liff.login();
-      }
-    }, err => console.error(err.code, error.message));
-  </script>
-
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <form action="register.php" method="POST">
-                <div class="form-group">
-                        <label>Line ID</label>
-                        <label id="userId"></label>
-                    </div>
-                    <div class="form-group">
-                        <label>Username</label>
-                        <input type="text" class="form-control" name="username" placeholder="Enter Username">
-                    </div>
-                    <div class="form-group">
-                        <label>Password</label>
-                        <input type="text" class="form-control" name="password" placeholder="Enter Password">
-                    </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="text" class="form-control" name="email" placeholder="Enter Email">
-                    </div>
-                    <div class="form-group">
-                        <label>Telephone</label>
-                        <input type="text" class="form-control" name="tel" placeholder="Enter Telephone">
-                    </div>
-                    <div class="form-group">
-                        <label>Address</label>
-                        <input type="text" class="form-control" name="address" placeholder="Enter Address">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
+</div>
