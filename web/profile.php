@@ -54,7 +54,7 @@ $updated = $data['updated_at'];
                 </div>
             </div>
         </div>
-        
+
         <div class="card shadow mt-1">
             <div class="card-body">
                 <b>Profile</b>
@@ -62,14 +62,17 @@ $updated = $data['updated_at'];
                 <div class="row">
                     <div class="col-6">
                         <article>
-                            <b>Username</b> <?=$name?> <br>
-                            <b>Password</b> <?=$password?> <br>
-                            <b>E-mail</b> <?=$email?> <br>
-                            <b>Telephone</b> <?=$tel?>
+                            <b>Username</b> <?= $name ?> <br>
+                            <b>E-mail</b> <?= $email ?> <br>
+                            <b>Telephone</b> <?= $tel ?>
                         </article>
                     </div>
                     <div class="col-6">
-
+                        <article>
+                            <b>Address</b> <?= $address ?> <br>
+                            <b>Created</b> <?= $created ?> <br>
+                            <b>Updated</b> <?= $updated ?>
+                        </article>
                     </div>
                 </div>
             </div>
