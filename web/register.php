@@ -12,19 +12,21 @@ $address = $_POST['address'];
 // echo $tel;
 // echo $address;
 
-$url = 'http://localhost/sample/login_action.php'; 
-$request = "[{'username' : '$name','password' : '$password'}]"; 
-echo $request["username"];
-// $ch = curl_init(); // เริ่มต้นใช้งาน cURL
-
-// curl_setopt($ch, CURLOPT_URL, $url); // กำหนดค่า URL
-// curl_setopt($ch, CURLOPT_POST, 1); // กำหนดรูปแบบการส่งข้อมูลเป็นแบบ $_POST
-// curl_setopt($ch, CURLOPT_POSTFIELDS, $request); // กำหนดค่า HTTP Request
-// curl_setopt($ch, CURLOPT_HEADER, 0); // กำให้ cURL ไม่มีการตั้งค่า Header
-// curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); // กำหนดให้ cURL คืนค่าผลลัพท์
-
-// $response = curl_exec($ch); // ประมวลผล cURL
-// curl_close($ch); // ปิดการใช้งาน cURL
-
-// echo $response; // แสดงผลการทำงาน
-
+$data = array("username" => "$name", "password" => "$password"); //ข้อมูลที่ต้องการโพส
+$data_string = json_encode($data); //ทำให้เป็น json ด้วยฟังก์ชัน json_encode
+ 
+echo $data_string;
+// $ch = curl_init('http://www.imooh.com/'); //ตรงนี้อย่าลืมเปลี่ยนเป็น url ที่ต้องการส่งค่าไปนะครับ
+ 
+// //ในกรณีที่ต้องการส่งเป็น method อื่น เช่น DELETE, PUT, HEAD ก็เปลี่ยนได้ที่นี่ครับ
+// curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+ 
+// curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+// curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+//     'Content-Type: application/json', //ระบุว่าค่าที่ส่งไปเป็นแบบ json
+//     'Content-Length: ' . strlen($data_string))  //บอกขนาดของ json ที่ส่งไปด้วย
+// );
+ 
+// $result = curl_exec($ch);
+// curl_close($ch);
