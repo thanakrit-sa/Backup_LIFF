@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,8 +11,25 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style_profile.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head> -->
-<!-- 
+</head> 
+
+<?
+$lineID = $_GET['lineID'];
+
+$ch = curl_init('https://e-sport.in.th/ssdev/ecom/dashboard/api/member/memberlineid/'.$lineID);
+
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json',));
+
+$result = curl_exec($ch);
+curl_close($ch);
+$resultData = json_decode($result,true);
+
+foreach ($resultData['data'] as $data) {
+    echo $data['username'];
+};
+?>
 
 <body>
     <br>
@@ -105,22 +122,6 @@
         </div>
     </div>
 </div>
-</div> -->
-<?
-// $lineID = $_GET['lineID'];
-// $data = array(
-//     "line_userid" => "$lineID"
-// );
-// $data_string = json_encode($data);
-$lineID = $_GET['lineID'];
+</div>
 
-$ch = curl_init('https://e-sport.in.th/ssdev/ecom/dashboard/api/member/memberlineid/'.$lineID);
-
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json',));
-
-$result = curl_exec($ch);
-curl_close($ch);
-echo $result;
 
