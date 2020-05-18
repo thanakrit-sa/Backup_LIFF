@@ -130,6 +130,7 @@
       liff.getProfile().then(profile => {
         
         document.getElementById("userId").innerHTML = profile.userId;
+        window.location.href = "authen.php?lineID=" + profile.userId;
       }).catch(err => console.error(err));
     }
     liff.init({ liffId: "1654173341-8BdJg3a7" }, () => {
