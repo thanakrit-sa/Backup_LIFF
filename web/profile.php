@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <br>
+    <!-- <br>
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
         <div class="container" id="navbar-example2">
             <div class="card p-0 mb-5">
