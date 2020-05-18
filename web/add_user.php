@@ -1,19 +1,3 @@
-<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-  <script>
-    function runApp() {
-      liff.getProfile().then(profile => {
-        
-        document.getElementById("userId").innerHTML = profile.userId;
-      }).catch(err => console.error(err));
-    }
-    liff.init({ liffId: "1654173341-8BdJg3a7" }, () => {
-      if (liff.isLoggedIn()) {
-        runApp()
-      } else {
-        liff.login();
-      }
-    }, err => console.error(err.code, error.message));
-  </script>
 <?
 
 $name = $_POST['username'];

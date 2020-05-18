@@ -31,14 +31,16 @@
       }
     }, err => console.error(err.code, error.message));
   </script>
-
+<?
+  $lineID = $_GET['lineID']
+?>
     <div class="container">
         <div class="card">
             <div class="card-body">
                 <form action="add_user.php" method="POST">
                 <div class="form-group">
                         <label>Line ID</label>
-                        <label id="userId"></label>
+                        <label><?=$lineID?></label>
                     </div>
                     <div class="form-group">
                         <label>Username</label>
