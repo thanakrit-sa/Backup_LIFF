@@ -26,7 +26,7 @@ $result = curl_exec($ch);
 curl_close($ch);
 $resultData = json_decode($result, true);
 
-$date = $resultData['data'];
+$data = $resultData['data'];
 echo $data['username'];
 
 
