@@ -110,7 +110,7 @@
 $data = 28;
 $data_string = json_encode($data);
 
-$ch = curl_init('https://e-sport.in.th/ssdev/ecom/dashboard/api/member/memberByid/'.$data);
+$ch = curl_init('https://e-sport.in.th/ssdev/ecom/dashboard/api/member/memberlineid/$line_userid');
 
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
