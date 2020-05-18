@@ -57,7 +57,8 @@ $updated = $data['updated_at'];
         
         <div class="card shadow mt-1">
             <div class="card-body">
-
+                <b>Profile</b>
+                <hr width="80%" style="border: 1px solid black">
             </div>
         </div>
 
