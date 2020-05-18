@@ -44,7 +44,7 @@ $updated = $data['updated_at'];
         <div class="container" id="navbar-example2">
             <div class="card p-0 mb-5">
                 <div class="card-body p-0 m-0">
-                    <div class="row bg-info p-5 m-0">
+                    <div class="row shadow bg-info p-5 m-0">
                         <div class="col">
                             <div class="row">
                                 <div class="col">
@@ -63,12 +63,12 @@ $updated = $data['updated_at'];
                             </div>
                         </div>
                     </div>
-                    <article>
-                        <b>Username : </b> <?=$name?> <br>
-                        <b>Username : </b> <?=$name?> <br>
-                        <b>Username : </b> <?=$name?> <br>
-                        <b>Username : </b> <?=$name?> <br>
-                    </article>
+                    <div>
+                        <b>Username : </b> <?= $name ?> <br>
+                        <b>Username : </b> <?= $name ?> <br>
+                        <b>Username : </b> <?= $name ?> <br>
+                        <b>Username : </b> <?= $name ?> <br>
+                    </div>
 
                 </div>
             </div>
