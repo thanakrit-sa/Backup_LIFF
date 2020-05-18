@@ -27,6 +27,7 @@ curl_close($ch);
 $resultData = json_decode($result, true);
 
 $data = $resultData['data'];
+$name = $data['username'];
 $password = $data['password'];
 $address = $data['address'];
 $email = $data['email'];
@@ -47,6 +48,8 @@ $updated = $data['updated_at'];
                         <div class="col" align="center">
                             <img src="Images/catdog.jpg" class="img-thumbnail rounded-circle shadow p-0 m-0 bg-black rounded" width="20%">
                         </div>
+                        <br>
+                        <h4 style="font-weight: bold; color: white;"><?=$name?></h4>
                     </div>
                     <br>
 
