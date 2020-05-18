@@ -26,8 +26,11 @@
           <h3>ลงทะเบียน</h3>
         </div>
         <hr>
-        <div class="alert alert-danger" role="alert">
-          <strong>** กรุณาลงทะเบียนก่อนการทำรายการ...</strong>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>กรุณา!</strong> ลงทะเบียนการทำรายการ.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <br>
         <form action="add_user.php" method="POST">
