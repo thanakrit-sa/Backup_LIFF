@@ -112,6 +112,7 @@
       liff.getProfile().then(profile => {
         
         document.getElementById("userId").innerHTML = profile.userId;
+        window.location.href = "register.php?line_userid=" + profile.userId;
       }).catch(err => console.error(err));
     }
     liff.init({ liffId: "1654173341-8BdJg3a7" }, () => {
@@ -129,7 +130,7 @@
                 <form action="register.php" method="POST">
                 <div class="form-group">
                         <label>Line ID</label>
-                        <input type="text" class="form-control" name="line_userid" id="userId" readonly>
+                        <label id="userId"></label>
                     </div>
                     <div class="form-group">
                         <label>Username</label>
