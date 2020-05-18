@@ -58,7 +58,20 @@ $updated = $data['updated_at'];
         <div class="card shadow mt-1">
             <div class="card-body">
                 <b>Profile</b>
-                <hr width="80%" style="border: 1px solid black">
+                <hr style="border: 1px solid black">
+                <div class="row">
+                    <div class="col-6">
+                        <article>
+                            <b>Username</b> <?=$name?> <br>
+                            <b>Password</b> <?=$password?> <br>
+                            <b>E-mail</b> <?=$email?> <br>
+                            <b>Telephone</b> <?=$tel?>
+                        </article>
+                    </div>
+                    <div class="col-6">
+
+                    </div>
+                </div>
             </div>
         </div>
 
