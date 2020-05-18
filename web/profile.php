@@ -41,16 +41,15 @@ $updated = $data['updated_at'];
 <body>
     <br>
     <div class="container">
-        <div class="card">
-            <div class="card-body bg-danger">
+        <div class="card bg-danger" style="border-radius: 30%">
+            <div class="card-body">
                 <div class="row">
                     <div class="col-4">
                         <img src="Images/catdog.jpg" class="img-thumbnail shadow rounded-circle shadow">
                     </div>
                     <div class="col-8">
                         <?= $name ?> <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                        doloribus ipsa voluptates. Praesentium.
+                        Lorem ipsum dolor sit amet, consectetur.
                     </div>
                 </div>
             </div>
