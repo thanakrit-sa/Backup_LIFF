@@ -15,12 +15,10 @@
     $result = curl_exec($ch);
     curl_close($ch);
     $data = json_decode($result, true);
-    echo $data["resultMgs"];
 
-    // if($result == "not found line user id") {
-    //     echo '<A HREF = "http://www.thaiseoboard.com "> Thaiseoboard </A>';
-    // }
-    // else {
-    //     echo "not";
-    // }
-?>
+    if($data["resultMgs"] == "Unsuccessfully") {
+        echo '<A HREF = "http://www.thaiseoboard.com "> Thaiseoboard </A>';
+    }
+    else {
+        echo "not";
+    }
