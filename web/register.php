@@ -6,9 +6,14 @@ $email = $_POST['email'];
 $tel = $_POST['tel'];
 $address = $_POST['address'];
 
-// $url = 'http://localhost/sample/login_action.php'; 
-$request = 'username=$name&password=$password'; 
-echo $request;
+echo $name;
+echo $password;
+echo $email;
+echo $tel;
+echo $address;
+
+$url = 'http://localhost/sample/login_action.php'; 
+$request = ["username = $name"]; 
 
 // $ch = curl_init(); // เริ่มต้นใช้งาน cURL
 
