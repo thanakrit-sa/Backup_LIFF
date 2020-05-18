@@ -53,6 +53,7 @@ $updated = $data['updated_at'];
                     </div>
                 </div>
             </div>
+            <br>
             <div class="card shadow mt-1" style="border-radius: 20%; color: white">
                 <div class="card-body">
                     
