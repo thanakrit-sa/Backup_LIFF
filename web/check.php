@@ -14,7 +14,8 @@
      
     $result = curl_exec($ch);
     curl_close($ch);
-    echo $result["resultMgs"];
+    $data = json_decode($result);
+    echo $data["resultMgs"];
 
     // if($result == "not found line user id") {
     //     echo '<A HREF = "http://www.thaiseoboard.com "> Thaiseoboard </A>';
