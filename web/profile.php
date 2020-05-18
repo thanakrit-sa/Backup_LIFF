@@ -41,7 +41,7 @@ $updated = $data['updated_at'];
 <body>
     <br>
     <div class="container">
-        <div class="card bg-danger shadow" style="border-radius: 10%; color: white">
+        <div class="card bg-danger shadow" style="border-radius: 20%; color: white">
             <div class="card-body">
                 <div class="row">
                     <div class="col-4">
@@ -51,6 +51,11 @@ $updated = $data['updated_at'];
                         <b>Hi! <?= $name ?></b><br>
                         Lorem ipsum dolor sit amet, consectetur.
                     </div>
+                </div>
+            </div>
+            <div class="card shadow mt-1" style="border-radius: 20%; color: white">
+                <div class="card-body">
+                    
                 </div>
             </div>
         </div>
