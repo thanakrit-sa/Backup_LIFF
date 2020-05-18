@@ -42,9 +42,9 @@ $updated = $data['updated_at'];
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
         <div class="container" id="navbar-example2">
             <div class="card p-0 mb-5">
-                <div class="card-body">
+                <div class="card-body p-0 m-0">
                     <div class="row bg-info p-0 m-0">
-                        <div class="col" align="center">
+                        <div class="col bg-info" align="center">
                             <img src="Images/catdog.jpg" class="img-thumbnail rounded-circle shadow p-0 m-0 bg-black rounded" width="20%">
                         </div>
                     </div>
