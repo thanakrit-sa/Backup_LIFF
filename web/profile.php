@@ -107,7 +107,28 @@
 </div>
 </div> -->
 
-<form class="form-group" action="" method="POST">
-    <input class="form-control" type="text" name="username" placeholder="Username">
-    <input class="form-control" type="password" name="password" placeholder="Password">
-</form>
+<div class="container">
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input type="text" class="form-control" placeholder="Enter Username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="text" class="form-control" placeholder="Enter Password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Email</label>
+            <input type="text" class="form-control" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Telephone</label>
+            <input type="text" class="form-control" placeholder="Enter Telephone">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Address</label>
+            <input type="text" class="form-control" placeholder="Enter Address">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
