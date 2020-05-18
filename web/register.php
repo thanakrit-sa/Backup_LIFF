@@ -13,7 +13,7 @@ $address = $_POST['address'];
 // echo $address;
 
 $url = 'http://localhost/sample/login_action.php'; 
-$request = "['username' : '$name']"; 
+$request = "[{'username' : '$name'}]"; 
 echo $request;
 // $ch = curl_init(); // เริ่มต้นใช้งาน cURL
 
