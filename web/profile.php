@@ -45,7 +45,7 @@ $updated = $data['updated_at'];
                 <div class="card-body">
                     <div class="row">
                         <div class="col" align="center">
-                            <img src="Images/catdog.jpg" class="img-thumbnail">
+                            <img src="Images/catdog.jpg" class="img-thumbnail rounded-circle shadow p-0 m-0 bg-black rounded" width="10%">
                         </div>
                     </div>
                     <br>
