@@ -107,7 +107,7 @@
 </div>
 </div> -->
 <?
-$line_userid = $_GET['lineID'];
+$line_userid = $_GET['line_userid'];
 $data_string = json_encode($line_userid);
 
 $ch = curl_init('https://e-sport.in.th/ssdev/ecom/dashboard/api/member/memberlineid/line_userid');
