@@ -18,9 +18,14 @@
   <?
   $lineID = $_GET['lineID']
   ?>
+  <br>
   <div class="container">
     <div class="card">
       <div class="card-body">
+        <div align="center">
+          <h3>Register Panel</h3>
+        </div>
+        <hr>
         <form action="add_user.php" method="POST">
           <div class="form-group">
             <label>Line ID</label>
@@ -46,7 +51,7 @@
             <label>Address</label>
             <input type="text" class="form-control" name="address" placeholder="Enter Address">
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
       </div>
     </div>
