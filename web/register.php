@@ -23,35 +23,39 @@
     <div class="card">
       <div class="card-body">
         <div align="center">
-          <h3>Register Panel</h3>
+          <h3>ลงทะเบียน</h3>
         </div>
         <hr>
+        <div class="alert alert-danger" role="alert">
+          <strong>** กรุณาลงทะเบียนก่อนการทำรายการ...</strong>
+        </div>
+        <br>
         <form action="add_user.php" method="POST">
           <div class="form-group">
-            <label>Line ID</label>
-            <input type="text" class="form-control" name="lineID" value="<?=$lineID?>" readonly>
+            <label>ไลน์ไอดี</label>
+            <input type="text" class="form-control" name="lineID" value="<?= $lineID ?>" readonly>
           </div>
           <div class="form-group">
-            <label>Username</label>
-            <input type="text" class="form-control" name="username" placeholder="Enter Username">
+            <label>ชื่อผู้ใช้งาน</label>
+            <input type="text" class="form-control" name="username" placeholder="กรุณากรอกชื่อผู้ใช้งาน">
           </div>
           <div class="form-group">
-            <label>Password</label>
-            <input type="text" class="form-control" name="password" placeholder="Enter Password">
+            <label>รหัสผ่าน</label>
+            <input type="text" class="form-control" name="password" placeholder="กรุณากรอกรหัสผ่าน">
           </div>
           <div class="form-group">
-            <label>Email</label>
-            <input type="text" class="form-control" name="email" placeholder="Enter Email">
+            <label>อีเมล</label>
+            <input type="text" class="form-control" name="email" placeholder="กรุณากรอกอีเมล">
           </div>
           <div class="form-group">
-            <label>Telephone</label>
-            <input type="text" class="form-control" name="tel" placeholder="Enter Telephone">
+            <label>เบอร์โทรศัพท์</label>
+            <input type="text" class="form-control" name="tel" placeholder="กรุณากรอกเบอร์โทรศัพท์">
           </div>
           <div class="form-group">
-            <label>Address</label>
-            <input type="text" class="form-control" name="address" placeholder="Enter Address">
+            <label>ที่อยู่</label>
+            <textarea type="text" class="form-control" name="address" placeholder="กรุณากรอกที่อยู่"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          <button type="submit" class="btn btn-primary btn-block">ยืนยันการลงทะเบียน</button>
         </form>
       </div>
     </div>
