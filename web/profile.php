@@ -41,14 +41,14 @@ $updated = $data['updated_at'];
 <body>
     <br>
     <div class="container">
-        <div class="card bg-danger shadow" style="border-radius: 100%; color: white">
+        <div class="card bg-danger shadow" style="border-radius: 10%; color: white">
             <div class="card-body">
                 <div class="row">
                     <div class="col-4">
                         <img src="Images/catdog.jpg" class="img-thumbnail shadow rounded-circle shadow">
                     </div>
                     <div class="col-8">
-                        <?= $name ?> <br>
+                        <b>Hi! <?= $name ?></b><br>
                         Lorem ipsum dolor sit amet, consectetur.
                     </div>
                 </div>
