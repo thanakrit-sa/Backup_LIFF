@@ -20,5 +20,5 @@ if ($data["resultMgs"] == "Unsuccessfully") {
     header("Location: register.php?lineID=$lineID");
     exit;
 } else {
-    header("Location: profile.php");;
+    header("Location: profile.php?lineID=$lineID");;
 }
