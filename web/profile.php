@@ -108,7 +108,7 @@
 </div> -->
 <?
 $data = array(
-    "id" => "28",
+    "data" => "28",
 );
 $data_string = json_encode($data);
 
