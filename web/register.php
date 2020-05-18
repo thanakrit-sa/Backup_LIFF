@@ -15,9 +15,10 @@ $address = $_POST['address'];
 $data = array(
     "username" => "$name", 
     "password" => "$password",
+    "address" => "$address",
     "email" => "$email",
     "tel" => "$tel",
-    "address" => "$address"
+    "line_userid" => "udsfdslfs"
 ); //ข้อมูลที่ต้องการโพส
 $data_string = json_encode($data); //ทำให้เป็น json ด้วยฟังก์ชัน json_encode
  echo $data_string;
