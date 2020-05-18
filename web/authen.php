@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
 </head>
-
 <body>
 <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
   <script>
     function runApp() {
       liff.getProfile().then(profile => {
-        
-        
         window.location.href = "check.php?lineID=" + profile.userId;
       }).catch(err => console.error(err));
     }
