@@ -35,7 +35,7 @@
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <form action="register.php" method="POST">
+                <form action="add_user.php" method="POST">
                 <div class="form-group">
                         <label>Line ID</label>
                         <label id="userId"></label>
