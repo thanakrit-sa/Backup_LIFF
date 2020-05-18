@@ -1,4 +1,4 @@
 <?
-    $lineID = $_POST['lineID'];
+    $lineID = $_GET['lineID'];
     echo $lineID;
 ?>
