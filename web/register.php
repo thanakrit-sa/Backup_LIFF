@@ -6,15 +6,15 @@ $email = $_POST['email'];
 $tel = $_POST['tel'];
 $address = $_POST['address'];
 
-echo $name;
-echo $password;
-echo $email;
-echo $tel;
-echo $address;
+// echo $name;
+// echo $password;
+// echo $email;
+// echo $tel;
+// echo $address;
 
 $url = 'http://localhost/sample/login_action.php'; 
 $request = ["username = $name"]; 
-
+echo $request;
 // $ch = curl_init(); // เริ่มต้นใช้งาน cURL
 
 // curl_setopt($ch, CURLOPT_URL, $url); // กำหนดค่า URL
