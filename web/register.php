@@ -13,6 +13,7 @@ $address = $_POST['address'];
 // echo $address;
 
 $data = array(
+    "id" => "",
     "username" => "$name", 
     "password" => "$password",
     "address" => "$address",
