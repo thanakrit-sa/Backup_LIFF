@@ -128,7 +128,7 @@
             <div class="card-body">
                 <form action="register.php" method="POST">
                 <div class="form-group">
-                        <label>{{profile.userId}}</label>
+                        <label id="userId"></label>
                         <input type="text" class="form-control" name="username">
                     </div>
                     <div class="form-group">
