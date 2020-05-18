@@ -27,7 +27,12 @@ curl_close($ch);
 $resultData = json_decode($result, true);
 
 $data = $resultData['data'];
-echo $data['username'];
+$password = $data['password'];
+$address = $data['address'];
+$email = $data['email'];
+$tel = $data['tel'];
+$created = $data['created_at'];
+$updated = $data['updated_at'];
 
 
 ?>
@@ -40,7 +45,7 @@ echo $data['username'];
                 <div class="card-body">
                     <div class="row">
                         <div class="col" align="center">
-                            <img src="catdog.jpg" class="rounded-circle shadow p-0 m-0 bg-black rounded" width="50%">
+                            <img src="images/catdog.jpg" class="rounded-circle shadow p-0 m-0 bg-black rounded" width="50%">
                         </div>
                     </div>
                     <br>
