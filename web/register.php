@@ -14,7 +14,7 @@ $address = $_POST['address'];
 
 $url = 'http://localhost/sample/login_action.php'; 
 $request = ["username = $name"]; 
-echo $request;
+echo $reques['username'];
 // $ch = curl_init(); // เริ่มต้นใช้งาน cURL
 
 // curl_setopt($ch, CURLOPT_URL, $url); // กำหนดค่า URL
