@@ -15,4 +15,11 @@
     $result = curl_exec($ch);
     curl_close($ch);
     echo $result;
+
+    if($result == "not found line user id") {
+        echo '<A HREF = "http://www.thaiseoboard.com "> Thaiseoboard </A>';
+    }
+    else {
+        echo "not";
+    }
 ?>
