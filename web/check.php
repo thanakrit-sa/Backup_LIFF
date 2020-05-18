@@ -17,7 +17,7 @@ curl_close($ch);
 $data = json_decode($result, true);
 
 if ($data["resultMgs"] == "Unsuccessfully") {
-    header("Location: register.php?lineID=" + $lineID);
+    header("Location: register.php");
     exit;
 } else {
     echo "not";
