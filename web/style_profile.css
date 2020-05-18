@@ -1,6 +1,7 @@
 * html .footer_allpage {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
 }
 
 article {
