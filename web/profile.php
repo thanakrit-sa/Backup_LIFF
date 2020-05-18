@@ -106,11 +106,32 @@
     </div>
 </div>
 </div> -->
+<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+  <script>
+    function runApp() {
+      liff.getProfile().then(profile => {
+        
+        document.getElementById("userId").innerHTML = '<b>UserId:</b> ' + profile.userId;
+      }).catch(err => console.error(err));
+    }
+    liff.init({ liffId: "1654173341-8BdJg3a7" }, () => {
+      if (liff.isLoggedIn()) {
+        runApp()
+      } else {
+        liff.login();
+      }
+    }, err => console.error(err.code, error.message));
+    $user = profile.userId;
+  </script>
 
     <div class="container">
         <div class="card">
             <div class="card-body">
                 <form action="register.php" method="POST">
+                <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="<?=$user?>">
+                    </div>
                     <div class="form-group">
                         <label>Username</label>
                         <input type="text" class="form-control" name="username" placeholder="Enter Username">
