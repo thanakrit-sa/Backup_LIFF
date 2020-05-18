@@ -49,7 +49,7 @@ $updated = $data['updated_at'];
                             <div class="row">
                                 <div class="col">
                                     <div class="col" align="center">
-                                        <img src="Images/catdog.jpg" class="img-thumbnail rounded-circle shadow p-0 m-0 bg-black rounded" width="20%">
+                                        <img src="Images/catdog.jpg" class="img-thumbnail rounded-circle shadow p-0 m-0 bg-black rounded" width="50%">
                                     </div>
                                 </div>
                             </div>
@@ -57,23 +57,24 @@ $updated = $data['updated_at'];
                             <div class="row">
                                 <div class="col">
                                     <div class="col" align="center">
-                                        <h3 style="font-weight: bold; color: white;" class="shadow"><?= $name ?></h3>
+                                        <h3 style="font-weight: bold; color: white;"><?= $name ?></h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h3>Profile</h3>
-                    <hr style="color: black">
-                    <div class="row">
-                        <div class="col">
+                    <article>
+                        <h3>Profile</h3>
+                        <hr style="color: black">
+                        <div class="row">
+                            <div class="col">
 
+                            </div>
+                            <div class="col">
+
+                            </div>
                         </div>
-                        <div class="col">
-
-                        </div>
-                    </div>
-
+                    </article>
 
                 </div>
             </div>
