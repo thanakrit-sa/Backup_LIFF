@@ -57,10 +57,20 @@ $updated = $data['updated_at'];
                             <div class="row">
                                 <div class="col">
                                     <div class="col" align="center">
-                                        <h3 style="font-weight: bold; color: white;"><?= $name ?></h3>
+                                        <h3 style="font-weight: bold; color: white;" class="shadow"><?= $name ?></h3>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <h3>Profile</h3>
+                    <hr style="color: black">
+                    <div class="row">
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
                         </div>
                     </div>
 
