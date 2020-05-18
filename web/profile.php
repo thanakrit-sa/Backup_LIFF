@@ -121,7 +121,6 @@
         liff.login();
       }
     }, err => console.error(err.code, error.message));
-    $user = profile.userId;
   </script>
 
     <div class="container">
@@ -129,8 +128,8 @@
             <div class="card-body">
                 <form action="register.php" method="POST">
                 <div class="form-group">
-                        <label>Username</label>
-                        <input type="text" class="form-control" name="username" placeholder="<?=$user?>">
+                        <label>{{profile.userId}}</label>
+                        <input type="text" class="form-control" name="username">
                     </div>
                     <div class="form-group">
                         <label>Username</label>
