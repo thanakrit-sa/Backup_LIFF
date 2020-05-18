@@ -12,21 +12,7 @@
     <link rel="stylesheet" type="text/css" href="style_profile.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-  <script>
-    function runApp() {
-      liff.getProfile().then(profile => {
-        window.location.href = "authen.php?lineID=" + profile.userId;
-      }).catch(err => console.error(err));
-    }
-    liff.init({ liffId: "1654173341-8BdJg3a7" }, () => {
-      if (liff.isLoggedIn()) {
-        runApp()
-      } else {
-        liff.login();
-      }
-    }, err => console.error(err.code, error.message));
-  </script>
+<!-- 
 
 <body>
     <br>
@@ -119,4 +105,20 @@
         </div>
     </div>
 </div>
-</div>
+</div> -->
+
+<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+  <script>
+    function runApp() {
+      liff.getProfile().then(profile => {
+        window.location.href = "authen.php?lineID=" + profile.userId;
+      }).catch(err => console.error(err));
+    }
+    liff.init({ liffId: "1654173341-8BdJg3a7" }, () => {
+      if (liff.isLoggedIn()) {
+        runApp()
+      } else {
+        liff.login();
+      }
+    }, err => console.error(err.code, error.message));
+  </script>
