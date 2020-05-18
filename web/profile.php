@@ -27,7 +27,7 @@ curl_close($ch);
 $resultData = json_decode($result,true);
 
 foreach ($resultData['data'] as $data) {
-    echo $data;
+    echo $data['username'];
 };
 
 ?>
