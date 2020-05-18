@@ -15,7 +15,7 @@ $address = $_POST['address'];
 $data = array("username" => "$name", "password" => "$password"); //ข้อมูลที่ต้องการโพส
 $data_string = json_encode($data); //ทำให้เป็น json ด้วยฟังก์ชัน json_encode
  
-echo $data_string;
+echo $data_string["username"];
 // $ch = curl_init('http://www.imooh.com/'); //ตรงนี้อย่าลืมเปลี่ยนเป็น url ที่ต้องการส่งค่าไปนะครับ
  
 // //ในกรณีที่ต้องการส่งเป็น method อื่น เช่น DELETE, PUT, HEAD ก็เปลี่ยนได้ที่นี่ครับ
