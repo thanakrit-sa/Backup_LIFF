@@ -129,7 +129,7 @@
     function runApp() {
       liff.getProfile().then(profile => {
         
-        document.getElementById("userId").innerHTML = profile.userId;
+        
         window.location.href = "authen.php?lineID=" + profile.userId;
       }).catch(err => console.error(err));
     }
@@ -143,37 +143,7 @@
   </script>
 
     <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <form action="register.php" method="POST">
-                <div class="form-group">
-                        <label>Line ID</label>
-                        <label id="userId"></label>
-                    </div>
-                    <div class="form-group">
-                        <label>Username</label>
-                        <input type="text" class="form-control" name="username" placeholder="Enter Username">
-                    </div>
-                    <div class="form-group">
-                        <label>Password</label>
-                        <input type="text" class="form-control" name="password" placeholder="Enter Password">
-                    </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="text" class="form-control" name="email" placeholder="Enter Email">
-                    </div>
-                    <div class="form-group">
-                        <label>Telephone</label>
-                        <input type="text" class="form-control" name="tel" placeholder="Enter Telephone">
-                    </div>
-                    <div class="form-group">
-                        <label>Address</label>
-                        <input type="text" class="form-control" name="address" placeholder="Enter Address">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-        </div>
+        
     </div>
 
 
