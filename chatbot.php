@@ -28,6 +28,7 @@ $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/pr
 $dataFromApi = json_decode($api, true);
 
 foreach ($dataFromApi['data'] as $data) {
+  $prod_id[] = $data['id'];
   $prod_name[] = $data['product_name'];
   $prod_image[] = $data['image_path'];
   $prod_stock[] = $data['stock'];
@@ -36,8 +37,8 @@ foreach ($dataFromApi['data'] as $data) {
   $prod_cate[] = $data['category_name'];
   $prod_created_time[] = $data['created_at'];
   $prod_updated_time[] = $data['updated_at'];
-  echo $dataFromApi['data'];
 }
+echo $prod_id;
 
 include 'flex_message.php';
 
