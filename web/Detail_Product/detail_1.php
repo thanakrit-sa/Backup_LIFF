@@ -35,7 +35,7 @@ $result = curl_exec($ch);
 curl_close($ch);
 $resultData = json_decode($result, true);
 
-echo $resultData['data']
+echo $resultData
 // $data = $resultData['data'];
 
 ?>
