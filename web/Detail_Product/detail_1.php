@@ -21,8 +21,8 @@
 
 <?
 $status = $_POST['status'];
-$id = $_GET['prod_id'];
-echo $id;
+$prod_ID = $_POST['prodID'];
+echo $prod_ID;
 
 include '../../function.php';
 

@@ -75,14 +75,14 @@ foreach ($dataFromApi['data'] as $data) {
     <div class="footer">
         <div class="row">
             <div class="col-5 p-0 m-0">
-                <form method="POST" action="../Detail_Product/detail_1.php?prod_id=$prod_id[0]">
+                <form method="POST" action="../Detail_Product/detail_1.php">
                     <select class="custom-select mr-sm-2 custom-select-lg" name="status">
                         <option selected value="ซื้อ">ซื้อ</option>
                         <option value="สั่งซื้อ">สั่งซื้อ</option>
                         <option value="สั่ง">สั่ง</option>
                     </select>
-
             </div>
+            <input type="hidden" name="prodID" value="<?=$prod_id[0]?>">
             <div class="col-7 p-0 m-0">
                 <button type="submit" id="count" class="btn btn-dark btn-block btn-lg p-2" align="center">สั่งสินค้า</button>
             </div>
