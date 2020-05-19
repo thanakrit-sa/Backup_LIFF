@@ -38,7 +38,7 @@ foreach ($dataFromApi['data'] as $data) {
   $prod_created_time[] = $data['created_at'];
   $prod_updated_time[] = $data['updated_at'];
 }
-echo $prod_id[0];
+$id0 = $prod_id[0];
 
 include 'flex_message.php';
 
