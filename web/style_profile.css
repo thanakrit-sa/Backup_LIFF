@@ -1,4 +1,15 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("Images/5.jpg");
+        min-height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width: 900px) {
     body {
         font-family: Arial, Helvetica, sans-serif;
         background-image: url("Images/5.jpg");
