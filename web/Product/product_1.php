@@ -20,7 +20,6 @@ $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/pr
 $dataFromApi = json_decode($api, true);
 
 $id = $_GET['prod_id'];
-echo $id;
 
 foreach ($dataFromApi['data'] as $data) {
     $prod_id[] = $data['id'];
@@ -41,10 +40,10 @@ foreach ($dataFromApi['data'] as $data) {
             <div class="card-body">
                 <div class="row">
                     <div class="col">
-                        <img src="<? echo $prod_image[0]; ?>" class="img-thumbnail shadow p-1 mb-3 bg-white rounded">
+                        <img src="<?=$prod_image[0]; ?>" class="img-thumbnail shadow p-1 mb-3 bg-white rounded">
                     </div>
                 </div>
-                <p align="center"><b><? echo $prod_name[0]; ?></b></p>
+                <p align="center"><b><?=$prod_name[0]; ?></b></p>
                 <hr>
                 <article class="row">
                     <div class="col-12" align="center">
@@ -58,15 +57,15 @@ foreach ($dataFromApi['data'] as $data) {
                 </div>
                 <div class="row">
                     <div class="col-4" align="right"><b>Catagory : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_cate[0]; ?></div>
+                    <div class="col-8" align="left"><?=$prod_cate[0]; ?></div>
                 </div>
                 <div class="row">
                     <div class="col-4" align="right"><b>Stock : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_stock[0] . " ชิ้น"; ?></div>
+                    <div class="col-8" align="left"><?=$prod_stock[0] . " ชิ้น"; ?></div>
                 </div>
                 <div class="row">
                     <div class="col-4" align="right"><b>Price : </b></div>
-                    <div class="col-8" align="left"><? echo $prod_price[0] . " บาท"; ?></div>
+                    <div class="col-8" align="left"><?=$prod_price[0] . " บาท"; ?></div>
                 </div>
             </div>
         </div>
@@ -75,7 +74,7 @@ foreach ($dataFromApi['data'] as $data) {
     <div class="footer">
         <div class="row">
             <div class="col-5 p-0 m-0">
-                <form method="POST" action="../Detail_Product/detail_1.php">
+                <form method="POST" action="../payment_product.php">
                     <select class="custom-select mr-sm-2 custom-select-lg" name="status">
                         <option selected value="ซื้อ">ซื้อ</option>
                         <option value="สั่งซื้อ">สั่งซื้อ</option>
