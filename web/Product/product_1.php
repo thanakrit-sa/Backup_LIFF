@@ -23,14 +23,15 @@ $id = $_GET['prod_id'];
 echo $id;
 
 foreach ($dataFromApi['data'] as $data) {
-  $prod_name[] = $data['product_name'];
-  $prod_image[] = $data['image_path'];
-  $prod_stock[] = $data['stock'];
-  $prod_price[] = $data['price'];
-  $prod_address[] = $data['address'];
-  $prod_cate[] = $data['category_name'];
-  $prod_created_time[] = $data['created_at'];
-  $prod_updated_time[] = $data['updated_at'];
+    $prod_id[] = $data['id'];
+    $prod_name[] = $data['product_name'];
+    $prod_image[] = $data['image_path'];
+    $prod_stock[] = $data['stock'];
+    $prod_price[] = $data['price'];
+    $prod_address[] = $data['address'];
+    $prod_cate[] = $data['category_name'];
+    $prod_created_time[] = $data['created_at'];
+    $prod_updated_time[] = $data['updated_at'];
 }
 ?>
 
@@ -74,7 +75,7 @@ foreach ($dataFromApi['data'] as $data) {
     <div class="footer">
         <div class="row">
             <div class="col-5 p-0 m-0">
-                <form method="POST" action="../Detail_Product/detail_1.php">
+                <form method="POST" action="../Detail_Product/detail_1.php?prod_id=$prod_id[0]">
                     <select class="custom-select mr-sm-2 custom-select-lg" name="status">
                         <option selected value="ซื้อ">ซื้อ</option>
                         <option value="สั่งซื้อ">สั่งซื้อ</option>
