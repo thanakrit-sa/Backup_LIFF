@@ -11,7 +11,7 @@
   <script>
     function runApp() {
       liff.getProfile().then(profile => {
-        window.location.href = "check.php?lineID=" + profile.userId;
+        window.location.href = "check_lineID.php?lineID=" + profile.userId;
       }).catch(err => console.error(err));
     }
     liff.init({ liffId: "1654173341-jxzy3Mbk" }, () => {
