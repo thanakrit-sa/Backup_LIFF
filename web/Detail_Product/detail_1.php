@@ -35,6 +35,10 @@ curl_close($ch);
 echo $result;
 $resultData = json_decode($result, true);
 
+foreach($resultData['data'] as $data) {
+    echo $data;
+};
+
 // $data = $resultData['data'];
 // $prod_name = $data['product_name'];
 // $prod_image = $data['image_path'];
