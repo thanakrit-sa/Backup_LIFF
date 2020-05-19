@@ -14,7 +14,9 @@ $data = array(
     "address" => "$address",
     "email" => "$email",
     "tel" => "$tel",
-    "line_userid" => "$lineID"
+    // "line_userid" => "$lineID"
+    "line_userid" => "LineID1"
+
 );
 $data_string = json_encode($data);
 echo $data_string;
