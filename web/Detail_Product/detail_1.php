@@ -32,17 +32,17 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json',));
 
 $result = curl_exec($ch);
 curl_close($ch);
-
+echo $result;
 $resultData = json_decode($result, true);
 
-$data = $resultData['data'];
-$prod_name = $data['product_name'];
-$prod_image = $data['image_path'];
-$prod_stock = $data['stock'];
-$prod_price = $data['price'];
-$prod_address = $data['address'];
-$prod_cate = $data['category_name'];
+// $data = $resultData['data'];
+// $prod_name = $data['product_name'];
+// $prod_image = $data['image_path'];
+// $prod_stock = $data['stock'];
+// $prod_price = $data['price'];
+// $prod_address = $data['address'];
+// $prod_cate = $data['category_name'];
 
-echo $prod_name;
+// echo $prod_name;
 
 ?>
