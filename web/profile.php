@@ -38,7 +38,7 @@ $updated = $data['updated_at'];
 
 ?>
 
-<body style="background-image: url('Images/5.jpg')">
+<body>
     <br>
     <div class="container">
         <div class="card bg-danger shadow" style="border-radius: 20% 20% 0% 0%; color: white">
