@@ -1,8 +1,10 @@
+html,body {
+    height: 100%;
+}
 @media screen and (min-width: 100px) {
     body {
         font-family: Arial, Helvetica, sans-serif;
         background-image: url("Images/5.jpg");
-        max-height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
