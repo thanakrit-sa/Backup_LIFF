@@ -43,7 +43,7 @@ foreach ($dataFromApi['data'] as $data) {
                         <img src="<? echo $prod_image[0]; ?>" class="img-thumbnail shadow p-1 mb-3 bg-white rounded">
                     </div>
                 </div>
-                <p align="center"><b><? echo $prod_name[0]; ?></b></p>
+                <p align="center"><b><? echo $id; ?></b></p>
                 <hr>
                 <article class="row">
                     <div class="col-12" align="center">
