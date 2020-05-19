@@ -1,4 +1,4 @@
-html,body {
+/* html,body {
     height: 100%;
 }
 @media screen and (min-width: 100px) {
@@ -9,7 +9,7 @@ html,body {
         background-repeat: no-repeat;
         background-position: center center;
     }
-}
+} */
 
 article {
     font-size: 11px;
