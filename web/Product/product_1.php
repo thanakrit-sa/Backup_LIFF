@@ -19,6 +19,9 @@ include '../../function.php';
 $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
 $dataFromApi = json_decode($api, true);
 
+$id = $_GET['prod_id'];
+echo $id;
+
 foreach ($dataFromApi['data'] as $data) {
   $prod_name[] = $data['product_name'];
   $prod_image[] = $data['image_path'];
