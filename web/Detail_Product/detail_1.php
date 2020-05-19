@@ -25,7 +25,17 @@ $prod_id = $_POST['prodID'];
 
 include '../../function.php';
 
-$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productByid/".$prod_id);
-$dataFromApi = json_decode($api, true);
-echo $dataFromApi['data'];
+$ch = curl_init('https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productByid/'.$prod_id);
+
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json',));
+
+$result = curl_exec($ch);
+curl_close($ch);
+$resultData = json_decode($result, true);
+
+echo $resultData['data']
+// $data = $resultData['data'];
+
 ?>
