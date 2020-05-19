@@ -24,7 +24,7 @@ $status = $_POST['status'];
 $prod_id = $_POST['prodID'];
 
 include '../../function.php';
-
+echo $prod_id;
 $ch = curl_init('https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productByid/'.$prod_id);
 
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
@@ -35,7 +35,7 @@ $result = curl_exec($ch);
 curl_close($ch);
 $resultData = json_decode($result, true);
 
-echo $resultData
+
 // $data = $resultData['data'];
 
 ?>
