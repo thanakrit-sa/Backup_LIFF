@@ -263,7 +263,7 @@ $jsonFlex = [
                             "action" => [
                                 "type" => "uri",
                                 "label" => "สั่งซื้อ",
-                                "uri" => "https://liff.line.me/1654173341-pJegLPb3"
+                                "uri" => "https://liff.line.me/1654173341-lVDxGq6k"
                             ],
                             "color" => "#000000",
                             "style" => "primary"
