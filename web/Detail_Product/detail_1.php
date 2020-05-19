@@ -32,11 +32,11 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json',));
 
 $result = curl_exec($ch);
 curl_close($ch);
-echo $result;
+
 $resultData = json_decode($result, true);
 
 foreach($resultData['data'] as $data) {
-    echo $data;
+    echo $data['product_name'];
 };
 
 // $data = $resultData['data'];
