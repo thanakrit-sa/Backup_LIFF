@@ -3,7 +3,7 @@ html, body{
     background-image: url("Images/5.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     height: 100%;
 }
 
