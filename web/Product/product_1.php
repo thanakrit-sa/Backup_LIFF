@@ -84,7 +84,3 @@ foreach ($dataFromApi['data'] as $data) {
             </div>
             </form>
         </div>
-    </div>
-</body>
-
-</html>
