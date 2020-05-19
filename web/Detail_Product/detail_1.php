@@ -27,5 +27,5 @@ include '../../function.php';
 
 $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productByid/".$prod_id);
 $dataFromApi = json_decode($api, true);
-echo $dataFromApi;
+echo $dataFromApi['data'];
 ?>
