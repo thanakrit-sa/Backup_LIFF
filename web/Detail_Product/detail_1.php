@@ -31,21 +31,117 @@ $resultData = json_decode($result, true);
 foreach ($resultData['data'] as $data) {
     $prod_name = $data['product_name'];
     $prod_image = $data['image_path'];
-    $prod_stock = $data['stock'];
     $prod_price = $data['price'];
-    $prod_address = $data['address'];
-    $prod_cate = $data['category_name'];
 };
-echo $prod_image;
-
-// $data = $resultData['data'];
-// $prod_name = $data['product_name'];
-// $prod_image = $data['image_path'];
-// $prod_stock = $data['stock'];
-// $prod_price = $data['price'];
-// $prod_address = $data['address'];
-// $prod_cate = $data['category_name'];
-
-// echo $prod_name;
 
 ?>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5" align="center">
+                <img src="<?=$prod_image?>" width="100%" height="100%">
+            </div>
+            <div class="col-7">
+                <h5><?=$prod_name?></h5>
+                <p>Lorem ipsum dolor !</p>
+                <b>Status : </b><?=$status?><br>
+                <b>Price : </b><?=$prod_price?> THB
+            </div>
+        </div>
+        <hr>
+        <h5>Payment Method</h5>
+        <br>
+        <div class="accordion" id="accordionExample">
+            <div class="row" align="center">
+                <div class="col m-0" id="headingOne">
+                    <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <i class='fab fa-cc-mastercard' style='font-size:50px'></i>
+                    </button>
+                </div>
+                <div class="col m-0" id="headingTwo">
+                    <button class="btn btn-dark collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class='fab fa-cc-visa' style='font-size:50px'></i>
+                    </button>
+                </div>
+                <div class="col m-0" id="headingThree">
+                    <button class="btn btn-dark collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class='fab fa-cc-paypal' style='font-size:50px'></i>
+                    </button>
+                </div>
+                
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <br>
+                        <div class="form-group" align="left">
+                            <label><b>Card Number</b></label>
+                            <input type="text" class="form-control" placeholder="MasterCard">
+                        </div>
+                        <div class="form-group" align="left">
+                            <label><b>Firstname</b></label>
+                            <input type="text" class="form-control" placeholder="Firstname">
+                        </div>
+                        <div class="form-group" align="left">
+                            <label><b>Lastname</b></label>
+                            <input type="text" class="form-control" placeholder="Lastname">
+                        </div>
+                        <div class="alert alert-success" role="alert" align="left">
+                            Product price 4,500 baht. Do you want to buy the product ?
+                        </div>
+                        <button class="btn btn-dark btn-block">Confirm</button>
+                    </div>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="card-body">
+                            <div class="form-group" align="left">
+                                <label><b>Card Number</b></label>
+                                <input type="text" class="form-control" placeholder="VISA">
+                            </div>
+                            <div class="form-group" align="left">
+                                <label><b>Firstname</b></label>
+                                <input type="text" class="form-control" placeholder="Firstname">
+                            </div>
+                            <div class="form-group" align="left">
+                                <label><b>Lastname</b></label>
+                                <input type="text" class="form-control" placeholder="Lastname">
+                            </div>
+                            <div class="alert alert-success" role="alert" align="left">
+                                Product price 4,500 baht. Do you want to buy the product ?
+                            </div>
+                            <button class="btn btn-dark btn-block">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="card-body">
+                            <div class="form-group" align="left">
+                                <label><b>Card Number</b></label>
+                                <input type="text" class="form-control" placeholder="PayPal">
+                            </div>
+                            <div class="form-group" align="left">
+                                <label><b>Firstname</b></label>
+                                <input type="text" class="form-control" placeholder="Firstname">
+                            </div>
+                            <div class="form-group" align="left">
+                                <label><b>Lastname</b></label>
+                                <input type="text" class="form-control" placeholder="Lastname">
+                            </div>
+                            <div class="alert alert-success" role="alert" align="left">
+                                Product price 4,500 baht. Do you want to buy the product ?
+                            </div>
+                            <button class="btn btn-dark btn-block">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
