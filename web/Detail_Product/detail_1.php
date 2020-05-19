@@ -21,8 +21,7 @@
 
 <?
 $status = $_POST['status'];
-$prod_ID = $_POST['prodID'];
-echo $prod_ID;
+$prod_id = $_POST['prodID'];
 
 include '../../function.php';
 
@@ -48,7 +47,7 @@ foreach ($dataFromApi['data'] as $data) {
                 <img src="<?=$prod_image[0]?>" width="100%" height="100%">
             </div>
             <div class="col-7">
-                <h5><?=$prod_name[0]?></h5>
+                <h5><?=$prod_id?></h5>
                 <p>Lorem ipsum dolor !</p>
                 <b>Status : </b><?=$status?><br>
                 <b>Price : </b><?=$prod_price[0]?> THB
