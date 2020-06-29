@@ -24,7 +24,7 @@
 //   curl_close($ch);
 //   return $result;
 // }
-    $url = "https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order";
+    $url = "https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order?search=&page=1";
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_HEADER, 0);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
