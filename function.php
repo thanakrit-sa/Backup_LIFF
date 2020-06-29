@@ -35,12 +35,10 @@
     // echo $data;
 
 // header("Access-Control-Allow-Origin: https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order?search=&page=1");
-
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
 $curl = curl_init();
 $url = "https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order?search=&page=1";
-curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-  "Access-Control-Allow-Origin: $url"
-));
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
