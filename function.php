@@ -24,7 +24,7 @@
 //   curl_close($ch);
 //   return $result;
 // }
-    $url = "https://e-sport.in.th/ssdev/ecom/dashboard/api/products/";
+    $url = "https://oaplus.line.biz/channels/5000030506/e-commerce/order";
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_HEADER, 0);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
