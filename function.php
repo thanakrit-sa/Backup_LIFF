@@ -39,7 +39,7 @@
 $curl = curl_init();
 $url = "https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order?search=&page=1";
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-  "Access-Control-Allow-Origin: https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order?search=&page=1"
+  "Access-Control-Allow-Origin: $url"
 ));
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
