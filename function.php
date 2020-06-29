@@ -38,4 +38,4 @@ function file_get_contents_curl($url)
 
 $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
 $dataFromApi = json_decode($api, true);
-echo $dataFromApi;
+echo $data;
