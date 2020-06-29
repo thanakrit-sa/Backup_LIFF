@@ -24,22 +24,22 @@
 //   curl_close($ch);
 //   return $result;
 // }
-    $url = "https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order?search=&page=1";
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_HEADER, 0);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
-    $data = curl_exec($ch);
-    curl_close($ch);
-    echo $data;
+    // $url = "https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order?search=&page=1";
+    // $ch = curl_init();
+    // curl_setopt($ch, CURLOPT_HEADER, 0);
+    // curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    // curl_setopt($ch, CURLOPT_URL, $url);
+    // curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
+    // $data = curl_exec($ch);
+    // curl_close($ch);
+    // echo $data;
 
 
-//     $curl = curl_init();
-// $url = "https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order?search=&page=1";
-// curl_setopt($curl, CURLOPT_URL, $url);
-// curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-// curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+    $curl = curl_init();
+$url = "https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order?search=&page=1";
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
 
-// $output = curl_exec($curl);
-// echo $output;
+$output = curl_exec($curl);
+echo $output;
