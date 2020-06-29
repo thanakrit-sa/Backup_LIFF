@@ -34,8 +34,9 @@
     // curl_close($ch);
     // echo $data;
 
+header("Access-Control-Allow-Origin: https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order?search=&page=1");
 
-    $curl = curl_init();
+$curl = curl_init();
 $url = "https://api-oaplus.line.biz/channels/5000030506/e-commerce/api/v1/order?search=&page=1";
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
