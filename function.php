@@ -24,8 +24,7 @@
 //   curl_close($ch);
 //   return $result;
 // }
-function file_get_contents_curl($url)
-{
+    $url = "https://e-sport.in.th/ssdev/ecom/dashboard/api/products/";
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_HEADER, 0);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -33,9 +32,5 @@ function file_get_contents_curl($url)
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
     $data = curl_exec($ch);
     curl_close($ch);
-    return $data;
-}
+    echo $data;
 
-$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
-$dataFromApi = json_decode($api, true);
-echo $data;
