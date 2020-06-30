@@ -56,66 +56,6 @@ foreach ($dataFromApi['data'] as $data) {
             <div class="card-body p-0 m-0 scroll">
                 <div class="row p-0 m-0">
                     <div class="col-6 p-0 m-0" align="center">
-                        <a style="text-decoration:none; color:black" href="../Product/product_1.php">
-                            <div class="card mt-2 ml-2 mr-1 mb-2 p-0 shadow bg-white">
-                                <div class="card-body p-0 m-0">
-                                    <div class="row p-0 m-0">
-                                        <div class="col p-0 m-0">
-                                            
-                                                    <img src="<?=$prod_image[3]?>" class="p-0 m-0" id="img-product">
-                                                    <div class="inner_position_right">
-                                                        <article class="ribbon red">
-                                                            -50%
-                                                        </article>
-                                                    </div>
-
-                                            
-                                        </div>
-                                    </div>
-                                    <article class="row p-1 m-1">
-                                        <div class="col p-1" align="left">
-                                            <strong style="font-size: 12px;"><?=$prod_name[3]?></strong> <br>
-                                            <b style="font-size: 18px; color:rgb(235, 105, 19);">฿<?=$prod_price[3]?>.00</b> <br>
-                                            <div>
-                                                <s>฿1,659.00</s>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 p-0 m-0" align="center">
-                        <a style="text-decoration:none; color:black" href="https://getbootstrap.com/docs/4.0/components/card/?">
-                            <div class="card mt-2 ml-2 mr-1 mb-2 p-0 shadow bg-white">
-                                <div class="card-body p-0 m-0">
-                                    <div class="row p-0 m-0">
-                                        <div class="col p-0 m-0">
-                                           
-                                                    <img src="<?=$prod_image[4]?>" class="p-0 m-0" id="img-product">
-                                                    <div class="inner_position_right">
-                                                        <article class="ribbon red">
-                                                            -50%
-                                                        </article>
-                                                    </div>
-
-                                             
-                                        </div>
-                                    </div>
-                                    <article class="row p-1 m-1">
-                                        <div class="col p-1" align="left">
-                                            <strong style="font-size: 12px;"><?=$prod_name[4]?></strong> <br>
-                                            <b style="font-size: 18px; color:rgb(235, 105, 19);">฿<?=$prod_price[4]?>.00</b> <br>
-                                            <s>฿1,659.00</s>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row p-0 m-0">
-                    <div class="col-6 p-0 m-0" align="center">
                         <a style="text-decoration:none; color:black" href="https://getbootstrap.com/docs/4.0/components/card/?">
                             <div class="card mt-2 ml-2 mr-1 mb-2 p-0 shadow bg-white">
                                 <div class="card-body p-0 m-0">
