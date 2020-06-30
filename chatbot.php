@@ -24,17 +24,6 @@ function send_reply_message($url, $post_header, $post_body)
   return $result;
 }
 
-function filterData($api) {
-  $dataFromApi = json_decode($api, true);
-
-  foreach ($dataFromApi['data'] as $data) {
-    $prod_name[] = $data['product_name'];
-    $prod_image[] = $data['image_path'];
-    $prod_stock[] = $data['stock'];
-    $prod_price[] = $data['price'];
-  }
-}
-
 $API_URL = 'https://api.line.me/v2/bot/message';
 $ACCESS_TOKEN = 'Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=';
 $channelSecret = 'a35820614034732a864c1e03c76bb327';
@@ -46,6 +35,7 @@ $message = $request_array['events'][0]['message']['text'];
 foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
+
 include 'flex_message.php';
 if ($message == "แสดงสินค้า") {
   $data = [
@@ -56,7 +46,14 @@ if ($message == "แสดงสินค้า") {
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 } else if ($message == "แฟชั่นชาย") {
   $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/25");
-  filterData($api);
+  $dataFromApi = json_decode($api, true);
+
+  foreach ($dataFromApi['data'] as $data) {
+    $prod_name[] = $data['product_name'];
+    $prod_image[] = $data['image_path'];
+    $prod_stock[] = $data['stock'];
+    $prod_price[] = $data['price'];
+  }
   include 'flex_message.php';
   $data = [
     'replyToken' => $reply_token,
