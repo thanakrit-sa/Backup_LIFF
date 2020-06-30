@@ -534,7 +534,7 @@ $prod_fasionMen = [
           "type"=> "bubble",
           "hero"=> [
             "type"=> "image",
-            "url"=> $prod_image[0],
+            "url"=> "https://my-live-02.slatic.net/original/544da1eaf8adf5cc082eedabaa917019.jpg",
             "size"=> "full",
             "aspectRatio"=> "1:1",
             "aspectMode"=> "cover",
@@ -571,7 +571,7 @@ $prod_fasionMen = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "฿ ",
+                        "text"=> "฿569.00",
                         "flex"=> 0,
                         "size"=> "lg",
                         "weight"=> "bold",
@@ -586,7 +586,7 @@ $prod_fasionMen = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "เหลือเพียงชิ้นเท่านั้น",
+                        "text"=> "เหลือเพียง 5 ชิ้นเท่านั้น",
                         "size"=> "sm",
                         "weight"=> "bold"
                     ]
