@@ -56,14 +56,14 @@ if ($message == "แสดงสินค้า") {
 } else if ($split_prod == "25") {
   $data = [
     'replyToken' => $reply_token,
-    'messages' => [$prod_fasionMen]
+    'messages' => [$prod_Recommend]
   ];
   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 } else if ($split_prod == "26") {
   $data = [
     'replyToken' => $reply_token,
-    'messages' => [$prod_fasionMen]
+    'messages' => [$prod_Recommend]
   ];
   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);

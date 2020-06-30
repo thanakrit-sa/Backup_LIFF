@@ -524,7 +524,7 @@ $category = [
 ]
 ];
 
-$prod_fasionMen = [
+$prod_Recommend = [
     "type"=> "flex",
     "altText"=> "Flex Message",
     "contents"=> [
