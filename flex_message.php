@@ -541,7 +541,7 @@ $prod_fasionMen = [
             "action"=> [
               "type"=> "message",
               "text"=> "แฟชั่นชาย"
-      ]
+        ]
         ],
           "body"=> [
             "type"=> "box",
@@ -596,12 +596,78 @@ $prod_fasionMen = [
             ]
             ]
       ]
+      ],[
+        "type"=> "bubble",
+        "hero"=> [
+          "type"=> "image",
+          "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$prod_image[1],
+          "size"=> "full",
+          "aspectRatio"=> "1:1",
+          "aspectMode"=> "cover",
+          "action"=> [
+            "type"=> "message",
+            "text"=> "แฟชั่นชาย"
+      ]
       ],
+        "body"=> [
+          "type"=> "box",
+          "layout"=> "vertical",
+          "spacing"=> "sm",
+          "margin"=> "sm",
+          "contents"=> [
+            [
+              "type"=> "text",
+              "text"=> $prod_name[1],
+              "size"=> "lg",
+              "weight"=> "bold",
+              "color"=> "#000000"
+          ],
+            [
+              "type"=> "separator",
+              "margin"=> "lg"
+          ],
+            [
+              "type"=> "box",
+              "layout"=> "horizontal",
+              "margin"=> "lg",
+              "contents"=> [
+                [
+                  "type"=> "box",
+                  "layout"=> "horizontal",
+                  "contents"=> [
+                    [
+                      "type"=> "text",
+                      "text"=> "฿".$prod_price[1],
+                      "flex"=> 0,
+                      "size"=> "lg",
+                      "weight"=> "bold",
+                      "color"=> "#FF9300"
+                  ]
+                  ]
+                  ],
+                [
+                  "type"=> "box",
+                  "layout"=> "vertical",
+                  "flex"=> 0,
+                  "contents"=> [
+                    [
+                      "type"=> "text",
+                      "text"=> "เหลือเพียง ".$prod_stock[1]." ชิ้นเท่านั้น",
+                      "size"=> "sm",
+                      "weight"=> "bold"
+                  ]
+                  ]
+              ]
+              ]
+          ]
+          ]
+    ]
+    ],
         [
           "type"=> "bubble",
           "hero"=> [
             "type"=> "image",
-            "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$prod_image[1],
+            "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$prod_image[2],
             "size"=> "full",
             "aspectRatio"=> "1:1",
             "aspectMode"=> "cover",
@@ -618,7 +684,7 @@ $prod_fasionMen = [
             "contents"=> [
               [
                 "type"=> "text",
-                "text"=> $prod_name[1],
+                "text"=> $prod_name[2],
                 "size"=> "lg",
                 "weight"=> "bold",
                 "color"=> "#000000"
@@ -638,7 +704,7 @@ $prod_fasionMen = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "฿".$prod_price[1],
+                        "text"=> "฿".$prod_price[2],
                         "flex"=> 0,
                         "size"=> "lg",
                         "weight"=> "bold",
@@ -653,7 +719,7 @@ $prod_fasionMen = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "เหลือเพียง".$prod_stock[1]."ชิ้นเท่านั้น",
+                        "text"=> "เหลือเพียง ".$prod_stock[2]." ชิ้นเท่านั้น",
                         "size"=> "sm",
                         "weight"=> "bold"
                     ]
@@ -667,3 +733,4 @@ $prod_fasionMen = [
       ]
     ]
                       ];
+                      ?>
