@@ -32,7 +32,6 @@ $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' 
 $request = file_get_contents('php://input');
 $request_array = json_decode($request, true);
 $message = $request_array['events'][0]['message']['text'];
-$postback = $request_array['events'][0]['postback'];
 foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
@@ -45,8 +44,8 @@ if ($message == "แสดงสินค้า") {
   ];
   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
-} else if ($postback == "35") {
-  $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/25");
+} else if ($message == "25") {
+  $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/" + $message);
   $dataFromApi = json_decode($api, true);
 
   foreach ($dataFromApi['data'] as $data) {
