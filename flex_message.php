@@ -482,7 +482,7 @@ $category = [
             "aspectMode"=> "cover",
             "action"=> [
               "type"=> "message",
-              "text"=> "25"
+              "text"=> "25:แฟชั่นชาย"
             ]
           ]
         ],

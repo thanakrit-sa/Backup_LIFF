@@ -28,17 +28,16 @@ $API_URL = 'https://api.line.me/v2/bot/message';
 $ACCESS_TOKEN = 'Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=';
 $channelSecret = 'a35820614034732a864c1e03c76bb327';
 $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
-
 $request = file_get_contents('php://input');
 $request_array = json_decode($request, true);
 $message = $request_array['events'][0]['message']['text'];
 foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
-
-$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/$message");
+$split = explode(':',$message);
+$split_prod = $split[0];
+$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/$split_prod");
 $dataFromApi = json_decode($api, true);
-
 foreach ($dataFromApi['data'] as $data) {
   $prod_name[] = $data['product_name'];
   $prod_image[] = $data['image_path'];
