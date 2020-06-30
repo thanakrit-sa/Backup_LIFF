@@ -46,7 +46,6 @@ foreach ($dataFromApi['data'] as $data) {
   $prod_price[] = $data['price'];
 }
 include 'flex_message.php';
-// include 'flex_message.php';
 
 if ($message == "แสดงสินค้า") {
   $data = [
@@ -55,7 +54,7 @@ if ($message == "แสดงสินค้า") {
   ];
   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
-} else if ($dummy == "25") {
+} else if ($message == "25") {
   $data = [
     'replyToken' => $reply_token,
     'messages' => [$prod_fasionMen]
