@@ -35,7 +35,8 @@ $message = $request_array['events'][0]['message']['text'];
 foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
-$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/25");
+$dummy = $message;
+$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/+$dummy");
   $dataFromApi = json_decode($api, true);
 
   foreach ($dataFromApi['data'] as $data) {
@@ -46,7 +47,7 @@ $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/pr
   }
   include 'flex_message.php';
 // include 'flex_message.php';
-$dummy = $message;
+
 if ($message == "แสดงสินค้า") {
   $data = [
     'replyToken' => $reply_token,
