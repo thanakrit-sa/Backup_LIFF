@@ -481,8 +481,8 @@ $category = [
             "aspectRatio"=> "16:9",
             "aspectMode"=> "cover",
             "action"=> [
-              "type"=> "message",
-              "text"=> "แฟชั่นชาย"
+                "type"=> "postback",
+                "data"=> "35"
             ]
           ]
         ],
