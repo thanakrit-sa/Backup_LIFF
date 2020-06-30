@@ -63,7 +63,7 @@ if ($message == "แสดงสินค้า") {
 } else {
   $data = [
     'replyToken' => $reply_token,
-    'messages' => ["Error"]
+    'messages' => [$category]
   ];
   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
