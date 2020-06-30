@@ -601,7 +601,7 @@ $prod_fasionMen = [
           "type"=> "bubble",
           "hero"=> [
             "type"=> "image",
-            "url"=> "https://my-live-02.slatic.net/original/42a0c116c133ae07e3d2107102741514.jpg",
+            "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$prod_image[1],
             "size"=> "full",
             "aspectRatio"=> "1:1",
             "aspectMode"=> "cover",
@@ -618,7 +618,7 @@ $prod_fasionMen = [
             "contents"=> [
               [
                 "type"=> "text",
-                "text"=> "CAMEL Man กระเป๋าหนังแท้ธุรกิจสบายๆสั้น",
+                "text"=> $prod_name[1],
                 "size"=> "lg",
                 "weight"=> "bold",
                 "color"=> "#000000"
@@ -638,7 +638,7 @@ $prod_fasionMen = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "฿729.00",
+                        "text"=> "฿".$prod_price[1],
                         "flex"=> 0,
                         "size"=> "lg",
                         "weight"=> "bold",
@@ -653,7 +653,7 @@ $prod_fasionMen = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "เหลือเพียง 10 ชิ้นเท่านั้น",
+                        "text"=> "เหลือเพียง".$prod_stock[1]."ชิ้นเท่านั้น",
                         "size"=> "sm",
                         "weight"=> "bold"
                     ]
