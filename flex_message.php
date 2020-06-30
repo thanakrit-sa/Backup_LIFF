@@ -586,7 +586,7 @@ $prod_fasionMen = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "เหลือเพียง ".$prod_stock[0]." ชิ้นเท่านั้น",
+                        "text"=> "เหลือเพียง".$prod_stock[0]."ชิ้นเท่านั้น",
                         "size"=> "sm",
                         "weight"=> "bold"
                     ]
