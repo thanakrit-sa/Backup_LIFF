@@ -72,6 +72,7 @@ if ($message == "แสดงสินค้า") {
     $prod_created_time[] = $data['created_at'];
     $prod_updated_time[] = $data['updated_at'];
   }
+  include 'flex_message.php';
   $data = [
     'replyToken' => $reply_token,
     'messages' => [$prodInCate]
