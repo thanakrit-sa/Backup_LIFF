@@ -638,7 +638,7 @@ $prod_fasionMen = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "฿".$prod_price[1],
+                        "text"=> "฿729.00",
                         "flex"=> 0,
                         "size"=> "lg",
                         "weight"=> "bold",
@@ -653,7 +653,7 @@ $prod_fasionMen = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "เหลือเพียง ".$prod_stock[1]." ชิ้นเท่านั้น",
+                        "text"=> "เหลือเพียง 10 ชิ้นเท่านั้น",
                         "size"=> "sm",
                         "weight"=> "bold"
                     ]
