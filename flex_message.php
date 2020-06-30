@@ -466,92 +466,60 @@ $prodInCate = [
     ]
 ];
 
-
-// $text = [
-//     "type" => "text",
-//     "text" => "คำที่คุณกรอกไม่ตรงกับคีย์เวิร์ด"
-// ];
-
-// $jsonRich = [
-//     "size" => [
-//         "width" => 2500,
-//         "height" => 1686
-//     ],
-//     "selected" => true,
-//     "name" => "ริชเมนู 1",
-//     "chatBarText" => "ประกาศ",
-//     "areas" => [
-//         [
-//             "bounds" => [
-//                 "x" => 47,
-//                 "y" => 61,
-//                 "width" => 790,
-//                 "height" => 787
-//             ],
-//             "action" => [
-//                 "type" => "message",
-//                 "text" => "พื้นที่ 1"
-//             ]
-//         ],
-//         [
-//             "bounds" => [
-//                 "x" => 851,
-//                 "y" => 57,
-//                 "width" => 801,
-//                 "height" => 791
-//             ],
-//             "action" => [
-//                 "type" => "message",
-//                 "text" => "พื้นที่ 2"
-//             ]
-//         ],
-//         [
-//             "bounds" => [
-//                 "x" => 1669,
-//                 "y" => 54,
-//                 "width" => 784,
-//                 "height" => 794
-//             ],
-//             "action" => [
-//                 "type" => "message",
-//                 "text" => "การดำเนินการ 3"
-//             ]
-//         ],
-//         [
-//             "bounds" => [
-//                 "x" => 50,
-//                 "y" => 858,
-//                 "width" => 783,
-//                 "height" => 769
-//             ],
-//             "action" => [
-//                 "type" => "message",
-//                 "text" => "การดำเนินการ 4"
-//             ]
-//         ],
-//         [
-//             "bounds" => [
-//                 "x" => 851,
-//                 "y" => 858,
-//                 "width" => 801,
-//                 "height" => 773
-//             ],
-//             "action" => [
-//                 "type" => "message",
-//                 "text" => "การดำเนินการ 5"
-//             ]
-//         ],
-//         [
-//             "bounds" => [
-//                 "x" => 1674,
-//                 "y" => 855,
-//                 "width" => 779,
-//                 "height" => 779
-//             ],
-//             "action" => [
-//                 "type" => "message",
-//                 "text" => "การดำเนินการ 6"
-//             ]
-//         ]
-//     ]
-// ];
+$category = [
+    "type"=> "flex",
+    "altText"=> "Flex Message",
+    "contents"=> [
+      "type"=> "carousel",
+      "contents"=> [
+        [
+          "type"=> "bubble",
+          "hero"=> [
+            "type"=> "image",
+            "url"=> "https://www.img.in.th/images/59ba47cd8b972b5ef8c0dfd758c3af46.png",
+            "size"=> "full",
+            "aspectRatio"=> "1:1",
+            "aspectMode"=> "cover",
+            "action"=> [
+              "type"=> "message",
+              "text"=> "แฟชั่นชาย"
+            ]
+          ]
+        ],
+        [
+          "type"=> "bubble",
+          "hero"=> [
+            "type"=> "image",
+            "url"=> "https://www.img.in.th/images/cd0437edd19660696a9a9280d863e9c4.png",
+            "size"=> "full",
+            "aspectRatio"=> "1:1",
+            "aspectMode"=> "cover",
+            "action"=> [
+              "type"=> "message",
+              "text"=> "แฟชั่นหญิง"
+            ]
+          ]
+        ],
+        [
+          "type"=> "bubble",
+          "body"=> [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "spacing"=> "sm",
+            "contents"=> [
+              [
+                "type"=> "button",
+                "action"=> [
+                  "type"=> "uri",
+                  "label"=> "หมวดหมู่เพิ่มเติม",
+                  "uri"=> "https://linecorp.com"
+              ],
+                "flex"=> 1,
+                "gravity"=> "center"
+                ]
+            ]
+        ]
+      ]
+      ]
+]
+            ];
