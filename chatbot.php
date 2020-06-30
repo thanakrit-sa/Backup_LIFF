@@ -36,19 +36,19 @@ foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
 
-// $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
-// $dataFromApi = json_decode($api, true);
+$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
+$dataFromApi = json_decode($api, true);
 
-// foreach ($dataFromApi['data'] as $data) {
-//   $prod_name[] = $data['product_name'];
-//   $prod_image[] = $data['image_path'];
-//   $prod_stock[] = $data['stock'];
-//   $prod_price[] = $data['price'];
-//   $prod_address[] = $data['address'];
-//   $prod_cate[] = $data['category_name'];
-//   $prod_created_time[] = $data['created_at'];
-//   $prod_updated_time[] = $data['updated_at'];
-// }
+foreach ($dataFromApi['data'] as $data) {
+  $prod_name[] = $data['product_name'];
+  $prod_image[] = $data['image_path'];
+  $prod_stock[] = $data['stock'];
+  $prod_price[] = $data['price'];
+  $prod_address[] = $data['address'];
+  $prod_cate[] = $data['category_name'];
+  $prod_created_time[] = $data['created_at'];
+  $prod_updated_time[] = $data['updated_at'];
+}
 include 'flex_message.php';
 
 if ($message == "แสดงสินค้า") {
@@ -59,20 +59,6 @@ if ($message == "แสดงสินค้า") {
   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 } else if ($message == "แฟชั่นชาย") {
-  $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/");
-  $dataFromApi = json_decode($api, true);
-
-  foreach ($dataFromApi['data'] as $data) {
-    $prod_name[] = $data['product_name'];
-    $prod_image[] = $data['image_path'];
-    $prod_stock[] = $data['stock'];
-    $prod_price[] = $data['price'];
-    $prod_address[] = $data['address'];
-    $prod_cate[] = $data['category_name'];
-    $prod_created_time[] = $data['created_at'];
-    $prod_updated_time[] = $data['updated_at'];
-  }
-  include 'flex_message.php';
   $data = [
     'replyToken' => $reply_token,
     'messages' => [$prodInCate]
