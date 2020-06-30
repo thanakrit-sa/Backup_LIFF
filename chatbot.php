@@ -36,7 +36,7 @@ foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
 $dummy = $message;
-$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/+$dummy");
+$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/$dummy");
   $dataFromApi = json_decode($api, true);
 
   foreach ($dataFromApi['data'] as $data) {
