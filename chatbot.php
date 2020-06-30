@@ -35,17 +35,7 @@ $message = $request_array['events'][0]['message']['text'];
 foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
-
-include 'flex_message.php';
-if ($message == "แสดงสินค้า") {
-  $data = [
-    'replyToken' => $reply_token,
-    'messages' => [$category]
-  ];
-  $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
-  $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
-} else if ($message == "25") {
-  $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/" + $message);
+$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/" + $message);
   $dataFromApi = json_decode($api, true);
 
   foreach ($dataFromApi['data'] as $data) {
@@ -55,6 +45,15 @@ if ($message == "แสดงสินค้า") {
     $prod_price[] = $data['price'];
   }
   include 'flex_message.php';
+// include 'flex_message.php';
+if ($message == "แสดงสินค้า") {
+  $data = [
+    'replyToken' => $reply_token,
+    'messages' => [$category]
+  ];
+  $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
+  $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
+} else if ($message == "25") {
   $data = [
     'replyToken' => $reply_token,
     'messages' => [$prod_fasionMen]
