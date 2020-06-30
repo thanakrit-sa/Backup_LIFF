@@ -57,10 +57,10 @@ if ($message == "แสดงสินค้า") {
 } else if ($message == "แฟชั่นชาย") {
   $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/25");
   filterData($api);
-  // include 'flex_message.php';
+  include 'flex_message.php';
   $data = [
     'replyToken' => $reply_token,
-    'messages' => [$prod_name[0]]
+    'messages' => [$prod_fasionMen]
   ];
   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);

@@ -551,7 +551,7 @@ $prod_fasionMen = [
             "contents"=> [
               [
                 "type"=> "text",
-                "text"=> "Camel บุรุษเข็มขัดหัวเข็มขัดอัตโนมัติ",
+                "text"=> $prod_name[0],
                 "size"=> "lg",
                 "weight"=> "bold",
                 "color"=> "#000000"
