@@ -46,7 +46,7 @@ $message = $request_array['events'][0]['message']['text'];
 foreach ($request_array['events'] as $event) {
   $reply_token = $event['replyToken'];
 }
-
+include 'flex_message.php';
 if ($message == "แสดงสินค้า") {
   $data = [
     'replyToken' => $reply_token,
