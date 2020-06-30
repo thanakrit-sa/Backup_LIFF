@@ -520,6 +520,150 @@ $category = [
             ]
         ]
       ]
-      ]
+    ]
 ]
-            ];
+];
+
+$prod_fasionMen = [
+    "type"=> "flex",
+    "altText"=> "Flex Message",
+    "contents"=> [
+      "type"=> "carousel",
+      "contents"=> [
+        [
+          "type"=> "bubble",
+          "hero"=> [
+            "type"=> "image",
+            "url"=> "https://my-live-02.slatic.net/original/544da1eaf8adf5cc082eedabaa917019.jpg",
+            "size"=> "full",
+            "aspectRatio"=> "1:1",
+            "aspectMode"=> "cover",
+            "action"=> [
+              "type"=> "message",
+              "text"=> "แฟชั่นชาย"
+      ]
+        ],
+          "body"=> [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "spacing"=> "sm",
+            "margin"=> "sm",
+            "contents"=> [
+              [
+                "type"=> "text",
+                "text"=> "Camel บุรุษเข็มขัดหัวเข็มขัดอัตโนมัติ",
+                "size"=> "lg",
+                "weight"=> "bold",
+                "color"=> "#000000"
+            ],
+              [
+                "type"=> "separator",
+                "margin"=> "lg"
+            ],
+              [
+                "type"=> "box",
+                "layout"=> "horizontal",
+                "margin"=> "lg",
+                "contents"=> [
+                  [
+                    "type"=> "box",
+                    "layout"=> "horizontal",
+                    "contents"=> [
+                      [
+                        "type"=> "text",
+                        "text"=> "฿569.00",
+                        "flex"=> 0,
+                        "size"=> "lg",
+                        "weight"=> "bold",
+                        "color"=> "#FF9300"
+                    ]
+                    ]
+                    ],
+                  [
+                    "type"=> "box",
+                    "layout"=> "vertical",
+                    "flex"=> 0,
+                    "contents"=> [
+                      [
+                        "type"=> "text",
+                        "text"=> "เหลือเพียง 5 ชิ้นเท่านั้น",
+                        "size"=> "sm",
+                        "weight"=> "bold"
+                    ]
+                    ]
+                ]
+                ]
+            ]
+            ]
+      ]
+      ],
+        [
+          "type"=> "bubble",
+          "hero"=> [
+            "type"=> "image",
+            "url"=> "https://my-live-02.slatic.net/original/42a0c116c133ae07e3d2107102741514.jpg",
+            "size"=> "full",
+            "aspectRatio"=> "1:1",
+            "aspectMode"=> "cover",
+            "action"=> [
+              "type"=> "message",
+              "text"=> "แฟชั่นชาย"
+      ]
+        ],
+          "body"=> [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "spacing"=> "sm",
+            "margin"=> "sm",
+            "contents"=> [
+              [
+                "type"=> "text",
+                "text"=> "CAMEL Man กระเป๋าหนังแท้ธุรกิจสบายๆสั้น",
+                "size"=> "lg",
+                "weight"=> "bold",
+                "color"=> "#000000"
+            ],
+              [
+                "type"=> "separator",
+                "margin"=> "lg"
+            ],
+              [
+                "type"=> "box",
+                "layout"=> "horizontal",
+                "margin"=> "lg",
+                "contents"=> [
+                  [
+                    "type"=> "box",
+                    "layout"=> "horizontal",
+                    "contents"=> [
+                      [
+                        "type"=> "text",
+                        "text"=> "฿729.00",
+                        "flex"=> 0,
+                        "size"=> "lg",
+                        "weight"=> "bold",
+                        "color"=> "#FF9300"
+                    ]
+                    ]
+                    ],
+                  [
+                    "type"=> "box",
+                    "layout"=> "vertical",
+                    "flex"=> 0,
+                    "contents"=> [
+                      [
+                        "type"=> "text",
+                        "text"=> "เหลือเพียง 10 ชิ้นเท่านั้น",
+                        "size"=> "sm",
+                        "weight"=> "bold"
+                    ]
+                    ]
+                ]
+                ]
+            ]
+            ]
+      ]
+      ]
+      ]
+    ]
+                      ];
