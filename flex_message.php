@@ -496,7 +496,7 @@ $category = [
             "aspectMode"=> "cover",
             "action"=> [
               "type"=> "message",
-              "text"=> "แฟชั่นหญิง"
+              "text"=> "26:แฟชั่นหญิง"
             ]
           ]
         ],
