@@ -1,7 +1,7 @@
 <?
 
 # Flex Messages
-$jsonFlex = [
+$prodInCate = [
     "type" => "flex",
     "altText" => "Flex Message",
     "contents" => [
