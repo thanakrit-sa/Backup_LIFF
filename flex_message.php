@@ -605,7 +605,7 @@ $prod_Recommend = [
             "type"=> "button",
             "action"=> [
                 "type"=> "message",
-                "label"=> "สั่งซื้อ",
+                "label"=> "เลือก",
                 "text"=> "1:Recommend:".$split_prod
              ],
             "color"=> "#2E5A7D",
@@ -688,7 +688,7 @@ $prod_Recommend = [
           "type"=> "button",
           "action"=> [
             "type"=> "message",
-            "label"=> "สั่งซื้อ",
+            "label"=> "เลือก",
             "text"=> "2:Recommend:".$split_prod
          ],
           "color"=> "#2E5A7D",
@@ -772,7 +772,7 @@ $prod_Recommend = [
             "type"=> "button",
             "action"=> [
                 "type"=> "message",
-                "label"=> "สั่งซื้อ",
+                "label"=> "เลือก",
                 "text"=> "3:Recommend:".$split_prod
              ],
             "color"=> "#2E5A7D",
@@ -853,7 +853,7 @@ $recommend_1 = [
               "label"=> "สั่งซื้อ",
               "uri"=> "https://linecorp.com"
             ],
-            "color"=> "#261983",
+            "color"=> "#2E5A7D",
             "style"=> "primary"
           ]
         ]
@@ -929,7 +929,7 @@ $recommend_2 = [
               "label"=> "สั่งซื้อ",
               "uri"=> "https://linecorp.com"
             ],
-            "color"=> "#261983",
+            "color"=> "#2E5A7D",
             "style"=> "primary"
           ]
         ]
@@ -1005,7 +1005,7 @@ $recommend_3 = [
               "label"=> "สั่งซื้อ",
               "uri"=> "https://linecorp.com"
             ],
-            "color"=> "#261983",
+            "color"=> "#2E5A7D",
             "style"=> "primary"
           ]
         ]
