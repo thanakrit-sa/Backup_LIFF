@@ -59,17 +59,17 @@ if ($message == "แสดงสินค้า") {
 } else if (strpos($message, "_")) {
   $splie = explode("_", $message);
   $split_word = $split[1];
-  if ($split_word = "261") {
-    $data = [
-      'replyToken' => $reply_token,
-      'messages' => [$recommend]
-    ];
-  } else {
-    $data = [
-      'replyToken' => $reply_token,
-      'messages' => [$recommend1]
-    ];
-  }
+  // if ($split_word = "261") {
+  //   $data = [
+  //     'replyToken' => $reply_token,
+  //     'messages' => [$recommend]
+  //   ];
+  // } else {
+  //   $data = [
+  //     'replyToken' => $reply_token,
+  //     'messages' => [$recommend1]
+  //   ];
+  // }
 } else {
   $data = [
     'replyToken' => $reply_token,
