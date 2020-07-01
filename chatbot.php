@@ -61,15 +61,21 @@ if ($message == "แสดงสินค้า") {
   $post_body = json_encode($data, true);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 } else if (strpos($message, "_")) {
-  
+  $split1 = explode($message, "_");
+  $split_word = $split1[1];
+  if ($split_word == "26") {
     $data = [
       'replyToken' => $reply_token,
       'messages' => [$recommend]
     ];
- 
-
-  $post_body = json_encode($data, true);
-  $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
+    $post_body = json_encode($data, true);
+    $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
+  } else {
+    $data = [
+      'replyToken' => $reply_token,
+      'messages' => "error"
+    ];
+  }
 } else {
   $data = [
     'replyToken' => $reply_token,
