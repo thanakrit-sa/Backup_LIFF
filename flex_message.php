@@ -873,7 +873,7 @@ $recommend_2 = [
         "contents"=> [
           [
             "type"=> "text",
-            "text"=> $recommend_name[4],
+            "text"=> $recommend_name[3],
             "size"=> "lg",
             "weight"=> "bold"
           ],
@@ -883,7 +883,7 @@ $recommend_2 = [
             "contents"=> [
               [
                 "type"=> "image",
-                "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[4],
+                "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[3],
                 "align"=> "start",
                 "size"=> "md",
                 "aspectRatio"=> "1:1",
@@ -899,13 +899,13 @@ $recommend_2 = [
                   ],
                   [
                     "type"=> "text",
-                    "text"=> "ราคา ".$recommend_price[4]." บาท",
+                    "text"=> "ราคา ".$recommend_price[3]." บาท",
                     "margin"=> "md",
                     "size"=> "md"
                   ],
                   [
                     "type"=> "text",
-                    "text"=> "เพียง ".$recommend_stock[4]." ชิ้นเท่านั้น",
+                    "text"=> "เพียง ".$recommend_stock[3]." ชิ้นเท่านั้น",
                     "margin"=> "md"
                   ]
                 ]
