@@ -811,7 +811,7 @@ $recommend_1 = [
                 "align"=> "start",
                 "size"=> "md",
                 "aspectRatio"=> "1:1",
-                "backgroundColor"=> "#E1C6C6"
+                "backgroundColor"=> "white"
               ],
               [
                 "type"=> "box",
@@ -873,7 +873,7 @@ $recommend_2 = [
         "contents"=> [
           [
             "type"=> "text",
-            "text"=> $recommend_name[1],
+            "text"=> $recommend_name[2],
             "size"=> "lg",
             "weight"=> "bold"
           ],
@@ -883,11 +883,11 @@ $recommend_2 = [
             "contents"=> [
               [
                 "type"=> "image",
-                "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[1],
+                "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[2],
                 "align"=> "start",
                 "size"=> "md",
                 "aspectRatio"=> "1:1",
-                "backgroundColor"=> "#E1C6C6"
+                "backgroundColor"=> "white"
               ],
               [
                 "type"=> "box",
@@ -899,13 +899,13 @@ $recommend_2 = [
                   ],
                   [
                     "type"=> "text",
-                    "text"=> "ราคา ".$recommend_price[1]." บาท",
+                    "text"=> "ราคา ".$recommend_price[2]." บาท",
                     "margin"=> "md",
                     "size"=> "md"
                   ],
                   [
                     "type"=> "text",
-                    "text"=> "เพียง ".$recommend_stock[1]." ชิ้นเท่านั้น",
+                    "text"=> "เพียง ".$recommend_stock[2]." ชิ้นเท่านั้น",
                     "margin"=> "md"
                   ]
                 ]
@@ -963,7 +963,7 @@ $recommend_3 = [
                 "align"=> "start",
                 "size"=> "md",
                 "aspectRatio"=> "1:1",
-                "backgroundColor"=> "#E1C6C6"
+                "backgroundColor"=> "white"
               ],
               [
                 "type"=> "box",
