@@ -604,10 +604,10 @@ $prod_Recommend = [
           [
             "type"=> "button",
             "action"=> [
-              "type"=> "uri",
-              "label"=> "ซื้อเลย",
-              "uri"=> "https://liff.line.me/1654173341-mW8WAoN5"
-            ],
+                "type"=> "message",
+                "label"=> "สั่งซื้อ",
+                "text"=> "recommend"
+             ],
             "color"=> "#2E5A7D",
             "style"=> "primary"
           ]
@@ -783,5 +783,80 @@ $prod_Recommend = [
       ]
       ]
     ]
-                      ];
-                      ?>
+];
+
+$recommend = [
+    "type"=> "flex",
+    "altText"=> "Flex Message",
+    "contents"=> [
+      "type"=> "bubble",
+      "body"=> [
+        "type"=> "box",
+        "layout"=> "vertical",
+        "spacing"=> "sm",
+        "contents"=> [
+          [
+            "type"=> "text",
+            "text"=> "น้ำหอม Dior Miss Dior Blooming Bouquet EDT",
+            "size"=> "lg",
+            "weight"=> "bold"
+          ],
+          [
+            "type"=> "box",
+            "layout"=> "horizontal",
+            "contents"=> [
+              [
+                "type"=> "image",
+                "url"=> "https:\\/\\/e-sport.in.th\\/ssdev\\/ecom\\/dashboard\\/uploads\\/img_prod\\/prod_img_1593512378.jpeg",
+                "align"=> "start",
+                "size"=> "md",
+                "aspectRatio"=> "1:1",
+                "backgroundColor"=> "#E1C6C6"
+              ],
+              [
+                "type"=> "box",
+                "layout"=> "vertical",
+                "margin"=> "md",
+                "contents"=> [
+                  [
+                    "type"=> "spacer"
+                  ],
+                  [
+                    "type"=> "text",
+                    "text"=> "ราคา 1,150 บาท",
+                    "margin"=> "md",
+                    "size"=> "md"
+                  ],
+                  [
+                    "type"=> "text",
+                    "text"=> "เพียง 5 ชิ้นเท่านั้น",
+                    "margin"=> "md"
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "type"=> "separator"
+          ]
+        ]
+      ],
+      "footer"=> [
+        "type"=> "box",
+        "layout"=> "vertical",
+        "spacing"=> "sm",
+        "contents"=> [
+          [
+            "type"=> "button",
+            "action"=> [
+              "type"=> "uri",
+              "label"=> "สั่งซื้อ",
+              "uri"=> "https://linecorp.com"
+            ],
+            "color"=> "#261983",
+            "style"=> "primary"
+          ]
+        ]
+      ]
+    ]
+];
