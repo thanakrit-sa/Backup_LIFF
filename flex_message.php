@@ -593,25 +593,25 @@ $prod_Recommend = [
                     ]
                 ]
                 ]
+            ]
+            ]
+      ],
+      "footer"=> [
+        "type"=> "box",
+        "layout"=> "vertical",
+        "spacing"=> "sm",
+        "contents"=> [
+          [
+            "type"=> "button",
+            "action"=> [
+              "type"=> "uri",
+              "label"=> "Button",
+              "uri"=> "https://linecorp.com"
             ],
-            "footer"=> [
-              "type"=> "box",
-              "layout"=> "vertical",
-              "spacing"=> "sm",
-              "contents"=> [
-                [
-                  "type"=> "button",
-                  "action"=> [
-                    "type"=> "uri",
-                    "label"=> "Button",
-                    "uri"=> "https://linecorp.com"
-                  ],
-                  "color"=> "#2E5A7D",
-                  "style"=> "primary"
-                ]
-              ]
-            ]
-            ]
+            "color"=> "#2E5A7D",
+            "style"=> "primary"
+          ]
+        ]
       ]
       ],[
         "type"=> "bubble",
