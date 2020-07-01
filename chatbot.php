@@ -73,6 +73,16 @@ if ($message == "แสดงสินค้า") {
       'replyToken' => $reply_token,
       'messages' => [$recommend_1]
     ];
+  } else if ($split[0] == "2") {
+    $data = [
+      'replyToken' => $reply_token,
+      'messages' => [$recommend_2]
+    ];
+  } else if ($split[0] == "3") {
+    $data = [
+      'replyToken' => $reply_token,
+      'messages' => [$recommend_3]
+    ];
   } else {
     $data = [
       'replyToken' => $reply_token,
