@@ -12,10 +12,12 @@
 <?
     $name = $_GET['key'];
     $name1 = $_GET['liff.state'];
+    echo urldecode("https://floating-coast-17079.herokuapp.com/web/Product/reccommend_1.php?liff.state=%3Fkey%3Dv11");
 ?>
 <body>
     ddddd
     <?=$name?>
     <?=$name1?>
+    
 </body>
 </html>
