@@ -797,7 +797,7 @@ $recommend = [
         "contents"=> [
           [
             "type"=> "text",
-            "text"=> "น้ำหอม Dior Miss Dior Blooming Bouquet EDT",
+            "text"=> $recommend_name[0],
             "size"=> "lg",
             "weight"=> "bold"
           ],

@@ -61,6 +61,17 @@ if ($message == "แสดงสินค้า") {
   $post_body = json_encode($data, true);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 } else if (strpos($message, "_")) {
+  $split = explode($message, "_");
+  $split_word = $split[1];
+  $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/$split_word");
+  $dataFromApi = json_decode($api, true);
+  foreach ($dataFromApi['data'] as $data) {
+    $recommend_name[] = $data['product_name'];
+    $recommend_image[] = $data['image_path'];
+    $recommend_stock[] = $data['stock'];
+    $recommend_price[] = $data['price'];
+  }
+  include 'flex_message.php';
   $data = [
     'replyToken' => $reply_token,
     'messages' => [$recommend]
