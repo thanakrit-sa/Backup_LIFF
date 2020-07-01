@@ -36,6 +36,7 @@ foreach ($request_array['events'] as $event) {
 }
 $split = explode(':', $message);
 $split_prod = $split[0];
+$n = 1;
 $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/$split_prod");
 $dataFromApi = json_decode($api, true);
 foreach ($dataFromApi['data'] as $data) {
@@ -59,6 +60,7 @@ if ($message == "แสดงสินค้า") {
 } else if (strpos($message, ":")) {
   $split = explode(":", $message);
   $split_prod = $split[2];
+  $n = 1;
   $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/$split_prod");
   $dataFromApi = json_decode($api, true);
   foreach ($dataFromApi['data'] as $data) {
