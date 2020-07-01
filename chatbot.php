@@ -61,8 +61,8 @@ if ($message == "แสดงสินค้า") {
   $post_body = json_encode($data, true);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
 } else if (strpos($message, "_")) {
-  $split = explode($message, "_");
-  $split_word = $split[1];
+  $split1 = explode($message, "_");
+  $split_word = $split1[1];
   if ($split_word == "26") {
     $data = [
       'replyToken' => $reply_token,
