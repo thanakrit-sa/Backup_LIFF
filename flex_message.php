@@ -811,7 +811,7 @@ $recommend_1 = [
                 "align"=> "start",
                 "size"=> "md",
                 "aspectRatio"=> "1:1",
-                "backgroundColor"=> "white"
+                "backgroundColor"=> "#ffffff"
               ],
               [
                 "type"=> "box",
@@ -887,7 +887,7 @@ $recommend_2 = [
                 "align"=> "start",
                 "size"=> "md",
                 "aspectRatio"=> "1:1",
-                "backgroundColor"=> "white"
+                "backgroundColor"=> "#ffffff"
               ],
               [
                 "type"=> "box",
@@ -963,7 +963,7 @@ $recommend_3 = [
                 "align"=> "start",
                 "size"=> "md",
                 "aspectRatio"=> "1:1",
-                "backgroundColor"=> "white"
+                "backgroundColor"=> "#ffffff"
               ],
               [
                 "type"=> "box",
