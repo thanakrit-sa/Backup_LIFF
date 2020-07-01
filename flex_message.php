@@ -797,7 +797,7 @@ $recommend = [
         "contents"=> [
           [
             "type"=> "text",
-            "text"=> $recommend_name[0],
+            "text"=> "ssss",
             "size"=> "lg",
             "weight"=> "bold"
           ],
