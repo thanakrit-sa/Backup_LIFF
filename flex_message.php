@@ -606,7 +606,7 @@ $prod_Recommend = [
             "action"=> [
                 "type"=> "message",
                 "label"=> "สั่งซื้อ",
-                "text"=> "1:RecommendFasionWomen:".$split_prod
+                "text"=> "1:Recommend:".$split_prod
              ],
             "color"=> "#2E5A7D",
             "style"=> "primary"
@@ -687,10 +687,10 @@ $prod_Recommend = [
         [
           "type"=> "button",
           "action"=> [
-            "type"=> "uri",
-            "label"=> "ซื้อเลย",
-            "uri"=> "https://linecorp.com"
-          ],
+            "type"=> "message",
+            "label"=> "สั่งซื้อ",
+            "text"=> "2:Recommend:".$split_prod
+         ],
           "color"=> "#2E5A7D",
           "style"=> "primary"
         ]
@@ -771,10 +771,10 @@ $prod_Recommend = [
           [
             "type"=> "button",
             "action"=> [
-              "type"=> "uri",
-              "label"=> "ซื้อเลย",
-              "uri"=> "https://linecorp.com"
-            ],
+                "type"=> "message",
+                "label"=> "สั่งซื้อ",
+                "text"=> "3:Recommend:".$split_prod
+             ],
             "color"=> "#2E5A7D",
             "style"=> "primary"
           ]
