@@ -68,7 +68,7 @@ if ($message == "แสดงสินค้า") {
   } else {
     $data = [
       'replyToken' => $reply_token,
-      'messages' => [$recommend1]
+      'messages' => [$recomme]
     ];
   }
 } else {
