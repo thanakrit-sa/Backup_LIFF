@@ -823,13 +823,13 @@ $recommend_1 = [
                   ],
                   [
                     "type"=> "text",
-                    "text"=> "ราคา ".$recommend_price." บาท",
+                    "text"=> "ราคา ".$recommend_price[0]." บาท",
                     "margin"=> "md",
                     "size"=> "md"
                   ],
                   [
                     "type"=> "text",
-                    "text"=> "เพียง ".$recommend_stock." ชิ้นเท่านั้น",
+                    "text"=> "เพียง ".$recommend_stock[0]." ชิ้นเท่านั้น",
                     "margin"=> "md"
                   ]
                 ]
