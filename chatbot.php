@@ -1,3 +1,4 @@
+
 <?php
 function file_get_contents_curl($url)
 {

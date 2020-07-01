@@ -9,10 +9,21 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
+<script>
+  const medium = 'https://medium.com/linedevth/';
+  const queryString = decodeURIComponent(window.location.search).replace("?liff.state=", "");
+  const params = new URLSearchParams(queryString);
+  const id = params.get('id');
+  if (id != null && id != '') {
+    window.location.assign(medium + id);
+  } else {
+    window.location.assign("https://developers.line.biz");
+  }
+</script>
 <?
     $name = $_GET['key'];
     $name1 = $_GET['liff.state'];
-    echo urldecode("https://floating-coast-17079.herokuapp.com/web/Product/reccommend_1.php?liff.state=%3Fkey%3Dv11");
+    // echo urldecode("https://floating-coast-17079.herokuapp.com/web/Product/reccommend_1.php?liff.state=%3Fkey%3Dv11");
 ?>
 <body>
     ddddd
