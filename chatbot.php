@@ -59,7 +59,7 @@ if ($message == "แสดงสินค้า") {
 } else if (strpos($message, "_")) {
   $splie = explode("_", $message);
   $split_word = $split[1];
-  if ($split[1] = "261") {
+  if ($split_word = "261") {
     $data = [
       'replyToken' => $reply_token,
       'messages' => [$recommend]
