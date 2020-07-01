@@ -861,154 +861,154 @@ $recommend_1 = [
     ]
 ];
 
-$recommend_2 = [
-    "type"=> "flex",
-    "altText"=> "Flex Message",
-    "contents"=> [
-      "type"=> "bubble",
-      "body"=> [
-        "type"=> "box",
-        "layout"=> "vertical",
-        "spacing"=> "sm",
-        "contents"=> [
-          [
-            "type"=> "text",
-            "text"=> $recommend_name[1],
-            "size"=> "lg",
-            "weight"=> "bold"
-          ],
-          [
-            "type"=> "box",
-            "layout"=> "horizontal",
-            "contents"=> [
-              [
-                "type"=> "image",
-                "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[1],
-                "align"=> "start",
-                "size"=> "md",
-                "aspectRatio"=> "1:1",
-                "backgroundColor"=> "#E1C6C6"
-              ],
-              [
-                "type"=> "box",
-                "layout"=> "vertical",
-                "margin"=> "md",
-                "contents"=> [
-                  [
-                    "type"=> "spacer"
-                  ],
-                  [
-                    "type"=> "text",
-                    "text"=> "ราคา ".$recommend_price[1]." บาท",
-                    "margin"=> "md",
-                    "size"=> "md"
-                  ],
-                  [
-                    "type"=> "text",
-                    "text"=> "เพียง ".$recommend_stock[1]." ชิ้นเท่านั้น",
-                    "margin"=> "md"
-                  ]
-                ]
-              ]
-            ]
-          ],
-          [
-            "type"=> "separator"
-          ]
-        ]
-      ],
-      "footer"=> [
-        "type"=> "box",
-        "layout"=> "vertical",
-        "spacing"=> "sm",
-        "contents"=> [
-          [
-            "type"=> "button",
-            "action"=> [
-              "type"=> "uri",
-              "label"=> "สั่งซื้อ",
-              "uri"=> "https://linecorp.com"
-            ],
-            "color"=> "#261983",
-            "style"=> "primary"
-          ]
-        ]
-      ]
-    ]
-];
+// $recommend_2 = [
+//     "type"=> "flex",
+//     "altText"=> "Flex Message",
+//     "contents"=> [
+//       "type"=> "bubble",
+//       "body"=> [
+//         "type"=> "box",
+//         "layout"=> "vertical",
+//         "spacing"=> "sm",
+//         "contents"=> [
+//           [
+//             "type"=> "text",
+//             "text"=> $recommend_name[1],
+//             "size"=> "lg",
+//             "weight"=> "bold"
+//           ],
+//           [
+//             "type"=> "box",
+//             "layout"=> "horizontal",
+//             "contents"=> [
+//               [
+//                 "type"=> "image",
+//                 "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[1],
+//                 "align"=> "start",
+//                 "size"=> "md",
+//                 "aspectRatio"=> "1:1",
+//                 "backgroundColor"=> "#E1C6C6"
+//               ],
+//               [
+//                 "type"=> "box",
+//                 "layout"=> "vertical",
+//                 "margin"=> "md",
+//                 "contents"=> [
+//                   [
+//                     "type"=> "spacer"
+//                   ],
+//                   [
+//                     "type"=> "text",
+//                     "text"=> "ราคา ".$recommend_price[1]." บาท",
+//                     "margin"=> "md",
+//                     "size"=> "md"
+//                   ],
+//                   [
+//                     "type"=> "text",
+//                     "text"=> "เพียง ".$recommend_stock[1]." ชิ้นเท่านั้น",
+//                     "margin"=> "md"
+//                   ]
+//                 ]
+//               ]
+//             ]
+//           ],
+//           [
+//             "type"=> "separator"
+//           ]
+//         ]
+//       ],
+//       "footer"=> [
+//         "type"=> "box",
+//         "layout"=> "vertical",
+//         "spacing"=> "sm",
+//         "contents"=> [
+//           [
+//             "type"=> "button",
+//             "action"=> [
+//               "type"=> "uri",
+//               "label"=> "สั่งซื้อ",
+//               "uri"=> "https://linecorp.com"
+//             ],
+//             "color"=> "#261983",
+//             "style"=> "primary"
+//           ]
+//         ]
+//       ]
+//     ]
+// ];
 
-$recommend_3 = [
-    "type"=> "flex",
-    "altText"=> "Flex Message",
-    "contents"=> [
-      "type"=> "bubble",
-      "body"=> [
-        "type"=> "box",
-        "layout"=> "vertical",
-        "spacing"=> "sm",
-        "contents"=> [
-          [
-            "type"=> "text",
-            "text"=> $recommend_name[2],
-            "size"=> "lg",
-            "weight"=> "bold"
-          ],
-          [
-            "type"=> "box",
-            "layout"=> "horizontal",
-            "contents"=> [
-              [
-                "type"=> "image",
-                "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[2],
-                "align"=> "start",
-                "size"=> "md",
-                "aspectRatio"=> "1:1",
-                "backgroundColor"=> "#E1C6C6"
-              ],
-              [
-                "type"=> "box",
-                "layout"=> "vertical",
-                "margin"=> "md",
-                "contents"=> [
-                  [
-                    "type"=> "spacer"
-                  ],
-                  [
-                    "type"=> "text",
-                    "text"=> "ราคา ".$recommend_price[2]." บาท",
-                    "margin"=> "md",
-                    "size"=> "md"
-                  ],
-                  [
-                    "type"=> "text",
-                    "text"=> "เพียง ".$recommend_stock[2]." ชิ้นเท่านั้น",
-                    "margin"=> "md"
-                  ]
-                ]
-              ]
-            ]
-          ],
-          [
-            "type"=> "separator"
-          ]
-        ]
-      ],
-      "footer"=> [
-        "type"=> "box",
-        "layout"=> "vertical",
-        "spacing"=> "sm",
-        "contents"=> [
-          [
-            "type"=> "button",
-            "action"=> [
-              "type"=> "uri",
-              "label"=> "สั่งซื้อ",
-              "uri"=> "https://linecorp.com"
-            ],
-            "color"=> "#261983",
-            "style"=> "primary"
-          ]
-        ]
-      ]
-    ]
-];
+// $recommend_3 = [
+//     "type"=> "flex",
+//     "altText"=> "Flex Message",
+//     "contents"=> [
+//       "type"=> "bubble",
+//       "body"=> [
+//         "type"=> "box",
+//         "layout"=> "vertical",
+//         "spacing"=> "sm",
+//         "contents"=> [
+//           [
+//             "type"=> "text",
+//             "text"=> $recommend_name[2],
+//             "size"=> "lg",
+//             "weight"=> "bold"
+//           ],
+//           [
+//             "type"=> "box",
+//             "layout"=> "horizontal",
+//             "contents"=> [
+//               [
+//                 "type"=> "image",
+//                 "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[2],
+//                 "align"=> "start",
+//                 "size"=> "md",
+//                 "aspectRatio"=> "1:1",
+//                 "backgroundColor"=> "#E1C6C6"
+//               ],
+//               [
+//                 "type"=> "box",
+//                 "layout"=> "vertical",
+//                 "margin"=> "md",
+//                 "contents"=> [
+//                   [
+//                     "type"=> "spacer"
+//                   ],
+//                   [
+//                     "type"=> "text",
+//                     "text"=> "ราคา ".$recommend_price[2]." บาท",
+//                     "margin"=> "md",
+//                     "size"=> "md"
+//                   ],
+//                   [
+//                     "type"=> "text",
+//                     "text"=> "เพียง ".$recommend_stock[2]." ชิ้นเท่านั้น",
+//                     "margin"=> "md"
+//                   ]
+//                 ]
+//               ]
+//             ]
+//           ],
+//           [
+//             "type"=> "separator"
+//           ]
+//         ]
+//       ],
+//       "footer"=> [
+//         "type"=> "box",
+//         "layout"=> "vertical",
+//         "spacing"=> "sm",
+//         "contents"=> [
+//           [
+//             "type"=> "button",
+//             "action"=> [
+//               "type"=> "uri",
+//               "label"=> "สั่งซื้อ",
+//               "uri"=> "https://linecorp.com"
+//             ],
+//             "color"=> "#261983",
+//             "style"=> "primary"
+//           ]
+//         ]
+//       ]
+//     ]
+// ];
