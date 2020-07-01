@@ -605,7 +605,7 @@ $prod_Recommend = [
             "type"=> "button",
             "action"=> [
               "type"=> "uri",
-              "label"=> "Button",
+              "label"=> "ซื้อเลย",
               "uri"=> "https://linecorp.com"
             ],
             "color"=> "#2E5A7D",
@@ -678,6 +678,23 @@ $prod_Recommend = [
               ]
           ]
           ]
+    ],
+    "footer"=> [
+      "type"=> "box",
+      "layout"=> "vertical",
+      "spacing"=> "sm",
+      "contents"=> [
+        [
+          "type"=> "button",
+          "action"=> [
+            "type"=> "uri",
+            "label"=> "ซื้อเลย",
+            "uri"=> "https://linecorp.com"
+          ],
+          "color"=> "#2E5A7D",
+          "style"=> "primary"
+        ]
+      ]
     ]
     ],
         [
@@ -745,6 +762,23 @@ $prod_Recommend = [
                 ]
             ]
             ]
+      ],
+      "footer"=> [
+        "type"=> "box",
+        "layout"=> "vertical",
+        "spacing"=> "sm",
+        "contents"=> [
+          [
+            "type"=> "button",
+            "action"=> [
+              "type"=> "uri",
+              "label"=> "ซื้อเลย",
+              "uri"=> "https://linecorp.com"
+            ],
+            "color"=> "#2E5A7D",
+            "style"=> "primary"
+          ]
+        ]
       ]
       ]
       ]
