@@ -11,7 +11,7 @@
 </head>
 <?
     $name = $_GET['key'];
-    $name1 = $_GET['key1'];
+    $name1 = $_POST['key1'];
 ?>
 <body>
     ddddd
