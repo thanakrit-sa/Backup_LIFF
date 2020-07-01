@@ -606,7 +606,7 @@ $prod_Recommend = [
             "action"=> [
                 "type"=> "message",
                 "label"=> "สั่งซื้อ",
-                "text"=> "recommend_".$split_prod
+                "text"=> "1:RecommendFasionWomen:".$split_prod
              ],
             "color"=> "#2E5A7D",
             "style"=> "primary"
