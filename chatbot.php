@@ -60,7 +60,7 @@ if ($message == "แสดงสินค้า") {
   ];
   $post_body = json_encode($data, true);
   $send_result = send_reply_message($API_URL . '/reply', $POST_HEADER, $post_body);
-} else if (strpos($message,"recommend") == true) {
+} else if ($message == "recommend26") {
   $data = [
     'replyToken' => $reply_token,
     'messages' => [$prod_Recommend]
