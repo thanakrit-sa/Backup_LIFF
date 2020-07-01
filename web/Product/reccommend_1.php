@@ -11,7 +11,7 @@
 </head>
 <?
     $name = $_GET['key'];
-    $name1 = $_POST['liff.state'];
+    $name1 = $_GET['liff.state'];
 ?>
 <body>
     ddddd
