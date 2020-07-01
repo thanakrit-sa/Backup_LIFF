@@ -807,7 +807,7 @@ $recommend_1 = [
             "contents"=> [
               [
                 "type"=> "image",
-                "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image,
+                "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[0],
                 "align"=> "start",
                 "size"=> "md",
                 "aspectRatio"=> "1:1",
