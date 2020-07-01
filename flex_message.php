@@ -851,7 +851,7 @@ $recommend_1 = [
             "action"=> [
               "type"=> "uri",
               "label"=> "สั่งซื้อ",
-              "uri"=> "https://liff.line.me/1654173341-mW8WAoN5/path_A/?key1=value1#URL-fragment"
+              "uri"=> "https://liff.line.me/1654173341-mW8WAoN5/path_A/?key=v11#URL-fragment"
             ],
             "color"=> "#2E5A7D",
             "style"=> "primary"
