@@ -785,7 +785,7 @@ $prod_Recommend = [
     ]
 ];
 
-$recommend = [
+$recommend_1 = [
     "type"=> "flex",
     "altText"=> "Flex Message",
     "contents"=> [
