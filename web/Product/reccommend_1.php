@@ -11,9 +11,11 @@
 </head>
 <?
     $name = $_GET['key'];
+    $name1 = $_GET['key1'];
 ?>
 <body>
     ddddd
     <?=$name?>
+    <?=$name1?>
 </body>
 </html>
