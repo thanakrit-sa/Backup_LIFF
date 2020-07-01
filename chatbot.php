@@ -56,8 +56,8 @@ if ($message == "แสดงสินค้า") {
     'replyToken' => $reply_token,
     'messages' => [$prod_Recommend]
   ];
-} else if (strpos($message, "_")) {
-  $split = explode("_", $message);
+} else if (strpos($message, ":")) {
+  $split = explode(":", $message);
   $split_prod = $split[2];
   $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/$split_prod");
   $dataFromApi = json_decode($api, true);
