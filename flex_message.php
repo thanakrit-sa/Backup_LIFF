@@ -534,7 +534,7 @@ $prod_Recommend = [
           "type"=> "bubble",
           "hero"=> [
             "type"=> "image",
-            "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$prod_image[0],
+            "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[0],
             "size"=> "full",
             "aspectRatio"=> "1:1",
             "aspectMode"=> "cover",
@@ -551,7 +551,7 @@ $prod_Recommend = [
             "contents"=> [
               [
                 "type"=> "text",
-                "text"=> $prod_name[0],
+                "text"=> $recommend_name[0],
                 "size"=> "lg",
                 "weight"=> "bold",
                 "color"=> "#000000"
@@ -571,7 +571,7 @@ $prod_Recommend = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "฿".$prod_price[0],
+                        "text"=> "฿".$recommend_price[0],
                         "flex"=> 0,
                         "size"=> "lg",
                         "weight"=> "bold",
@@ -586,7 +586,7 @@ $prod_Recommend = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "เหลือเพียง ".$prod_stock[0]." ชิ้นเท่านั้น",
+                        "text"=> "เหลือเพียง ".$recommend_stock[0]." ชิ้นเท่านั้น",
                         "size"=> "sm",
                         "weight"=> "bold"
                     ]
@@ -617,7 +617,7 @@ $prod_Recommend = [
         "type"=> "bubble",
         "hero"=> [
           "type"=> "image",
-          "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$prod_image[1],
+          "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[1],
           "size"=> "full",
           "aspectRatio"=> "1:1",
           "aspectMode"=> "cover",
@@ -634,7 +634,7 @@ $prod_Recommend = [
           "contents"=> [
             [
               "type"=> "text",
-              "text"=> $prod_name[1],
+              "text"=> $recommend_name[1],
               "size"=> "lg",
               "weight"=> "bold",
               "color"=> "#000000"
@@ -654,7 +654,7 @@ $prod_Recommend = [
                   "contents"=> [
                     [
                       "type"=> "text",
-                      "text"=> "฿".$prod_price[1],
+                      "text"=> "฿".$recommend_price[1],
                       "flex"=> 0,
                       "size"=> "lg",
                       "weight"=> "bold",
@@ -669,7 +669,7 @@ $prod_Recommend = [
                   "contents"=> [
                     [
                       "type"=> "text",
-                      "text"=> "เหลือเพียง ".$prod_stock[1]." ชิ้นเท่านั้น",
+                      "text"=> "เหลือเพียง ".$recommend_stock[1]." ชิ้นเท่านั้น",
                       "size"=> "sm",
                       "weight"=> "bold"
                   ]
@@ -701,7 +701,7 @@ $prod_Recommend = [
           "type"=> "bubble",
           "hero"=> [
             "type"=> "image",
-            "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$prod_image[2],
+            "url"=> "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[2],
             "size"=> "full",
             "aspectRatio"=> "1:1",
             "aspectMode"=> "cover",
@@ -718,7 +718,7 @@ $prod_Recommend = [
             "contents"=> [
               [
                 "type"=> "text",
-                "text"=> $prod_name[2],
+                "text"=> $recommend_name[2],
                 "size"=> "lg",
                 "weight"=> "bold",
                 "color"=> "#000000"
@@ -738,7 +738,7 @@ $prod_Recommend = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "฿".$prod_price[2],
+                        "text"=> "฿".$recommend_price[2],
                         "flex"=> 0,
                         "size"=> "lg",
                         "weight"=> "bold",
@@ -753,7 +753,7 @@ $prod_Recommend = [
                     "contents"=> [
                       [
                         "type"=> "text",
-                        "text"=> "เหลือเพียง ".$prod_stock[2]." ชิ้นเท่านั้น",
+                        "text"=> "เหลือเพียง ".$recommend_stock[2]." ชิ้นเท่านั้น",
                         "size"=> "sm",
                         "weight"=> "bold"
                     ]
