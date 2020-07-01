@@ -57,11 +57,13 @@ if ($message == "แสดงสินค้า") {
     'messages' => [$prod_Recommend]
   ];
 } else if (strpos($message, "_")) {
-
-  $data = [
+  if ($message = "recommend_26") {
+    $data = [
     'replyToken' => $reply_token,
     'messages' => [$recommend]
   ];
+  }
+  
 } else {
   $data = [
     'replyToken' => $reply_token,
