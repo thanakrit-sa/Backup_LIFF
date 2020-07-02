@@ -55,6 +55,9 @@
             <div>
                 <b>Overview</b>
             </div>
+            <div>
+                <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi distinctio saepe laboriosam placeat, officiis voluptate aperiam. Tempore consectetur, alias perferendis iste explicabo voluptas obcaecati! Maiores quia ad exercitationem? Provident, ducimus.</label>
+            </div>
         </li>
     </ul>
 </body>
