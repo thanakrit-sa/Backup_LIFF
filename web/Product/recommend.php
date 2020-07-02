@@ -22,6 +22,9 @@
 ?>
     <h2>hello</h2>
     <p><?= $message ?></p>
+    <p><?= $split[0] ?></p>
+    <p><?= $split[1] ?></p>
+    <p><?= $split[2] ?></p>
 </body>
 
 </html>
