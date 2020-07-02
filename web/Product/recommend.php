@@ -25,9 +25,6 @@
 ?>
     <h2>hello</h2>
     <p><?= $message ?></p>
-    <p><?= $split[0] ?></p>
-    <p><?= $split[1] ?></p>
-    <p><?= $split[2] ?></p>
     <p><?= $recommend_name[$split[0]-2] ?></p>
 </body>
 
