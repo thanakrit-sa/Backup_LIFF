@@ -45,8 +45,6 @@
             </div>
             <div class="m-0 p-0">
                 <p style="color: gray;">จำนวน (พร้อมจัดส่ง <?= $recommend_stock[$split[0] - 1] ?> ชิ้น)</p>
-            </div>
-            <div class="m-0 p-0">
                 <button type="button" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
                 <label disabled class="btn btn-lg bg-white mx-1">1</label>
                 <button type="button" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
