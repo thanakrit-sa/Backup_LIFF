@@ -77,10 +77,10 @@
             <div class="col-4">
                 <div class="row">
                     <div class="col-6">
-                        <button class="btn btn-block btn-success">ซื้อเลย</button>
+                        <button class="btn btn-block btn-success">ซื้อ</button>
                     </div>
                     <div class="col-6">
-                        <button class="btn btn-block btn-success">ซื้อเลย</button>
+                        <button class="btn btn-block btn-success">ซื้อ</button>
                     </div>
                 </div>
             </div>
