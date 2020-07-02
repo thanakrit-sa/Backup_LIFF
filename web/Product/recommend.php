@@ -40,7 +40,7 @@
                 <h6 class="m-0"><?= $recommend_name[$split[0] - 1] ?></h6>
                 <h4><strong class="m-0">฿<?= $recommend_price[$split[0] - 1] ?></strong></h4>
             </div>
-            <div class="btn-group shadow border border-dark rounded" role="group">
+            <div class="btn-group shadow border border-dark rounded bg-dark" role="group">
                 <button type="button" class="btn btn-lg btn-dark">+</button>
                 <button type="button" disabled class="btn btn-lg btn-white mx-3">1</button>
                 <button type="button" class="btn btn-lg btn-dark">-</button>
