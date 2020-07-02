@@ -927,7 +927,7 @@ $recommend_2 = [
             "action"=> [
               "type"=> "uri",
               "label"=> "สั่งซื้อ",
-              "uri"=> "https://linecorp.com"
+              "uri"=> "https://liff.line.me/1654173341-mW8WAoN5?id=?name=$message"
             ],
             "color"=> "#2E5A7D",
             "style"=> "primary"
@@ -1003,7 +1003,7 @@ $recommend_3 = [
             "action"=> [
               "type"=> "uri",
               "label"=> "สั่งซื้อ",
-              "uri"=> "https://linecorp.com"
+              "uri"=> "https://liff.line.me/1654173341-mW8WAoN5?id=?name=$message"
             ],
             "color"=> "#2E5A7D",
             "style"=> "primary"
