@@ -27,7 +27,7 @@
     <h2>hello</h2>
     <p><?= $message ?></p>
     <p><?= $split_p ?></p>
-    <p><?= $recommend_name[$split_p] ?></p>
+    <p><?= $recommend_name[$split_p-1] ?></p>
 </body>
 
 </html>
