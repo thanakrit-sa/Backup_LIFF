@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<?
+    <?
     include '../../function.php';
     $message = $_GET['message'];
     $split = explode(":", $message);
@@ -28,10 +28,8 @@
     $img_url = "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[$split[0]-1];
 
 ?>
-    <div class="container">
-        <div align="center" class="shadow">
-            <h3><?=$recommend_name[$split[0]-1]?></h3>
-        </div>
+    <div align="center" class="shadow">
+        <p><?= $recommend_name[$split[0] - 1] ?></p>
     </div>
 </body>
 
