@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 
+<body>
 <?
     $message = $_GET['message'];
     $split = explode(":", $message);
@@ -20,9 +21,6 @@
         $recommend_price[] = $data['price'];
     }
 ?>
-
-<body>
-    
     <h2>hello</h2>
     <p><?= $recommend_name[0] ?></p>
     <p><?= $recommend_image[0] ?></p>
