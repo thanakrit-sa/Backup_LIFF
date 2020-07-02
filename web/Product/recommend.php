@@ -44,7 +44,8 @@
                 <h5><strong class="m-0">฿<?= $recommend_price[$split[0] - 1] ?></strong></h5>
             </div>
             <div class="m-0 p-0">
-                <u style="color: gray;">จำนวน (พร้อมจัดส่ง <?= $recommend_stock[$split[0] - 1] ?> ชิ้น)</u>
+                <u class="m-0" style="color: gray;">จำนวน (พร้อมจัดส่ง <?= $recommend_stock[$split[0] - 1] ?> ชิ้น)</u>
+                <br class="m-0 p-0">
                 <button type="button" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
                 <label disabled class="btn btn-lg bg-white mx-1">1</label>
                 <button type="button" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
