@@ -76,10 +76,10 @@
         <div class="row">
             <div class="col-4 m-0 p-0">
                 <div class="row">
-                    <div class="col-6 m-0 px-1">
+                    <div class="col-6 m-0 pr-1">
                         <button class="btn btn-lg btn-block btn-success">ซื้อ</button>
                     </div>
-                    <div class="col-6 mr-2 px-1">
+                    <div class="col-6 m-0 p-0">
                         <button class="btn btn-lg btn-block btn-success">ซื้อ</button>
                     </div>
                 </div>
