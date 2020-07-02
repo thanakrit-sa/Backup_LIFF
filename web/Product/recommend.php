@@ -31,6 +31,7 @@
     <div align="center" class="shadow">
         <p class="p-3"><?= $recommend_name[$split[0] - 1] ?></p>
     </div>
+    <img src=<?=$img_url?> class="img-fluid">
 </body>
 
 </html>
