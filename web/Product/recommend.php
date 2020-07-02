@@ -51,7 +51,7 @@
                 <button type="button" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
             </div>
         </li>
-        <li>
+        <li class="list-group-item m-1">
             <div>
                 <b>Overview</b>
             </div>
