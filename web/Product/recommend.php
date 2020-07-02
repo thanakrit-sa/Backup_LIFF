@@ -85,7 +85,7 @@
                 </div>
             </div>
             <div class="col-8 m-0 px-1">
-                <button class="btn btn-block btn-success mx-1 px-1">ซื้อเลย</button>
+                <button class="btn btn-block btn-success mx-2 px-1">ซื้อเลย</button>
             </div>
         </div>
     </div>
