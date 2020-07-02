@@ -29,7 +29,7 @@
 
 ?>
     <ul class="list-group">
-        <li class="list-group-item">
+        <li class="list-group-item shadow">
             <p class="p-3"><?= $recommend_name[$split[0] - 1] ?></p>
         </li>
         <li class="list-group-item">
