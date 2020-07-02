@@ -7,9 +7,9 @@
 </head>
 <body>
     <?
-        $name = $_GET['name'];
+        $message = $_GET['message'];
     ?>
     <h2>hello</h2>
-    <p><?=$name?></p>
+    <p><?=$message?></p>
 </body>
 </html>
