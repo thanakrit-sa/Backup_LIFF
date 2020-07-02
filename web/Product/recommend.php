@@ -28,10 +28,10 @@
     $img_url = "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[$split[0]-1];
 
 ?>
+    <div align="center" class="shadow m-0">
+        <p class="p-3"><?= $recommend_name[$split[0] - 1] ?></p>
+    </div>
     <ul class="list-group">
-        <li class="list-group-item shadow">
-            <p class="p-3"><?= $recommend_name[$split[0] - 1] ?></p>
-        </li>
         <li class="list-group-item">
             <img src=<?= $img_url ?> class="img-fluid m-0">
         </li>
