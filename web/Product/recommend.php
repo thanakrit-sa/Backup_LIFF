@@ -71,6 +71,7 @@
                 <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi distinctio saepe laboriosam placeat, officiis voluptate aperiam. Tempore consectetur, alias perferendis iste explicabo voluptas obcaecati! Maiores quia ad exercitationem? Provident, ducimus.</label>
             </div>
         </li>
+        <br>
     </ul>
     <br>
     <div class="footer">
@@ -81,7 +82,7 @@
             <div class="col-2 m-0 p-0">
                 <button class="btn btn-lg btn-block btn-success">ซื้อ</button>
             </div>
-            <div class="col-8 ml-1 p-0">
+            <div class="col-7 ml-1 p-0">
                 <button class="btn btn-lg btn-block btn-success">ซื้อเลย</button>
             </div>
         </div>
