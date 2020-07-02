@@ -38,11 +38,10 @@
         <li class="list-group-item m-1">
             <h6 class="m-0"><?= $recommend_name[$split[0] - 1] ?></h6>
             <strong class="m-0">฿<?= $recommend_price[$split[0] - 1] ?></strong>
-            <br>
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">Left</button>
-                <button type="button" class="btn btn-secondary">Middle</button>
-                <button type="button" class="btn btn-secondary">Right</button>
+            <div class="btn-group my-3" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">+</button>
+                <button type="button" disabled class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">-</button>
             </div>
         </li>
     </ul>
