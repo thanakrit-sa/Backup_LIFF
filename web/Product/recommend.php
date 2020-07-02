@@ -39,11 +39,11 @@
         <li class="list-group-item m-1">
             <div class="mb-3">
                 <h6 class="m-0"><?= $recommend_name[$split[0] - 1] ?></h6>
-                <h4><strong class="m-0">฿<?= $recommend_price[$split[0] - 1] ?></strong></h4>
+                <h4><strong class="mt-1">฿<?= $recommend_price[$split[0] - 1] ?></strong></h4>
             </div>
-            <button type="button" class="btn btn-lg btn-dark rounded-circle" style="width:50px; height:50px;">+</button>
+            <button type="button" class="btn btn-dark rounded-circle" style="width:50px; height:50px;">+</button>
             <button type="button" disabled class="btn btn-lg bg-white mx-3 px-3">1</button>
-            <button type="button" class="btn btn-lg btn-dark rounded-circle" style="width:50px; height:50px;">- </button>
+            <button type="button" class="btn btn-dark rounded-circle" style="width:50px; height:50px;">- </button>
         </li>
     </ul>
 </body>
