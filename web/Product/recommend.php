@@ -29,9 +29,8 @@
 
 ?>
     <div class="container">
-        <div align="center" class="shadow">
-            <h3><?=$$recommend_name[$split[0]-1]?></h3>
-        </div>
+    <h3><?=$$recommend_name[$split[0]-1]?></h3>
+
     </div>
 </body>
 
