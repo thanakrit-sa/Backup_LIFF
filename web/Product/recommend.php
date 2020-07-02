@@ -43,9 +43,9 @@
             <div class="mb-3">
                 <h5><strong class="m-0">฿<?= $recommend_price[$split[0] - 1] ?></strong></h5>
             </div>
-            <button type="button" class="btn btn-dark rounded-circle" style="width:50px; height:50px;">+</button>
+            <button type="button" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
             <label disabled class="btn btn-lg bg-white mx-1">1</label>
-            <button type="button" class="btn btn-dark rounded-circle" style="width:50px; height:50px;">- </button>
+            <button type="button" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
         </li>
     </ul>
 </body>
