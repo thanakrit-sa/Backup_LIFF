@@ -7,7 +7,7 @@
 </head>
 <body>
     <?
-        $name = $_GET['id'];
+        $name = $_GET['name'];
     ?>
     <h2>hello</h2>
     <p><?=$name?></p>
