@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-8 m-0 p-0">
+            <div class="col-8 m-0 pl-1">
                 <button class="btn btn-block btn-success">ซื้อเลย</button>
             </div>
         </div>
