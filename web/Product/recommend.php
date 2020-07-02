@@ -41,7 +41,7 @@
                 <strong class="m-0">฿<?= $recommend_price[$split[0] - 1] ?></strong>
             </div>
             <div class="btn-group" role="group">
-                <button type="button" class="btn btn-secondary">+</button>
+                <button type="button" class="btn btn-muted">+</button>
                 <button type="button" disabled class="btn btn-secondary">1</button>
                 <button type="button" class="btn btn-secondary">-</button>
             </div>
