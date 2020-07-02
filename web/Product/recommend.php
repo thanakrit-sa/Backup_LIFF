@@ -42,7 +42,7 @@
             </div>
             <button type="button" class="btn btn-lg btn-dark rounded-circle">+</button>
             <button type="button" disabled class="btn btn-lg bg-white mx-3 px-3">1</button>
-            <button type="button" class="btn btn-lg btn-dark rounded-circle">-</button>
+            <button type="button" class="btn btn-lg btn-dark rounded-circle">- </button>
         </li>
     </ul>
 </body>
