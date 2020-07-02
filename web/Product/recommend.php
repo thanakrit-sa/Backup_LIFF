@@ -36,7 +36,7 @@
             <img src=<?= $img_url ?> class="img-fluid m-0">
         </li>
         <li class="list-group-item">
-            <p><h4><?= $recommend_name[$split[0] - 1] ?></h4></p>
+            <p><h6><?= $recommend_name[$split[0] - 1] ?></h6></p>
             <strong>฿<?=$recommend_price[$split[0]-1]?></strong>
         </li>
     </ul>
