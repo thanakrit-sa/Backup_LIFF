@@ -36,9 +36,11 @@
             <img src=<?= $img_url ?> class="img-fluid m-0">
         </li>
         <li class="list-group-item m-1">
-            <h6 class="m-0"><?= $recommend_name[$split[0] - 1] ?></h6>
-            <strong class="mb-1">฿<?= $recommend_price[$split[0] - 1] ?></strong>
-            <div class="btn-group mt-1" role="group" aria-label="Basic example">
+            <div class="mb-3">
+                <h6 class="m-0"><?= $recommend_name[$split[0] - 1] ?></h6>
+                <strong class="m-0">฿<?= $recommend_price[$split[0] - 1] ?></strong>
+            </div>
+            <div class="btn-group" role="group">
                 <button type="button" class="btn btn-secondary">+</button>
                 <button type="button" disabled class="btn btn-secondary">1</button>
                 <button type="button" class="btn btn-secondary">-</button>
