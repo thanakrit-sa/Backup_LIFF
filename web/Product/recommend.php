@@ -13,12 +13,12 @@
     <style>
         .footer {
             position: fixed;
-            height: 10%;
+            height: 15%;
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: red;
-            color: white;
+            background-color: white;
+            color: black;
             text-align: center;
         }
     </style>
@@ -73,7 +73,21 @@
         </li>
     </ul>
     <div class="footer">
-        nn
+        <div class="row">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="btn btn-block btn-success">ซื้อเลย</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-block btn-success">ซื้อเลย</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <button class="btn btn-block btn-success">ซื้อเลย</button>
+            </div>
+        </div>
     </div>
 </body>
 
