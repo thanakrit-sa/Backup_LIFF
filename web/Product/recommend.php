@@ -42,7 +42,7 @@
             </div>
             <div class="btn-group shadow" role="group">
                 <button type="button" class="btn btn-lg btn-light border border-dark">+</button>
-                <button type="button" disabled class="btn btn-lg btn-white mx-3">1</button>
+                <button type="button" disabled class="btn btn-lg btn-white mx-3 border border-dark">1</button>
                 <button type="button" class="btn btn-lg btn-light border border-dark">-</button>
             </div>
         </li>
