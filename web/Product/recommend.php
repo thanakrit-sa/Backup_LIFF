@@ -75,10 +75,10 @@
     <br>
     <div class="footer">
         <div class="row">
-            <div class="col-2 ml-1 p-0">
+            <div class="col-2 mr-1 p-0">
                 <button class="btn btn-lg btn-block btn-success">ซื้อ</button>
             </div>
-            <div class="col-2 ml-1 p-0">
+            <div class="col-2 mr-1 p-0">
                 <button class="btn btn-lg btn-block btn-success">ซื้อ</button>
             </div>
             <div class="col-8 m-1 p-0">
