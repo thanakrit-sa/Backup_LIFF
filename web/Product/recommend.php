@@ -7,8 +7,9 @@
 </head>
 <body>
     <?
-
+        $name = $_GET['id'];
     ?>
     <h2>hello</h2>
+    <p><?=$name?></p>
 </body>
 </html>
