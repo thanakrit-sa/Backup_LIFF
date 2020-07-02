@@ -8,7 +8,7 @@
 </head>
 <body>
 <?
-    include '../../function.php'
+    include '../../function.php';
     $message = $_GET['message'];
     $split = explode(":", $message);
     $split_prod = $split[2];
