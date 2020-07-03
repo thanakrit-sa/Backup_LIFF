@@ -32,6 +32,7 @@
             background: linear-gradient(to right, #2e5a7d 9%, #33ccff 100%);
             color: white;
             border: 0;
+            font-size: 20px;
         }
     </style>
 </head>
