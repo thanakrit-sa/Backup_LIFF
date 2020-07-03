@@ -75,13 +75,10 @@
                 <br class="m-0 p-0">
                 <form name="form1">
                     <script>
-                        
-                        console.log(document.form1.input1.value);
-
                         function handle() {
                             var a = form1.input1.value
                             console.log(a);
-                            if (a = "0") {
+                            if (a = "1") {
                                 document.form1.button.disabled = false;
                                 document.form1.input1.value++
                             } else {
