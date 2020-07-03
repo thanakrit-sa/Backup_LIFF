@@ -76,15 +76,15 @@
                 <form name="form1">
                     <script>
                         function handle() {
-                            var a = form1.input1.value++
-                            console.log(a);
-                            document.form1.button.disabled = true;
-                            console.log(a + 1);
+                            // var a = form1.input1.value++
+                            // console.log(a);
+                            // document.form1.button.disabled = true;
+                            // console.log(a + 1);
                         }
 
                         function handle2() {
-                            var a = form1.input1.value--
-                            console.log(a-1);
+                            var a = form1.input1.value-1
+                            console.log(a);
                             document.form1.button.disabled = true;
                         }
                     </script>
