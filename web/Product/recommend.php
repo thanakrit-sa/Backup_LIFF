@@ -53,7 +53,7 @@
         $recommend_price[] = $data['price'];
     }
     $img_url = "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[$split[0]-1];
-    $n = 1;
+    $n = 0;
 ?>
     </script>
     <div align="center" class="shadow m-0">
@@ -80,7 +80,7 @@
                     <button type="button" onclick="javascript:form1.input1.value++" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
                     <input readonly type="text" name="input1" value="<?=$n?>" size="1" style="border: 0; text-align: center;">
                     <?=$n?>
-                    <button type="button" onclick="javascript:form1.input1.value--" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
+                    <button type="button" disabled="<?if ($n == "0") { true; } else { false; };?>" onclick="javascript:form1.input1.value--" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
                 </form>
             </div>
         </li>
