@@ -76,7 +76,7 @@
                 <form name="form1">
                     <script>
                         function handle() {
-                            // var q = <?=$recommend_stock[$split[0] - 1]?>
+                            // var q = 
                             var n = 1
                             var nn = n + document.form1.input1.value++
                             // console.log(q);
