@@ -77,7 +77,7 @@
                     <script>
                         function handle() {
                             var a = form1.input1.value
-                            console.log(aa);
+                            console.log(a);
                             if (a == "1") {
                                 document.form1.button.disabled = false;
                                 document.form1.input1.value++
