@@ -76,9 +76,10 @@
                 <form name="form1">
                     <script>
                         function handle() {
+                            var q = <?=$recommend_stock[$split[0] - 1]?>
                             var n = 1
                             var nn = n + document.form1.input1.value++
-                            console.log(nn);
+                            console.log(q);
                             if (nn == "5") {
                                 document.form1.buttonUp.disabled = true;
                             } else {
