@@ -78,7 +78,7 @@
                         var a = form1.input1.value = 1
                         function handle() {
                             var a = form1.input1.value++
-                            console.log(a);
+                            console.log(a+1);
                         }
                     </script>
                     <button type="button" onclick="javascript:handle()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
