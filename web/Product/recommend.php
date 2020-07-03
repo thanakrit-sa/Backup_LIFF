@@ -90,11 +90,10 @@
             <div class="m-0 p-0">
                 <label class="m-0" style="color: gray;">จำนวน (พร้อมจัดส่ง <?= $recommend_stock[$split[0] - 1] ?> ชิ้น)</label>
                 <br class="m-0 p-0">
-                <!-- <label disabled class="btn btn-lg bg-white mx-1 mt-2">1</label> -->
                 <form name="form1">
                     <button type="button" onclick="javascript:form1.input1.value++" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
                     <input id="qty-1" type="text" name="input1" value="1" size="1" style="border: 0; text-align: center;">
-                    <button type="button" onclick="javascript:form1.input1.value++" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
+                    <button type="button" onclick="javascript:form1.input1.value--" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
                 </form>
             </div>
         </li>
