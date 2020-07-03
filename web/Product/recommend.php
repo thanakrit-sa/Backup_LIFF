@@ -77,8 +77,9 @@
                     <script>
                         function handle() {
                             var a = form1.input1.value++
-                            <?=$n?> = a+1
                             console.log(a+1);
+                            const dd = a+1
+                            dd = <?=$n?>
                         }
                     </script>
                     <button type="button" onclick="javascript:handle()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
