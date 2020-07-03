@@ -80,14 +80,15 @@
                             console.log(a);
                             if (a == "1") {
                                 document.form1.button.disabled = false;
-                                document.form1.input1.value++
+                                var a = document.form1.input1.value++
+                                console.log(a);
                             } else {
                                 document.form1.input1.value++
                             }
                         }
 
                         function handle2() {
-                            var a = form1.input1.value
+                            var a = form1.input1.value - 1
                             console.log(a);
                             if (a == "0") {
                                 document.form1.button.disabled = true;
