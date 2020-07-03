@@ -77,24 +77,13 @@
                     <script>
                         function handle() {
                             var a = form1.input1.value++
-                            console.log(a + 1);
+                            document.form1.button.disabled = true;
+                            console.log(a+1);
                         }
                     </script>
                     <button type="button" onclick="javascript:handle()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
                     <input readonly type="text" name="input1" value="<?= $n ?>" onchange="javascript:handle()" size="1" style="border: 0; text-align: center;">
-                    <button type="button" id="btn-submit" onclick="javascript:form1.input1.value--" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
-                    <script type="text/javascript">
-                        $(document).ready(function() {
-
-                            $("#form1").submit(function(e) {
-
-                                $("#btn-submit").attr("disabled", true);
-
-                                return true;
-
-                            });
-                        });
-                    </script>
+                    <button type="button" name="button" onclick="javascript:form1.input1.value--" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
                 </form>
             </div>
         </li>
