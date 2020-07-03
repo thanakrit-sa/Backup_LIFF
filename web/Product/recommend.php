@@ -78,6 +78,11 @@
                         function handle() {
                             var a = form1.input1.value++
                             console.log(a);
+                            if (a != "0") {
+                                document.form1.button.disabled = false;
+                            } else {
+                                document.form1.input1.value++
+                            }
                         }
 
                         function handle2() {
@@ -85,10 +90,9 @@
                             console.log(a);
                             if (a == "0") {
                                 document.form1.button.disabled = true;
-                                form1.input1.value--
+                                document.form1.input1.value--
                             } else {
-                                document.form1.button.disabled = false;
-                                form1.input1.value--
+                                document.form1.input1.value--
                             }
                         }
                     </script>
