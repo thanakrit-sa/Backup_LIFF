@@ -95,7 +95,7 @@
                             var stock = formData.inputStock.value - 1
                             console.log(stock);
                             if (stock == "0") {
-                                // document.formData.buttonDown.disabled = true;
+                                document.formData.buttonDown.disabled = true;
                                 document.formData.buttonUp.disabled = false;
                                 document.formData.inputStock.value--
                             } else {
