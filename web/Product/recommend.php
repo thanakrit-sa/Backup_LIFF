@@ -54,8 +54,8 @@
     }
     $img_url = "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[$split[0]-1];
     $n = 0;
-    // $data = $recommend_stock[$split[0] - 1];
-    $data = "5";
+    $data = $recommend_stock[$split[0] - 1];
+    // $data = "5";
     echo '<script type="text/javascript">';
     echo "var data = '$data';"; // ส่งค่า $data จาก PHP ไปยังตัวแปร data ของ Javascript
     echo '</script>';
@@ -81,11 +81,9 @@
                 <form name="form1">
                     <script>
                         function handle() {
-                            // var q = 
                             // console.log(data);
                             var n = 1
                             var nn = n + document.form1.input1.value++
-                            // console.log(q);
                             if (nn == data) {
                                 document.form1.buttonUp.disabled = true;
                             } else {
