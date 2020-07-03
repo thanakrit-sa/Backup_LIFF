@@ -76,22 +76,13 @@
                 <form name="form1">
                     <script>
                         function handle() {
-                            
                             var n = 1
                             var nn = n + document.form1.input1.value++
-                            
                             console.log(nn);
-                            
                             if (nn == "5") {
-                                document.form1.button.disabled = false;
-                                
-                                
+                                document.form1.buttonUp.disabled = true;
                             } else {
-                                document.form1.button.disabled = false;
-                                
-                                
-                                
-                                
+                                document.form1.buttonDown.disabled = false;
                             }
                         }
 
@@ -99,16 +90,16 @@
                             var a = form1.input1.value - 1
                             console.log(a);
                             if (a == "0") {
-                                document.form1.button.disabled = true;
+                                document.form1.buttonDown.disabled = true;
                                 document.form1.input1.value--
                             } else {
                                 document.form1.input1.value--
                             }
                         }
                     </script>
-                    <button type="button" onclick="javascript:handle()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
+                    <button type="button" name="buttonUp" onclick="javascript:handle()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
                     <input readonly type="text" name="input1" value="0" onchange="javascript:handle()" size="1" style="border: 0; text-align: center;">
-                    <button type="button" disabled="true" name="button" onclick="javascript:handle2()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
+                    <button type="button" disabled="true" name="buttonDown" onclick="javascript:handle2()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
                 </form>
             </div>
         </li>
