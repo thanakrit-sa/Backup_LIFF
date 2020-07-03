@@ -93,7 +93,7 @@
 
                         function handle2() {
                             var stock = form1.input1.value - 1
-                            console.log(a);
+                            console.log(stock);
                             if (stock == "0") {
                                 document.form1.buttonDown.disabled = true;
                                 document.form1.buttonUp.disabled = false;
