@@ -74,7 +74,6 @@
             </div>
             <div>
                 <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi distinctio saepe laboriosam placeat, officiis voluptate aperiam. Tempore consectetur, alias perferendis iste explicabo voluptas obcaecati! Maiores quia ad exercitationem? Provident, ducimus.</label>
-                <div class="btn-grad">.bg-gradient-success</div>
             </div>
         </li>
         <br>
@@ -89,8 +88,7 @@
                 <button class="btn btn-lg btn-block btn-success"><i class="fas fa-cart-plus" style="font-size: 20px;"></i></button>
             </div>
             <div class="col-7 ml-1 p-0">
-                <button class="btn btn-lg btn-block bg-gradient-success text-white">ซื้อเลย</button>
-                <div class="p-3 mb-2 bg-gradient-success text-white">.bg-gradient-success</div>
+                <button class="btn btn-lg btn-block btn-grad">ซื้อเลย</button>
             </div>
         </div>
     </div>
