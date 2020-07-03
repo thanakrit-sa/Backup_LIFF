@@ -26,12 +26,14 @@
         .btn-default {
             background-color: #2e5a7d;
             color: white;
+            height: 8%;
         }
 
         .btn-grad {
             background: linear-gradient(to right, #2e5a7d 9%, #33ccff 100%);
             color: white;
             border: 0;
+            height: 8%;
         }
     </style>
 </head>
