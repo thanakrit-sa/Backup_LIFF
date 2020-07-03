@@ -74,6 +74,7 @@
             </div>
             <div>
                 <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi distinctio saepe laboriosam placeat, officiis voluptate aperiam. Tempore consectetur, alias perferendis iste explicabo voluptas obcaecati! Maiores quia ad exercitationem? Provident, ducimus.</label>
+                <div class="p-3 mb-2 bg-gradient-success text-white">.bg-gradient-success</div>
             </div>
         </li>
         <br>
