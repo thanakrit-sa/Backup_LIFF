@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
+
 <body>
     <?
         $id = $_POST["id"];
         $quantity = $_POST["inputStock"];
+        $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productByid/20/$id");
+        $dataFromApi = json_decode($api, true);
+        $data = $dataFromApi['data'];
+            $recommend_id = $data['id'];
+            $recommend_name = $data['product_name'];
+            $recommend_image = $data['image_path'];
+            $recommend_stock = $data['stock'];
+            $recommend_price = $data['price'];
+    
     ?>
-    <h3><?=$quantity?></h3>
-    <h3><?=$id?></h3>
+    <p>ชื่อสินค้า : <?=$recommend_id?></p>
 </body>
+
 </html>
