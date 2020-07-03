@@ -80,7 +80,7 @@
                             console.log(a);
                         }
                     </script>
-                    <button type="button" onclick="javascript:form1.input1.value++" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
+                    <button type="button" onclick="javascript:handle()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
                     <input readonly type="text" name="input1" value="<?= $n ?>" onchange="javascript:handle()" size="1" style="border: 0; text-align: center;">
                     <?= $n ?>
                     <button type="button" disabled="<?if ($n == " 0") { true; } else { false; };?>" onclick="javascript:form1.input1.value--" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
