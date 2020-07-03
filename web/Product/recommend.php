@@ -75,7 +75,7 @@
                 <button type="button" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
                 <!-- <label disabled class="btn btn-lg bg-white mx-1 mt-2">1</label> -->
                 <form name="form1">
-                    <input type="text" name="input1" value="1">
+                    <input type="text" name="input1" value="1" size="2">
                 </form>
                 <button type="button" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
             </div>
