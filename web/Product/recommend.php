@@ -77,8 +77,8 @@
                     <script>
                         function handle() {
                             var a = form1.input1.value
-                            var aa
-                            console.log(aa);
+                            console.log(a);
+                            
                             if (a == "5") {
                                 document.form1.button.disabled = false;
                                 document.form1.input1.value++
@@ -88,7 +88,7 @@
                                 document.form1.button.disabled = false;
                                 var n = 1
                                 var nn = n + document.form1.input1.value++
-                                var aa = nn
+                                
                                 // console.log(nn);
                                 // console.log(aa);
                                 
