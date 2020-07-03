@@ -86,7 +86,7 @@
                     <script type="text/javascript">
                         $(document).ready(function() {
 
-                            $("#my-form").submit(function(e) {
+                            $("#form1").submit(function(e) {
 
                                 $("#btn-submit").attr("disabled", true);
 
