@@ -66,7 +66,7 @@
 
         function stepQty(id, step) {
             var value = $('#' + id).val();
-            $('#' + id).val(value + step);
+            $('#' + id).val(value++);
         }
 
         function updatePrice(id) {
