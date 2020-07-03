@@ -75,8 +75,8 @@
                 <br class="m-0 p-0">
                 <form name="form1">
                     <script>
-                        var a = document.form1.input1.value
-                        console.log(a);
+                        
+                        console.log(document.form1.input1.value);
 
                         function handle() {
                             var a = form1.input1.value
