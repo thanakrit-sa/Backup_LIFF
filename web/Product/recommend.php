@@ -83,7 +83,7 @@
             <div class="col-2 m-0 p-0">
                 <button class="btn btn-lg btn-block btn-success"><i class="fas fa-cart-plus" style="font-size: 20px;"></i></button>
             </div>
-            <div class="col-7 ml-1 p-0">
+            <div class="col-7 ml-1 p-1">
                 <button class="btn btn-lg btn-block btn-success">ซื้อเลย</button>
             </div>
         </div>
