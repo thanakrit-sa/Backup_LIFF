@@ -87,18 +87,17 @@
                         }
 
                         function handle2() {
-                            var a = form1.input1.value - 1
+                            var a = form1.input1.value
                             console.log(a);
                             if (a == "0") {
                                 document.form1.button.disabled = true;
-                                document.form1.input1.value--
                             } else {
                                 document.form1.input1.value--
                             }
                         }
                     </script>
                     <button type="button" onclick="javascript:handle()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
-                    <input readonly type="text" name="input1" value="1" onchange="javascript:handle()" size="1" style="border: 0; text-align: center;">
+                    <input readonly type="text" name="input1" value="0" onchange="javascript:handle()" size="1" style="border: 0; text-align: center;">
                     <button type="button" name="button" onclick="javascript:handle2()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
                 </form>
             </div>
