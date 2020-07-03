@@ -47,6 +47,7 @@
     $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/$split_prod");
     $dataFromApi = json_decode($api, true);
     foreach ($dataFromApi['data'] as $data) {
+        $recommend_id[] = $data['id'];
         $recommend_name[] = $data['product_name'];
         $recommend_image[] = $data['image_path'];
         $recommend_stock[] = $data['stock'];
@@ -104,6 +105,7 @@
                             }
                         }
                     </script>
+                    <input hidden name="id" type="text" value="<?=$recommend_id[$split[0] - 1]?>">
                     <button type="button" name="buttonUp" onclick="javascript:handle()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
                     <input readonly type="text" name="inputStock" value="0" onchange="javascript:handle()" size="1" style="border: 0; text-align: center;">
                     <button type="button" disabled="true" name="buttonDown" onclick="javascript:handle2()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
