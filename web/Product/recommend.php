@@ -79,6 +79,7 @@
                     </script>
                     <button type="button" onclick="javascript:form1.input1.value++" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
                     <input readonly type="text" name="input1" value="<?=$n?>" size="1" style="border: 0; text-align: center;">
+                    <?=$n?>
                     <button type="button" onclick="javascript:form1.input1.value--" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
                 </form>
             </div>
