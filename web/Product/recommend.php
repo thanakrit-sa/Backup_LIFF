@@ -76,7 +76,7 @@
                 <form name="form1">
                     <script>
                         function handle() {
-                            var a = form1.input1.value
+                            var a = form1.input1.value++
                             console.log(a);
                         }
                     </script>
