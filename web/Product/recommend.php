@@ -80,8 +80,8 @@
                             console.log(a);
                             if (a == "1") {
                                 document.form1.button.disabled = false;
-                                var a = document.form1.input1.value++
-                                console.log(a);
+                                var aa = document.form1.input1.value++
+                                console.log(aa);
                             } else {
                                 document.form1.input1.value++
                             }
