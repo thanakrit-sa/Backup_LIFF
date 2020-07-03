@@ -23,7 +23,7 @@
             text-align: center;
         }
 
-        .btn-defalut {
+        .btn-default {
             background-color: #2e5a7d;
             color: white;
         }
