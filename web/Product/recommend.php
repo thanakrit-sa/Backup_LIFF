@@ -85,8 +85,10 @@
                                 
                             } else {
                                 document.form1.button.disabled = false;
+                                var n = 1
+                                var nn = n + document.form1.input1.value++
                                 document.form1.input1.value++
-                                console.log("aa");
+                                console.log(nn);
                                 
                             }
                         }
