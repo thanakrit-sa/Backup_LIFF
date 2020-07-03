@@ -80,7 +80,7 @@
                             console.log(a);
                             if (a = "1") {
                                 document.form1.button.disabled = false;
-                                document.form1.input1.value++
+                                a++
                             } else {
                                 document.form1.input1.value++
                             }
