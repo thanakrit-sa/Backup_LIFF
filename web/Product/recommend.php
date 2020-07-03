@@ -24,7 +24,7 @@
         }
 
         .btn-grad {
-            background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%)
+            background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
         }
     </style>
 </head>
@@ -74,7 +74,7 @@
             </div>
             <div>
                 <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi distinctio saepe laboriosam placeat, officiis voluptate aperiam. Tempore consectetur, alias perferendis iste explicabo voluptas obcaecati! Maiores quia ad exercitationem? Provident, ducimus.</label>
-                <div class="p-3 mb-2 bg-gradient-success text-white">.bg-gradient-success</div>
+                <div class="btn-grad">.bg-gradient-success</div>
             </div>
         </li>
         <br>
