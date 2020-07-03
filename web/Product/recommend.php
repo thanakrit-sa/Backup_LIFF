@@ -54,9 +54,6 @@
     }
     $img_url = "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[$split[0]-1];
     $value = "1";
-    function Myfunction() {
-        $value = "4";
-    }
 ?>
     <div align="center" class="shadow m-0">
         <p class="p-3"><?= $recommend_name[$split[0] - 1] ?></p>
@@ -77,7 +74,7 @@
                 <br class="m-0 p-0">
                 <!-- <label disabled class="btn btn-lg bg-white mx-1 mt-2">1</label> -->
                 <form name="form1">
-                    <button type="button" onclick=<?Myfunction()?> class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
+                    <button type="button" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
                     <input type="text" name="input1" value="<?php echo $value;?>" size="1" style="border: 0; text-align: center;">
                     <button type="button" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
                 </form>
