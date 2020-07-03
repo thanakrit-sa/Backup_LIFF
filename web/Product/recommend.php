@@ -84,7 +84,7 @@
 
                         function handle2() {
                             var a = form1.input1.value--
-                            console.log(a);
+                            console.log(a-1);
                             document.form1.button.disabled = true;
                         }
                     </script>
