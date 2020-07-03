@@ -81,7 +81,6 @@
                             if (a == "1") {
                                 document.form1.button.disabled = false;
                                 var a = document.form1.input1.value++
-                                console.log(a);
                             } else {
                                 document.form1.input1.value++
                             }
