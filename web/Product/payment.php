@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
 <body>
-    asdasd
+    <?
+        $quantity = $_POST["inputStock"];
+    ?>
+    <h3><?=$quantity?></h3>
 </body>
 </html>

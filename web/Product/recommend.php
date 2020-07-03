@@ -78,7 +78,7 @@
             <div class="m-0 p-0">
                 <label class="m-0" style="color: gray;">จำนวน (พร้อมจัดส่ง <?= $recommend_stock[$split[0] - 1] ?> ชิ้น)</label>
                 <br class="m-0 p-0">
-                <form name="formData" action="/payment.php" method="POST">
+                <form name="formData" action="/web/Product/payment.php" method="POST">
                     <script>
                         function handle() {
                             // console.log(stockFromApi);
