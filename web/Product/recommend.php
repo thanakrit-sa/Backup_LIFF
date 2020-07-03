@@ -87,6 +87,7 @@
                                 document.form1.button.disabled = true;
                                 form1.input1.value--
                             } else {
+                                document.form1.button.disabled = false;
                                 form1.input1.value--
                             }
                         }
