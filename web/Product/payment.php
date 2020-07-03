@@ -13,7 +13,7 @@
 </head>
 <body>
     <?
-        $quantity = $_POST["inputStock"]
+        $quantity = $_POST["inputStock"];
     ?>
     <h3><?=$quantity?></h3>
 </body>
