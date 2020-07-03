@@ -82,21 +82,17 @@
                             
                             console.log(nn);
                             
-                            // if (a == "5") {
-                            //     document.form1.button.disabled = false;
-                            //     document.form1.input1.value++
-                            //     // console.log("a");
+                            if (a == "5") {
+                                document.form1.button.disabled = false;
                                 
-                            // } else {
-                            //     document.form1.button.disabled = false;
-                            //     var n = 1
-                            //     var nn = n + document.form1.input1.value++
                                 
-                            //     // console.log(nn);
+                            } else {
+                                document.form1.button.disabled = false;
                                 
                                 
                                 
-                            // }
+                                
+                            }
                         }
 
                         function handle2() {
