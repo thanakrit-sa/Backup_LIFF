@@ -76,9 +76,9 @@
                 <form name="form1">
                     <script>
                         function handle() {
-                            var a = form1.input1.value
-                            var n = 1
-                            console.log(a+n);
+                            var a = aa + form1.input1.value
+                            var aa = 1
+                            console.log(a);
                             
                             if (a == "5") {
                                 document.form1.button.disabled = false;
