@@ -78,34 +78,34 @@
             <div class="m-0 p-0">
                 <label class="m-0" style="color: gray;">จำนวน (พร้อมจัดส่ง <?= $recommend_stock[$split[0] - 1] ?> ชิ้น)</label>
                 <br class="m-0 p-0">
-                <form name="form1">
+                <form name="formData">
                     <script>
                         function handle() {
                             // console.log(stockFromApi);
                             var num = 1
-                            var stock = num + document.form1.input1.value++
+                            var stock = num + document.formData.inputStock.value++
                             if (stock == stockFromApi) {
-                                document.form1.buttonUp.disabled = true;
+                                document.formData.buttonUp.disabled = true;
                             } else {
-                                document.form1.buttonDown.disabled = false;
+                                document.formData.buttonDown.disabled = false;
                             }
                         }
 
                         function handle2() {
-                            var stock = form1.input1.value - 1
+                            var stock = formData.inputStock.value - 1
                             console.log(stock);
                             if (stock == "0") {
-                                document.form1.buttonDown.disabled = true;
-                                document.form1.buttonUp.disabled = false;
-                                document.form1.input1.value--
+                                document.formData.buttonDown.disabled = true;
+                                document.formData.buttonUp.disabled = false;
+                                document.formData.inputStock.value--
                             } else {
-                                document.form1.buttonUp.disabled = false;
-                                document.form1.input1.value--
+                                document.formData.buttonUp.disabled = false;
+                                document.formData.inputStock.value--
                             }
                         }
                     </script>
                     <button type="button" name="buttonUp" onclick="javascript:handle()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
-                    <input readonly type="text" name="input1" value="0" onchange="javascript:handle()" size="1" style="border: 0; text-align: center;">
+                    <input readonly type="text" name="inputStock" value="0" onchange="javascript:handle()" size="1" style="border: 0; text-align: center;">
                     <button type="button" disabled="true" name="buttonDown" onclick="javascript:handle2()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
                 </form>
             </div>
