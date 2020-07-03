@@ -16,7 +16,7 @@
     <?
         $id = $_POST["id"];
         $quantity = $_POST["inputStock"];
-        $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productByid/20/$id");
+        $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productByid/$id");
         $dataFromApi = json_decode($api, true);
         $data = $dataFromApi['data'];
             $recommend_id = $data['id'];
