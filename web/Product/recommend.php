@@ -54,7 +54,8 @@
     }
     $img_url = "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[$split[0]-1];
     $n = 0;
-    $data = $recommend_stock[$split[0] - 1];
+    // $data = $recommend_stock[$split[0] - 1];
+    $data = "5";
     echo '<script type="text/javascript">';
     echo "var data = '$data';"; // ส่งค่า $data จาก PHP ไปยังตัวแปร data ของ Javascript
     echo '</script>';
