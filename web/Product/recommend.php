@@ -54,10 +54,10 @@
     }
     $img_url = "https://e-sport.in.th/ssdev/ecom/dashboard/uploads/img_prod/".$recommend_image[$split[0]-1];
     $n = 0;
-    $data = $recommend_stock[$split[0] - 1];
+    $stockFromApi = $recommend_stock[$split[0] - 1];
     // $data = "5";
     echo '<script type="text/javascript">';
-    echo "var data = '$data';"; // ส่งค่า $data จาก PHP ไปยังตัวแปร data ของ Javascript
+    echo "var stockFromApi = '$stockFromApi';";
     echo '</script>';
 ?>
     </script>
@@ -78,34 +78,34 @@
             <div class="m-0 p-0">
                 <label class="m-0" style="color: gray;">จำนวน (พร้อมจัดส่ง <?= $recommend_stock[$split[0] - 1] ?> ชิ้น)</label>
                 <br class="m-0 p-0">
-                <form name="form1">
+                <form name="formData">
                     <script>
                         function handle() {
-                            // console.log(data);
-                            var n = 1
-                            var nn = n + document.form1.input1.value++
-                            if (nn == data) {
-                                document.form1.buttonUp.disabled = true;
+                            // console.log(stockFromApi);
+                            var num = 1
+                            var stock = num + document.formData.stock.value++
+                            if (stock == stockFromApi) {
+                                document.formData.buttonUp.disabled = true;
                             } else {
-                                document.form1.buttonDown.disabled = false;
+                                document.formData.buttonDown.disabled = false;
                             }
                         }
 
                         function handle2() {
-                            var a = form1.input1.value - 1
+                            var stock = formData.stock.value - 1
                             console.log(a);
-                            if (a == "0") {
-                                document.form1.buttonDown.disabled = true;
-                                document.form1.buttonUp.disabled = false;
-                                document.form1.input1.value--
+                            if (stock == "0") {
+                                document.formData.buttonDown.disabled = true;
+                                document.formData.buttonUp.disabled = false;
+                                document.formData.stock.value--
                             } else {
-                                document.form1.buttonUp.disabled = false;
-                                document.form1.input1.value--
+                                document.formData.buttonUp.disabled = false;
+                                document.formData.stock.value--
                             }
                         }
                     </script>
                     <button type="button" name="buttonUp" onclick="javascript:handle()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
-                    <input readonly type="text" name="input1" value="0" onchange="javascript:handle()" size="1" style="border: 0; text-align: center;">
+                    <input readonly type="text" name="stock" value="0" onchange="javascript:handle()" size="1" style="border: 0; text-align: center;">
                     <button type="button" disabled="true" name="buttonDown" onclick="javascript:handle2()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">- </button>
                 </form>
             </div>
