@@ -86,7 +86,6 @@
                             var a = form1.input1.value--
                             console.log(a);
                             document.form1.button.disabled = true;
-                            console.log(a + 1);
                         }
                     </script>
                     <button type="button" onclick="javascript:handle()" class="btn btn-dark rounded-circle" style="width:40px; height:40px;">+</button>
