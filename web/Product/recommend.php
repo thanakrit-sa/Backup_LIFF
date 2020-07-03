@@ -89,6 +89,7 @@
             </div>
             <div class="col-7 ml-1 p-0">
                 <button class="btn btn-lg btn-block bg-gradient-success text-white">ซื้อเลย</button>
+                <div class="p-3 mb-2 bg-gradient-success text-white">.bg-gradient-success</div>
             </div>
         </div>
     </div>
