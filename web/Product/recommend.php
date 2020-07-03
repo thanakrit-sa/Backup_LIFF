@@ -76,8 +76,9 @@
                 <form name="form1">
                     <script>
                         function handle() {
-                            var a = aa + form1.input1.value
                             var aa = 1
+                            var a = aa + form1.input1.value
+                            
                             console.log(a);
                             
                             if (a == "5") {
