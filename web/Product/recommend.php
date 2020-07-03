@@ -97,10 +97,10 @@
                             if (stock == "0") {
                                 document.formData.buttonDown.disabled = true;
                                 document.formData.buttonUp.disabled = false;
-                                // document.formData.stock.value--
+                                document.formData.stock.value--
                             } else {
                                 document.formData.buttonUp.disabled = false;
-                                // document.formData.stock.value--
+                                document.formData.stock.value--
                             }
                         }
                     </script>
