@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../style_profile.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <style>
         .footer {
             position: fixed;
@@ -77,10 +78,10 @@
     <div class="footer">
         <div class="row mt-1 ml-1" align="center">
             <div class="col-2 mr-1 p-0">
-                <button class="btn btn-lg btn-block btn-success">ซื้อ</button>
+                <button class="btn btn-lg btn-block btn-success"><i class="fas fa-comment-dots"></i></button>
             </div>
             <div class="col-2 m-0 p-0">
-                <button class="btn btn-lg btn-block btn-success">ซื้อ</button>
+                <button class="btn btn-lg btn-block btn-success"><i class="fas fa-cart-plus"></i></button>
             </div>
             <div class="col-7 ml-1 p-0">
                 <button class="btn btn-lg btn-block btn-success">ซื้อเลย</button>
