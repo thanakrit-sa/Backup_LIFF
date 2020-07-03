@@ -78,7 +78,7 @@
             <div class="m-0 p-0">
                 <label class="m-0" style="color: gray;">จำนวน (พร้อมจัดส่ง <?= $recommend_stock[$split[0] - 1] ?> ชิ้น)</label>
                 <br class="m-0 p-0">
-                <form name="formData">
+                <form name="formData" action="payment.php" method="POST">
                     <script>
                         function handle() {
                             // console.log(stockFromApi);
@@ -130,7 +130,7 @@
                 <button class="btn btn-lg btn-block btn-default"><i class="fas fa-cart-plus" style="font-size: 20px;"></i></button>
             </div>
             <div class="col-7 ml-1 p-0">
-                <button class="btn btn-lg btn-block btn-grad">ซื้อเลย</button>
+                <button type="submit" class="btn btn-lg btn-block btn-grad">ซื้อเลย</button>
             </div>
         </div>
     </div>
