@@ -82,11 +82,11 @@
                     <script>
                         function handle() {
                             // var q = 
-                            console.log(data);
+                            // console.log(data);
                             var n = 1
                             var nn = n + document.form1.input1.value++
                             // console.log(q);
-                            if (nn == "5") {
+                            if (nn == data) {
                                 document.form1.buttonUp.disabled = true;
                             } else {
                                 document.form1.buttonDown.disabled = false;
