@@ -82,7 +82,7 @@
                             
                             console.log(nn);
                             
-                            if (a == "5") {
+                            if (nn == "5") {
                                 document.form1.button.disabled = false;
                                 
                                 
