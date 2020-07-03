@@ -28,8 +28,11 @@
             $recommend_price = $data['price'];
         }
     ?>
-    <h3><?= $quantity ?></h3>
-    <h3><?= $recommend_id ?></h3>
+    <div align="center">
+        <p>ชื่อสินค้า : <?=$recommend_name?></p>
+        <p>ราคาสินค้า : <?=$recommend_price?></p>
+        <p>จำนวนสินค้าที่ซื้อ : <?=$quantity?></p>
+    </div>
 </body>
 
 </html>
