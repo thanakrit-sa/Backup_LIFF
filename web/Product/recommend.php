@@ -26,6 +26,7 @@
         .btn-default {
             background-color: #2e5a7d;
             color: white;
+            border: 0;
         }
 
         .btn-grad {
