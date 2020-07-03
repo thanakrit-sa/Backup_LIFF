@@ -25,10 +25,11 @@
 
         .btn {
             background-color: #2e5a7d;
+            color: white;
         }
 
         .btn-grad {
-            background: linear-gradient(to right, #2e5a7d 9%, #33ccff 100%);
+            background-color: linear-gradient(to right, #2e5a7d 9%, #33ccff 100%);
             color: white;
         }
     </style>
