@@ -91,8 +91,10 @@
                             console.log(a);
                             if (a == "0") {
                                 document.form1.buttonDown.disabled = true;
+                                document.form1.buttonUp.disabled = false;
                                 document.form1.input1.value--
                             } else {
+                                document.form1.buttonUp.disabled = false;
                                 document.form1.input1.value--
                             }
                         }
