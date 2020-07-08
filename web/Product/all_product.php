@@ -43,8 +43,8 @@ foreach ($dataFromApi['data'] as $data) {
     <div class="card card-body" style="border: 0;">
         <div class="row" align="center">
             <div class="col-6 p-1">
-                <div class="card card-body">
-                    <img src="<?=$prod_image[0]?>" />
+                <div class="card card-body p-0 m-0">
+                    <img src="<?=$prod_image[0]?>" class="img-thumbnail p-0 m-0" />
                 </div>
             </div>
             <div class="col-6 p-1">
