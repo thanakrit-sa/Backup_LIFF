@@ -778,7 +778,6 @@ $prod_Recommend = [
           ]
         ]
       ]
-      ]
       ],
       [
         "type"=> "bubble",
@@ -800,6 +799,7 @@ $prod_Recommend = [
           ]
       ]
     ]
+      ]
     ]
 ];
 
