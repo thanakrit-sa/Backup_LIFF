@@ -40,14 +40,14 @@ foreach ($dataFromApi['data'] as $data) {
             <button type="submit" class="btn btn-primary btn-block mt-2">ค้นหาสินค้า</button>
         </div>
     </div>
-    <div class="card card-body">
+    <div class="card card-body" style="border: 0;">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 p-0">
                 <div class="card card-body">
 
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 p-0">
                 <div class="card card-body">
 
                 </div>
