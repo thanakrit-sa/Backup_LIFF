@@ -27,7 +27,7 @@ foreach ($dataFromApi['data'] as $data) {
 
 <body>
   
-            <div class="row" align="center">
+            <div class="row m-1 p-1" align="center">
                 <div class="col-6 mr-1">
                     <input type="text" class="form-control" placeholder="ชื่อสินค้า">
                 </div>
