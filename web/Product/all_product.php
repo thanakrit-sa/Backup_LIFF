@@ -37,8 +37,6 @@ foreach ($dataFromApi['data'] as $data) {
                     <option>...</option>
                 </select>
             </div>
-        </div>
-        <div align="center">
             <button type="submit" class="btn btn-primary btn-block mt-3">ค้นหาสินค้า</button>
         </div>
     </div>
