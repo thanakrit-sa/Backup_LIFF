@@ -26,24 +26,24 @@ foreach ($dataFromApi['data'] as $data) {
 ?>
 
 <body>
-  
-            <div class="row m-1" align="center">
-                <div class="col-7 m-0 p-0">
-                    <input type="text" class="form-control" placeholder="ชื่อสินค้า">
-                </div>
-                <div class="col- m-0 p-05">
-                    <select id="inputState" class="form-control">
-                        <option selected>หมวดหมู่</option>
-                        <option>...</option>
-                    </select>
-                </div>
+    <div class="card crad-body">
+        <div class="row" align="center">
+            <div class="col-7 m-0 p-0">
+                <input type="text" class="form-control" placeholder="ชื่อสินค้า">
             </div>
-            <div align="center">
-                <button type="submit" class="btn btn-primary btn-block mt-3 mx-2">ค้นหาสินค้า</button>
+            <div class="col- m-0 p-05">
+                <select id="inputState" class="form-control">
+                    <option selected>หมวดหมู่</option>
+                    <option>...</option>
+                </select>
             </div>
-            <hr>
-        
-    </ul>
+        </div>
+        <div align="center">
+            <button type="submit" class="btn btn-primary btn-block mt-3">ค้นหาสินค้า</button>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
