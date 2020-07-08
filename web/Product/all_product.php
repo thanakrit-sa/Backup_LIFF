@@ -34,7 +34,10 @@ foreach ($dataFromApi['data'] as $data) {
             <div class="col-12 mt-1 p-0">
                 <select id="inputState" class="form-control">
                     <option selected>หมวดหมู่</option>
-                    <option>...</option>
+                    <option>รองเท้า</option>
+                    <option>แฟชั่นชาย</option>
+                    <option>แฟชั่นหญิง</option>
+                    <option>เครื่องสำอาง</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-primary btn-block mt-2">ค้นหาสินค้า</button>
