@@ -33,17 +33,15 @@ foreach ($dataFromApi['data'] as $data) {
                     <label>รายชื่อสินค้า</label>
                     <input type="text" class="form-control" placeholder="ชื่อสินค้า">
                 </div>
-                <div class="col-4">
+                <div class="col-6">
                     <label for="inputState">State</label>
                     <select id="inputState" class="form-control">
                         <option selected>Choose...</option>
                         <option>...</option>
                     </select>
                 </div>
-                <div class="col-2">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                </div>
             </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
         </div>
         <div class="list-group-item">
 
