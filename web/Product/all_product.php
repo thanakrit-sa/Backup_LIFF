@@ -101,7 +101,28 @@ foreach ($dataFromApi['data'] as $data) {
                 </div>
             </div>
         </div>
+        <div class="row" align="center">
+            <div class="col-6 p-1">
+                <div class="card card-body p-0 m-0 border-0 shadow-sm" align="left">
+                    <img src="<?= $prod_image[6] ?>" class="img-thumbnail p-0 m-0 border-0" style="width: 200px; height: 150px;" />
+                    <div class="mt-1 m-1">
+                        <article><?= $prod_name[6] ?></article>
+                        <h6>฿<?= $prod_price[6] ?></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 p-1">
+                <div class="card card-body p-0 m-0 border-0 shadow-sm" align="left">
+                    <img src="<?= $prod_image[7] ?>" class="img-thumbnail p-0 m-0 border-0" style="width: 200px; height: 150px;" />
+                    <div class="mt-1 m-1">
+                        <article><?= $prod_name[7] ?></article>
+                        <h6>฿<?= $prod_price[7] ?></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
 
 
 </body>
