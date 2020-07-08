@@ -790,8 +790,8 @@ $prod_Recommend = [
               "type"=> "button",
               "action"=> [
                 "type"=> "uri",
-                "label"=> "หมวดหมู่เพิ่มเติม",
-                "uri"=> "https://linecorp.com"
+                "label"=> "สินค้าเพิ่มเติม",
+                "uri"=> "https://liff.line.me/1654173341-QR4Yj7Mx"
             ],
               "flex"=> 1,
               "gravity"=> "center"
