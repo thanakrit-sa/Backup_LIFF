@@ -45,8 +45,8 @@ foreach ($dataFromApi['data'] as $data) {
             <div class="col-6 p-1">
                 <div class="card card-body p-0 m-0 border-0 shadow-sm" align="left">
                     <img src="<?=$prod_image[0]?>" class="img-thumbnail p-0 m-0 border-0" style="width: 200px; height: 150px;"/>
-                    <article><?=$prod_name[0]?></article>
-                    <h6>฿<?=$prod_price[0]?></h6>
+                    <article class="p-1"><?=$prod_name[0]?></article>
+                    <h6 class="p-1">฿<?=$prod_price[0]?></h6>
                 </div>
             </div>
             <div class="col-6 p-1">
