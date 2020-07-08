@@ -28,10 +28,10 @@ foreach ($dataFromApi['data'] as $data) {
 <body>
   
             <div class="row" align="center">
-                <div class="col-7 mr-1">
+                <div class="col-6 mr-1">
                     <input type="text" class="form-control" placeholder="ชื่อสินค้า">
                 </div>
-                <div class="col-5 ml-0">
+                <div class="col-6 ml-0">
                     <select id="inputState" class="form-control">
                         <option selected>หมวดหมู่</option>
                         <option>...</option>
