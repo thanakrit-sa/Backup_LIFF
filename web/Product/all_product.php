@@ -31,7 +31,7 @@ foreach ($dataFromApi['data'] as $data) {
             <div class="col-6 mr-1 p-0">
                 <input type="text" class="form-control" placeholder="ชื่อสินค้า">
             </div>
-            <div class="col-5 m-0 p-0">
+            <div class="col-6 m-0 p-0">
                 <select id="inputState" class="form-control">
                     <option selected>หมวดหมู่</option>
                     <option>...</option>
