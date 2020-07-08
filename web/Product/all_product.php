@@ -26,8 +26,7 @@ foreach ($dataFromApi['data'] as $data) {
 ?>
 
 <body>
-    <ul class="list-group">
-        <li class="list-group-item">
+  
             <div class="row">
                 <div class="col-6">
                     <input type="text" class="form-control" placeholder="ชื่อสินค้า">
@@ -40,10 +39,8 @@ foreach ($dataFromApi['data'] as $data) {
                 </div>
             </div>
             <button type="submit" class="btn btn-primary btn-block mt-3">ค้นหาสินค้า</button>
-        </li>
-        <li class="list-group-item">
-
-        </li>
+            <hr>
+        
     </ul>
 </body>
 
