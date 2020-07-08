@@ -42,12 +42,12 @@ foreach ($dataFromApi['data'] as $data) {
     </div>
     <div class="card card-body" style="border: 0;">
         <div class="row">
-            <div class="col-6 p-0">
+            <div class="col-6 p-0 mr-1">
                 <div class="card card-body">
 
                 </div>
             </div>
-            <div class="col-6 p-0">
+            <div class="col-6 p-0 ml-1">
                 <div class="card card-body">
 
                 </div>
