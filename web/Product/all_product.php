@@ -52,11 +52,51 @@ foreach ($dataFromApi['data'] as $data) {
                 </div>
             </div>
             <div class="col-6 p-1">
-                <div class="card card-body p-0 m-0 border-0 shadow-sm">
+                <div class="card card-body p-0 m-0 border-0 shadow-sm" align="left">
                     <img src="<?= $prod_image[1] ?>" class="img-thumbnail p-0 m-0 border-0" style="width: 200px; height: 150px;" />
                     <div class="mt-1 m-1">
                         <article><?= $prod_name[1] ?></article>
                         <h6>฿<?= $prod_price[1] ?></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" align="center">
+            <div class="col-6 p-1">
+                <div class="card card-body p-0 m-0 border-0 shadow-sm" align="left">
+                    <img src="<?= $prod_image[2] ?>" class="img-thumbnail p-0 m-0 border-0" style="width: 200px; height: 150px;" />
+                    <div class="mt-1 m-1">
+                        <article><?= $prod_name[2] ?></article>
+                        <h6>฿<?= $prod_price[2] ?></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 p-1">
+                <div class="card card-body p-0 m-0 border-0 shadow-sm" align="left">
+                    <img src="<?= $prod_image[3] ?>" class="img-thumbnail p-0 m-0 border-0" style="width: 200px; height: 150px;" />
+                    <div class="mt-1 m-1">
+                        <article><?= $prod_name[3] ?></article>
+                        <h6>฿<?= $prod_price[3] ?></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" align="center">
+            <div class="col-6 p-1">
+                <div class="card card-body p-0 m-0 border-0 shadow-sm" align="left">
+                    <img src="<?= $prod_image[4] ?>" class="img-thumbnail p-0 m-0 border-0" style="width: 200px; height: 150px;" />
+                    <div class="mt-1 m-1">
+                        <article><?= $prod_name[4] ?></article>
+                        <h6>฿<?= $prod_price[4] ?></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 p-1">
+                <div class="card card-body p-0 m-0 border-0 shadow-sm" align="left">
+                    <img src="<?= $prod_image[5] ?>" class="img-thumbnail p-0 m-0 border-0" style="width: 200px; height: 150px;" />
+                    <div class="mt-1 m-1">
+                        <article><?= $prod_name[5] ?></article>
+                        <h6>฿<?= $prod_price[5] ?></h6>
                     </div>
                 </div>
             </div>
