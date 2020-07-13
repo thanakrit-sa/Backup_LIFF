@@ -8,6 +8,6 @@ $ch = curl_init('https://track.thailandpost.co.th/?trackNumber=EE993673545CN');
                 $result = curl_exec($ch);
                 curl_close($ch);
                 $resultData = json_decode($result, true);
-                echo $resultData;
+                echo $result;
 
 ?>
