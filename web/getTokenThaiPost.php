@@ -13,7 +13,7 @@ $data_register = json_encode($data);
 
 // echo $data_register;
 
-$ch = curl_init('https://trackapi.thailandpost.co.th/post/api/v1/track');
+$ch = curl_init('https://trackapi.thailandpost.co.th/post/api/v1/track/batch');
                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_register);
