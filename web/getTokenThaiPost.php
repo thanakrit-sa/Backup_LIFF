@@ -1,7 +1,7 @@
 <?
 
 
-$ch = curl_init('https://trackapi.thailandpost.co.th/post/api/v1/track');
+$ch = curl_init('https://trackapi.thailandpost.co.th/post/api/v1/authenticate/token');
                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
