@@ -1,33 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<script>
-    let promise_token = new Promise(resolve => {
-        var options = {
-            method: 'POST',
-            uri: 'https://trackapi.thailandpost.co.th/post/api/v1/authenticate/token',
-            strictSSL: false,
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Token ' + config.thaipost.token
-            }
-        };
-
-        request(options, function(error, response, body) {
-            resolve(JSON.parse(body));
-        });
-    });
-
-    let access_token = await promise_token;
-</script>
-
-<body>
-
-</body>
-
-</html>
+<?
+$headers = getallheaders(); // ได้ค่า array ของส่วน Headers ที่ถูกส่งมา
+// ทดสอบเก็บส่วนของข้อมูลลงในไฟล์ เพื่อดูว่า มีการส่งค่ากลับมาหรือไม่ และส่งค่าอะไรกลับมา
+file_put_contents('headers.txt',json_encode($headers, JSON_PRETTY_PRINT)); // ส่วนสำหรับใช้ตรวจสอบเพิ่มเติม
+file_put_contents('body.txt',file_get_contents('php://input')); // ส่วนของ body เป็นส่วนที่จะใช้งานถ้ามีข้อมูล
+?>
