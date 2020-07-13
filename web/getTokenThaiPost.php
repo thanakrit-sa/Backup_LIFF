@@ -1,12 +1,12 @@
 <?
 
 
-$ch = curl_init('https://trackapi.thailandpost.co.th/post/api/v1/authenticate/token');
+$ch = curl_init('https://trackapi.thailandpost.co.th/post/api/v1/track');
                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
                     'Content-Type: application/json',
-                    'Authorization: Token OqRMQVW#PZLnW*YbS_OCY6DeDAQdWtIAB9MjVdBwLwL2PND;QBESS$NgEnW:Z8KOXMBpP~JDD/J+EJY@Q-H&KhY2W1PETeU:DqEf'
+                    'Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWN1cmUtYXBpIiwiYXVkIjoic2VjdXJlLWFwcCIsInN1YiI6IkF1dGhvcml6YXRpb24iLCJleHAiOjE1OTczMzI1MDIsInJvbCI6WyJST0xFX1VTRVIiXSwiZCpzaWciOnsicCI6InpXNzB4IiwicyI6bnVsbCwidSI6IjJlZmMyMmQwYTdhYjNlNGMxZTJjNTQ5ODk1OTE0MGRhIiwiZiI6InhzeiM5In19.Y6hD3mfZ6yttF1FVLuY3yjoGp4FmwMG91CoNC8j1LRAoEdWU8ES7rvRyNMGLMLgoVCW2mlMTvOAy8DQRv7pc0w'
                 ));
                 $result = curl_exec($ch);
                 curl_close($ch);
