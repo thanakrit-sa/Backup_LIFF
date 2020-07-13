@@ -6,7 +6,7 @@ $ch = curl_init('https://trackapi.thailandpost.co.th/post/api/v1/track');
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
                     'Content-Type: application/json',
-                    'Authorization: Token HLH|N&UiJMA0FXE^KoNpRuZ!S;RwCFD+N|UNM\TxPxA6I8OxH/HIUnNCD+QqUIXzI&IdR-ObLlJ&V#E^IgNANdP?E9IxEIWeA=EZ '
+                    'Authorization: Token OqRMQVW#PZLnW*YbS_OCY6DeDAQdWtIAB9MjVdBwLwL2PND;QBESS$NgEnW:Z8KOXMBpP~JDD/J+EJY@Q-H&KhY2W1PETeU:DqEf'
                 ));
                 $result = curl_exec($ch);
                 curl_close($ch);
