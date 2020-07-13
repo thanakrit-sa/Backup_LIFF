@@ -1,17 +1,13 @@
 <?
 
 
-$headers = getallheaders(); // ได้ค่า array ของส่วน Headers ที่ถูกส่งมา
-if(isset($headers) && isset($headers["Host"]) && $headers["Host"]=="https://floating-coast-17079.herokuapp.com"){
-    if(isset($_POST)){ // เมื่้อมีการส่งข้อมูลกลับมา
-        $result = json_decode(file_get_contents('php://input'),TRUE); // แปลงข้อมูลเป็น array
-        // จะได้ array ของข้อมูล
-         if(!is_null($result) && array_key_exists('items',$result)){
-             foreach($result['items'] as $key=>$data){ // วนลูปนำข้อมูลไปใช้งาน 
-                 echo $data['barcode']."\r\n"; // ทดสอบแสดงข้อมูล
-             }
-         }
-    }
-}
+$ch = curl_init('https://track.thailandpost.co.th/?trackNumber=EE993673545CN');
+                curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json',));
+                $result = curl_exec($ch);
+                curl_close($ch);
+                $resultData = json_decode($result, true);
+                echo $resultData;
 
 ?>
