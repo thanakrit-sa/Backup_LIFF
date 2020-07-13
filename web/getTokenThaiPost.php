@@ -1,7 +1,17 @@
 <?
+
+
 $headers = getallheaders(); // ได้ค่า array ของส่วน Headers ที่ถูกส่งมา
-// ทดสอบเก็บส่วนของข้อมูลลงในไฟล์ เพื่อดูว่า มีการส่งค่ากลับมาหรือไม่ และส่งค่าอะไรกลับมา
-file_put_contents('headers.txt',json_encode($headers, JSON_PRETTY_PRINT)); // ส่วนสำหรับใช้ตรวจสอบเพิ่มเติม
-file_put_contents('body.txt',file_get_contents('php://input')); // ส่วนของ body เป็นส่วนที่จะใช้งานถ้ามีข้อมูล
-echo file_get_contents('php://input');
+if(isset($headers) && isset($headers["Host"]) && $headers["Host"]=="www.mywebsite.com"){
+    if(isset($_POST)){ // เมื่้อมีการส่งข้อมูลกลับมา
+        $result = json_decode(file_get_contents('php://input'),TRUE); // แปลงข้อมูลเป็น array
+        // จะได้ array ของข้อมูล
+         if(!is_null($result) && array_key_exists('items',$result)){
+             foreach($result['items'] as $key=>$data){ // วนลูปนำข้อมูลไปใช้งาน 
+                 echo $data['barcode']."\r\n"; // ทดสอบแสดงข้อมูล
+             }
+         }
+    }
+}
+
 ?>
