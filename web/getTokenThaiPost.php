@@ -4,7 +4,7 @@ $data = array(
     "status" => "all",
     "language" => "TH",
     "barcode" => [
-        "EY145587896TH"
+        "EF023395845TH"
    ],
 );
 
