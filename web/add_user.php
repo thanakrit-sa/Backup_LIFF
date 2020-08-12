@@ -8,7 +8,7 @@ $address = $_POST['address'];
 $lineID = $_POST['lineID'];
 
 $data = array(
-    "id" => "",
+    "id" => "$lineID",
     "username" => "$name", 
     "password" => "$password",
     "address" => "$address",
