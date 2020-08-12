@@ -8,14 +8,14 @@ $address = $_POST['address'];
 $lineID = $_POST['lineID'];
 
 $data = array(
-    "id" => "$lineID",
+    "id" => "",
     "username" => "$name", 
     "password" => "$password",
     "address" => "$address",
     "email" => "$email",
     "tel" => "$tel",
     // "line_userid" => "$lineID"
-    "line_userid" => "LineID1"
+    "line_userid" => "$lineID"
 
 );
 $data_string = json_encode($data);
