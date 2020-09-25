@@ -452,7 +452,7 @@ $prodInCate = [
                     ]
                 ],
                 "styles" => [
-                    "body" => [
+                    "body" => {
                         "backgroundColor" => "#000000"
                     ],
                     "footer" => [
