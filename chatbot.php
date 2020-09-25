@@ -53,6 +53,11 @@ if ($message == "แสดงสินค้า") {
     'replyToken' => $reply_token,
     'messages' => [$category]
   ];
+} else if ($message == "data") {
+  $data = [
+    'replyToken' => $reply_token,
+    'messages' => [$data]
+  ];
 } else if ($split_prod == "25" || $split_prod == "26") {
   $data = [
     'replyToken' => $reply_token,
