@@ -10,6 +10,7 @@ function file_get_contents_curl($url)
   $data = curl_exec($ch);
   curl_close($ch);
   return $data;
+  echo $data;
 }
 
 function send_reply_message($url, $post_header, $post_body)
@@ -38,65 +39,12 @@ foreach ($request_array['events'] as $event) {
 $split = explode(':', $message);
 $split_prod = $split[0];
 $n = 1;
-$api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/$split_prod");
-$dataFromApi = json_decode($api, true);
-foreach ($dataFromApi['data'] as $data) {
-  $recommend_name[] = $data['product_name'];
-  $recommend_image[] = $data['image_path'];
-  $recommend_stock[] = $data['stock'];
-  $recommend_price[] = $data['price'];
-}
-include 'flex_message.php';
 
 if ($message == "แสดงสินค้า") {
   $data = [
     'replyToken' => $reply_token,
     'messages' => [$category]
   ];
-} else if ($message == "data") {
-  $data = [
-    'replyToken' => $reply_token,
-    'messages' => [$data]
-  ];
-} else if ($split_prod == "25" || $split_prod == "26") {
-  $data = [
-    'replyToken' => $reply_token,
-    'messages' => [$prod_Recommend]
-  ];
-} else if (strpos($message, ":")) {
-  $split = explode(":", $message);
-  $split_prod = $split[2];
-  $n = 1;
-  $api = file_get_contents_curl("https://e-sport.in.th/ssdev/ecom/dashboard/api/products/productBycat/$split_prod");
-  $dataFromApi = json_decode($api, true);
-  foreach ($dataFromApi['data'] as $data) {
-    $recommend_name[] = $data['product_name'];
-    $recommend_image[] = $data['image_path'];
-    $recommend_stock[] = $data['stock'];
-    $recommend_price[] = $data['price'];
-  }
-  include 'flex_message.php';
-  if ($split[0] == "1") {
-    $data = [
-      'replyToken' => $reply_token,
-      'messages' => [$recommend_1]
-    ];
-  } else if ($split[0] == "2") {
-    $data = [
-      'replyToken' => $reply_token,
-      'messages' => [$recommend_2]
-    ];
-  } else if ($split[0] == "3") {
-    $data = [
-      'replyToken' => $reply_token,
-      'messages' => [$recommend_3]
-    ];
-  } else {
-    $data = [
-      'replyToken' => $reply_token,
-      'messages' => [$recommend1]
-    ];
-  }
 } else {
   $data = [
     'replyToken' => $reply_token,
