@@ -10,10 +10,10 @@ $userId = $deCode['events'][0]['source']['userId'];
 $text = $deCode['events'][0]['message']['text'];
 
 $messages = [];
-$messages['replyToken'] = $replyToken;
+$messages['to'] = $id;
 $messages['messages'][0] = [
   "type" => "text",
-  "text" => $id
+  "text" => "aaaa"
 ];
 
 $encodeJson = json_encode($messages);
