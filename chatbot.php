@@ -1,109 +1,97 @@
-<?php 
-	/*Get Data From POST Http Request*/
-	$datas = file_get_contents('php://input');
-	/*Decode Json From LINE Data Body*/
-	$deCode = json_decode($datas,true);
+<?php
+/*Get Data From POST Http Request*/
+$datas = file_get_contents('php://input');
+/*Decode Json From LINE Data Body*/
+$deCode = json_decode($datas, true);
 
-	file_put_contents('log.txt', file_get_contents('php://input') . PHP_EOL, FILE_APPEND);
+file_put_contents('log.txt', file_get_contents('php://input') . PHP_EOL, FILE_APPEND);
 
-	$replyToken = $deCode['events'][0]['replyToken'];
-	$userId = $deCode['events'][0]['source']['userId'];
-	$text = $deCode['events'][0]['message']['text'];
+$replyToken = $deCode['events'][0]['replyToken'];
+$userId = $deCode['events'][0]['source']['userId'];
+$text = $deCode['events'][0]['message']['text'];
 
-	$messages = [];
-	$messages['replyToken'] = $replyToken;
-	$messages['messages'][0] = [
-    "type"=> "bubble",
-    "hero"=> [
-      "type"=> "image",
-      "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_2_restaurant.png",
-      "size"=> "full",
-      "aspectRatio"=> "20:13",
-      "aspectMode"=> "cover",
-      "action"=> [
-        "type"=> "uri",
-        "label"=> "Action",
-        "uri"=> "https://linecorp.com"
-      ]
-    ],
-    "footer"=> [
-      "type"=> "box",
-      "layout"=> "vertical",
-      "contents"=> [
-        [
-          "type"=> "spacer",
-          "size"=> "xxl"
-        ],
-        [
-          "type"=> "button",
-          "action"=> [
-            "type"=> "uri",
-            "label"=> "Add to Cart",
-            "uri"=> "https://linecorp.com"
-        ],
-          "color"=> "#905C44",
-          "style"=> "primary"
-      ]
+$messages = [];
+$messages['replyToken'] = $replyToken;
+$messages['messages'][0] = [
+  [
+    "type" => "flex",
+    "altText" => "This is a Flex Message",
+    "contents" => [
+      "type" => "bubble",
+      "body" => [
+        "type" => "box",
+        "layout" => "horizontal",
+        "contents" => [
+          [
+            "type" => "text",
+            "text" => "Hello,"
+          ],
+          [
+            "type" => "text",
+            "text" => "World!"
+          ]
+        ]
       ]
     ]
-  ];
+  ]
+];
 
-	$encodeJson = json_encode($messages);
+$encodeJson = json_encode($messages);
 
-	$LINEDatas['url'] = "https://api.line.me/v2/bot/message/reply";
-  $LINEDatas['token'] = "Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=";
+$LINEDatas['url'] = "https://api.line.me/v2/bot/message/reply";
+$LINEDatas['token'] = "Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=";
 
-  	$results = sentMessage($encodeJson,$LINEDatas);
+$results = sentMessage($encodeJson, $LINEDatas);
 
-	/*Return HTTP Request 200*/
-	http_response_code(200);
+/*Return HTTP Request 200*/
+http_response_code(200);
 
-	function getFormatTextMessage($text)
-	{
-		$datas = [];
-		$datas['type'] = 'text';
-		$datas['text'] = $text;
+function getFormatTextMessage($text)
+{
+  $datas = [];
+  $datas['type'] = 'text';
+  $datas['text'] = $text;
 
-		return $datas;
-	}
+  return $datas;
+}
 
-	function sentMessage($encodeJson,$datas)
-	{
-		$datasReturn = [];
-		$curl = curl_init();
-		curl_setopt_array($curl, array(
-		  CURLOPT_URL => $datas['url'],
-		  CURLOPT_RETURNTRANSFER => true,
-		  CURLOPT_ENCODING => "",
-		  CURLOPT_MAXREDIRS => 10,
-		  CURLOPT_TIMEOUT => 30,
-		  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-		  CURLOPT_CUSTOMREQUEST => "POST",
-		  CURLOPT_POSTFIELDS => $encodeJson,
-		  CURLOPT_HTTPHEADER => array(
-		    "authorization: Bearer ".$datas['token'],
-		    "cache-control: no-cache",
-		    "content-type: application/json; charset=UTF-8",
-		  ),
-		));
+function sentMessage($encodeJson, $datas)
+{
+  $datasReturn = [];
+  $curl = curl_init();
+  curl_setopt_array($curl, array(
+    CURLOPT_URL => $datas['url'],
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "POST",
+    CURLOPT_POSTFIELDS => $encodeJson,
+    CURLOPT_HTTPHEADER => array(
+      "authorization: Bearer " . $datas['token'],
+      "cache-control: no-cache",
+      "content-type: application/json; charset=UTF-8",
+    ),
+  ));
 
-		$response = curl_exec($curl);
-		$err = curl_error($curl);
+  $response = curl_exec($curl);
+  $err = curl_error($curl);
 
-		curl_close($curl);
+  curl_close($curl);
 
-		if ($err) {
-		    $datasReturn['result'] = 'E';
-		    $datasReturn['message'] = $err;
-		} else {
-		    if($response == "{}"){
-			$datasReturn['result'] = 'S';
-			$datasReturn['message'] = 'Success';
-		    }else{
-			$datasReturn['result'] = 'E';
-			$datasReturn['message'] = $response;
-		    }
-		}
+  if ($err) {
+    $datasReturn['result'] = 'E';
+    $datasReturn['message'] = $err;
+  } else {
+    if ($response == "{}") {
+      $datasReturn['result'] = 'S';
+      $datasReturn['message'] = 'Success';
+    } else {
+      $datasReturn['result'] = 'E';
+      $datasReturn['message'] = $response;
+    }
+  }
 
-		return $datasReturn;
-	}
+  return $datasReturn;
+}
