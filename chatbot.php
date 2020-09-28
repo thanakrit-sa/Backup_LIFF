@@ -5,6 +5,7 @@ $deCode = json_decode($datas, true);
 file_put_contents('log.txt', file_get_contents('php://input') . PHP_EOL, FILE_APPEND);
 
 $replyToken = $deCode['events'][0]['replyToken'];
+$id = $deCode['events'][0]['source']['userId'];
 $userId = $deCode['events'][0]['source']['userId'];
 $text = $deCode['events'][0]['message']['text'];
 
@@ -12,7 +13,7 @@ $messages = [];
 $messages['replyToken'] = $replyToken;
 $messages['messages'][0] = [
   "type" => "text",
-  "text" => $replyToken
+  "text" => $id
 ];
 
 $encodeJson = json_encode($messages);
