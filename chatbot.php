@@ -28,7 +28,7 @@ $messages['messages'][0] =
             "type" => "box",
             "layout" => "horizontal",
             "spacing" => "none",
-            "offsetStart" => "20%",
+            "offsetStart" => "10%",
             "width" => "150px",
             "height" => "150px",
             "backgroundColor" => "#131010FF",
@@ -49,7 +49,7 @@ $messages['messages'][0] =
           ],
           [
             "type" => "text",
-            "text" => "%E0%B9%83%E0%B8%AA%E0%B9%88%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD",
+            "text" => "ใส่ชื่อ",
             "weight" => "bold",
             "size" => "xl",
             "color" => "#050404FF",
@@ -69,7 +69,7 @@ $messages['messages'][0] =
             "contents" => [
               [
                 "type" => "text",
-                "text" => "%E0%B9%83%E0%B8%AA%E0%B9%88%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%81%E0%B8%9A%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C",
+                "text" => "ใส่ข้อความแบนเนอร์",
                 "weight" => "regular",
                 "size" => "md",
                 "color" => "#FFFFFFFF",
@@ -86,7 +86,7 @@ $messages['messages'][0] =
             "contents" => [
               [
                 "type" => "text",
-                "text" => "%E0%B9%83%E0%B8%AA%E0%B9%88%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87",
+                "text" => "ใส่คำอธิบาย",
                 "size" => "sm",
                 "gravity" => "center",
                 "margin" => "none",
