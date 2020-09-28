@@ -1,6 +1,6 @@
 
 <?php
-function file_get_contents_curl($url)
+function file_get_contents($url)
 {
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_HEADER, 0);
