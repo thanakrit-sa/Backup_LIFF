@@ -16,82 +16,28 @@ $messages['messages'][0] =
     "altText" => "This is a Flex Message",
     "contents" => [
       "type"=> "bubble",
+      "hero"=> [
+        "type"=> "image",
+        "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+        "size"=> "full",
+        "aspectRatio"=> "20:13",
+        "aspectMode"=> "cover",
+        "action"=> [
+          "type"=> "uri",
+          "uri"=> "http://linecorp.com/"
+        ]
+      ],
       "body"=> [
         "type"=> "box",
         "layout"=> "vertical",
         "contents"=> [
           [
-            "type"=> "box",
-            "layout"=> "vertical",
-            "contents"=> [
-              [
-                "type"=> "image",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip1.jpg",
-                "aspectMode"=> "cover",
-                "size"=> "full"
-              ]
-            ],
-            "cornerRadius"=> "200px",
-            "width"=> "150px",
-            "offsetStart"=> "55px"
-          ],
-          [
             "type"=> "text",
-            "text"=> "ใส่ชื่อ",
-            "size"=> "xl",
+            "text"=> "Brown Cafe",
             "weight"=> "bold",
-            "align"=> "center",
-            "offsetTop"=> "20px"
-          ],
-          [
-            "type"=> "box",
-            "layout"=> "vertical",
-            "contents"=> [
-              [
-                "type"=> "box",
-                "layout"=> "vertical",
-                "contents"=> [
-                  [
-                    "type"=> "box",
-                    "layout"=> "vertical",
-                    "contents"=> [
-                      [
-                        "type"=> "text",
-                        "text"=> "ใส่ข้อความแบนเนอร์",
-                        "color"=> "#ffffff",
-                        "align"=> "center",
-                        "offsetTop"=> "5px"
-                      ]
-                    ],
-                    "backgroundColor"=> "#117302",
-                    "cornerRadius"=> "60px",
-                    "width"=> "180px",
-                    "height"=> "30px"
-                  ]
-                ],
-                "height"=> "33px",
-                "spacing"=> "none",
-                "margin"=> "none"
-              ]
-            ],
-            "height"=> "100%",
-            "paddingTop"=> "25px",
-            "paddingStart"=> "40px"
-          ],
-          [
-            "type"=> "box",
-            "layout"=> "vertical",
-            "contents"=> [
-              [
-                "type"=> "text",
-                "text"=> "ใส่คำอธิบาย",
-                "wrap"=> true
-              ]
-            ],
-            "paddingTop"=> "10px"
+            "size"=> "xl"
           ]
-        ],
-        "height"=> "100%"
+        ]
       ],
       "footer"=> [
         "type"=> "box",
@@ -104,7 +50,7 @@ $messages['messages'][0] =
             "height"=> "sm",
             "action"=> [
               "type"=> "uri",
-              "label"=> "ใส่ข้อความที่แสดง",
+              "label"=> "CALL",
               "uri"=> "https://linecorp.com"
             ]
           ],
@@ -114,19 +60,13 @@ $messages['messages'][0] =
             "height"=> "sm",
             "action"=> [
               "type"=> "uri",
-              "label"=> "ใส่ข้อความที่แสดง",
+              "label"=> "WEBSITE",
               "uri"=> "https://linecorp.com"
             ]
           ],
           [
-            "type"=> "button",
-            "style"=> "link",
-            "height"=> "sm",
-            "action"=> [
-              "type"=> "uri",
-              "label"=> "ใส่ข้อความที่แสดง",
-              "uri"=> "https://linecorp.com"
-            ]
+            "type"=> "spacer",
+            "size"=> "sm"
           ]
         ],
         "flex"=> 0
