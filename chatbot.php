@@ -5,37 +5,33 @@ $deCode = json_decode($datas, true);
 file_put_contents('log.txt', file_get_contents('php://input') . PHP_EOL, FILE_APPEND);
 
 $replyToken = $deCode['events'][0]['replyToken'];
-$id = $deCode['events'][0]['source']['userId'];
 $userId = $deCode['events'][0]['source']['userId'];
 $text = $deCode['events'][0]['message']['text'];
 
-$myObj->type = "text";
-$myObj->text = "aaaa";
-$myJSON = json_encode($myObj);
-
 $messages = [];
-$messages['to'] = $id;
+$messages['replyToken'] = $replyToken;
 $messages['messages'][0] = [
-  $myJSON
+  "type" => "text",
+  "text" => "Hello, world1"
 ];
 
 $encodeJson = json_encode($messages);
 
-$LINEDatas['url'] = "https://api.line.me/v2/bot/message/push";
+$LINEDatas['url'] = "https://api.line.me/v2/bot/message/reply";
 $LINEDatas['token'] = "Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=";
 
 $results = sentMessage($encodeJson, $LINEDatas);
 
 http_response_code(200);
 
-// function getFormatTextMessage($text)
-// {
-//   $datas = [];
-//   $datas['type'] = 'text';
-//   $datas['text'] = $text;
+function getFormatTextMessage($text)
+{
+  $datas = [];
+  $datas['type'] = 'text';
+  $datas['text'] = $text;
 
-//   return $datas;
-// }
+  return $datas;
+}
 
 function sentMessage($encodeJson, $datas)
 {
