@@ -120,7 +120,8 @@ $messages['messages'][0] =
                 "text"=> "ใส่คำอธิบาย"
               ]
             ],
-            "paddingTop"=> "20px"
+            "paddingTop"=> "20px",
+            "paddingBottom"=> "20px"
           ]
         ],
         "offsetTop"=> "20px",
