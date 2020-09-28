@@ -35,8 +35,84 @@ $messages['messages'][0] =
             "width"=> "150px",
             "height"=> "150px",
             "offsetStart"=> "55px"
+          ],
+          [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "contents"=> [
+              [
+                "type"=> "text",
+                "text"=> "ใส่ชื่อ",
+                "size"=> "lg",
+                "weight"=> "bold",
+                "wrap"=> true,
+                "align"=> "center"
+              ]
+            ],
+            "paddingTop"=> "20px"
+          ],
+          [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "contents"=> [
+              [
+                "type"=> "text",
+                "text"=> "ใส่ข้อความแบนเนอร์",
+                "color"=> "#ffffff",
+                "align"=> "center",
+                "wrap"=> true,
+                "offsetTop"=> "5px"
+              ]
+            ],
+            "backgroundColor"=> "#117302",
+            "cornerRadius"=> "80px",
+            "margin"=> "lg",
+            "width"=> "200px",
+            "height"=> "30px",
+            "offsetStart"=> "30px"
+          ],
+          [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "contents"=> [
+              [
+                "type"=> "text",
+                "text"=> "ใส่ข้อความแบนเนอร์",
+                "color"=> "#ffffff",
+                "align"=> "center",
+                "wrap"=> true,
+                "offsetTop"=> "5px"
+              ]
+            ],
+            "backgroundColor"=> "#117302",
+            "cornerRadius"=> "80px",
+            "margin"=> "lg",
+            "width"=> "200px",
+            "height"=> "30px",
+            "offsetStart"=> "30px"
+          ],
+          [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "contents"=> [
+              [
+                "type"=> "text",
+                "text"=> "ใส่ข้อความแบนเนอร์",
+                "color"=> "#ffffff",
+                "align"=> "center",
+                "wrap"=> true,
+                "offsetTop"=> "5px"
+              ]
+            ],
+            "backgroundColor"=> "#117302",
+            "cornerRadius"=> "80px",
+            "margin"=> "lg",
+            "width"=> "200px",
+            "height"=> "30px",
+            "offsetStart"=> "30px"
           ]
-        ]
+        ],
+        "offsetTop"=> "20px"
       ],
       "footer"=> [
         "type"=> "box",
