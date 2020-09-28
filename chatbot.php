@@ -10,7 +10,10 @@ $text = $deCode['events'][0]['message']['text'];
 
 $messages = [];
 $messages['replyToken'] = $replyToken;
-$messages['messages'][0] = getFormatTextMessage("dddd");
+$messages['messages'][0] = [
+  "type" => "text",
+  "text" => "Hello, world1"
+];
 
 $encodeJson = json_encode($messages);
 
@@ -21,14 +24,14 @@ $results = sentMessage($encodeJson, $LINEDatas);
 
 http_response_code(200);
 
-function getFormatTextMessage($text)
-{
-  $datas = [];
-  $datas['type'] = 'text';
-  $datas['text'] = $text;
+// function getFormatTextMessage($text)
+// {
+//   $datas = [];
+//   $datas['type'] = 'text';
+//   $datas['text'] = $text;
 
-  return $datas;
-}
+//   return $datas;
+// }
 
 function sentMessage($encodeJson, $datas)
 {
