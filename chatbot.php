@@ -23,10 +23,6 @@ $messages['messages'][0] = [
   [
     "type" => "text",
     "text" => "cccc"
-  ],
-  [
-    "type" => "text",
-    "text" => "dddd"
   ]
 ];
 
