@@ -112,7 +112,8 @@ $messages['messages'][0] =
             "offsetStart"=> "30px"
           ]
         ],
-        "offsetTop"=> "20px"
+        "offsetTop"=> "20px",
+        "margin"=> "lg"
       ],
       "footer"=> [
         "type"=> "box",
