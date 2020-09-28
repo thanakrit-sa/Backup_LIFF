@@ -12,7 +12,10 @@
 
 	$messages = [];
 	$messages['replyToken'] = $replyToken;
-	$messages['messages'][0] = getFormatTextMessage("เอ้ย ถามอะไรก็ตอบได้");
+	$messages['messages'][0] = [
+    "type"=>"text",
+    "text"=>"Hello, user"
+  ];
 
 	$encodeJson = json_encode($messages);
 
@@ -73,4 +76,3 @@
 
 		return $datasReturn;
 	}
-?>
