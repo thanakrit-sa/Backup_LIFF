@@ -8,13 +8,142 @@ $replyToken = $deCode['events'][0]['replyToken'];
 $userId = $deCode['events'][0]['source']['userId'];
 $text = $deCode['events'][0]['message']['text'];
 
-$age = array("type"=>"text", "text"=>"aaa");
-
-$dataaa = json_encode($age);
-
 $messages = [];
 $messages['replyToken'] = $replyToken;
-$messages['messages'][0] = $dataaa;
+$messages['messages'][0] = [
+  "type" => "flex",
+  "altText" => "This is a Flex Message",
+  "contents" => [
+    "type" => "carousel",
+    "contents" => [
+      [
+        "type" => "bubble",
+        "body" => [
+          "type" => "box",
+          "layout" => "vertical",
+          "contents" => [
+            [
+              "type" => "image",
+              "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip1.jpg",
+              "size" => "full",
+              "aspectMode" => "cover",
+              "aspectRatio" => "2:3",
+              "gravity" => "top"
+            ],
+            [
+              "type" => "box",
+              "layout" => "vertical",
+              "contents" => [
+                [
+                  "type" => "text",
+                  "text" => "ใส่ข้อความแบนเนอร์",
+                  "color" => "#ffffff",
+                  "align" => "center",
+                  "size" => "xs",
+                  "offsetTop" => "5px"
+                ]
+              ],
+              "position" => "absolute",
+              "cornerRadius" => "20px",
+              "offsetTop" => "18px",
+              "backgroundColor" => "#ff334b",
+              "offsetStart" => "18px",
+              "height" => "30px",
+              "width" => "150px"
+            ],
+            [
+              "type" => "box",
+              "layout" => "vertical",
+              "contents" => [
+                [
+                  "type" => "text",
+                  "text" => "ใส่ข้อความเพื่อแสดง",
+                  "color" => "#ffffff",
+                  "align" => "center",
+                  "size" => "xs",
+                  "offsetTop" => "10px",
+                  "wrap" => true
+                ]
+              ],
+              "position" => "absolute",
+              "cornerRadius" => "20px",
+              "offsetTop" => "240px",
+              "backgroundColor" => "#727070cc",
+              "offsetStart" => "50px",
+              "height" => "40px",
+              "width" => "200px"
+            ]
+          ],
+          "paddingAll" => "0px",
+          "width" => "300px",
+          "height" => "300px"
+        ]
+        ],[
+          "type" => "bubble",
+          "body" => [
+            "type" => "box",
+            "layout" => "vertical",
+            "contents" => [
+              [
+                "type" => "image",
+                "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip1.jpg",
+                "size" => "full",
+                "aspectMode" => "cover",
+                "aspectRatio" => "2:3",
+                "gravity" => "top"
+              ],
+              [
+                "type" => "box",
+                "layout" => "vertical",
+                "contents" => [
+                  [
+                    "type" => "text",
+                    "text" => "ใส่ข้อความแบนเนอร์",
+                    "color" => "#ffffff",
+                    "align" => "center",
+                    "size" => "xs",
+                    "offsetTop" => "5px"
+                  ]
+                ],
+                "position" => "absolute",
+                "cornerRadius" => "20px",
+                "offsetTop" => "18px",
+                "backgroundColor" => "#ff334b",
+                "offsetStart" => "18px",
+                "height" => "30px",
+                "width" => "150px"
+              ],
+              [
+                "type" => "box",
+                "layout" => "vertical",
+                "contents" => [
+                  [
+                    "type" => "text",
+                    "text" => "ใส่ข้อความเพื่อแสดง",
+                    "color" => "#ffffff",
+                    "align" => "center",
+                    "size" => "xs",
+                    "offsetTop" => "10px",
+                    "wrap" => true
+                  ]
+                ],
+                "position" => "absolute",
+                "cornerRadius" => "20px",
+                "offsetTop" => "240px",
+                "backgroundColor" => "#727070cc",
+                "offsetStart" => "50px",
+                "height" => "40px",
+                "width" => "200px"
+              ]
+            ],
+            "paddingAll" => "0px",
+            "width" => "300px",
+            "height" => "300px"
+          ]
+        ]
+    ]
+  ]
+];
 
 $encodeJson = json_encode($messages);
 
