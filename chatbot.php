@@ -11,13 +11,12 @@ $text = $deCode['events'][0]['message']['text'];
 
 $myObj->type = "text";
 $myObj->text = "aaaa";
-
 $myJSON = json_encode($myObj);
 
 $messages = [];
 $messages['to'] = $id;
 $messages['messages'][0] = [
-  $myObj
+  $myJSON
 ];
 
 $encodeJson = json_encode($messages);
