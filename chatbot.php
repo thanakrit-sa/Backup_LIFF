@@ -11,11 +11,16 @@ $text = $deCode['events'][0]['message']['text'];
 
 $messages = [];
 $messages['to'] = $id;
-for($i=1;$i<=10;$i++){
-  $arrayPostData['to'] = $id;
-  $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] = $i;
-};
+$messages['messages'][0] = [
+  [
+    "type" => "text",
+    "text" => "Hello, world1"
+  ],
+  [
+    "type" => "text",
+    "text" => "Hello, world2"
+  ]
+];
 
 $encodeJson = json_encode($messages);
 
