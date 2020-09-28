@@ -41,7 +41,7 @@ $messages['messages'][0] =
                     "color" => "#ffffff",
                     "align" => "center",
                     "size" => "xs",
-                    "offsetTop" => "3px"
+                    "offsetTop" => "5px"
                   ]
                 ],
                 "position" => "absolute",
@@ -49,7 +49,7 @@ $messages['messages'][0] =
                 "offsetTop" => "18px",
                 "backgroundColor" => "#ff334b",
                 "offsetStart" => "18px",
-                "height" => "25px",
+                "height" => "30px",
                 "width" => "150px"
               ],
               [
@@ -68,8 +68,8 @@ $messages['messages'][0] =
                 ],
                 "position" => "absolute",
                 "cornerRadius" => "20px",
-                "offsetTop" => "230px",
-                "backgroundColor" => "#323131cc",
+                "offsetTop" => "240px",
+                "backgroundColor" => "#727070cc",
                 "offsetStart" => "50px",
                 "height" => "40px",
                 "width" => "200px"
