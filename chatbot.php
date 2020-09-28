@@ -9,7 +9,6 @@ $userId = $deCode['events'][0]['source']['userId'];
 $text = $deCode['events'][0]['message']['text'];
 
 $messages = [];
-$messages['to'] = $userId;
 $messages['messages'][0] = [
   "type" => "flex",
   "altText" => "This is a Flex Message",
@@ -147,7 +146,7 @@ $messages['messages'][0] = [
 
 $encodeJson = json_encode($messages);
 
-$LINEDatas['url'] = "https://api.line.me/v2/bot/message/push";
+$LINEDatas['url'] = "https://api.line.me/v2/bot/message/broadcast";
 $LINEDatas['token'] = "Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLtcFOEfe3Mrdtvk0KNvGP3owBpYOBIE/Xq3aDuJ+w0VI/3Eelkl7/bvEz+Kv2K0pBsumqTnDpQDXTqsC7yucteBdhejsnXwdB04t89/1O/w1cDnyilFU=";
 
 $results = sentMessage($encodeJson, $LINEDatas);
