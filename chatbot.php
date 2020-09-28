@@ -9,7 +9,7 @@ $userId = $deCode['events'][0]['source']['userId'];
 $text = $deCode['events'][0]['message']['text'];
 
 $messages = [];
-$messages['to'] = $id;
+$messages['to'] = $userId;
 $messages['messages'][0] = [
   "type" => "flex",
   "altText" => "This is a Flex Message",
