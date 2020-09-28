@@ -18,128 +18,342 @@ $messages['messages'][0] =
       "type" => "carousel",
       "contents" => [
         [
-          "type" => "bubble",
-          "body" => [
-            "type" => "box",
-            "layout" => "vertical",
-            "contents" => [
+          "type"=> "bubble",
+          "body"=> [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "contents"=> [
               [
-                "type" => "image",
-                "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip1.jpg",
-                "size" => "full",
-                "aspectMode" => "cover",
-                "aspectRatio" => "2:3",
-                "gravity" => "top"
-              ],
-              [
-                "type" => "box",
-                "layout" => "vertical",
-                "contents" => [
+                "type"=> "box",
+                "layout"=> "vertical",
+                "contents"=> [
                   [
-                    "type" => "text",
-                    "text" => "ใส่ข้อความแบนเนอร์",
-                    "color" => "#ffffff",
-                    "align" => "center",
-                    "size" => "xs",
-                    "offsetTop" => "5px"
+                    "type"=> "image",
+                    "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip1.jpg",
+                    "aspectMode"=> "cover",
+                    "size"=> "full"
                   ]
                 ],
-                "position" => "absolute",
-                "cornerRadius" => "20px",
-                "offsetTop" => "18px",
-                "backgroundColor" => "#ff334b",
-                "offsetStart" => "18px",
-                "height" => "30px",
-                "width" => "150px"
+                "cornerRadius"=> "200px",
+                "width"=> "150px",
+                "offsetStart"=> "55px"
               ],
               [
-                "type" => "box",
-                "layout" => "vertical",
-                "contents" => [
+                "type"=> "text",
+                "text"=> "ใส่ชื่อ",
+                "size"=> "xl",
+                "weight"=> "bold",
+                "align"=> "center",
+                "offsetTop"=> "20px"
+              ],
+              [
+                "type"=> "box",
+                "layout"=> "vertical",
+                "contents"=> [
                   [
-                    "type" => "text",
-                    "text" => "ใส่ข้อความเพื่อแสดง",
-                    "color" => "#ffffff",
-                    "align" => "center",
-                    "size" => "xs",
-                    "offsetTop" => "10px",
-                    "wrap" => true
+                    "type"=> "box",
+                    "layout"=> "vertical",
+                    "contents"=> [
+                      [
+                        "type"=> "box",
+                        "layout"=> "vertical",
+                        "contents"=> [
+                          [
+                            "type"=> "text",
+                            "text"=> "ใส่ข้อความแบนเนอร์",
+                            "color"=> "#ffffff",
+                            "align"=> "center",
+                            "offsetTop"=> "5px"
+                          ]
+                        ],
+                        "backgroundColor"=> "#117302",
+                        "cornerRadius"=> "60px",
+                        "width"=> "180px",
+                        "height"=> "30px"
+                      ]
+                    ],
+                    "height"=> "33px",
+                    "spacing"=> "none",
+                    "margin"=> "none"
+                  ],
+                  [
+                    "type"=> "box",
+                    "layout"=> "vertical",
+                    "contents"=> [
+                      [
+                        "type"=> "box",
+                        "layout"=> "vertical",
+                        "contents"=> [
+                          [
+                            "type"=> "text",
+                            "text"=> "ใส่ข้อความแบนเนอร์",
+                            "color"=> "#ffffff",
+                            "align"=> "center",
+                            "offsetTop"=> "5px"
+                          ]
+                        ],
+                        "backgroundColor"=> "#117302",
+                        "cornerRadius"=> "60px",
+                        "width"=> "180px",
+                        "height"=> "30px"
+                      ]
+                    ],
+                    "height"=> "33px",
+                    "spacing"=> "none",
+                    "margin"=> "none"
+                  ],
+                  [
+                    "type"=> "box",
+                    "layout"=> "vertical",
+                    "contents"=> [
+                      [
+                        "type"=> "box",
+                        "layout"=> "vertical",
+                        "contents"=> [
+                          [
+                            "type"=> "text",
+                            "text"=> "ใส่ข้อความแบนเนอร์",
+                            "color"=> "#ffffff",
+                            "align"=> "center",
+                            "offsetTop"=> "5px"
+                          ]
+                        ],
+                        "backgroundColor"=> "#117302",
+                        "cornerRadius"=> "60px",
+                        "width"=> "180px",
+                        "height"=> "30px"
+                      ]
+                    ],
+                    "height"=> "33px",
+                    "spacing"=> "none",
+                    "margin"=> "none"
                   ]
                 ],
-                "position" => "absolute",
-                "cornerRadius" => "20px",
-                "offsetTop" => "240px",
-                "backgroundColor" => "#727070cc",
-                "offsetStart" => "50px",
-                "height" => "40px",
-                "width" => "200px"
+                "height"=> "100%",
+                "paddingTop"=> "25px",
+                "paddingStart"=> "40px"
+              ],
+              [
+                "type"=> "box",
+                "layout"=> "vertical",
+                "contents"=> [
+                  [
+                    "type"=> "text",
+                    "text"=> "ใส่คำอธิบาย",
+                    "wrap"=> true
+                  ]
+                ],
+                "paddingTop"=> "10px"
               ]
             ],
-            "paddingAll" => "0px",
-            "width" => "300px",
-            "height" => "300px"
-          ]
-          ],[
-            "type" => "bubble",
-            "body" => [
-              "type" => "box",
-              "layout" => "vertical",
-              "contents" => [
-                [
-                  "type" => "image",
-                  "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip1.jpg",
-                  "size" => "full",
-                  "aspectMode" => "cover",
-                  "aspectRatio" => "2:3",
-                  "gravity" => "top"
-                ],
-                [
-                  "type" => "box",
-                  "layout" => "vertical",
-                  "contents" => [
-                    [
-                      "type" => "text",
-                      "text" => "ใส่ข้อความแบนเนอร์",
-                      "color" => "#ffffff",
-                      "align" => "center",
-                      "size" => "xs",
-                      "offsetTop" => "5px"
-                    ]
-                  ],
-                  "position" => "absolute",
-                  "cornerRadius" => "20px",
-                  "offsetTop" => "18px",
-                  "backgroundColor" => "#ff334b",
-                  "offsetStart" => "18px",
-                  "height" => "30px",
-                  "width" => "150px"
-                ],
-                [
-                  "type" => "box",
-                  "layout" => "vertical",
-                  "contents" => [
-                    [
-                      "type" => "text",
-                      "text" => "ใส่ข้อความเพื่อแสดง",
-                      "color" => "#ffffff",
-                      "align" => "center",
-                      "size" => "xs",
-                      "offsetTop" => "10px",
-                      "wrap" => true
-                    ]
-                  ],
-                  "position" => "absolute",
-                  "cornerRadius" => "20px",
-                  "offsetTop" => "240px",
-                  "backgroundColor" => "#727070cc",
-                  "offsetStart" => "50px",
-                  "height" => "40px",
-                  "width" => "200px"
+            "width"=> "100%"
+          ],
+          "footer"=> [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "spacing"=> "sm",
+            "contents"=> [
+              [
+                "type"=> "button",
+                "style"=> "link",
+                "height"=> "sm",
+                "action"=> [
+                  "type"=> "uri",
+                  "label"=> "ใส่ข้อความที่แสดง",
+                  "uri"=> "https://linecorp.com"
                 ]
               ],
-              "paddingAll" => "0px",
-              "width" => "300px",
-              "height" => "300px"
+              [
+                "type"=> "button",
+                "style"=> "link",
+                "height"=> "sm",
+                "action"=> [
+                  "type"=> "uri",
+                  "label"=> "ใส่ข้อความที่แสดง",
+                  "uri"=> "https://linecorp.com"
+                ]
+              ],
+              [
+                "type"=> "button",
+                "style"=> "link",
+                "height"=> "sm",
+                "action"=> [
+                  "type"=> "uri",
+                  "label"=> "ใส่ข้อความที่แสดง",
+                  "uri"=> "https://linecorp.com"
+                ]
+              ]
+            ],
+            "flex"=> 0
+          ]
+          ],[
+            "type"=> "bubble",
+            "body"=> [
+              "type"=> "box",
+              "layout"=> "vertical",
+              "contents"=> [
+                [
+                  "type"=> "box",
+                  "layout"=> "vertical",
+                  "contents"=> [
+                    [
+                      "type"=> "image",
+                      "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip1.jpg",
+                      "aspectMode"=> "cover",
+                      "size"=> "full"
+                    ]
+                  ],
+                  "cornerRadius"=> "200px",
+                  "width"=> "150px",
+                  "offsetStart"=> "55px"
+                ],
+                [
+                  "type"=> "text",
+                  "text"=> "ใส่ชื่อ",
+                  "size"=> "xl",
+                  "weight"=> "bold",
+                  "align"=> "center",
+                  "offsetTop"=> "20px"
+                ],
+                [
+                  "type"=> "box",
+                  "layout"=> "vertical",
+                  "contents"=> [
+                    [
+                      "type"=> "box",
+                      "layout"=> "vertical",
+                      "contents"=> [
+                        [
+                          "type"=> "box",
+                          "layout"=> "vertical",
+                          "contents"=> [
+                            [
+                              "type"=> "text",
+                              "text"=> "ใส่ข้อความแบนเนอร์",
+                              "color"=> "#ffffff",
+                              "align"=> "center",
+                              "offsetTop"=> "5px"
+                            ]
+                          ],
+                          "backgroundColor"=> "#117302",
+                          "cornerRadius"=> "60px",
+                          "width"=> "180px",
+                          "height"=> "30px"
+                        ]
+                      ],
+                      "height"=> "33px",
+                      "spacing"=> "none",
+                      "margin"=> "none"
+                    ],
+                    [
+                      "type"=> "box",
+                      "layout"=> "vertical",
+                      "contents"=> [
+                        [
+                          "type"=> "box",
+                          "layout"=> "vertical",
+                          "contents"=> [
+                            [
+                              "type"=> "text",
+                              "text"=> "ใส่ข้อความแบนเนอร์",
+                              "color"=> "#ffffff",
+                              "align"=> "center",
+                              "offsetTop"=> "5px"
+                            ]
+                          ],
+                          "backgroundColor"=> "#117302",
+                          "cornerRadius"=> "60px",
+                          "width"=> "180px",
+                          "height"=> "30px"
+                        ]
+                      ],
+                      "height"=> "33px",
+                      "spacing"=> "none",
+                      "margin"=> "none"
+                    ],
+                    [
+                      "type"=> "box",
+                      "layout"=> "vertical",
+                      "contents"=> [
+                        [
+                          "type"=> "box",
+                          "layout"=> "vertical",
+                          "contents"=> [
+                            [
+                              "type"=> "text",
+                              "text"=> "ใส่ข้อความแบนเนอร์",
+                              "color"=> "#ffffff",
+                              "align"=> "center",
+                              "offsetTop"=> "5px"
+                            ]
+                          ],
+                          "backgroundColor"=> "#117302",
+                          "cornerRadius"=> "60px",
+                          "width"=> "180px",
+                          "height"=> "30px"
+                        ]
+                      ],
+                      "height"=> "33px",
+                      "spacing"=> "none",
+                      "margin"=> "none"
+                    ]
+                  ],
+                  "height"=> "100%",
+                  "paddingTop"=> "25px",
+                  "paddingStart"=> "40px"
+                ],
+                [
+                  "type"=> "box",
+                  "layout"=> "vertical",
+                  "contents"=> [
+                    [
+                      "type"=> "text",
+                      "text"=> "ใส่คำอธิบาย",
+                      "wrap"=> true
+                    ]
+                  ],
+                  "paddingTop"=> "10px"
+                ]
+              ],
+              "width"=> "100%"
+            ],
+            "footer"=> [
+              "type"=> "box",
+              "layout"=> "vertical",
+              "spacing"=> "sm",
+              "contents"=> [
+                [
+                  "type"=> "button",
+                  "style"=> "link",
+                  "height"=> "sm",
+                  "action"=> [
+                    "type"=> "uri",
+                    "label"=> "ใส่ข้อความที่แสดง",
+                    "uri"=> "https://linecorp.com"
+                  ]
+                ],
+                [
+                  "type"=> "button",
+                  "style"=> "link",
+                  "height"=> "sm",
+                  "action"=> [
+                    "type"=> "uri",
+                    "label"=> "ใส่ข้อความที่แสดง",
+                    "uri"=> "https://linecorp.com"
+                  ]
+                ],
+                [
+                  "type"=> "button",
+                  "style"=> "link",
+                  "height"=> "sm",
+                  "action"=> [
+                    "type"=> "uri",
+                    "label"=> "ใส่ข้อความที่แสดง",
+                    "uri"=> "https://linecorp.com"
+                  ]
+                ]
+              ],
+              "flex"=> 0
             ]
           ]
       ]
