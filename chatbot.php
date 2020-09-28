@@ -12,10 +12,28 @@ $text = $deCode['events'][0]['message']['text'];
 
 $messages = [];
 $messages['replyToken'] = $replyToken;
-$messages['messages'][0] = [
-  "type"=> "text",
-  "text"=> "Hello,"
-];
+$messages['messages'][0] =
+  [
+    "type" => "flex",
+    "altText" => "This is a Flex Message",
+    "contents" => [
+      "type" => "bubble",
+      "body" => [
+        "type" => "box",
+        "layout" => "horizontal",
+        "contents" => [
+          [
+            "type" => "text",
+            "text" => "Hello,"
+          ],
+          [
+            "type" => "text",
+            "text" => "World!"
+          ]
+        ]
+      ]
+    ]
+  ];
 
 $encodeJson = json_encode($messages);
 
