@@ -12,14 +12,8 @@ $text = $deCode['events'][0]['message']['text'];
 $messages = [];
 // $messages['to'] = $id;
 $messages['messages'][0] = [
-  [
-    "type" => "text",
-    "text" => "Hello, world1"
-  ],
-  [
-    "type" => "text",
-    "text" => "Hello, world2"
-  ]
+  "type" => "text",
+  "text" => "Hello, world1"
 ];
 
 $encodeJson = json_encode($messages);
