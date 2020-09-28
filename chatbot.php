@@ -12,7 +12,7 @@ $messages = [];
 $messages['replyToken'] = $replyToken;
 $messages['messages'][0] = [
   "type" => "text",
-  "text" => "Hello, world1"
+  "text" => $replyToken
 ];
 
 $encodeJson = json_encode($messages);
