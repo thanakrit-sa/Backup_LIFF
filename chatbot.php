@@ -33,7 +33,7 @@ $messages['messages'][0] =
                     "size" => "full",
                     "aspectMode" => "cover",
                     "gravity" => "center",
-                    "aspectRatio" => "1.91:1"
+                    "aspectRatio" => "3:2"
                   ],
                   [
                     "type" => "box",
@@ -145,7 +145,7 @@ $messages['messages'][0] =
                     "size" => "full",
                     "aspectMode" => "cover",
                     "gravity" => "center",
-                    "aspectRatio" => "1.91:1"
+                    "aspectRatio" => "3:2"
                   ],
                   [
                     "type" => "box",
