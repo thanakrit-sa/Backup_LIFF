@@ -80,15 +80,17 @@ $messages['messages'][0] =
               ],
               [
                 "type" => "text",
-                "text" => "ใส่ที่อยู่",
+                "text" => "ใส่คำอธิบาย",
                 "wrap" => true,
                 "margin" => "sm"
               ],
               [
                 "type" => "text",
-                "text" => "ใส่ข้อมูลเพิ่มเติม",
+                "text" => "00,000",
                 "wrap" => true,
-                "margin" => "sm"
+                "margin" => "sm",
+                "align" => "end",
+                "size" => "xl"
               ]
             ],
             "paddingAll" => "20px"
@@ -192,15 +194,17 @@ $messages['messages'][0] =
               ],
               [
                 "type" => "text",
-                "text" => "ใส่ที่อยู่",
+                "text" => "ใส่คำอธิบาย",
                 "wrap" => true,
                 "margin" => "sm"
               ],
               [
                 "type" => "text",
-                "text" => "ใส่ข้อมูลเพิ่มเติม",
+                "text" => "00,000",
                 "wrap" => true,
-                "margin" => "sm"
+                "margin" => "sm",
+                "align" => "end",
+                "size" => "xl"
               ]
             ],
             "paddingAll" => "20px"
