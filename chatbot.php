@@ -14,9 +14,7 @@ $dataaa = json_encode($age);
 
 $messages = [];
 $messages['replyToken'] = $replyToken;
-$messages['messages'][0] = [
-  $dataaa
-];
+$messages['messages'][0] = $dataaa;
 
 $encodeJson = json_encode($messages);
 
