@@ -43,7 +43,10 @@ $n = 1;
 if ($message == "แสดงสินค้า") {
   $data = [
     'replyToken' => $reply_token,
-    'messages' => [$category]
+    'message' => [
+      'type' => "text",
+      'text' => "Hello, world!"
+    ]
   ];
 } else {
   $data = [
