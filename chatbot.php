@@ -1,7 +1,5 @@
 <?php
-/*Get Data From POST Http Request*/
 $datas = file_get_contents('php://input');
-/*Decode Json From LINE Data Body*/
 $deCode = json_decode($datas, true);
 
 file_put_contents('log.txt', file_get_contents('php://input') . PHP_EOL, FILE_APPEND);
@@ -17,268 +15,137 @@ $messages['messages'][0] =
     "type" => "flex",
     "altText" => "This is a Flex Message",
     "contents" => [
-      "type" => "carousel",
-      "contents" => [
-        [
-          "type" => "bubble",
-          "body" => [
+      "type" => "bubble",
+      "header" => [
+        "type" => "box",
+        "layout" => "vertical",
+        "contents" => [
+          [
             "type" => "box",
-            "layout" => "vertical",
+            "layout" => "horizontal",
             "contents" => [
               [
                 "type" => "image",
-                "url" => "https=>//scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip1.jpg",
+                "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip4.jpg",
                 "size" => "full",
                 "aspectMode" => "cover",
-                "aspectRatio" => "2=>3",
-                "gravity" => "top"
+                "aspectRatio" => "150:196",
+                "gravity" => "center",
+                "flex" => 1
               ],
               [
                 "type" => "box",
                 "layout" => "vertical",
                 "contents" => [
                   [
-                    "type" => "box",
-                    "layout" => "vertical",
-                    "contents" => [
-                      [
-                        "type" => "text",
-                        "text" => "Brown's T-shirts",
-                        "size" => "xl",
-                        "color" => "#ffffff",
-                        "weight" => "bold"
-                      ]
-                    ]
+                    "type" => "image",
+                    "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip5.jpg",
+                    "size" => "full",
+                    "aspectMode" => "cover",
+                    "aspectRatio" => "150:98",
+                    "gravity" => "center"
                   ],
                   [
-                    "type" => "box",
-                    "layout" => "baseline",
-                    "contents" => [
-                      [
-                        "type" => "text",
-                        "text" => "¥35,800",
-                        "color" => "#ebebeb",
-                        "size" => "sm",
-                        "flex" => 0
-                      ],
-                      [
-                        "type" => "text",
-                        "text" => "¥75,000",
-                        "color" => "#ffffffcc",
-                        "decoration" => "line-through",
-                        "gravity" => "bottom",
-                        "flex" => 0,
-                        "size" => "sm"
-                      ]
-                    ],
-                    "spacing" => "lg"
-                  ],
-                  [
-                    "type" => "box",
-                    "layout" => "vertical",
-                    "contents" => [
-                      [
-                        "type" => "filler"
-                      ],
-                      [
-                        "type" => "box",
-                        "layout" => "baseline",
-                        "contents" => [
-                          [
-                            "type" => "filler"
-                          ],
-                          [
-                            "type" => "icon",
-                            "url" => "https=>//scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip14.png"
-                          ],
-                          [
-                            "type" => "text",
-                            "text" => "Add to cart",
-                            "color" => "#ffffff",
-                            "flex" => 0,
-                            "offsetTop" => "-2px"
-                          ],
-                          [
-                            "type" => "filler"
-                          ]
-                        ],
-                        "spacing" => "sm"
-                      ],
-                      [
-                        "type" => "filler"
-                      ]
-                    ],
-                    "borderWidth" => "1px",
-                    "cornerRadius" => "4px",
-                    "spacing" => "sm",
-                    "borderColor" => "#ffffff",
-                    "margin" => "xxl",
-                    "height" => "40px"
+                    "type" => "image",
+                    "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip6.jpg",
+                    "size" => "full",
+                    "aspectMode" => "cover",
+                    "aspectRatio" => "150:98",
+                    "gravity" => "center"
                   ]
                 ],
-                "position" => "absolute",
-                "offsetBottom" => "0px",
-                "offsetStart" => "0px",
-                "offsetEnd" => "0px",
-                "backgroundColor" => "#03303Acc",
-                "paddingAll" => "20px",
-                "paddingTop" => "18px"
+                "flex" => 1
               ],
               [
                 "type" => "box",
-                "layout" => "vertical",
+                "layout" => "horizontal",
                 "contents" => [
                   [
                     "type" => "text",
-                    "text" => "SALE",
+                    "text" => "NEW",
+                    "size" => "xs",
                     "color" => "#ffffff",
                     "align" => "center",
-                    "size" => "xs",
-                    "offsetTop" => "3px"
+                    "gravity" => "center"
                   ]
                 ],
+                "backgroundColor" => "#EC3D44",
+                "paddingAll" => "2px",
+                "paddingStart" => "4px",
+                "paddingEnd" => "4px",
+                "flex" => 0,
                 "position" => "absolute",
-                "cornerRadius" => "20px",
-                "offsetTop" => "18px",
-                "backgroundColor" => "#ff334b",
                 "offsetStart" => "18px",
-                "height" => "25px",
-                "width" => "53px"
+                "offsetTop" => "18px",
+                "cornerRadius" => "100px",
+                "width" => "48px",
+                "height" => "25px"
               ]
-            ],
-            "paddingAll" => "0px"
+            ]
           ]
         ],
-        [
-          "type" => "bubble",
-          "body" => [
+        "paddingAll" => "0px"
+      ],
+      "body" => [
+        "type" => "box",
+        "layout" => "vertical",
+        "contents" => [
+          [
             "type" => "box",
             "layout" => "vertical",
             "contents" => [
-              [
-                "type" => "image",
-                "url" => "https=>//scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip2.jpg",
-                "size" => "full",
-                "aspectMode" => "cover",
-                "aspectRatio" => "2=>3",
-                "gravity" => "top"
-              ],
-              [
-                "type" => "box",
-                "layout" => "vertical",
-                "contents" => [
-                  [
-                    "type" => "box",
-                    "layout" => "vertical",
-                    "contents" => [
-                      [
-                        "type" => "text",
-                        "text" => "Cony's T-shirts",
-                        "size" => "xl",
-                        "color" => "#ffffff",
-                        "weight" => "bold"
-                      ]
-                    ]
-                  ],
-                  [
-                    "type" => "box",
-                    "layout" => "baseline",
-                    "contents" => [
-                      [
-                        "type" => "text",
-                        "text" => "¥35,800",
-                        "color" => "#ebebeb",
-                        "size" => "sm",
-                        "flex" => 0
-                      ],
-                      [
-                        "type" => "text",
-                        "text" => "¥75,000",
-                        "color" => "#ffffffcc",
-                        "decoration" => "line-through",
-                        "gravity" => "bottom",
-                        "flex" => 0,
-                        "size" => "sm"
-                      ]
-                    ],
-                    "spacing" => "lg"
-                  ],
-                  [
-                    "type" => "box",
-                    "layout" => "vertical",
-                    "contents" => [
-                      [
-                        "type" => "filler"
-                      ],
-                      [
-                        "type" => "box",
-                        "layout" => "baseline",
-                        "contents" => [
-                          [
-                            "type" => "filler"
-                          ],
-                          [
-                            "type" => "icon",
-                            "url" => "https=>//scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip14.png"
-                          ],
-                          [
-                            "type" => "text",
-                            "text" => "Add to cart",
-                            "color" => "#ffffff",
-                            "flex" => 0,
-                            "offsetTop" => "-2px"
-                          ],
-                          [
-                            "type" => "filler"
-                          ]
-                        ],
-                        "spacing" => "sm"
-                      ],
-                      [
-                        "type" => "filler"
-                      ]
-                    ],
-                    "borderWidth" => "1px",
-                    "cornerRadius" => "4px",
-                    "spacing" => "sm",
-                    "borderColor" => "#ffffff",
-                    "margin" => "xxl",
-                    "height" => "40px"
-                  ]
-                ],
-                "position" => "absolute",
-                "offsetBottom" => "0px",
-                "offsetStart" => "0px",
-                "offsetEnd" => "0px",
-                "backgroundColor" => "#9C8E7Ecc",
-                "paddingAll" => "20px",
-                "paddingTop" => "18px"
-              ],
               [
                 "type" => "box",
                 "layout" => "vertical",
                 "contents" => [
                   [
                     "type" => "text",
-                    "text" => "SALE",
+                    "contents" => [],
+                    "size" => "xl",
+                    "wrap" => true,
+                    "text" => "Cony Residence",
                     "color" => "#ffffff",
-                    "align" => "center",
-                    "size" => "xs",
-                    "offsetTop" => "3px"
+                    "weight" => "bold"
+                  ],
+                  [
+                    "type" => "text",
+                    "text" => "3 Bedrooms, ¥35,000",
+                    "color" => "#ffffffcc",
+                    "size" => "sm"
                   ]
                 ],
-                "position" => "absolute",
-                "cornerRadius" => "20px",
-                "offsetTop" => "18px",
-                "backgroundColor" => "#ff334b",
-                "offsetStart" => "18px",
-                "height" => "25px",
-                "width" => "53px"
+                "spacing" => "sm"
+              ],
+              [
+                "type" => "box",
+                "layout" => "vertical",
+                "contents" => [
+                  [
+                    "type" => "box",
+                    "layout" => "vertical",
+                    "contents" => [
+                      [
+                        "type" => "text",
+                        "contents" => [],
+                        "size" => "sm",
+                        "wrap" => true,
+                        "margin" => "lg",
+                        "color" => "#ffffffde",
+                        "text" => "Private Pool, Delivery box, Floor heating, Private Cinema"
+                      ]
+                    ]
+                  ]
+                ],
+                "paddingAll" => "13px",
+                "backgroundColor" => "#ffffff1A",
+                "cornerRadius" => "2px",
+                "margin" => "xl"
               ]
-            ],
-            "paddingAll" => "0px"
+            ]
           ]
-        ]
+        ],
+        "paddingAll" => "20px",
+        "backgroundColor" => "#464F69"
       ]
     ]
   ];
@@ -290,7 +157,6 @@ $LINEDatas['token'] = "Es3Kz8W5FIyX+e9W8QhhNvTreG4FuPaUwlTi/CCK5+g51055N5mYYzPLt
 
 $results = sentMessage($encodeJson, $LINEDatas);
 
-/*Return HTTP Request 200*/
 http_response_code(200);
 
 function getFormatTextMessage($text)
