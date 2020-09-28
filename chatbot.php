@@ -13,8 +13,39 @@
 	$messages = [];
 	$messages['replyToken'] = $replyToken;
 	$messages['messages'][0] = [
-    "type"=>"text",
-    "text"=>"Hello, user"
+    "type"=> "bubble",
+    "hero"=> [
+      "type"=> "image",
+      "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_2_restaurant.png",
+      "size"=> "full",
+      "aspectRatio"=> "20:13",
+      "aspectMode"=> "cover",
+      "action"=> [
+        "type"=> "uri",
+        "label"=> "Action",
+        "uri"=> "https://linecorp.com"
+      ]
+    ],
+    "footer"=> [
+      "type"=> "box",
+      "layout"=> "vertical",
+      "contents"=> [
+        [
+          "type"=> "spacer",
+          "size"=> "xxl"
+        ],
+        [
+          "type"=> "button",
+          "action"=> [
+            "type"=> "uri",
+            "label"=> "Add to Cart",
+            "uri"=> "https://linecorp.com"
+        ],
+          "color"=> "#905C44",
+          "style"=> "primary"
+      ]
+      ]
+    ]
   ];
 
 	$encodeJson = json_encode($messages);
