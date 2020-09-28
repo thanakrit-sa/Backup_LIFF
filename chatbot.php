@@ -17,36 +17,97 @@ $messages['messages'][0] =
     "type" => "flex",
     "altText" => "This is a Flex Message",
     "contents" => [
-      "type"=> "bubble",
-      "hero"=> [
-        "type"=> "image",
-        "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_2_restaurant.png",
-        "size"=> "full",
-        "aspectRatio"=> "20:13",
-        "aspectMode"=> "cover",
-        "action"=> [
-          "type"=> "uri",
-          "label"=> "Action",
-          "uri"=> "https://linecorp.com"
-        ]
-      ],
-      "footer"=> [
-        "type"=> "box",
-        "layout"=> "vertical",
-        "contents"=> [
+      "type" => "bubble",
+      "direction" => "ltr",
+      "body" => [
+        "type" => "box",
+        "layout" => "vertical",
+        "spacing" => "xxl",
+        "contents" => [
           [
-            "type"=> "spacer",
-            "size"=> "xxl"
+            "type" => "box",
+            "layout" => "horizontal",
+            "spacing" => "none",
+            "offsetStart" => "20%",
+            "width" => "150px",
+            "height" => "150px",
+            "backgroundColor" => "#131010FF",
+            "cornerRadius" => "200px",
+            "contents" => [
+              [
+                "type" => "image",
+                "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+                "margin" => "none",
+                "align" => "center",
+                "gravity" => "center",
+                "size" => "full",
+                "aspectRatio" => "1:1",
+                "aspectMode" => "cover",
+                "backgroundColor" => "#FAF4F4FF"
+              ]
+            ]
           ],
           [
-            "type"=> "button",
-            "action"=> [
-              "type"=> "uri",
-              "label"=> "Add to Cart",
-              "uri"=> "https://linecorp.com"
-            ],
-            "color"=> "#905C44",
-            "style"=> "primary"
+            "type" => "text",
+            "text" => "%E0%B9%83%E0%B8%AA%E0%B9%88%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD",
+            "weight" => "bold",
+            "size" => "xl",
+            "color" => "#050404FF",
+            "align" => "center",
+            "margin" => "xxl",
+            "wrap" => false,
+            "contents" => []
+          ],
+          [
+            "type" => "box",
+            "layout" => "vertical",
+            "spacing" => "md",
+            "margin" => "xxl",
+            "height" => "40px",
+            "backgroundColor" => "#008504FF",
+            "cornerRadius" => "50px",
+            "contents" => [
+              [
+                "type" => "text",
+                "text" => "%E0%B9%83%E0%B8%AA%E0%B9%88%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%81%E0%B8%9A%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C",
+                "weight" => "regular",
+                "size" => "md",
+                "color" => "#FFFFFFFF",
+                "align" => "center",
+                "margin" => "md",
+                "contents" => []
+              ]
+            ]
+          ],
+          [
+            "type" => "box",
+            "layout" => "vertical",
+            "margin" => "xxl",
+            "contents" => [
+              [
+                "type" => "text",
+                "text" => "%E0%B9%83%E0%B8%AA%E0%B9%88%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87",
+                "size" => "sm",
+                "gravity" => "center",
+                "margin" => "none",
+                "wrap" => true,
+                "contents" => []
+              ]
+            ]
+          ]
+        ]
+      ],
+      "footer" => [
+        "type" => "box",
+        "layout" => "horizontal",
+        "contents" => [
+          [
+            "type" => "button",
+            "action" => [
+              "type" => "uri",
+              "label" => "ใส่ข้อความที่แสดง",
+              "uri" => "https://linecorp.com"
+            ]
           ]
         ]
       ]
