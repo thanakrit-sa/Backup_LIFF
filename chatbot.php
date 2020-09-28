@@ -110,6 +110,17 @@ $messages['messages'][0] =
             "width"=> "200px",
             "height"=> "30px",
             "offsetStart"=> "30px"
+          ],
+          [
+            "type"=> "box",
+            "layout"=> "vertical",
+            "contents"=> [
+              [
+                "type"=> "text",
+                "text"=> "ใส่คำอธิบาย"
+              ]
+            ],
+            "paddingTop"=> "20px"
           ]
         ],
         "offsetTop"=> "20px",
