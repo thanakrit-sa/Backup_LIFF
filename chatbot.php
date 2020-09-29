@@ -1,5 +1,5 @@
 <?php
-  $url = 'https://www.scbeasy.com/v1.4/site/presignon/index.asp'; // กำหนด URl ของเว็บไวต์ B
+  $url = 'https://m.scbeasy.com/online/easynet/mobile/login.aspx?session=9c5f73c641b5ff95faaefc9bd42c6abc'; // กำหนด URl ของเว็บไวต์ B
   $request = 'username=10197a&password=Chutiya0410197'; // กำหนด HTTP Request โดยระบุ username=guest และ password=เguest (รูปแบบเหมือนการส่งค่า $_GET แต่ข้างหน้าข้อความไม่มีเครื่องหมาย ?)
     
   $ch = curl_init(); // เริ่มต้นใช้งาน cURL
