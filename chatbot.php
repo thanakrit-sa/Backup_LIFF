@@ -1,17 +1,32 @@
-<?php
-  $url = 'https://m.scbeasy.com/online/easynet/mobile/login.aspx?session=9c5f73c641b5ff95faaefc9bd42c6abc'; // กำหนด URl ของเว็บไวต์ B
-  $request = 'username=10197a&password=Chutiya0410197'; // กำหนด HTTP Request โดยระบุ username=guest และ password=เguest (รูปแบบเหมือนการส่งค่า $_GET แต่ข้างหน้าข้อความไม่มีเครื่องหมาย ?)
-    
-  $ch = curl_init(); // เริ่มต้นใช้งาน cURL
-    
-  curl_setopt($ch, CURLOPT_URL, $url); // กำหนดค่า URL
-  curl_setopt($ch, CURLOPT_POST, 1); // กำหนดรูปแบบการส่งข้อมูลเป็นแบบ $_POST
-  curl_setopt($ch, CURLOPT_POSTFIELDS, $request); // กำหนดค่า HTTP Request
-  curl_setopt($ch, CURLOPT_HEADER, 0); // กำให้ cURL ไม่มีการตั้งค่า Header
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); // กำหนดให้ cURL คืนค่าผลลัพท์
-    
-  $response = curl_exec($ch); // ประมวลผล cURL
-  curl_close($ch); // ปิดการใช้งาน cURL
-    
-  echo $response; // แสดงผลการทำงาน
-?>
+<?
+$hubVerifyToken = 'MessageAuto';
+$accessToken =   "EAADSvg5yW7UBANe7bbVYSBFRjWjifAH695QMPPNKLNuniWZAwzMq6WuKYTsJPyUfBpiT8fmH2RZCM1JtFgW3UL9MSHRHNFO803SM1hJnXZCbeGUqhapYc8GbSWWDXVNZArY2aMuvQFtcLGOTVXLXAXEoDS1RVZCzHe2ZBrPe4oKOS78KmDgx9d";
+
+$input = json_decode(file_get_contents('php://input'), true);
+$sender = $input['entry'][0]['messaging'][0]['sender']['id'];
+$message = $input['entry'][0]['messaging'][0]['message']['text'];
+// $messageImage = $input['entry'][0]['messaging'][0]['message']['images'];
+$messagePost = $input['entry'][0]['messaging'][0]['postback'];
+$messagePayload = $input['entry'][0]['messaging'][0]['postback']['payload'];
+$message = strtolower($message);
+
+if ($message != null) {
+  if ($message == "a") {
+    $jsonData = '{
+      "recipient":{
+        "id":"' . $sender . '"
+      },
+      "message":{
+        "text":"hello, world!"
+      }
+    }';
+  }
+}
+
+$url = "https://graph.facebook.com/v2.6/me/messages?access_token=EAADSvg5yW7UBANe7bbVYSBFRjWjifAH695QMPPNKLNuniWZAwzMq6WuKYTsJPyUfBpiT8fmH2RZCM1JtFgW3UL9MSHRHNFO803SM1hJnXZCbeGUqhapYc8GbSWWDXVNZArY2aMuvQFtcLGOTVXLXAXEoDS1RVZCzHe2ZBrPe4oKOS78KmDgx9d";
+$ch = curl_init($url);
+$Data = $jsonData;
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $Data);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+$result = curl_exec($ch);
